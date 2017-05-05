@@ -1,2 +1,2 @@
-APP_MODULES := NdkTest
 APP_ABI := all
+APP_STL := gnustl_static
