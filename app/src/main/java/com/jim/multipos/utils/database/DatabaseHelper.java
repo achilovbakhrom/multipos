@@ -15,7 +15,6 @@ public class DatabaseHelper implements Upgradable{
         try {
             String fileName = PathGenerator.getDbDir(context) + "/"+PathGenerator.MAIN_DB_NAME;
             database = new SQLiteDatabase(fileName, context, version);
-            database.tableinfo(database.getSqliteHandle(), "foo");
         } catch (SQLiteException e) {
             e.printStackTrace();
         }

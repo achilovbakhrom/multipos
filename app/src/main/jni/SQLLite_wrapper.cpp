@@ -20,7 +20,7 @@ void throw_sqlite3_exception(JNIEnv *env, sqlite3 *handle, int errcode) {
         errcode = sqlite3_errcode(handle);
     }
     const char *errmsg = sqlite3_errmsg(handle);
-    jclass exClass = env->FindClass("com/jim/multipos/orm/database/SQLiteException");
+    jclass exClass = env->FindClass("com/jim/multipos/utils/database/SQLiteException");
     env->ThrowNew(exClass, errmsg);
 }
 

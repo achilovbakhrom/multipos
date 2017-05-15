@@ -2,6 +2,8 @@ package com.jim.multipos.utils.database;
 
 import android.util.Log;
 
+import com.jim.multipos.managers.DatabaseManager;
+
 import java.util.Map;
 
 public class SQLiteCursor {
@@ -95,26 +97,6 @@ public class SQLiteCursor {
 		if (!inRow) {
 			throw new SQLiteException("You must call next before");
 		}
-	}
-
-	public int getInt(String columnName) throws SQLiteException {
-
-		return 0;
-	}
-
-	public String getString(String columnName) throws SQLiteException {
-
-		return null;
-	}
-
-	public double getDouble(String columnName) throws SQLiteException {
-
-		return 0.0d;
-	}
-
-	public float getFloat(String columnName) throws SQLiteException {
-
-		return 0.0f;
 	}
 
 	native int columnsCount(int statementHandle);

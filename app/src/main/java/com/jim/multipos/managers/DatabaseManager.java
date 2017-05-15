@@ -15,7 +15,7 @@ public class DatabaseManager {
     private DatabaseHelper helper;
     private static DatabaseManager manager;
     private Context context;
-    public DatabaseManager getInstance(Context context) {
+    public static DatabaseManager getInstance(Context context) {
         if (manager == null) {
             manager = new DatabaseManager(context);
         }
@@ -62,13 +62,4 @@ public class DatabaseManager {
         }
     }
 
-    public int getIndex(String tableName, String columnName) {
-        int index = -1;
-        try {
-            index = helper.getDatabase().columnIndex(tableName, columnName);
-        } catch (SQLiteException e) {
-            e.printStackTrace();
-        }
-        return index;
-    }
 }
