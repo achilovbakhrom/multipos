@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="80dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etComboBarcode"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:drawableRight="@drawable/barcode"
+            android:drawableTint="#e1e1e1"
+            android:hint="SKU, Barcode"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textColorHint="#e1e1e1"
+            android:textSize="16dp"/>
+
+
+        <EditText
+            android:id="@+id/etDiffPrice"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Difference price"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textColorHint="#e1e1e1"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="30dp"
+            android:tint="#8a8a8a"
+            android:src="@drawable/delete"/>
+
+    </LinearLayout>
+
+</LinearLayout>

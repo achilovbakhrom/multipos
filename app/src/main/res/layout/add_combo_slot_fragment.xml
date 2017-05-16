@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f8f8f8"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="43"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="43"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Creating Upsell combos"
+                    android:textColor="#419fd9"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap Product to manage it info"
+                    android:textColor="#8a8a8a"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="2px"
+                android:layout_marginBottom="25dp"
+                android:background="#8a8a8a"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:gravity="right"
+                    android:text="Combo"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:id="@+id/etComboName"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:hint="Name"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:textColorHint="#e1e1e1"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:id="@+id/ivChooseImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/camera"
+                    android:tint="#8a8a8a"/>
+                4
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="16dp"
+                android:gravity="right"
+                android:text="Product"
+                android:textColor="#419fd9"
+                android:textSize="16dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="30dp"
+                android:background="#e4e4e4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="80dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/etComboBarcode"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:drawableRight="@drawable/barcode"
+                    android:drawableTint="#e1e1e1"
+                    android:hint="SKU, Barcode"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:textColorHint="#e1e1e1"
+                    android:textSize="16dp"/>
+
+
+                <EditText
+                    android:id="@+id/etDiffPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:hint="Difference price"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:textColorHint="#e1e1e1"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/add_round"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Cancel"
+                android:textColor="#b1b1b1"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Save"
+                android:textColor="#419fd9"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/btnAdd"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Add"
+                android:textColor="#419fd9"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="57"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProductClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Combo List"
+                    android:textColor="#419fd9"
+                    android:textSize="18dp"/>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@drawable/top_fade"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="25px"
+            android:layout_height="match_parent"
+            android:background="@drawable/left_fade"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

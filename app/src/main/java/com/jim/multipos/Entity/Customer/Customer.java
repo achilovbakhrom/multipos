@@ -7,16 +7,15 @@ public class Customer {
     private String phoneNumber;
     private String address;
     private String photoPath;
-    private long referenceID;
+
 
     public Customer(String name, String email, String phoneNumber,
-                    String address, String photoPath, long referenceID) {
+                    String address, String photoPath) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.address = address;
         this.photoPath = photoPath;
-        this.referenceID = referenceID;
     }
 
     public String getName() {
@@ -57,13 +56,5 @@ public class Customer {
 
     public void setPhotoPath(String photoPath) {
         this.photoPath = photoPath;
-    }
-
-    public long getReferenceID() {
-        return referenceID;
-    }
-
-    public void setReferenceID(long referenceID) {
-        this.referenceID = referenceID;
     }
 }

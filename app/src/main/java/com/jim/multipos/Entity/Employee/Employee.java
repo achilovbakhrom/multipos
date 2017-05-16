@@ -5,14 +5,12 @@ public class Employee {
     private String name;
     private String phone;
     private String startDate;
-    private long referenceID;
     private long password;
 
-    public Employee(String name, String phone, String startDate, long referenceID, long password) {
+    public Employee(String name, String phone, String startDate,  long password) {
         this.name = name;
         this.phone = phone;
         this.startDate = startDate;
-        this.referenceID = referenceID;
         this.password = password;
     }
 
@@ -38,14 +36,6 @@ public class Employee {
 
     public void setStartDate(String startDate) {
         this.startDate = startDate;
-    }
-
-    public long getReferenceID() {
-        return referenceID;
-    }
-
-    public void setReferenceID(long referenceID) {
-        this.referenceID = referenceID;
     }
 
     public long getPassword() {

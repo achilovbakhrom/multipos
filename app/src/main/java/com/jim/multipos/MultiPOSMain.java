@@ -1,10 +1,11 @@
 package com.jim.multipos;
 
-import android.app.Application;
-import android.graphics.Camera;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+
+import com.jim.multipos.utils.database.SQLiteCursor;
+import com.jim.multipos.utils.database.SQLiteException;
 
 public class MultiPOSMain extends AppCompatActivity {
 
@@ -12,8 +13,14 @@ public class MultiPOSMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multi_posmain);
-        View view;
-        Application application;
+        SQLiteCursor cursor = null;
+        try {
+            while(cursor.next() ){
+                cursor.intValue(2);
+            }
+        } catch (SQLiteException e) {
+            e.printStackTrace();
+        }
     }
 
 
