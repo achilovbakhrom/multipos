@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="#f8f8f8"
+              android:background="@color/colorBackground"
               android:orientation="horizontal">
 
     <LinearLayout
@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="#ffffff"
+            android:background="@color/colorWhite"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingBottom="10dp"
@@ -26,21 +26,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Creating Upsell combos"
-                android:textColor="#419fd9"/>
+                android:textColor="@color/colorBlue"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tap Product to manage it info"
-                android:textColor="#8a8a8a"/>
+                android:textColor="@color/colorMainText"/>
 
         </LinearLayout>
 
         <FrameLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="2px"
             android:layout_marginBottom="25dp"
-            android:background="#8a8a8a"/>
+            android:background="@color/colorTextHint"/>
 
 
         <LinearLayout
@@ -56,6 +56,7 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Combo"
+                android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
             <EditText
@@ -67,10 +68,10 @@
                 android:background="@drawable/edit_text_bg"
                 android:hint="Name"
                 android:paddingBottom="5dp"
-                android:paddingTop="5dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:textColorHint="#e1e1e1"
+                android:paddingTop="5dp"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
             <ImageView
@@ -81,7 +82,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="30dp"
                 android:src="@drawable/camera"
-                android:tint="#8a8a8a"/>
+                android:tint="@color/colorTintGrey"/>
 
         </LinearLayout>
 
@@ -99,6 +100,7 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Price"
+                android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
             <EditText
@@ -108,12 +110,12 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_bg"
+                android:hint="Combo price"
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColorHint="#e1e1e1"
-                android:hint="Combo price"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
             <TextView
@@ -123,19 +125,20 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Price \n currency"
+                android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="38dp"
+                android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_bg"
                 android:orientation="horizontal"
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:paddingTop="5dp"
-                android:layout_marginRight="30dp">
+                android:paddingTop="5dp">
 
                 <Spinner
                     android:id="@+id/spComboPriceCurr"
@@ -171,6 +174,7 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Description"
+                android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
             <EditText
@@ -184,10 +188,10 @@
                 android:gravity="top"
                 android:hint="Some notes"
                 android:paddingBottom="5dp"
-                android:paddingTop="5dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:textColorHint="#e1e1e1"
+                android:paddingTop="5dp"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"
                 />
         </LinearLayout>
@@ -212,7 +216,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:text="Cancel"
-                android:textColor="#b1b1b1"
+                android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
             <TextView
@@ -227,7 +231,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:text="Save"
-                android:textColor="#419fd9"
+                android:textColor="@color/colorBlue"
                 android:textSize="16dp"/>
 
         </LinearLayout>
@@ -239,7 +243,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="57"
-        android:background="#f1f1f1"
+        android:background="@color/colorBackgroundGrey"
         android:orientation="vertical">
 
 
@@ -251,7 +255,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#ffffff"
+                android:background="@color/colorWhite"
                 android:orientation="horizontal">
 
                 <TextView
@@ -265,7 +269,7 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="Combo List"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="18dp"/>
 
 

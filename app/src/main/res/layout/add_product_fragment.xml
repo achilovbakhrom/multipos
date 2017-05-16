@@ -71,7 +71,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColorHint="#e1e1e1"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
             <ImageView
@@ -124,7 +124,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColorHint="#e1e1e1"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"
                 />
         </LinearLayout>
@@ -153,12 +153,12 @@
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_bg"
                 android:drawableRight="@drawable/barcode"
-                android:drawableTint="#e1e1e1"
+                android:drawableTint="@color/colorTextHint"
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColorHint="#e1e1e1"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
             <TextView
@@ -182,7 +182,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColorHint="#e1e1e1"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
         </LinearLayout>
@@ -304,7 +304,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColorHint="#e1e1e1"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
             <TextView
@@ -328,7 +328,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColorHint="#e1e1e1"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
         </LinearLayout>

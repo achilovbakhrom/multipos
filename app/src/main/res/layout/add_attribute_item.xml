@@ -28,7 +28,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
-            android:textColorHint="#e1e1e1">
+            android:textColorHint="@color/colorTextHint">
         </EditText>
 
         <ImageView

@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#419fd9"
+        android:background="@color/colorBlue"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -27,7 +27,7 @@
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:layout_weight="61"
-            android:background="#51afe6"/>
+            android:background="@color/colorBlueLight"/>
 
     </LinearLayout>
 
@@ -40,7 +40,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="43"
-            android:background="#f1f1f1"
+            android:background="@color/colorBackgroundGrey"
             android:orientation="vertical"
             >
 
@@ -67,6 +67,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textColor="@color/colorMainText"
                         android:text="Parent"
                         />
 
@@ -91,6 +92,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textColor="@color/colorMainText"
                         android:text="Child"
                         />
 
@@ -111,7 +113,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="55dp"
                 android:text="Parent Product"
-                android:textColor="#419fd9"
+                android:textColor="@color/colorBlue"
                 android:textSize="18dp"/>
 
             <EditText
@@ -146,7 +148,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="57"
-            android:background="#ffffff"
+            android:background="@color/colorWhite"
             android:orientation="vertical">
 
 
@@ -168,6 +170,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
                         android:text="Size: 30"
+                        android:textColor="@color/colorMainText"
                         android:textSize="18dp"/>
 
                     <TextView
@@ -175,6 +178,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:text="Color: Black"
+                        android:textColor="@color/colorMainText"
                         android:textSize="18dp"/>
 
 
@@ -187,7 +191,7 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="40dp"
                     android:text="Size (1st Attribute)"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="18dp"/>
 
                 <android.support.v7.widget.RecyclerView
@@ -205,7 +209,7 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="40dp"
                     android:text="Color (2nd Attribute)"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="18dp"/>
 
                 <android.support.v7.widget.RecyclerView
@@ -240,7 +244,7 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="Back"
-                    android:textColor="#b1b1b1"
+                    android:textColor="@color/colorMainText"
                     android:textSize="16dp"/>
 
                 <TextView
@@ -255,7 +259,7 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="Save"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="16dp"/>
 
             </LinearLayout>

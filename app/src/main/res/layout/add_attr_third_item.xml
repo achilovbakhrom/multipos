@@ -39,14 +39,14 @@
             android:layout_height="25dp"
             android:layout_marginLeft="55dp"
             android:src="@drawable/save"
-            android:tint="#a7a7a7"/>
+            android:tint="@color/colorTintGrey"/>
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginRight="75dp"
             android:layout_marginLeft="20dp"
             android:src="@drawable/delete"
-            android:tint="#a7a7a7"/>
+            android:tint="@color/colorTintGrey"/>
 
     </LinearLayout>
 </LinearLayout>

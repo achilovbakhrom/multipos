@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="#f8f8f8"
+              android:background="@color/colorBackground"
               android:orientation="horizontal">
 
     <LinearLayout
@@ -24,7 +24,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Custom User"
-                android:textColor="#419fd9"
+                android:textColor="@color/colorBlue"
                 android:textSize="20dp"/>
 
             <TextView
@@ -39,7 +39,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="#419fd9"
+            android:background="@color/colorBlue"
             android:orientation="horizontal">
 
             <TextView
@@ -49,7 +49,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_weight="1"
                 android:text="Name"
-                android:textColor="#fff"
+                android:textColor="@color/colorWhite"
                 android:textSize="18dp"/>
 
             <TextView
@@ -58,7 +58,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="Qty"
-                android:textColor="#fff"
+                android:textColor="@color/colorWhite"
                 android:textSize="18dp"/>
 
             <TextView
@@ -67,7 +67,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="Each"
-                android:textColor="#fff"
+                android:textColor="@color/colorWhite"
                 android:textSize="18dp"/>
 
             <TextView
@@ -76,7 +76,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="Sum"
-                android:textColor="#fff"
+                android:textColor="@color/colorWhite"
                 android:textSize="18dp"/>
 
         </LinearLayout>
@@ -101,7 +101,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="#ffffff"
+            android:background="@color/colorWhite"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -123,6 +123,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Sub total :"
+                        android:textColor="@color/colorMainText"
                         android:textSize="18dp"/>
 
                     <TextView
@@ -131,6 +132,7 @@
                         android:layout_weight="1"
                         android:gravity="right"
                         android:text="31 600 uzs"
+                        android:textColor="@color/colorMainText"
                         android:textSize="18dp"/>
 
                 </LinearLayout>
@@ -147,6 +149,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="To discount :"
+                        android:textColor="@color/colorMainText"
                         android:textSize="18dp"/>
 
                     <TextView
@@ -155,6 +158,7 @@
                         android:layout_weight="1"
                         android:gravity="right"
                         android:text="316 uzs"
+                        android:textColor="@color/colorMainText"
                         android:textSize="18dp"/>
 
                 </LinearLayout>
@@ -170,6 +174,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Balance Due :"
+                        android:textColor="@color/colorMainText"
                         android:textSize="18dp"/>
 
                     <TextView
@@ -199,6 +204,7 @@
                     android:layout_marginRight="35dp"
                     android:gravity="right"
                     android:text="TOTAL"
+                    android:textColor="@color/colorMainText"
                     android:textSize="18dp"/>
 
                 <TextView
@@ -207,8 +213,150 @@
                     android:layout_marginRight="35dp"
                     android:gravity="right"
                     android:text="31 600 uzs"
-                    android:textColor="#212121"
+                    android:textColor="@color/colorMainText"
                     android:textSize="26dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorGrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorGreyDark"/>
+
+            <FrameLayout
+                android:layout_width="8px"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"/>
+
+            <FrameLayout
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/colorGreyDark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/order_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/slider"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/discount"
+                        android:tint="#929395"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Discount"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/service"
+                        android:tint="#929395"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Service Fee"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/print"
+                        android:tint="#929395"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Print check"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/currency"
+                        android:tint="#7fe275"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="PAY"
+                        android:textColor="#7fe275"/>
+
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
@@ -218,136 +366,6 @@
             android:layout_height="2px"
             android:background="#ebebeb"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <FrameLayout
-                android:layout_width="2px"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:background="#cccccc"/>
-
-            <FrameLayout
-                android:layout_width="8px"
-                android:layout_height="match_parent"
-                android:background="#ffffff"/>
-
-            <FrameLayout
-                android:layout_width="2px"
-                android:layout_height="match_parent"
-                android:background="#cccccc"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/order_bg"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/slider"/>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/discount"
-                        android:layout_marginBottom="10dp"
-                        android:layout_gravity="center"
-                        android:tint="#929395"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:text="Discount"/>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:src="@drawable/service"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:tint="#929395"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:text="Service Fee"/>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/print"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:tint="#929395"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:text="Print check"/>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:background="@drawable/rectangle"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/currency"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_gravity="center"
-                        android:tint="#7fe275"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textColor="#7fe275"
-                        android:layout_gravity="center"
-                        android:text="PAY"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
 
     </LinearLayout>
 
@@ -355,7 +373,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="57"
-        android:background="#f1f1f1"
+        android:background="@color/colorBackgroundGrey"
         android:orientation="vertical">
 
 
@@ -367,7 +385,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#ffffff"
+                android:background="@color/colorWhite"
                 android:orientation="horizontal">
 
                 <TextView
@@ -381,7 +399,7 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="Category"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="18dp"/>
 
                 <TextView
@@ -389,7 +407,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text=">"
-                    android:textColor="#419fd9"/>
+                    android:textColor="@color/colorBlue"/>
 
                 <TextView
                     android:id="@+id/tvSubCategory"
@@ -401,7 +419,7 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="SubCategory"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="18dp"/>
 
                 <TextView
@@ -409,7 +427,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text=">"
-                    android:textColor="#419fd9"/>
+                    android:textColor="@color/colorBlue"/>
 
                 <TextView
                     android:id="@+id/tvProduct"
@@ -421,7 +439,7 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="Product"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="18dp"/>
 
             </LinearLayout>

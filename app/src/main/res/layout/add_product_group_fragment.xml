@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="#f8f8f8"
+              android:background="@color/colorBackground"
               android:orientation="horizontal">
 
     <LinearLayout
@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="#ffffff"
+            android:background="@color/colorWhite"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingBottom="10dp"
@@ -26,21 +26,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Management Item Mode"
-                android:textColor="#419fd9"/>
+                android:textColor="@color/colorBlue"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tap Product to manage it info"
-                android:textColor="#8a8a8a"/>
+                android:textColor="@color/colorMainText"/>
 
         </LinearLayout>
 
         <FrameLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="2px"
             android:layout_marginBottom="25dp"
-            android:background="#8a8a8a"/>
+            android:background="@color/colorTextHint"/>
 
 
         <LinearLayout
@@ -56,6 +56,7 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Group"
+                android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
             <EditText
@@ -71,7 +72,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColorHint="#e1e1e1"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
 
@@ -90,6 +91,7 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Product"
+                android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
             <EditText
@@ -107,7 +109,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColorHint="#e1e1e1"
+                android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
             <ImageView
@@ -140,7 +142,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
-            android:textColorHint="#e1e1e1"
+            android:textColorHint="@color/colorTextHint"
             android:textSize="16dp"
             />
 
@@ -158,6 +160,7 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Options"
+                android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
             <LinearLayout
@@ -179,6 +182,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/colorMainText"
                     android:text="Discount"/>
 
             </LinearLayout>
@@ -202,6 +206,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/colorMainText"
                     android:text="Active"/>
 
             </LinearLayout>
@@ -230,7 +235,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:text="Cancel"
-                android:textColor="#b1b1b1"
+                android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
             <TextView
@@ -245,7 +250,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:text="Save"
-                android:textColor="#419fd9"
+                android:textColor="@color/colorBlue"
                 android:textSize="16dp"/>
 
         </LinearLayout>
@@ -285,6 +290,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="25dp"
                 android:text="T-shirts"
+                android:textColor="@color/colorMainText"
                 android:textSize="18dp"/>
 
 
@@ -295,6 +301,7 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
                 android:text="--American colors"
+                android:textColor="@color/colorMainText"
                 android:textSize="18dp"/>
 
             <android.support.v7.widget.RecyclerView
@@ -312,6 +319,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="25dp"
                 android:text="T-shirts"
+                android:textColor="@color/colorMainText"
                 android:textSize="18dp"/>
 
 
@@ -322,6 +330,7 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
                 android:text="--American colors"
+                android:textColor="@color/colorMainText"
                 android:textSize="18dp"/>
 
             <android.support.v7.widget.RecyclerView

@@ -20,13 +20,13 @@
             android:layout_weight="1"
             android:background="@drawable/edit_text_bg"
             android:drawableRight="@drawable/barcode"
-            android:drawableTint="#e1e1e1"
+            android:drawableTint="@color/colorTextHint"
             android:hint="SKU, Barcode"
             android:paddingBottom="5dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
-            android:textColorHint="#e1e1e1"
+            android:textColorHint="@color/colorTextHint"
             android:textSize="16dp"/>
 
 
@@ -43,7 +43,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
-            android:textColorHint="#e1e1e1"
+            android:textColorHint="@color/colorTextHint"
             android:textSize="16dp"/>
 
         <ImageView

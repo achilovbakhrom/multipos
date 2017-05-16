@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#419fd9"
+        android:background="@color/colorBlue"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -66,6 +66,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textColor="@color/colorMainText"
                         android:text="Parent"
                         />
 
@@ -90,6 +91,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textColor="@color/colorMainText"
                         android:text="Child"
                         />
 
@@ -127,7 +129,7 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="35dp"
                     android:text="Default parent value"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="18dp"/>
 
                 <LinearLayout
@@ -141,6 +143,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
                         android:text="Size: 30"
+                        android:textColor="@color/colorMainText"
                         android:textSize="18dp"/>
 
                     <TextView
@@ -148,6 +151,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:text="Color: Black"
+                        android:textColor="@color/colorMainText"
                         android:textSize="18dp"/>
 
 
@@ -160,7 +164,7 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="40dp"
                     android:text="Size (1st Attribute)"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="18dp"/>
 
                 <android.support.v7.widget.RecyclerView
@@ -178,7 +182,7 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="40dp"
                     android:text="Color (2nd Attribute)"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="18dp"/>
 
                 <android.support.v7.widget.RecyclerView
@@ -213,7 +217,7 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="Cancel"
-                    android:textColor="#b1b1b1"
+                    android:textColor="@color/colorMainText"
                     android:textSize="16dp"/>
 
                 <TextView
@@ -228,7 +232,7 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="Save"
-                    android:textColor="#419fd9"
+                    android:textColor="@color/colorBlue"
                     android:textSize="16dp"/>
 
             </LinearLayout>
@@ -240,7 +244,7 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginLeft="60dp"
                 android:text="2 step of 2"
-                android:textColor="#419fd9"
+                android:textColor="@color/colorBlue"
                 android:textSize="18dp"/>
 
             <FrameLayout
