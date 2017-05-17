@@ -6209,7 +6209,7 @@ typedef struct sqlite3_blob sqlite3_blob;
 **   <li> ^(Row iRow is not present in the table)^,
 **   <li> ^(The specified column of row iRow contains a value that is not
 **         a TEXT or BLOB value)^,
-**   <li> ^(Column zColumn is part of an index, PRIMARY KEY or UNIQUE
+**   <li> ^(Column zColumn is part of an index, PRIMARY KEY or UNIQUE 
 **         constraint and the blob is being opened for read/write access)^,
 **   <li> ^([foreign key constraints | Foreign key constraints] are enabled, 
 **         column zColumn is part of a [child key] definition and the blob is

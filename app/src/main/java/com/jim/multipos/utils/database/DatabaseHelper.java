@@ -43,7 +43,5 @@ public class DatabaseHelper implements Upgradable{
         return database;
     }
 
-    public int columnIndex(String tableName, String columnName) throws SQLiteException{
-        return database.columnIndex(tableName, columnName);
-    }
+
 }

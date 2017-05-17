@@ -71,9 +71,7 @@ public abstract class AbstractSQLite {
         return cursor;
     }
 
-    public int columnIndex(String tableName, String columnName) throws SQLiteException {
-        return columnIndex(sqliteHandle, tableName, columnName);
-    }
+
 
     void checkOpened() throws SQLiteException {
 		if (!isOpen) {
@@ -100,6 +98,5 @@ public abstract class AbstractSQLite {
     native void beginTransaction(int sqliteHandle);
     native void commitTransaction(int sqliteHandle);
     native void tableinfo(int sqliteHandle, String tableName);
-    native int columnIndex(int sqliteHandle, String tableName, String columnName) throws SQLiteException;
 
 }

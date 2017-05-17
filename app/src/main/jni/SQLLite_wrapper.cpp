@@ -159,7 +159,7 @@ void Java_com_jim_multipos_utils_database_AbstractSQLite_commitTransaction(JNIEn
 }
 
 //open existing db
-int Java_com_jim_multipos_utils_database_AbstractSQLite_opendb(JNIEnv *env, jobject object, jstring fileName, jstring cache, jstring v) {
+JNIEXPORT int JNICALL Java_com_jim_multipos_utils_database_AbstractSQLite_opendb(JNIEnv *env, jobject object, jstring fileName, jstring cache, jstring v) {
     char const *version = env->GetStringUTFChars(v, 0);
     char const *fileNameStr = env->GetStringUTFChars(fileName, 0);
     char const *cacheDir = env->GetStringUTFChars(cache, 0);
@@ -175,11 +175,7 @@ int Java_com_jim_multipos_utils_database_AbstractSQLite_opendb(JNIEnv *env, jobj
         throw_sqlite3_exception(env, handle, err);
     }
 
-    if (fileNameStr != 0) {
-        env->ReleaseStringUTFChars(fileName, fileNameStr);
-        env->ReleaseStringUTFChars(v, version);
-        env->ReleaseStringUTFChars(cache, cacheDir);
-    }
+
 
     sqlite3_stmt *stmt;
     std::string sql = "PRAGMA schema_version;";
@@ -205,7 +201,8 @@ int Java_com_jim_multipos_utils_database_AbstractSQLite_opendb(JNIEnv *env, jobj
         __android_log_write(ANDROID_LOG_DEBUG, "com.jim.multipos", "Version is changed ... ");
         std::string query = "PRAGMA schema_version=";
         query += version;
-        query += ";";
+                    __android_log_write(ANDROID_LOG_DEBUG, "com.jim.multipos", query.c_str());
+
         char temp_q[100];
         strcpy(temp_q, query.c_str());
         rc = sqlite3_prepare_v2(handle, temp_q, sizeof(temp_q), &stmt, NULL);
@@ -224,6 +221,12 @@ int Java_com_jim_multipos_utils_database_AbstractSQLite_opendb(JNIEnv *env, jobj
         int temp = std::stoi(version);
         jmethodID method = env->GetMethodID(objClass, "versionChangeNotification", "(II)V");
         env->CallVoidMethod(object, method, currentVersion, temp);
+    }
+
+    if (fileNameStr != 0) {
+            env->ReleaseStringUTFChars(fileName, fileNameStr);
+            env->ReleaseStringUTFChars(v, version);
+            env->ReleaseStringUTFChars(cache, cacheDir);
     }
     return (int)handle;
 }
@@ -292,37 +295,6 @@ jbyteArray Java_com_jim_multipos_utils_database_SQLiteCursor_columnByteArrayValu
         return result;
     }
     return nullptr;
-}
-
-int Java_com_jim_multipos_utils_database_AbstractSQLite_columnIndex(JNIEnv *env, jobject object, int dbHandle, jstring tableName, jstring columnName) {
-    sqlite3 *db = (sqlite3 *) dbHandle;
-    sqlite3_stmt *handle;
-    int colIndex = 0, colName = 1, colType = 2;
-    char const *tn = env->GetStringUTFChars(tableName, 0);
-    char const *cn = env->GetStringUTFChars(columnName, 0);
-    char pragmaQuery[100] = "PRAGMA table_info(";
-    strcat(pragmaQuery, tn);
-    int rc = sqlite3_prepare_v2(db, pragmaQuery, sizeof(pragmaQuery), &handle, NULL);
-    if (rc != SQLITE_OK) {
-        throw_sqlite3_exception(env, db, rc);
-        return -1;
-    }
-    while (sqlite3_step(handle) == SQLITE_ROW) {
-        const char *str = (const char *) sqlite3_column_text(handle, colName);
-        if (strcmp(str, cn) == 0) {
-            if (tn != 0) {
-                env->ReleaseStringUTFChars(tableName, tn);
-                env->ReleaseStringUTFChars(columnName, cn);
-            }
-            return sqlite3_column_int(handle, colIndex);
-        }
-    }
-    if (tn != 0) {
-        env->ReleaseStringUTFChars(tableName, tn);
-        env->ReleaseStringUTFChars(columnName, cn);
-    }
-    throw_sqlite3_exception(env, db, rc);
-    return -1;
 }
 
 void Java_com_jim_multipos_utils_database_AbstractSQLite_execSQL(JNIEnv *env, jobject object, int dbHandle, jstring sql) {
