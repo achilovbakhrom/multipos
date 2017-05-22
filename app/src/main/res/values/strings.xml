@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MultiPOS</string>
+    <string name="client_management"><u>Client management</u></string>
 </resources>

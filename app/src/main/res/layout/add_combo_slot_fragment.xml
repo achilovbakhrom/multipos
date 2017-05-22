@@ -121,7 +121,6 @@
 
 
                 <EditText
-                    android:id="@+id/etComboBarcode"
                     android:layout_width="0dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
@@ -130,6 +129,7 @@
                     android:drawableRight="@drawable/barcode"
                     android:drawableTint="@color/colorTintGrey"
                     android:hint="SKU, Barcode"
+                    android:gravity="center_vertical"
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
@@ -139,7 +139,6 @@
 
 
                 <EditText
-                    android:id="@+id/etDiffPrice"
                     android:layout_width="0dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
@@ -147,6 +146,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edit_text_bg"
                     android:hint="Difference price"
+                    android:gravity="center_vertical"
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
@@ -156,6 +156,7 @@
 
                 <ImageView
                     android:layout_width="25dp"
+                    android:layout_gravity="center"
                     android:layout_height="25dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="30dp"

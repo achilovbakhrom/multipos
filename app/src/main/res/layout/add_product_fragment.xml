@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="#f8f8f8"
+              android:background="@color/colorBackground"
               android:orientation="horizontal"
     >
 
@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="#ffffff"
+            android:background="@color/colorWhite"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingBottom="10dp"
@@ -27,21 +27,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Management Item Mode"
-                android:textColor="#419fd9"/>
+                android:textColor="@color/colorBlue"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tap Product to manage it info"
-                android:textColor="#8a8a8a"/>
+                android:textColor="@color/colorTextHint"/>
 
         </LinearLayout>
 
         <FrameLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="2px"
             android:layout_marginBottom="25dp"
-            android:background="#8a8a8a"/>
+            android:background="@color/colorTextHint"/>
 
 
         <LinearLayout
@@ -81,7 +81,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="16dp"
                 android:src="@drawable/child"
-                android:tint="#8a8a8a"/>
+                android:tint="@color/colorTintGrey"/>
 
             <ImageView
                 android:id="@+id/ivChooseImage"
@@ -91,7 +91,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="30dp"
                 android:src="@drawable/camera"
-                android:tint="#8a8a8a"/>
+                android:tint="@color/colorTintGrey"/>
 
         </LinearLayout>
 

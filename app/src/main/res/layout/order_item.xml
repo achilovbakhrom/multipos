@@ -12,7 +12,7 @@
 
         <TextView
             android:id="@+id/tvProductName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="25dp"
@@ -22,10 +22,11 @@
             android:textSize="18dp"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageView
@@ -46,9 +47,9 @@
 
             <ImageView
                 android:id="@+id/ivRightArrow"
-                android:layout_marginLeft="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
                 android:src="@drawable/right_arrow"/>
 
         </LinearLayout>
@@ -56,7 +57,7 @@
 
         <TextView
             android:id="@+id/tvPrice"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
@@ -66,7 +67,7 @@
 
         <TextView
             android:id="@+id/tvTotalPrice"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
