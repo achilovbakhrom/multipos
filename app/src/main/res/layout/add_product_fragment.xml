@@ -203,35 +203,12 @@
                 android:text="Quantity"
                 android:textSize="16dp"/>
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
+                android:id="@+id/mpSpinner1"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:id="@+id/spProductQuantity"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="#fff"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/arrow_down"
-                    />
-            </LinearLayout>
+               />
 
 
             <TextView
@@ -346,6 +323,7 @@
                 android:layout_gravity="center"
                 android:layout_marginRight="16dp"
                 android:gravity="right"
+
                 android:text="Price \n currency"
                 android:textSize="16dp"/>
 

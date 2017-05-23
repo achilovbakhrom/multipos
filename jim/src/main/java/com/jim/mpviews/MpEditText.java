@@ -1,27 +1,21 @@
 package com.jim.mpviews;
 
-import android.app.Activity;
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
+
+import com.jim.mpviews.utils.Utils;
 
 /**
  * Created by developer on 16.05.2017.
  */
 
-public class MpEditText extends LinearLayout {
-
-    TextView textView;
+public class MpEditText extends EditText {
     public MpEditText(Context context) {
         super(context);
         init(context);
@@ -44,25 +38,41 @@ public class MpEditText extends LinearLayout {
     }
 
     private void init(Context context){
-//        LayoutParams layoutParams = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-//        setLayoutParams(layoutParams);
-//        LayoutInflater.from(context).inflate(R.layout.mp_edit_text, this);
-//        textView = (TextView) findViewById(R.id.textView);
-//        LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//        this.addView(inflater.inflate(R.layout.mp_edit_text, null));
-//        ((Activity) getContext()).getLayoutInflater().inflate(R.layout.mp_edit_text,  this);
+        setLines(1);
+        setTextSize(Utils.convertDpToPixel(16));
+        setGravity(RelativeLayout.CENTER_VERTICAL);
+        final int sdk = android.os.Build.VERSION.SDK_INT;
+        if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+            setBackgroundDrawable( ContextCompat.getDrawable(context, R.drawable.edit_text_bg) );
+        } else {
+            setBackground( ContextCompat.getDrawable(context, R.drawable.edit_text_bg));
+        }
+        setPadding((int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10));
+        setHintTextColor(ContextCompat.getColor(context,R.color.colorTextHint));
+        setTextColor(ContextCompat.getColor(context,R.color.colorTextMain));
 
-//        LayoutInflater inflater = (LayoutInflater) context
-//                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//        inflater.inflate(R.layout.mp_edit_text, this, true);
     }
 
-    @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-        Paint paint = new Paint();
-        paint.setColor(Color.RED);
-        paint.setStyle(Paint.Style.FILL);
-        canvas.drawCircle(getWidth()/2,getHeight()/2,getWidth()/2,paint);
-    }
+//    public void setText(String text){
+//        editText.setText(text);
+//    }
+//    public String getText(){
+//        return  editText.getText().toString();
+//    }
+//    public boolean isEmpty(){
+//        return editText.getText().toString().isEmpty();
+//    }
+//    public void setHintText(String hint){
+//        editText.setText(hint);
+//    }
+//    public void setError(String errorMessage){
+//        editText.setError(errorMessage);
+//    }
+//    public void cancelError(){
+//        editText.setError(null);
+//    }
+//    public EditText getEditText(){
+//        return editText;
+//    }
+
 }
