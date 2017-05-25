@@ -1,14 +1,18 @@
 package com.jim.mpviews;
 
 import android.content.Context;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.util.AttributeSet;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 
+import com.jim.mpviews.utils.StateSaver;
 import com.jim.mpviews.utils.Utils;
 
 /**
@@ -39,7 +43,7 @@ public class MpEditText extends EditText {
 
     private void init(Context context){
         setLines(1);
-        setTextSize(Utils.convertDpToPixel(16));
+        setTextSize(Utils.convertDpToPixel(8));
         setGravity(RelativeLayout.CENTER_VERTICAL);
         final int sdk = android.os.Build.VERSION.SDK_INT;
         if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
@@ -50,29 +54,14 @@ public class MpEditText extends EditText {
         setPadding((int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10));
         setHintTextColor(ContextCompat.getColor(context,R.color.colorTextHint));
         setTextColor(ContextCompat.getColor(context,R.color.colorTextMain));
-
     }
-
-//    public void setText(String text){
-//        editText.setText(text);
-//    }
-//    public String getText(){
-//        return  editText.getText().toString();
-//    }
-//    public boolean isEmpty(){
-//        return editText.getText().toString().isEmpty();
-//    }
-//    public void setHintText(String hint){
-//        editText.setText(hint);
-//    }
-//    public void setError(String errorMessage){
-//        editText.setError(errorMessage);
-//    }
-//    public void cancelError(){
-//        editText.setError(null);
-//    }
-//    public EditText getEditText(){
-//        return editText;
-//    }
-
+    private String key = null;
+    public void setState(String key)
+    {
+        String savedText = StateSaver.getInstance(getContext()).getStateSaver().getString(key, "default");
+        this.key = key;
+        if (!getText().toString().equals("")){
+            setText(savedText);
+        }
+    }
 }

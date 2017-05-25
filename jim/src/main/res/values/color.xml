@@ -2,4 +2,6 @@
 <resources>
     <color name="colorTextHint">#e1e1e1</color>
     <color name="colorTextMain">#464646</color>
+    <color name="colorTintGrey">#929395</color>
+    <color name="colorBlue">#419fd9</color>
 </resources>

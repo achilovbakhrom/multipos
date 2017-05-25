@@ -198,6 +198,19 @@ public class MpSpinner extends RelativeLayout {
             mySpinner.animate().alpha(1f).setDuration(400).start();
             return mySpinner;
         }
+// implementation of mpSpinner
+//        mpSpinner1 = (MpSpinner) findViewById(R.id.mpSpinner1);
+//        mpSpinner1.setUnPickValue("default");
+//        mpSpinner1.setWithDefaultValueForFirstTime("(set value)");
+//        mpSpinner1.setItems(new String[]{"Uzs","Dollar"});
+//        mpSpinner1.setAdapter();
+////        mpSpinner1.setState(MpSpinnerState.GROUP_CURRENCY);
+//        mpSpinner1.setOnItemSelectedListener(new MpSpinner.setOnItemClickListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+//                Log.d(Test.TAG, "onItemClick: "+mpSpinner1.selectedItem());
+//            }
+//        });
 
 
     }
