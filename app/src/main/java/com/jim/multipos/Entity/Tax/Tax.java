@@ -1,4 +1,4 @@
-package com.jim.multipos.Entity.Tax;
+package com.jim.multipos.entity.tax;
 
 
 public class Tax {

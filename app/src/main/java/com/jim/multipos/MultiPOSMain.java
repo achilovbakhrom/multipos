@@ -1,30 +1,23 @@
 package com.jim.multipos;
 
 
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.jim.mpviews.MpButton;
-import com.jim.mpviews.MpCheckbox;
-import com.jim.mpviews.MpItem;
-import com.jim.mpviews.MpVendorItem;
+
+import com.jim.multipos.managers.DatabaseManager;
+import com.jim.multipos.utils.database.DatabaseHelper;
+import com.jim.multipos.utils.database.SQLiteCursor;
+import com.jim.multipos.utils.database.SQLiteException;
 
 public class MultiPOSMain extends AppCompatActivity {
 
 
-    MpButton mpButton;
-    MpVendorItem mpVendorItem;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_product_fragment);
-
-        mpButton = (MpButton) findViewById(R.id.btnAdvance);
-        mpVendorItem = (MpVendorItem) findViewById(R.id.item);
-
-        mpVendorItem.setVendor("Fish and Bread");
-        mpVendorItem.setVendorItem("10");
-        mpVendorItem.setVendorName("Lucas Vasquez");
+        setContentView(R.layout.activity_multi_posmain);
+        DatabaseManager.getInstance(this).execSQL("CREATE TABLE IF NOT EXISTS test(id INTEGER PRIMARY KEY, name TEXT);");
     }
 
 

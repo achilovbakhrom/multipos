@@ -126,7 +126,6 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:background="@drawable/edit_text_bg"
-                    android:drawableRight="@drawable/barcode"
                     android:drawableTint="@color/colorTintGrey"
                     android:hint="SKU, Barcode"
                     android:gravity="center_vertical"

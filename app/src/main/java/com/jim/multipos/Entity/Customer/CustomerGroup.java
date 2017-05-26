@@ -1,4 +1,4 @@
-package com.jim.multipos.Entity.Customer;
+package com.jim.multipos.entity.customer;
 
 
 public class CustomerGroup {

@@ -12,18 +12,26 @@ import com.jim.multipos.utils.database.SQLiteException;
  */
 
 public class DatabaseManager {
+
     private DatabaseHelper helper;
     private static DatabaseManager manager;
     private Context context;
+
     public static DatabaseManager getInstance(Context context) {
         if (manager == null) {
             manager = new DatabaseManager(context);
         }
         return manager;
     }
+
     private DatabaseManager(Context context) {
         this.context = context;
         helper = new DatabaseHelper(context, Constants.DB_NAME, 1);
+        initPragmas();
+    }
+
+    private void initPragmas() {
+        execSQL("PRAGMA foreign_keys = ON");
     }
 
     public void beginTransaction() {
@@ -61,5 +69,6 @@ public class DatabaseManager {
             e.printStackTrace();
         }
     }
+
 
 }

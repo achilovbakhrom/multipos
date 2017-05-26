@@ -1,4 +1,4 @@
-package com.jim.multipos.Entity;
+package com.jim.multipos.entity;
 
 
 public class Discount {

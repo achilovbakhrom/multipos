@@ -1,4 +1,4 @@
-package com.jim.multipos.Entity.Employee;
+package com.jim.multipos.entity.employee;
 
 
 public class PositionEmployee {

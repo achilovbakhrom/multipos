@@ -124,7 +124,6 @@
                 android:layout_marginLeft="55dp"
                 android:layout_marginRight="50dp"
                 android:background="@drawable/edit_text_bg"
-                android:drawableRight="@drawable/barcode"
                 android:drawableTint="#e1e1e1"
                 android:hint="Name, SKU or Barcode"
                 android:paddingBottom="5dp"

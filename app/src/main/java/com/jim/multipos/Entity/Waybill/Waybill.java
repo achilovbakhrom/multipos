@@ -1,4 +1,4 @@
-package com.jim.multipos.Entity.Waybill;
+package com.jim.multipos.entity.waybill;
 
 
 public class Waybill {

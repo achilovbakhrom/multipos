@@ -1,4 +1,4 @@
-package com.jim.multipos.Entity.Unit;
+package com.jim.multipos.entity.unit;
 
 
 public class Unit {

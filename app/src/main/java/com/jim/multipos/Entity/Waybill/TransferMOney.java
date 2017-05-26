@@ -1,12 +1,12 @@
-package com.jim.multipos.Entity.Waybill;
+package com.jim.multipos.entity.waybill;
 
 
-public class TransferMOney {
+public class TransferMoney {
     private String dateTime;
     private double paymentAmount;
     private String description;
 
-    public TransferMOney(String dateTime, double paymentAmount, String description) {
+    public TransferMoney(String dateTime, double paymentAmount, String description) {
         this.dateTime = dateTime;
         this.paymentAmount = paymentAmount;
         this.description = description;
