@@ -5,11 +5,13 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
 import com.jim.mpviews.utils.StateSaver;
 import com.jim.mpviews.utils.Utils;
+import com.jim.mpviews.utils.VibratorManager;
 
 /**
  * Created by Пользователь on 24.05.2017.
@@ -18,6 +20,7 @@ import com.jim.mpviews.utils.Utils;
 public class MpButton extends TextView {
 
     private boolean isPressed = false;
+    private VibratorManager vibratorManager;
 
     public MpButton(Context context) {
         super(context);
@@ -41,6 +44,7 @@ public class MpButton extends TextView {
     }
 
     public void init(Context context, AttributeSet attrs) {
+        vibratorManager = new VibratorManager(getContext());
         setBackgroundResource(R.drawable.button_bg);
         setPadding((int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10));
         setGravity(Gravity.CENTER);
@@ -59,15 +63,21 @@ public class MpButton extends TextView {
                 }
             }
         });
+
+        setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch (motionEvent.getAction())
+                {
+                    case MotionEvent.ACTION_DOWN:
+                        vibratorManager.startVibrate();
+                        break;
+                }
+                return false;
+            }
+        });
     }
 
-    public void setBackground(int res) {
-        setBackgroundResource(res);
-    }
-
-    public void setText(String text) {
-        setText(text);
-    }
     private String key = null;
     public void setState(String key) {
         boolean state = StateSaver.getInstance(getContext()).getStateSaver().getBoolean(key, false);

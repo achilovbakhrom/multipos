@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llVendor"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvVendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/colorMainText"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tvItemQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/colorSecondaryText"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/tvVendorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/colorSecondaryText"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+</merge>

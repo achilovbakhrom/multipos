@@ -5,11 +5,13 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
 import com.jim.mpviews.utils.StateSaver;
 import com.jim.mpviews.utils.Utils;
+import com.jim.mpviews.utils.VibratorManager;
 
 /**
  * Created by Пользователь on 24.05.2017.
@@ -18,6 +20,7 @@ import com.jim.mpviews.utils.Utils;
 public class MpItem extends TextView {
 
     private boolean isPressed = false;
+    private VibratorManager vibratorManager;
 
     public MpItem(Context context) {
         super(context);
@@ -41,19 +44,32 @@ public class MpItem extends TextView {
     }
 
     public void init(Context context, AttributeSet attrs) {
-//        setBackgroundResource(R.drawable.item_bg);
+        vibratorManager = new VibratorManager(getContext());
+        setBackgroundResource(R.drawable.item_bg);
         setPadding((int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10));
         setGravity(Gravity.CENTER);
+        setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch (motionEvent.getAction())
+                {
+                    case MotionEvent.ACTION_DOWN:
+                        vibratorManager.startVibrate();
+                        break;
+                }
+                return false;
+            }
+        });
 
         setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (!isPressed) {
-                    setBackgroundResource(R.drawable.pressed_btn);
+                    setBackgroundResource(R.drawable.item_pressed_bg);
                     isPressed = true;
                     setTextColor(getResources().getColor(R.color.colorBlue));
                 } else {
-                    setBackgroundResource(R.drawable.button_bg);
+                    setBackgroundResource(R.drawable.item_bg);
                     isPressed = false;
                     setTextColor(getResources().getColor(R.color.colorTextMain));
                 }
@@ -61,22 +77,15 @@ public class MpItem extends TextView {
         });
     }
 
-    public void setBackground(int res) {
-        setBackgroundResource(res);
-    }
-
-    public void setText(String text) {
-        setText(text);
-    }
     private String key = null;
     public void setState(String key) {
         boolean state = StateSaver.getInstance(getContext()).getStateSaver().getBoolean(key, false);
         this.key = key;
         if (state) {
-            setBackgroundResource(R.drawable.pressed_btn);
+            setBackgroundResource(R.drawable.item_pressed_bg);
             isPressed = true;
         } else {
-            setBackgroundResource(R.drawable.button_bg);
+            setBackgroundResource(R.drawable.item_bg);
             isPressed = false;
         }
     }
