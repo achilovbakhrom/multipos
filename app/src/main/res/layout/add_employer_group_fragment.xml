@@ -120,7 +120,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingRight="10dp"
-                    android:src="@drawable/arrow_down"
+                    android:src="@drawable/triangle_down"
                     />
             </LinearLayout>
 
@@ -168,7 +168,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingRight="10dp"
-                    android:src="@drawable/arrow_down"
+                    android:src="@drawable/triangle_down"
                     />
             </LinearLayout>
 
