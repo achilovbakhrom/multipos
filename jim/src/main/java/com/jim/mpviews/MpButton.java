@@ -49,28 +49,21 @@ public class MpButton extends TextView {
         setPadding((int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10));
         setGravity(Gravity.CENTER);
 
-        setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!isPressed) {
-                    setBackgroundResource(R.drawable.pressed_btn);
-                    isPressed = true;
-                    setTextColor(getResources().getColor(R.color.colorBlue));
-                } else {
-                    setBackgroundResource(R.drawable.button_bg);
-                    isPressed = false;
-                    setTextColor(getResources().getColor(R.color.colorTextMain));
-                }
-            }
-        });
-
         setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                switch (motionEvent.getAction())
-                {
+                switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
                         vibratorManager.startVibrate();
+                        if (!isPressed) {
+                            setBackgroundResource(R.drawable.pressed_btn);
+                            isPressed = true;
+                            setTextColor(getResources().getColor(R.color.colorBlue));
+                        } else {
+                            setBackgroundResource(R.drawable.button_bg);
+                            isPressed = false;
+                            setTextColor(getResources().getColor(R.color.colorMainText));
+                        }
                         break;
                 }
                 return false;
@@ -79,14 +72,17 @@ public class MpButton extends TextView {
     }
 
     private String key = null;
+
     public void setState(String key) {
         boolean state = StateSaver.getInstance(getContext()).getStateSaver().getBoolean(key, false);
         this.key = key;
         if (state) {
             setBackgroundResource(R.drawable.pressed_btn);
+            setTextColor(getResources().getColor(R.color.colorBlue));
             isPressed = true;
         } else {
             setBackgroundResource(R.drawable.button_bg);
+            setTextColor(getResources().getColor(R.color.colorMainText));
             isPressed = false;
         }
     }

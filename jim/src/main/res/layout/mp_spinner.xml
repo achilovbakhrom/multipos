@@ -30,7 +30,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:paddingRight="10dp"
-            android:src="@drawable/arrow_down"
+            android:src="@drawable/triangle"
             />
     </LinearLayout>
 </merge>

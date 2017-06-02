@@ -67,25 +67,18 @@ public class MpEmpItem extends RelativeLayout {
                 switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
                         vibratorManager.startVibrate();
+                        if (!isPressed) {
+                            mpEmpBackground.setBackgroundResource(R.drawable.pressed_vendor_item);
+                            isPressed = true;
+                        } else {
+                            mpEmpBackground.setBackgroundResource(R.drawable.vendor_item_bg);
+                            isPressed = false;
+                        }
                         break;
                 }
                 return false;
             }
         });
-
-        setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!isPressed) {
-                    mpEmpBackground.setBackgroundResource(R.drawable.pressed_vendor_item);
-                    isPressed = true;
-                } else {
-                    mpEmpBackground.setBackgroundResource(R.drawable.vendor_item_bg);
-                    isPressed = false;
-                }
-            }
-        });
-
 
     }
 

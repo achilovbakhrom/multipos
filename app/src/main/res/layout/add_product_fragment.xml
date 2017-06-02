@@ -65,20 +65,13 @@
                 android:text="Category"
                 android:textSize="16dp"/>
 
-            <EditText
-                android:id="@+id/etProductName"
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:hint="Name"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
-                android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+              />
 
             <ImageView
                 android:id="@+id/ivChild"
@@ -116,22 +109,14 @@
                 android:text="Description"
                 android:textSize="16dp"/>
 
-            <EditText
-                android:id="@+id/etProductDescription"
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:gravity="top"
                 android:hint="Some notes"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
-                android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"
                 />
         </LinearLayout>
 
@@ -224,7 +209,25 @@
                 android:layout_height="38dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
-                />
+                >
+
+                <EditText
+                    android:id="@+id/etProductCos"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textSize="16dp" />
+            </com.jim.mpviews.MpSpinner>
 
         </LinearLayout>
 
@@ -246,7 +249,6 @@
                 android:textSize="16dp"/>
 
             <EditText
-                android:id="@+id/etProductPrice"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
@@ -269,17 +271,16 @@
                 android:textSize="16dp"/>
 
             <EditText
-                android:id="@+id/etProductCos"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
-                android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_bg"
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
+                android:layout_marginRight="30dp"
                 android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
@@ -641,27 +642,10 @@ android:orientation="vertical">
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rvCategory"
+        <com.jim.mpviews.MpRoller
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"/>
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rvSubCategory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"/>
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rvProduct"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"/>
+            android:layout_margin="50dp"
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>

@@ -16,7 +16,7 @@ public class MultiPOSMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_multi_posmain);
+        setContentView(R.layout.reg_fragment);
         DatabaseManager.getInstance(this).execSQL("CREATE TABLE IF NOT EXISTS test(id INTEGER PRIMARY KEY, name TEXT);");
     }
 

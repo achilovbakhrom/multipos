@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/llEmp"
@@ -14,11 +14,21 @@
         android:paddingLeft="20dp"
         android:paddingTop="10dp">
 
-        <ImageView
-            android:id="@+id/ivEmpPhoto"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/add_item_bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivEmpPhoto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="1dp" />
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +43,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColor="@color/colorMainText"/>
+                android:textColor="@color/colorMainText" />
 
             <TextView
                 android:id="@+id/tvDepartment"
@@ -43,7 +53,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColor="@color/colorSecondaryText"/>
+                android:textColor="@color/colorSecondaryText" />
 
             <TextView
                 android:id="@+id/tvRole"
@@ -53,7 +63,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:textColor="@color/colorSecondaryText"/>
+                android:textColor="@color/colorSecondaryText" />
         </LinearLayout>
 
     </LinearLayout>

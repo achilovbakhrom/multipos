@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/posmen" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@drawable/top__blue_fade" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorBlue"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="Login details"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/diagonal_lines"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="35">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.jim.mpviews.MpEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="35dp"
+                    android:hint="Organization" />
+
+                <com.jim.mpviews.MpEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="User login" />
+
+                <com.jim.mpviews.MpEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="User password" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a Lorem ipsum dolor sit amet"
+                    android:textColor="@color/colorSecondaryText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp"
+
+                >
+
+                <com.jim.mpviews.MpButton
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Back"
+                    android:textColor="@color/colorMainText"
+                    android:textSize="16dp" />
+
+                <com.jim.mpviews.MpButton
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Login"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="65"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/posmen_note" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a"
+                android:textColor="@color/colorMainText"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

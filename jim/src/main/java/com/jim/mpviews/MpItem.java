@@ -55,24 +55,18 @@ public class MpItem extends TextView {
                 {
                     case MotionEvent.ACTION_DOWN:
                         vibratorManager.startVibrate();
+                        if (!isPressed) {
+                            setBackgroundResource(R.drawable.item_pressed_bg);
+                            isPressed = true;
+                            setTextColor(getResources().getColor(R.color.colorBlue));
+                        } else {
+                            setBackgroundResource(R.drawable.item_bg);
+                            isPressed = false;
+                            setTextColor(getResources().getColor(R.color.colorMainText));
+                        }
                         break;
                 }
                 return false;
-            }
-        });
-
-        setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!isPressed) {
-                    setBackgroundResource(R.drawable.item_pressed_bg);
-                    isPressed = true;
-                    setTextColor(getResources().getColor(R.color.colorBlue));
-                } else {
-                    setBackgroundResource(R.drawable.item_bg);
-                    isPressed = false;
-                    setTextColor(getResources().getColor(R.color.colorTextMain));
-                }
             }
         });
     }

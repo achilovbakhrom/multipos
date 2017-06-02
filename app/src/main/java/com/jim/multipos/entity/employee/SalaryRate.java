@@ -1,12 +1,12 @@
 package com.jim.multipos.entity.employee;
 
 
-public class SalartRate {
+public class SalaryRate {
     private String fromDate;
     private double salaryAmount;
     private String salaryType;
 
-    public SalartRate(String fromDate, double salaryAmount, String salaryType) {
+    public SalaryRate(String fromDate, double salaryAmount, String salaryType) {
         this.fromDate = fromDate;
         this.salaryAmount = salaryAmount;
         this.salaryType = salaryType;

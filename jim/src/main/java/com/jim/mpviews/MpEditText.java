@@ -49,11 +49,11 @@ public class MpEditText extends EditText {
         if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
             setBackgroundDrawable( ContextCompat.getDrawable(context, R.drawable.edit_text_bg) );
         } else {
-            setBackground( ContextCompat.getDrawable(context, R.drawable.edit_text_bg));
+            setBackgroundResource( R.drawable.edit_text_bg);
         }
         setPadding((int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10));
         setHintTextColor(ContextCompat.getColor(context,R.color.colorTextHint));
-        setTextColor(ContextCompat.getColor(context,R.color.colorTextMain));
+        setTextColor(ContextCompat.getColor(context,R.color.colorMainText));
     }
     private String key = null;
     public void setState(String key)

@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="43"
+        android:background="@color/colorBackgroundGrey"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Vendor details"
+                android:textColor="@color/colorBlue" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:src="@drawable/chain" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorTextHint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/grey_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="1dp"
+                    android:src="@drawable/photo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="Some vendor"
+                    android:textColor="@color/colorMainText"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="Alvaro Gonzalez"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="18dp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="Phone:"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="+ 99890 986 23 15"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="Email:"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="somevendor@gmail.com"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="Address:"
+                    android:textColor="@color/colorMainText"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:text="Some where in the galaxy"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="30dp"
+                        android:gravity="center"
+                        android:src="@drawable/edit" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorTextHint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="State details"
+            android:textColor="@color/colorBlue"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="Debt:"
+                android:textColor="@color/colorMainText"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="128.00 uzs"
+                android:textColor="@color/colorMainText"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="Payed in this month:"
+                android:textColor="@color/colorMainText"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="187 000.00 uzs"
+                android:textColor="@color/colorMainText"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="30dp"
+            android:background="@color/colorTextHint" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_bg">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/currency"
+                    android:tint="@color/colorBlue" />
+
+                <FrameLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorTextHint" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Pay"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_bg">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/payments" />
+
+                <FrameLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorTextHint" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Payments"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_bg">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/income_2nd" />
+
+                <FrameLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorTextHint" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Income"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_bg">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/message" />
+
+                <FrameLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorTextHint" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Messagee"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_bg">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/story" />
+
+                <FrameLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorTextHint" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Story"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_bg">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/expense_2nd" />
+
+                <FrameLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorTextHint" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Return"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_bg">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/order_list" />
+
+                <FrameLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorTextHint" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Order list"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_bg">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/truck" />
+
+                <FrameLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorTextHint" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Order"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="57"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Products"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Inventory"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center"
+                    android:text="Unit"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="Action"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@color/colorBackground"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="Angels's food"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="40dp"
+                            android:text="Class: Pizza"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="18dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="40dp"
+                            android:text="Barcode: 1456643143"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="18dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="40dp"
+                            android:text="SKU: 546"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="18dp"
+                            android:textStyle="italic" />
+
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorGrey" />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:text="128.0000"
+                        android:textColor="@color/colorMainText"
+                        android:textSize="18dp" />
+
+                    <FrameLayout
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorGrey" />
+
+                    <com.jim.mpviews.MpRoller
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center" />
+
+                    <FrameLayout
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorGrey" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:src="@drawable/order" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:src="@drawable/add_product" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:src="@drawable/remove_product" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:src="@drawable/truck_btn" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:src="@drawable/expense" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:src="@drawable/income" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/colorGrey" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="25px"
+            android:layout_height="match_parent"
+            android:background="@drawable/left_fade" />
+    </RelativeLayout>
+
+
+</LinearLayout>
