@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@drawable/rounded_bg"
-              android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bg"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,14 +21,13 @@
             android:gravity="left"
             android:text="Matrix Option"
             android:textColor="#fff"
-            android:textSize="18dp"
-            />
+            android:textSize="18dp" />
 
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:layout_weight="61"
-            android:background="@color/colorBlueLight"/>
+            android:background="@color/colorBlueLight" />
 
     </LinearLayout>
 
@@ -41,8 +41,7 @@
             android:layout_height="match_parent"
             android:layout_weight="43"
             android:background="@color/colorBackgroundGrey"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,54 +54,21 @@
                 android:paddingRight="10dp"
                 android:paddingTop="40dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:background="@drawable/matrix_left_bg"
+                <com.jim.mpviews.MpLeftButton
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:textColor="@color/colorMainText"
-                        android:text="Parent"
-                        />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ellipse_not_active"/>
-
-                </LinearLayout>
+                    app:text_right="Parent" />
 
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:background="@drawable/matrix_right_pressed_bg"
+                <com.jim.mpviews.MpRightButton
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:textColor="@color/colorMainText"
-                        android:text="Child"
-                        />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ellipse"/>
-
-                </LinearLayout>
+                    app:pressed="true"
+                    app:text_right="Child" />
 
 
             </LinearLayout>
@@ -114,31 +80,24 @@
                 android:layout_marginLeft="55dp"
                 android:text="Parent Product"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
-            <EditText
-                android:id="@+id/etBarcode"
+            <com.jim.mpviews.MpEditText
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="55dp"
                 android:layout_marginRight="50dp"
-                android:background="@drawable/edit_text_bg"
                 android:drawableTint="#e1e1e1"
                 android:hint="Name, SKU or Barcode"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
-                android:textColorHint="#e1e1e1"
-                android:textSize="16dp"/>
+                android:textColorHint="@color/colorTextHint"
+                android:textSize="16dp" />
 
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="55dp"/>
-
+                android:layout_marginLeft="55dp" />
 
 
         </LinearLayout>
@@ -170,7 +129,7 @@
                         android:layout_marginRight="10dp"
                         android:text="Size: 30"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -178,7 +137,7 @@
                         android:layout_marginLeft="10dp"
                         android:text="Color: Black"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
 
                 </LinearLayout>
@@ -191,7 +150,7 @@
                     android:layout_marginTop="40dp"
                     android:text="Size (1st Attribute)"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
                 <android.support.v7.widget.RecyclerView
                     android:layout_width="match_parent"
@@ -199,7 +158,7 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:paddingTop="5dp"/>
+                    android:paddingTop="5dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -209,7 +168,7 @@
                     android:layout_marginTop="40dp"
                     android:text="Color (2nd Attribute)"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
                 <android.support.v7.widget.RecyclerView
                     android:layout_width="match_parent"
@@ -217,7 +176,7 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:paddingTop="5dp"/>
+                    android:paddingTop="5dp" />
 
 
             </LinearLayout>
@@ -228,8 +187,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="30dp"
                 android:gravity="right"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/btnBack"
@@ -244,7 +202,7 @@
                     android:paddingTop="5dp"
                     android:text="Back"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <TextView
                     android:id="@+id/btnNext"
@@ -259,7 +217,7 @@
                     android:paddingTop="5dp"
                     android:text="Save"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -267,7 +225,7 @@
             <FrameLayout
                 android:layout_width="5px"
                 android:layout_height="match_parent"
-                android:background="#e1e1e1"/>
+                android:background="#e1e1e1" />
         </RelativeLayout>
 
     </LinearLayout>

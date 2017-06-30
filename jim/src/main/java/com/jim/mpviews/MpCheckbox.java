@@ -56,8 +56,21 @@ public class MpCheckbox extends RelativeLayout {
         checkBox = (CheckBox) findViewById(R.id.mpCheckbox);
         textView = (TextView) findViewById(R.id.tvCheckbox);
         boolean state = attributeArray.getBoolean(R.styleable.MpCheckbox_checked, false);
+        boolean without_text = attributeArray.getBoolean(R.styleable.MpCheckbox_without_text, false);
+        boolean enabled = attributeArray.getBoolean(R.styleable.MpCheckbox_without_text, true);
+
         String text = attributeArray.getString(R.styleable.MpCheckbox_text);
         setText(text);
+
+        checkBox.setEnabled(enabled);
+        textView.setEnabled(enabled);
+
+        if (without_text) {
+            textView.setVisibility(GONE);
+        } else {
+            textView.setVisibility(VISIBLE);
+        }
+
         if (state) {
             checkBox.setBackgroundResource(R.drawable.checked);
             checkBox.setChecked(true);
@@ -65,7 +78,9 @@ public class MpCheckbox extends RelativeLayout {
             checkBox.setBackgroundResource(R.drawable.unchecked);
             checkBox.setChecked(false);
         }
+
         checkBox.setButtonDrawable(null);
+
         setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -126,5 +141,9 @@ public class MpCheckbox extends RelativeLayout {
 
     public boolean isChecked() {
         return checkBox.isChecked();
+    }
+
+    public void setEnabled(boolean state) {
+        checkBox.setEnabled(state);
     }
 }

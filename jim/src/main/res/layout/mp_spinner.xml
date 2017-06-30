@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     >
     <LinearLayout
+        android:id="@+id/mpSpinnerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/edit_text_bg"
@@ -16,8 +17,8 @@
             android:layout_height="wrap_content"
             android:drawSelectorOnTop="true"
             android:layout_gravity="center"
-            android:layout_weight="1"
             android:paddingBottom="5dp"
+            android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
@@ -26,6 +27,7 @@
             android:textSize="16dp"/>
 
         <ImageView
+            android:id="@+id/mpSpIcon"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"

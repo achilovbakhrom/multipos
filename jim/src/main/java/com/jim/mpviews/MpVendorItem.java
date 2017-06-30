@@ -91,6 +91,13 @@ public class MpVendorItem extends RelativeLayout {
         mpName.setText(name);
     }
 
+    public void setVisibility(int vendor, int item, int name)
+    {
+        mpVendor.setVisibility(vendor);
+        mpItem.setVisibility(item);
+        mpName.setVisibility(name);
+    }
+
     private String key = null;
 
     public void setState(String key) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorBackground"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,12 +24,12 @@
                 android:gravity="center"
                 android:text="Vendor"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <FrameLayout
                 android:layout_width="2px"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrey"/>
+                android:background="@color/colorGrey" />
 
             <TextView
                 android:layout_width="260dp"
@@ -37,51 +37,51 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:paddingLeft="20dp"
-                android:text="Vendor"
+                android:text="Products"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <FrameLayout
                 android:layout_width="2px"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrey"/>
+                android:background="@color/colorGrey" />
 
             <TextView
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Low \n Stock Alert"
+                android:text="Status"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <FrameLayout
                 android:layout_width="2px"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrey"/>
+                android:background="@color/colorGrey" />
 
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Inventory"
+                android:text="Debt"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Already"
+                android:text="Unit"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <FrameLayout
                 android:layout_width="2px"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrey"/>
+                android:background="@color/colorGrey" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -90,13 +90,13 @@
                 android:gravity="center"
                 android:text="Operations"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
         </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="3px"
-            android:background="@color/colorGrey"/>
+            android:background="@color/colorGrey" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -109,8 +109,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -119,7 +118,7 @@
                     android:paddingLeft="20dp"
                     android:text="Logitech"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -129,7 +128,7 @@
                     android:text="ID: 126305"
                     android:textColor="@color/colorSecondaryText"
                     android:textSize="18dp"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -139,7 +138,7 @@
                     android:text="Tel: +91456643143"
                     android:textColor="@color/colorSecondaryText"
                     android:textSize="18dp"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -149,7 +148,7 @@
                     android:text="Products count: 546"
                     android:textColor="@color/colorSecondaryText"
                     android:textSize="18dp"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic" />
 
 
             </LinearLayout>
@@ -157,7 +156,7 @@
             <FrameLayout
                 android:layout_width="2px"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrey"/>
+                android:background="@color/colorGrey" />
 
             <TextView
                 android:layout_width="260dp"
@@ -165,34 +164,42 @@
                 android:layout_gravity="center"
                 android:gravity="left"
                 android:paddingLeft="20dp"
-                android:text="Cell Solutions"
-                android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:text="Logitech mouse"
+                android:textColor="@color/colorMainText" />
 
             <FrameLayout
                 android:layout_width="2px"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrey"/>
+                android:background="@color/colorGrey" />
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="vertical"
+                android:paddingBottom="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp">
 
-                <EditText
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
-                    android:background="@drawable/edit_text_bg"
-                    android:gravity="center"/>
-            </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="Local" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/chain" />
+            </RelativeLayout>
 
             <FrameLayout
                 android:layout_width="2px"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrey"/>
+                android:background="@color/colorGrey" />
 
             <TextView
                 android:layout_width="200dp"
@@ -202,12 +209,12 @@
                 android:paddingRight="20dp"
                 android:text="128.0000"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <FrameLayout
                 android:layout_width="2px"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrey"/>
+                android:background="@color/colorGrey" />
 
             <LinearLayout
                 android:layout_width="110dp"
@@ -215,90 +222,110 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
+                <com.jim.mpviews.MpRoller
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/arrow_up"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center"
-                    android:text="pcs"
-                    android:textColor="@color/colorMainText"
-                    android:textSize="18dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/triangle"/>
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
             <FrameLayout
                 android:layout_width="2px"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrey"/>
+                android:background="@color/colorGrey" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:gravity="center"
-                >
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:src="@drawable/expense"
-                    />
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:src="@drawable/income"
-                    />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/currency_btn" />
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:src="@drawable/order"
-                    />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/payments_btn" />
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:src="@drawable/add"
-                    />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/history_btn" />
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/order_list_btn" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/truck_btn" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:src="@drawable/minus"
-                    />
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/blue_stroke_2"
+                        android:gravity="center"
+                        android:text="More"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/expense" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/income" />
+                </LinearLayout>
 
             </LinearLayout>
+
+
         </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="2px"
-            android:background="@color/colorGrey"/>
+            android:background="@color/colorGrey" />
 
 
     </LinearLayout>

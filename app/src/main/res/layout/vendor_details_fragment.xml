@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorBackground"
     android:orientation="horizontal">
 
@@ -66,8 +67,7 @@
                 <ImageView
                     android:layout_width="90dp"
                     android:layout_height="90dp"
-                    android:padding="1dp"
-                    android:src="@drawable/photo" />
+                    android:padding="1dp"/>
 
             </LinearLayout>
 
@@ -272,109 +272,23 @@
             android:layout_marginLeft="30dp"
             android:orientation="horizontal">
 
-            <LinearLayout
+            <com.jim.mpviews.MpButtonWithIcon
                 android:layout_width="170dp"
                 android:layout_height="60dp"
-                android:background="@drawable/button_bg">
+                app:btn_text="Pay"
+                app:src="@drawable/currency" />
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="25dp"
-                    android:gravity="center"
-                    android:src="@drawable/currency"
-                    android:tint="@color/colorBlue" />
-
-                <FrameLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/colorTextHint" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:text="Pay"
-                    android:textColor="@color/colorBlue"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <com.jim.mpviews.MpButtonWithIcon
                 android:layout_width="170dp"
                 android:layout_height="60dp"
-                android:background="@drawable/button_bg">
+                app:btn_text="Payments"
+                app:src="@drawable/payments" />
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="25dp"
-                    android:gravity="center"
-                    android:src="@drawable/payments" />
-
-                <FrameLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/colorTextHint" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:text="Payments"
-                    android:textColor="@color/colorBlue"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <com.jim.mpviews.MpButtonWithIcon
                 android:layout_width="170dp"
                 android:layout_height="60dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/button_bg">
-
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="25dp"
-                    android:gravity="center"
-                    android:src="@drawable/income_2nd" />
-
-                <FrameLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/colorTextHint" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:text="Income"
-                    android:textColor="@color/colorBlue"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
+                app:btn_text="Income"
+                app:src="@drawable/income_2nd" />
 
 
         </LinearLayout>
@@ -386,108 +300,23 @@
             android:layout_marginLeft="30dp"
             android:orientation="horizontal">
 
-            <LinearLayout
+            <com.jim.mpviews.MpButtonWithIcon
                 android:layout_width="170dp"
                 android:layout_height="60dp"
-                android:background="@drawable/button_bg">
+                app:btn_text="Message"
+                app:src="@drawable/message" />
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="25dp"
-                    android:gravity="center"
-                    android:src="@drawable/message" />
-
-                <FrameLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/colorTextHint" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:text="Messagee"
-                    android:textColor="@color/colorBlue"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <com.jim.mpviews.MpButtonWithIcon
                 android:layout_width="170dp"
                 android:layout_height="60dp"
-                android:background="@drawable/button_bg">
+                app:btn_text="Story"
+                app:src="@drawable/story" />
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="25dp"
-                    android:gravity="center"
-                    android:src="@drawable/story" />
-
-                <FrameLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/colorTextHint" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:text="Story"
-                    android:textColor="@color/colorBlue"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <com.jim.mpviews.MpButtonWithIcon
                 android:layout_width="170dp"
                 android:layout_height="60dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/button_bg">
-
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="25dp"
-                    android:gravity="center"
-                    android:src="@drawable/expense_2nd" />
-
-                <FrameLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/colorTextHint" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:text="Return"
-                    android:textColor="@color/colorBlue"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
+                app:btn_text="Return"
+                app:src="@drawable/expense_2nd" />
 
 
         </LinearLayout>
@@ -500,75 +329,18 @@
             android:gravity="right"
             android:orientation="horizontal">
 
-
-            <LinearLayout
+            <com.jim.mpviews.MpButtonWithIcon
                 android:layout_width="170dp"
                 android:layout_height="60dp"
-                android:background="@drawable/button_bg">
+                app:btn_text="Order list"
+                app:src="@drawable/order_list" />
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="25dp"
-                    android:gravity="center"
-                    android:src="@drawable/order_list" />
-
-                <FrameLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/colorTextHint" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:text="Order list"
-                    android:textColor="@color/colorBlue"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <com.jim.mpviews.MpButtonWithIcon
                 android:layout_width="170dp"
                 android:layout_height="60dp"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/button_bg">
-
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="25dp"
-                    android:gravity="center"
-                    android:src="@drawable/truck" />
-
-                <FrameLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/colorTextHint" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:text="Order"
-                    android:textColor="@color/colorBlue"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
+                app:btn_text="Order"
+                app:src="@drawable/truck" />
 
 
         </LinearLayout>

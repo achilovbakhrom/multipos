@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="MpEditText">
-        <attr name="showText" format="boolean"/>
+        <attr name="showText" format="boolean" />
         <attr name="gravity" format="enum">
-            <enum name="left" value="0"/>
-            <enum name="right" value="1"/>
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
         </attr>
     </declare-styleable>
 
     <declare-styleable name="MpCheckbox">
-        <attr name="text" format="string"/>
-        <attr name="checked" format="boolean"/>
+        <attr name="text" format="string" />
+        <attr name="checked" format="boolean" />
+        <attr name="without_text" format="boolean" />
+        <attr name="enabled" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="MpButtonWithIcon">
+        <attr name="btn_text" format="string" />
+        <attr name="src" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MpSpinner">
+        <attr name="sp_bg" format="reference" />
+        <attr name="img_color" format="reference" />
+        <attr name="text_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MpRightButton">
+        <attr name="text_right" format="string" />
+        <attr name="pressed" format="boolean" />
+    </declare-styleable>
 </resources>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorBackground"
-              android:orientation="horizontal"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="43"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,13 +26,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Management Employer"
-                android:textColor="@color/colorBlue"/>
+                android:textColor="@color/colorBlue" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tap Product to manage it info"
-                android:textColor="@color/colorTextHint"/>
+                android:textColor="@color/colorTextHint" />
 
         </LinearLayout>
 
@@ -41,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="2px"
             android:layout_marginBottom="25dp"
-            android:background="@color/colorTextHint"/>
+            android:background="@color/colorTextHint" />
 
 
         <LinearLayout
@@ -63,24 +62,18 @@
                     android:gravity="right"
                     android:text="Full name"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <EditText
-                    android:id="@+id/etProductName"
+                <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
                     android:gravity="center_vertical"
                     android:hint="Name"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
 
             </LinearLayout>
@@ -99,25 +92,18 @@
                     android:gravity="right"
                     android:text="Password"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <EditText
-                    android:id="@+id/etProductDescription"
+                <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
                     android:gravity="center_vertical"
                     android:hint="Password"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"
-                    />
+                    android:textSize="16dp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -138,37 +124,12 @@
                 android:gravity="right"
                 android:text="Department"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
                 android:layout_height="38dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@color/colorWhite"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
-
+                android:layout_weight="1" />
 
             <TextView
                 android:layout_width="100dp"
@@ -178,37 +139,13 @@
                 android:gravity="right"
                 android:text="Role"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginRight="30dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@color/colorWhite"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -228,35 +165,11 @@
                 android:gravity="right"
                 android:text="Salary type"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <LinearLayout
-                android:layout_width="123dp"
-                android:layout_height="38dp"
-                android:background="@drawable/pressed_rectangle"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@color/colorWhite"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
+            <com.jim.mpviews.MpSpinner
+                android:layout_width="120dp"
+                android:layout_height="38dp" />
 
 
         </LinearLayout>
@@ -275,30 +188,14 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Options"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
 
-            <LinearLayout
+            <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:src="@drawable/checked"
-                    android:tint="#419fd9"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Active"/>
-
-            </LinearLayout>
+                app:checked="true"
+                app:text="Active" />
         </LinearLayout>
 
         <LinearLayout
@@ -325,7 +222,7 @@
                 android:paddingTop="5dp"
                 android:text="Cancel"
                 android:textColor="#b1b1b1"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
 
             <TextView
@@ -341,7 +238,7 @@
                 android:paddingTop="5dp"
                 android:text="Save"
                 android:textColor="#419fd9"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -378,7 +275,7 @@
                     android:text="Management Employer"
                     android:textColor="#419fd9"
                     android:textSize="18dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
@@ -386,7 +283,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="10px"
-                android:background="@drawable/top_fade"/>
+                android:background="@drawable/top_fade" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -408,98 +305,26 @@
                         android:gravity="right"
                         android:text="For all items"
                         android:textColor="@color/colorMainText"
-                        android:textSize="16dp"/>
+                        android:textSize="16dp" />
 
-                    <LinearLayout
+                    <com.jim.mpviews.MpSpinner
                         android:layout_width="0dp"
                         android:layout_height="38dp"
                         android:layout_marginRight="15dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/edit_text_bg"
-                        android:orientation="horizontal"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp">
+                        android:layout_weight="1" />
 
-                        <Spinner
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="@color/colorWhite"
-                            android:spinnerMode="dropdown"
-                            android:textSize="16dp"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingRight="10dp"
-                            android:src="@drawable/triangle_down"
-                            />
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <com.jim.mpviews.MpSpinner
                         android:layout_width="0dp"
                         android:layout_height="38dp"
                         android:layout_marginRight="15dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/edit_text_bg"
-                        android:orientation="horizontal"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp">
-
-                        <Spinner
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="@color/colorWhite"
-                            android:spinnerMode="dropdown"
-                            android:textSize="16dp"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingRight="10dp"
-                            android:src="@drawable/triangle_down"
-                            />
-                    </LinearLayout>
+                        android:layout_weight="1" />
 
 
-                    <LinearLayout
+                    <com.jim.mpviews.MpSpinner
                         android:layout_width="0dp"
                         android:layout_height="38dp"
                         android:layout_marginRight="15dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/edit_text_bg"
-                        android:orientation="horizontal"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp">
-
-                        <Spinner
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="@color/colorWhite"
-                            android:spinnerMode="dropdown"
-                            android:textSize="16dp"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingRight="10dp"
-                            android:src="@drawable/triangle_down"
-                            />
-                    </LinearLayout>
+                        android:layout_weight="1" />
 
                     <ImageView
                         android:layout_width="35dp"
@@ -508,8 +333,7 @@
                         android:layout_marginRight="30dp"
                         android:paddingRight="10dp"
                         android:src="@drawable/save"
-                        android:tint="@color/colorTintGrey"
-                        />
+                        android:tint="@color/colorTintGrey" />
 
                 </LinearLayout>
 
@@ -526,7 +350,7 @@
                         android:gravity="right"
                         android:text="Stock units"
                         android:textColor="@color/colorBlue"
-                        android:textSize="16dp"/>
+                        android:textSize="16dp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -537,7 +361,7 @@
                         android:gravity="right"
                         android:text="Active"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                 </LinearLayout>
 
@@ -545,7 +369,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="2px"
                     android:layout_marginBottom="10dp"
-                    android:background="#e4e4e4"/>
+                    android:background="#e4e4e4" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -554,116 +378,38 @@
                     android:orientation="horizontal">
 
 
-                    <EditText
+                    <com.jim.mpviews.MpEditText
                         android:layout_width="0dp"
                         android:layout_height="38dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="60dp"
                         android:layout_marginRight="15dp"
                         android:layout_weight="2"
-                        android:background="@drawable/edit_text_bg"
                         android:drawableRight="@drawable/barcode"
                         android:drawableTint="@color/colorTextHint"
                         android:gravity="center_vertical"
                         android:hint="SKU, Barcode"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
                         android:textColorHint="@color/colorTextHint"
-                        android:textSize="16dp"
-                        />
+                        android:textSize="16dp" />
 
-                    <LinearLayout
+                    <com.jim.mpviews.MpSpinner
                         android:layout_width="0dp"
                         android:layout_height="38dp"
                         android:layout_marginRight="15dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/edit_text_bg"
-                        android:orientation="horizontal"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp">
+                        android:layout_weight="1" />
 
-                        <Spinner
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="@color/colorWhite"
-                            android:spinnerMode="dropdown"
-                            android:textSize="16dp"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingRight="10dp"
-                            android:src="@drawable/triangle_down"
-                            />
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <com.jim.mpviews.MpSpinner
                         android:layout_width="0dp"
                         android:layout_height="38dp"
                         android:layout_marginRight="15dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/edit_text_bg"
-                        android:orientation="horizontal"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp">
-
-                        <Spinner
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="@color/colorWhite"
-                            android:spinnerMode="dropdown"
-                            android:textSize="16dp"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingRight="10dp"
-                            android:src="@drawable/triangle_down"
-                            />
-                    </LinearLayout>
+                        android:layout_weight="1" />
 
 
-                    <LinearLayout
+                    <com.jim.mpviews.MpSpinner
                         android:layout_width="0dp"
                         android:layout_height="38dp"
                         android:layout_marginRight="15dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/edit_text_bg"
-                        android:orientation="horizontal"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp">
-
-                        <Spinner
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="@color/colorWhite"
-                            android:spinnerMode="dropdown"
-                            android:textSize="16dp"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingRight="10dp"
-                            android:src="@drawable/triangle_down"
-                            />
-                    </LinearLayout>
+                        android:layout_weight="1" />
 
                     <ImageView
                         android:layout_width="35dp"
@@ -672,14 +418,13 @@
                         android:layout_marginRight="30dp"
                         android:paddingRight="10dp"
                         android:src="@drawable/add_round"
-                        android:tint="@color/colorBlue"
-                        />
+                        android:tint="@color/colorBlue" />
 
                 </LinearLayout>
 
                 <android.support.v7.widget.RecyclerView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
         </LinearLayout>
@@ -687,7 +432,7 @@
         <FrameLayout
             android:layout_width="25px"
             android:layout_height="match_parent"
-            android:background="@drawable/left_fade"/>
+            android:background="@drawable/left_fade" />
     </RelativeLayout>
 
 

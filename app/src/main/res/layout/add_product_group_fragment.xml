@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorBackground"
-              android:orientation="horizontal">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="43"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,13 +26,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Management Item Mode"
-                android:textColor="@color/colorBlue"/>
+                android:textColor="@color/colorBlue" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tap Product to manage it info"
-                android:textColor="@color/colorMainText"/>
+                android:textColor="@color/colorMainText" />
 
         </LinearLayout>
 
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="2px"
             android:layout_marginBottom="25dp"
-            android:background="@color/colorTextHint"/>
+            android:background="@color/colorTextHint" />
 
 
         <LinearLayout
@@ -57,23 +57,16 @@
                 android:gravity="right"
                 android:text="Group"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <EditText
-                android:id="@+id/etClassName"
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="38dp"
-                android:layout_gravity="center"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:hint="Name"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
 
         </LinearLayout>
@@ -92,58 +85,44 @@
                 android:gravity="right"
                 android:text="Product"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <EditText
-                android:id="@+id/etBarcode"
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="38dp"
-                android:layout_gravity="center"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:drawableTint="#e1e1e1"
                 android:hint="Name, SKU, or Barcode"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginRight="20dp"
-                android:src="@drawable/dots"/>
+                android:src="@drawable/dots" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginRight="30dp"
-                android:src="@drawable/add_round"/>
+                android:src="@drawable/add_round" />
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/etCategoryDescription"
+        <com.jim.mpviews.MpEditText
             android:layout_width="360dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="95dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/edit_text_bg"
             android:gravity="top"
             android:hint="List of products"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
             android:textColorHint="@color/colorTextHint"
-            android:textSize="16dp"
-            />
+            android:textSize="16dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -160,55 +139,18 @@
                 android:gravity="right"
                 android:text="Options"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:orientation="vertical"
-                android:padding="5dp">
+                app:text="Discount" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:src="@drawable/checked"
-                    android:tint="@color/colorBlue"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="@color/colorMainText"
-                    android:text="Discount"/>
-
-            </LinearLayout>
-
-            <LinearLayout
+            <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:src="@drawable/checked"
-                    android:tint="@color/colorBlue"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="@color/colorMainText"
-                    android:text="Active"/>
-
-            </LinearLayout>
+                app:checked="true"
+                app:text="Active" />
 
 
         </LinearLayout>
@@ -222,35 +164,21 @@
 
             >
 
-            <TextView
-                android:id="@+id/btnCancel"
+            <com.jim.mpviews.MpButton
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="15dp"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:text="Cancel"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/btnSave"
+            <com.jim.mpviews.MpButton
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="30dp"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:text="Save"
                 android:textColor="@color/colorBlue"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -279,7 +207,7 @@
                 android:layout_marginTop="35dp"
                 android:text="Products List"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
 
             <TextView
@@ -290,7 +218,7 @@
                 android:layout_marginTop="25dp"
                 android:text="T-shirts"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
 
             <TextView
@@ -301,7 +229,7 @@
                 android:layout_marginTop="10dp"
                 android:text="--American colors"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
@@ -309,7 +237,7 @@
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:paddingTop="5dp"/>
+                android:paddingTop="5dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -319,7 +247,7 @@
                 android:layout_marginTop="25dp"
                 android:text="T-shirts"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
 
             <TextView
@@ -330,7 +258,7 @@
                 android:layout_marginTop="10dp"
                 android:text="--American colors"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
@@ -338,7 +266,7 @@
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:paddingTop="5dp"/>
+                android:paddingTop="5dp" />
 
 
         </LinearLayout>
@@ -346,7 +274,7 @@
         <FrameLayout
             android:layout_width="5px"
             android:layout_height="match_parent"
-            android:background="#e1e1e1"/>
+            android:background="#e1e1e1" />
     </RelativeLayout>
 
 

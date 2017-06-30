@@ -59,18 +59,12 @@
                 android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
-            <EditText
-                android:id="@+id/etComboName"
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:hint="Name"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
@@ -103,18 +97,12 @@
                 android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
-            <EditText
-                android:id="@+id/etComboPrice"
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:hint="Combo price"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"/>
 
@@ -128,36 +116,12 @@
                 android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:id="@+id/spComboPriceCurr"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="#fff"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
+              />
 
         </LinearLayout>
 
@@ -177,20 +141,14 @@
                 android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
-            <EditText
-                android:id="@+id/etCategoryDescription"
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:gravity="top"
                 android:hint="Some notes"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
                 android:textSize="16dp"
                 />
@@ -204,32 +162,20 @@
 
             >
 
-            <TextView
-                android:id="@+id/btnCancel"
+            <com.jim.mpviews.MpButton
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="15dp"
-                android:background="@drawable/button_bg"
                 android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:text="Cancel"
                 android:textColor="@color/colorMainText"
                 android:textSize="16dp"/>
 
-            <TextView
-                android:id="@+id/btnSave"
+            <com.jim.mpviews.MpButton
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="30dp"
-                android:background="@drawable/button_bg"
                 android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:text="Save"
                 android:textColor="@color/colorBlue"
                 android:textSize="16dp"/>

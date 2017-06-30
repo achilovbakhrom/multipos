@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorBackground"
-              android:orientation="horizontal">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="43"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,13 +25,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Management Item Mode"
-                android:textColor="@color/colorBlue"/>
+                android:textColor="@color/colorBlue" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tap Product to manage it info"
-                android:textColor="@color/colorMainText"/>
+                android:textColor="@color/colorMainText" />
 
         </LinearLayout>
 
@@ -40,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="2px"
             android:layout_marginBottom="25dp"
-            android:background="@color/colorTextHint"/>
+            android:background="@color/colorTextHint" />
 
 
         <LinearLayout
@@ -57,22 +56,16 @@
                 android:gravity="right"
                 android:text="Category"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <EditText
-                android:id="@+id/etCategoryName"
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:hint="Name"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
             <ImageView
                 android:id="@+id/ivChooseImage"
@@ -82,7 +75,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="30dp"
                 android:src="@drawable/camera"
-                android:tint="@color/colorTintGrey"/>
+                android:tint="@color/colorTintGrey" />
 
         </LinearLayout>
 
@@ -100,25 +93,18 @@
                 android:gravity="right"
                 android:text="Description"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <EditText
-                android:id="@+id/etCategoryDescription"
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:gravity="top"
                 android:hint="Some notes"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"
-                />
+                android:textSize="16dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -129,35 +115,21 @@
 
             >
 
-            <TextView
-                android:id="@+id/btnCancel"
+            <com.jim.mpviews.MpButton
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="15dp"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
                 android:text="Cancel"
                 android:textColor="@color/colorMainText"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/btnSave"
+            <com.jim.mpviews.MpButton
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="30dp"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
                 android:text="Save"
                 android:textColor="@color/colorBlue"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -188,61 +160,61 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Category"
-                    android:textSize="18dp"
-                    android:textColor="@color/colorBlue"
+                    android:layout_marginLeft="15dp"
                     android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:layout_marginLeft="15dp"/>
+                    android:paddingTop="5dp"
+                    android:text="Category"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text=">"
-                    android:textColor="@color/colorBlue"/>
+                    android:textColor="@color/colorBlue" />
 
                 <TextView
                     android:id="@+id/tvSubCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="SubCategory"
-                    android:textSize="18dp"
-                    android:textColor="@color/colorBlue"
                     android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp"/>
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="SubCategory"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text=">"
-                    android:textColor="@color/colorBlue"/>
+                    android:textColor="@color/colorBlue" />
 
                 <TextView
                     android:id="@+id/tvProduct"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Product"
-                    android:textSize="18dp"
-                    android:textColor="@color/colorBlue"
                     android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp"/>
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Product"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="10px"
-                android:background="@drawable/top_fade"/>
+                android:background="@drawable/top_fade" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -253,20 +225,22 @@
                     android:id="@+id/rvCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1" />
+
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rvSubCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1" />
+
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rvProduct"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="4"/>
+                    android:layout_weight="4" />
 
 
             </LinearLayout>
@@ -275,7 +249,7 @@
         <FrameLayout
             android:layout_width="25px"
             android:layout_height="match_parent"
-            android:background="@drawable/left_fade"/>
+            android:background="@drawable/left_fade" />
     </RelativeLayout>
 
 

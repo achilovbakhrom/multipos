@@ -58,11 +58,9 @@ public class MpButton extends TextView {
                         if (!isPressed) {
                             setBackgroundResource(R.drawable.pressed_btn);
                             isPressed = true;
-                            setTextColor(getResources().getColor(R.color.colorBlue));
                         } else {
                             setBackgroundResource(R.drawable.button_bg);
                             isPressed = false;
-                            setTextColor(getResources().getColor(R.color.colorMainText));
                         }
                         break;
                 }
@@ -78,11 +76,9 @@ public class MpButton extends TextView {
         this.key = key;
         if (state) {
             setBackgroundResource(R.drawable.pressed_btn);
-            setTextColor(getResources().getColor(R.color.colorBlue));
             isPressed = true;
         } else {
             setBackgroundResource(R.drawable.button_bg);
-            setTextColor(getResources().getColor(R.color.colorMainText));
             isPressed = false;
         }
     }

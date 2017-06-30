@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorBackground"
-              android:orientation="horizontal"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="43"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,13 +26,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Management Item Mode"
-                android:textColor="@color/colorBlue"/>
+                android:textColor="@color/colorBlue" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tap Product to manage it info"
-                android:textColor="@color/colorTextHint"/>
+                android:textColor="@color/colorTextHint" />
 
         </LinearLayout>
 
@@ -41,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="2px"
             android:layout_marginBottom="25dp"
-            android:background="@color/colorTextHint"/>
+            android:background="@color/colorTextHint" />
 
 
         <LinearLayout
@@ -57,22 +56,16 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Name"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <EditText
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="38dp"
-                android:layout_gravity="center"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:hint="Name"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -89,54 +82,22 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Amount"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <EditText
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="38dp"
-                android:layout_gravity="center"
                 android:layout_marginRight="30dp"
                 android:layout_weight="2"
-                android:background="@drawable/edit_text_bg"
-                android:gravity="center_vertical"
                 android:hint="None"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"
-                />
+                android:textSize="16dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginRight="30dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="#fff"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -153,37 +114,13 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Type"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginRight="30dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="#fff"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -201,37 +138,13 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Qualification"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginRight="30dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="#fff"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -250,37 +163,13 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Actually"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_marginRight="30dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="#fff"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -298,23 +187,17 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Product"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <EditText
+            <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="38dp"
-                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_bg"
                 android:drawableRight="@drawable/barcode"
                 android:drawableTint="@color/colorTextHint"
                 android:hint="Name"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
             <ImageView
                 android:layout_width="20dp"
@@ -323,7 +206,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="30dp"
                 android:src="@drawable/dots"
-                android:tint="@color/colorTintGrey"/>
+                android:tint="@color/colorTintGrey" />
 
         </LinearLayout>
 
@@ -341,97 +224,29 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Options"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:orientation="vertical"
-                android:padding="5dp">
+                app:text="Auto Apply" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:src="@drawable/unchecked"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Tax Free"/>
-
-            </LinearLayout>
-
-            <LinearLayout
+            <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:orientation="vertical"
-                android:padding="5dp">
+                app:text="Taxed" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:src="@drawable/checked"
-                    android:tint="#419fd9"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Active"/>
-
-            </LinearLayout>
-
-            <LinearLayout
+            <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:orientation="vertical"
-                android:padding="5dp">
+                app:checked="true"
+                app:text="Active" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:src="@drawable/checked"
-                    android:tint="#419fd9"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Active"/>
-
-            </LinearLayout>
-
-            <LinearLayout
+            <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:src="@drawable/checked"
-                    android:tint="#419fd9"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Active"/>
-
-            </LinearLayout>
+                app:checked="true"
+                app:text="  Display \n on Tablet" />
         </LinearLayout>
 
         <LinearLayout
@@ -441,54 +256,33 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/btnCancel"
+            <com.jim.mpviews.MpButton
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:text="Cancel"
-                android:textColor="#b1b1b1"
-                android:textSize="16dp"/>
+                android:textColor="@color/colorMainText"
+                android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/btnAdvance"
+            <com.jim.mpviews.MpButton
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:text="Advance"
-                android:textColor="#b1b1b1"
-                android:textSize="16dp"/>
+                android:textColor="@color/colorMainText"
+                android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/btnSave"
+            <com.jim.mpviews.MpButton
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:text="Save"
-                android:textColor="#419fd9"
-                android:textSize="16dp"/>
+                android:textColor="@color/colorBlue"
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -523,23 +317,17 @@
                     android:gravity="right"
                     android:text="Barcode"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <EditText
+                <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="38dp"
-                    android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
                     android:drawableRight="@drawable/barcode"
                     android:drawableTint="@color/colorTextHint"
                     android:hint="Number"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <TextView
                     android:layout_width="100dp"
@@ -549,21 +337,15 @@
                     android:gravity="right"
                     android:text="Password"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <EditText
+                <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="38dp"
-                    android:layout_gravity="center"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -571,7 +353,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:layout_marginBottom="10dp"
-                android:background="@color/colorTextHint"/>
+                android:background="@color/colorTextHint" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -588,21 +370,15 @@
                     android:gravity="right"
                     android:text="Maximum \n off"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <EditText
+                <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="38dp"
-                    android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
                     android:hint="Amount"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <TextView
                     android:layout_width="100dp"
@@ -612,22 +388,16 @@
                     android:gravity="right"
                     android:text="Minimum \n off"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <EditText
+                <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="38dp"
-                    android:layout_gravity="center"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
                     android:hint="Amount"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -645,36 +415,13 @@
                     android:layout_marginRight="16dp"
                     android:gravity="right"
                     android:text="Currency"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <LinearLayout
-                    android:layout_width="212dp"
+
+                <com.jim.mpviews.MpSpinner
+                    android:layout_width="210dp"
                     android:layout_height="38dp"
-                    android:layout_marginRight="30dp"
-                    android:background="@drawable/edit_text_bg"
-                    android:orientation="horizontal"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp">
-
-                    <Spinner
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
-                        android:spinnerMode="dropdown"
-                        android:textSize="16dp"/>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingRight="10dp"
-                        android:src="@drawable/triangle_down"
-                        />
-                </LinearLayout>
+                    android:layout_marginRight="30dp" />
 
             </LinearLayout>
 
@@ -682,7 +429,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:layout_marginBottom="10dp"
-                android:background="@color/colorTextHint"/>
+                android:background="@color/colorTextHint" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -697,21 +444,15 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Number of Products Required to Earn Discount"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <EditText
+                <com.jim.mpviews.MpEditText
                     android:layout_width="212dp"
                     android:layout_height="38dp"
-                    android:layout_gravity="center"
                     android:layout_marginRight="30dp"
-                    android:background="@drawable/edit_text_bg"
                     android:hint="Amount"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -722,13 +463,12 @@
                 android:orientation="horizontal"
                 android:padding="5dp">
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                <com.jim.mpviews.MpCheckbox
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="70dp"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/unchecked"/>
+                    android:layout_marginRight="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -736,20 +476,19 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="80dp"
                     android:text="Apply to All Products \n Required to \n Earn Discount"
-                    android:textColor="@color/colorMainText"/>
+                    android:textColor="@color/colorMainText" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                <com.jim.mpviews.MpCheckbox
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/unchecked"/>
+                    android:layout_marginRight="20dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Apply to Qualifying \n Products/Class/ \n Group"/>
+                    android:text="Apply to Qualifying \n Products/Class/ \n Group" />
 
             </LinearLayout>
 
@@ -758,7 +497,7 @@
                 android:layout_height="2px"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="30dp"
-                android:background="@color/colorTextHint"/>
+                android:background="@color/colorTextHint" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -772,17 +511,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Effective Dates/Times"
                     android:layout_marginRight="20dp"
-                    android:textColor="@color/colorBlue"/>
+                    android:text="Effective Dates/Times"
+                    android:textColor="@color/colorBlue" />
 
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                <com.jim.mpviews.MpCheckbox
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:tint="@color/colorBlue"
-                    android:src="@drawable/checked"/>
+                    app:checked="true" />
 
 
             </LinearLayout>
@@ -794,7 +532,7 @@
         <FrameLayout
             android:layout_width="25px"
             android:layout_height="match_parent"
-            android:background="@drawable/left_fade"/>
+            android:background="@drawable/left_fade" />
     </RelativeLayout>
 
 

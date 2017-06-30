@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorBackground"
-              android:orientation="horizontal"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="horizontal">
 
     <RelativeLayout
         android:layout_width="0dp"
@@ -14,8 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -31,13 +30,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:text="Management Item Mode"
-                    android:textColor="#419fd9"/>
+                    android:textColor="#419fd9" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tap Product to manage it info"
-                    android:textColor="@color/colorTextHint"/>
+                    android:textColor="@color/colorTextHint" />
 
             </LinearLayout>
 
@@ -45,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2px"
                 android:layout_marginBottom="25dp"
-                android:background="@color/colorTextHint"/>
+                android:background="@color/colorTextHint" />
 
 
             <LinearLayout
@@ -62,23 +61,17 @@
                     android:gravity="right"
                     android:text="Name"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <EditText
-                    android:id="@+id/etTaxName"
+                <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
                     android:hint="Name"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
 
             </LinearLayout>
@@ -98,25 +91,19 @@
                     android:gravity="right"
                     android:text="Current rate"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
 
-                <EditText
-                    android:id="@+id/etCurrRate"
+                <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
                     android:gravity="center_vertical"
                     android:hint="Percentage"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
 
                 <TextView
@@ -128,38 +115,13 @@
                     android:gravity="right"
                     android:text="Rounding"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <LinearLayout
+                <com.jim.mpviews.MpSpinner
                     android:layout_width="0dp"
                     android:layout_height="38dp"
                     android:layout_marginRight="30dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
-                    android:orientation="horizontal"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp">
-
-                    <Spinner
-                        android:id="@+id/spCostCur"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:background="#fff"
-                        android:spinnerMode="dropdown"
-                        android:textSize="16dp"/>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingRight="10dp"
-                        android:src="@drawable/triangle_down"
-                        />
-                </LinearLayout>
+                    android:layout_weight="1" />
 
             </LinearLayout>
 
@@ -178,24 +140,18 @@
                     android:gravity="right"
                     android:text="From date"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <EditText
-                    android:id="@+id/etFromDate"
+                <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
                     android:gravity="center_vertical"
                     android:hint="dd/mm/yyyy"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <TextView
                     android:layout_width="80dp"
@@ -205,24 +161,18 @@
                     android:gravity="right"
                     android:text="To date"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <EditText
-                    android:id="@+id/etToDate"
+                <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@drawable/edit_text_bg"
                     android:gravity="center_vertical"
                     android:hint="dd/mm/yyyy"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -233,42 +183,28 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:gravity="right"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/btnCancel"
+            <com.jim.mpviews.MpButton
                 android:layout_width="160dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="15dp"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:text="Cancel"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
 
-            <TextView
-                android:id="@+id/btnSave"
+            <com.jim.mpviews.MpButton
                 android:layout_width="160dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="20dp"
                 android:layout_marginRight="30dp"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:text="Save"
-                android:textColor="#419fd9"
-                android:textSize="16dp"/>
+                android:textColor="@color/colorBlue"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </RelativeLayout>
@@ -292,64 +228,29 @@
                 android:background="@color/colorWhite"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <com.jim.mpviews.MpLeftButton
+                    android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/matrix_left_bg"
+                    android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Group"
-                        android:textColor="@color/colorMainText"
-                        />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ellipse_not_active"
-                        android:textColor="@color/colorMainText"/>
-
-                </LinearLayout>
+                    app:pressed="true"
+                    app:text_right="Group" />
 
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <com.jim.mpviews.MpRightButton
+                    android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/matrix_right_pressed_bg"
+                    android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Tax&amp;Rate"
-                        />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ellipse"/>
-
-                </LinearLayout>
+                    app:text_right="Tax and Rate" />
 
             </LinearLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="10px"
-                android:background="@drawable/top_fade"/>
+                android:background="@drawable/top_fade" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -362,7 +263,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" />
 
             </LinearLayout>
         </LinearLayout>
@@ -370,7 +271,7 @@
         <FrameLayout
             android:layout_width="25px"
             android:layout_height="match_parent"
-            android:background="@drawable/left_fade"/>
+            android:background="@drawable/left_fade" />
     </RelativeLayout>
 
 

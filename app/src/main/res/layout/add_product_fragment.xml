@@ -74,7 +74,6 @@
               />
 
             <ImageView
-                android:id="@+id/ivChild"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
@@ -83,7 +82,6 @@
                 android:tint="@color/colorTintGrey"/>
 
             <ImageView
-                android:id="@+id/ivChooseImage"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
@@ -510,48 +508,29 @@
 
         >
 
-        <TextView
-            android:id="@+id/btnCancel"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="15dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_bg"
-            android:gravity="center"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="Cancel"
-            android:textColor="#b1b1b1"
-            android:textSize="16dp"/>
-
         <com.jim.mpviews.MpButton
-            android:id="@+id/btnAdvance"
-            android:layout_width="0dp"
+            android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_marginRight="15dp"
-            android:layout_weight="1"
             android:text="Advance"
             android:textColor="@color/colorMainText"
             />
 
-        <TextView
-            android:id="@+id/btnSave"
-            android:layout_width="0dp"
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginRight="30dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_bg"
-            android:gravity="center"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="Save"
-            android:textColor="#419fd9"
-            android:textSize="16dp"/>
+            android:layout_marginRight="15dp"
+            android:text="Advance"
+            android:textColor="@color/colorMainText"
+            />
+
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Advance"
+            android:textColor="@color/colorMainText"
+            />
 
     </LinearLayout>
 
@@ -643,6 +622,7 @@ android:orientation="vertical">
         android:orientation="horizontal">
 
         <com.jim.mpviews.MpRoller
+            android:id="@+id/mpRoller"
             android:layout_width="wrap_content"
             android:layout_margin="50dp"
             android:layout_height="wrap_content" />

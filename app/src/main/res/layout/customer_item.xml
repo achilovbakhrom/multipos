@@ -95,36 +95,13 @@
                 />
         </LinearLayout>
 
-        <LinearLayout
+        <com.jim.mpviews.MpSpinner
             android:layout_width="0dp"
             android:layout_height="38dp"
             android:layout_weight="1"
             android:layout_marginLeft="20dp"
-            android:background="@drawable/edit_text_bg"
-            android:orientation="horizontal"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp">
+           />
 
-            <Spinner
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@color/colorWhite"
-                android:spinnerMode="dropdown"
-                android:textSize="18dp"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingRight="10dp"
-                android:src="@drawable/triangle_down"
-                />
-
-        </LinearLayout>
 
         <ImageView
             android:layout_width="35dp"

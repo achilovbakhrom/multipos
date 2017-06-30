@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorBackgroundGrey"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundGrey"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="145dp"
@@ -13,7 +13,7 @@
         android:gravity="right"
         android:text="Service Fee"
         android:textColor="@color/colorBlue"
-        android:textSize="18dp"/>
+        android:textSize="18dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,21 +35,16 @@
                 android:layout_marginBottom="10dp"
                 android:text="Name"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
-            <EditText
+            <com.jim.mpviews.MpEditText
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
-                android:background="@drawable/edit_text_bg"
                 android:gravity="center_vertical"
                 android:hint="Name"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -66,29 +61,24 @@
                 android:layout_marginBottom="10dp"
                 android:text="Amount"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
-            <EditText
+            <com.jim.mpviews.MpEditText
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
-                android:background="@drawable/edit_text_bg"
                 android:gravity="center_vertical"
                 android:hint="Value"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginRight="15dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
@@ -97,43 +87,19 @@
                 android:layout_marginBottom="10dp"
                 android:text="Type"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@color/colorWhite"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
+                android:layout_height="38dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginRight="15dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
@@ -142,43 +108,19 @@
                 android:layout_marginBottom="10dp"
                 android:text="Currency"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@color/colorWhite"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
+                android:layout_height="38dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginRight="15dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
@@ -188,35 +130,11 @@
                 android:layout_marginBottom="10dp"
                 android:text="App type"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
-            <LinearLayout
+            <com.jim.mpviews.MpSpinner
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
-                android:background="@drawable/edit_text_bg"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <Spinner
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@color/colorWhite"
-                    android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
-            </LinearLayout>
+                android:layout_height="38dp" />
 
         </LinearLayout>
 
@@ -225,26 +143,23 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
             android:gravity="center"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_marginBottom="10dp"
+                android:gravity="center"
                 android:text="Taxed"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+            <com.jim.mpviews.MpCheckbox
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/checked"
-                android:tint="@color/colorBlue"/>
+                android:layout_marginTop="5dp" />
 
         </LinearLayout>
 
@@ -253,26 +168,23 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
             android:gravity="center"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
-                android:text="Post Tax"
                 android:gravity="center"
+                android:text="Post Tax"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+            <com.jim.mpviews.MpCheckbox
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/checked"
-                android:tint="@color/colorBlue"/>
+                android:layout_marginTop="5dp" />
 
         </LinearLayout>
 
@@ -280,26 +192,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
-                android:text="Active"
                 android:gravity="center"
+                android:text="Active"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+            <com.jim.mpviews.MpCheckbox
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/checked"
-                android:tint="@color/colorBlue"/>
+                android:layout_marginTop="5dp" />
 
         </LinearLayout>
 
@@ -314,10 +223,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
-                android:text="Actions"
                 android:gravity="center"
+                android:text="Actions"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <ImageView
                 android:layout_width="30dp"
@@ -325,7 +234,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/add_round"
-                android:tint="@color/colorBlue"/>
+                android:tint="@color/colorBlue" />
 
         </LinearLayout>
 
@@ -334,7 +243,7 @@
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

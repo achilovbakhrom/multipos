@@ -128,11 +128,11 @@
 
             </LinearLayout>
 
-            <TextView
+            <ImageView
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_marginRight="30dp"
-                android:background="@drawable/add_item_bg"/>
+                android:src="@drawable/add_item_bg"/>
         </LinearLayout>
 
 

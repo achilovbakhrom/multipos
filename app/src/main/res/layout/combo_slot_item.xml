@@ -13,36 +13,25 @@
         android:orientation="horizontal">
 
 
-        <EditText
+        <com.jim.mpviews.MpEditText
             android:layout_width="0dp"
             android:layout_height="38dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/edit_text_bg"
             android:drawableTint="@color/colorTextHint"
             android:hint="SKU, Barcode"
             android:gravity="center_vertical"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
             android:textColorHint="@color/colorTextHint"
             android:textSize="16dp"/>
 
 
-        <EditText
+        <com.jim.mpviews.MpEditText
             android:layout_width="0dp"
             android:layout_height="38dp"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
-            android:background="@drawable/edit_text_bg"
             android:hint="Difference price"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:gravity="center_vertical"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
             android:textColorHint="@color/colorTextHint"
             android:textSize="16dp"/>
 

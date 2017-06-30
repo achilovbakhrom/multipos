@@ -2,7 +2,10 @@
 
     package="com.jim.mpviews">
 
-    <application android:allowBackup="true" android:label="@string/app_name"
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:label="@string/app_name"
         android:supportsRtl="true">
 
     </application>

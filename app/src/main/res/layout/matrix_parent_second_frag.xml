@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@drawable/rounded_bg"
-              android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bg"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,14 +21,13 @@
             android:gravity="left"
             android:text="Matrix Option"
             android:textColor="#fff"
-            android:textSize="18dp"
-            />
+            android:textSize="18dp" />
 
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:layout_weight="61"
-            android:background="#51afe6"/>
+            android:background="#51afe6" />
 
     </LinearLayout>
 
@@ -41,8 +41,7 @@
             android:layout_height="match_parent"
             android:layout_weight="43"
             android:background="#f1f1f1"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,54 +53,21 @@
                 android:paddingRight="10dp"
                 android:paddingTop="40dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:background="@drawable/matrix_left_bg"
+                <com.jim.mpviews.MpLeftButton
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:textColor="@color/colorMainText"
-                        android:text="Parent"
-                        />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ellipse_not_active"/>
-
-                </LinearLayout>
+                    app:text_right="Parent" />
 
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:background="@drawable/matrix_right_pressed_bg"
+                <com.jim.mpviews.MpRightButton
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:textColor="@color/colorMainText"
-                        android:text="Child"
-                        />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ellipse"/>
-
-                </LinearLayout>
+                    app:pressed="true"
+                    app:text_right="Child" />
 
 
             </LinearLayout>
@@ -130,7 +96,7 @@
                     android:layout_marginTop="35dp"
                     android:text="Default parent value"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -144,7 +110,7 @@
                         android:layout_marginRight="10dp"
                         android:text="Size: 30"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -152,7 +118,7 @@
                         android:layout_marginLeft="10dp"
                         android:text="Color: Black"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
 
                 </LinearLayout>
@@ -165,7 +131,7 @@
                     android:layout_marginTop="40dp"
                     android:text="Size (1st Attribute)"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
                 <android.support.v7.widget.RecyclerView
                     android:layout_width="match_parent"
@@ -173,7 +139,7 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:paddingTop="5dp"/>
+                    android:paddingTop="5dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -183,7 +149,7 @@
                     android:layout_marginTop="40dp"
                     android:text="Color (2nd Attribute)"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
                 <android.support.v7.widget.RecyclerView
                     android:layout_width="match_parent"
@@ -191,7 +157,7 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:paddingTop="5dp"/>
+                    android:paddingTop="5dp" />
 
 
             </LinearLayout>
@@ -202,38 +168,24 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="30dp"
                 android:gravity="right"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/btnCancel"
+
+                <com.jim.mpviews.MpButton
                     android:layout_width="120dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="15dp"
-                    android:background="@drawable/button_bg"
-                    android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:text="Cancel"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
-                <TextView
-                    android:id="@+id/btnNext"
+                <com.jim.mpviews.MpButton
                     android:layout_width="120dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="30dp"
-                    android:background="@drawable/button_bg"
-                    android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
                     android:text="Save"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -245,12 +197,12 @@
                 android:layout_marginLeft="60dp"
                 android:text="2 step of 2"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <FrameLayout
                 android:layout_width="5px"
                 android:layout_height="match_parent"
-                android:background="#e1e1e1"/>
+                android:background="#e1e1e1" />
         </RelativeLayout>
 
     </LinearLayout>

@@ -43,8 +43,8 @@ public class MpEditText extends EditText {
 
     private void init(Context context){
         setLines(1);
-        setTextSize(Utils.convertDpToPixel(8));
-        setGravity(RelativeLayout.CENTER_VERTICAL);
+        setTextSize(Utils.convertDpToPixel(16));
+//        setGravity(RelativeLayout.CENTER_VERTICAL);
         final int sdk = android.os.Build.VERSION.SDK_INT;
         if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
             setBackgroundDrawable( ContextCompat.getDrawable(context, R.drawable.edit_text_bg) );

@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorBackground"
-              android:orientation="horizontal">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="43"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
@@ -25,15 +23,14 @@
                 android:gravity="center"
                 android:text="Custom User"
                 android:textColor="@color/colorBlue"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/add_rectangle"
-                />
+                android:background="@drawable/add_rectangle" />
         </LinearLayout>
 
         <LinearLayout
@@ -52,7 +49,7 @@
                 android:layout_weight="1"
                 android:text="Name"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -61,7 +58,7 @@
                 android:layout_weight="1"
                 android:text="Qty"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -70,7 +67,7 @@
                 android:layout_weight="1"
                 android:text="Each"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -79,7 +76,7 @@
                 android:layout_weight="1"
                 android:text="Sum"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
         </LinearLayout>
 
@@ -91,14 +88,14 @@
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp" />
 
         </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="2px"
-            android:background="#ebebeb"/>
+            android:background="#ebebeb" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -126,7 +123,7 @@
                         android:layout_weight="1"
                         android:text="Sub total :"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -135,7 +132,7 @@
                         android:gravity="right"
                         android:text="31 600 uzs"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                 </LinearLayout>
 
@@ -152,7 +149,7 @@
                         android:layout_weight="1"
                         android:text="To discount :"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -161,7 +158,7 @@
                         android:gravity="right"
                         android:text="316 uzs"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                 </LinearLayout>
 
@@ -177,7 +174,7 @@
                         android:layout_weight="1"
                         android:text="Balance Due :"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -186,7 +183,7 @@
                         android:gravity="right"
                         android:text="31 284 uzs"
                         android:textColor="#ff5e52"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                 </LinearLayout>
 
@@ -207,7 +204,7 @@
                     android:gravity="right"
                     android:text="TOTAL"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -216,7 +213,7 @@
                     android:gravity="right"
                     android:text="31 600 uzs"
                     android:textColor="@color/colorMainText"
-                    android:textSize="26dp"/>
+                    android:textSize="26dp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -224,7 +221,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="2px"
-            android:background="@color/colorGrey"/>
+            android:background="@color/colorGrey" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -235,17 +232,17 @@
                 android:layout_width="2px"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
-                android:background="@color/colorGreyDark"/>
+                android:background="@color/colorGreyDark" />
 
             <FrameLayout
                 android:layout_width="8px"
                 android:layout_height="match_parent"
-                android:background="@color/colorWhite"/>
+                android:background="@color/colorWhite" />
 
             <FrameLayout
                 android:layout_width="2px"
                 android:layout_height="match_parent"
-                android:background="@color/colorGreyDark"/>
+                android:background="@color/colorGreyDark" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -257,7 +254,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:src="@drawable/slider"/>
+                    android:src="@drawable/slider" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -272,14 +269,14 @@
                         android:layout_gravity="center"
                         android:layout_marginBottom="10dp"
                         android:src="@drawable/discount"
-                        android:tint="#929395"/>
+                        android:tint="#929395" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Discount"/>
+                        android:text="Discount" />
 
                 </LinearLayout>
 
@@ -296,14 +293,14 @@
                         android:layout_gravity="center"
                         android:layout_marginBottom="10dp"
                         android:src="@drawable/service"
-                        android:tint="#929395"/>
+                        android:tint="#929395" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Service Fee"/>
+                        android:text="Service Fee" />
 
                 </LinearLayout>
 
@@ -320,14 +317,14 @@
                         android:layout_gravity="center"
                         android:layout_marginBottom="10dp"
                         android:src="@drawable/print"
-                        android:tint="#929395"/>
+                        android:tint="#929395" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Print check"/>
+                        android:text="Print check" />
 
                 </LinearLayout>
 
@@ -347,7 +344,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginLeft="5dp"
                         android:src="@drawable/currency"
-                        android:tint="#7fe275"/>
+                        android:tint="@color/colorBlue" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -355,7 +352,8 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="PAY"
-                        android:textColor="#7fe275"/>
+                        android:textColor="@color/colorBlue"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -366,7 +364,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="2px"
-            android:background="#ebebeb"/>
+            android:background="#ebebeb" />
 
 
     </LinearLayout>
@@ -402,14 +400,14 @@
                     android:paddingTop="5dp"
                     android:text="Category"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text=">"
-                    android:textColor="@color/colorBlue"/>
+                    android:textColor="@color/colorBlue" />
 
                 <TextView
                     android:id="@+id/tvSubCategory"
@@ -422,14 +420,14 @@
                     android:paddingTop="5dp"
                     android:text="SubCategory"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text=">"
-                    android:textColor="@color/colorBlue"/>
+                    android:textColor="@color/colorBlue" />
 
                 <TextView
                     android:id="@+id/tvProduct"
@@ -442,14 +440,14 @@
                     android:paddingTop="5dp"
                     android:text="Product"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="10px"
-                android:background="@drawable/top_fade"/>
+                android:background="@drawable/top_fade" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -462,20 +460,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" />
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rvSubCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" />
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rvProduct"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="4"/>
+                    android:layout_weight="4" />
 
 
             </LinearLayout>
@@ -484,7 +482,7 @@
         <FrameLayout
             android:layout_width="25px"
             android:layout_height="match_parent"
-            android:background="@drawable/left_fade"/>
+            android:background="@drawable/left_fade" />
     </RelativeLayout>
 
 
