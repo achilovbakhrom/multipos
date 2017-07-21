@@ -2,6 +2,8 @@ package com.jim.mpviews;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -67,7 +69,7 @@ public class MpKeyBoard extends FrameLayout implements View.OnClickListener, Vie
     }
 
     public void init(Context context) {
-        vibratorManager = new VibratorManager(getContext());
+        vibratorManager = new VibratorManager(getContext(), 50);
         LayoutInflater.from(context).inflate(R.layout.mp_keyboard, this);
         LayoutParams layoutParams = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         setLayoutParams(layoutParams);
@@ -95,10 +97,7 @@ public class MpKeyBoard extends FrameLayout implements View.OnClickListener, Vie
         findViewById(R.id.mpBackspace).setOnClickListener(this);
         findViewById(R.id.mpBackspaceRU).setOnClickListener(this);
         findViewById(R.id.mpDot).setOnClickListener(this);
-//        findViewById(R.id.mpDotRU).setOnClickListener(this);
-//        findViewById(R.id.mpSwitcherRU).setOnClickListener(this);
         findViewById(R.id.mpSwitcherEN).setOnClickListener(this);
-
         mpCase.setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -182,6 +181,7 @@ public class MpKeyBoard extends FrameLayout implements View.OnClickListener, Vie
         return mpText.getText().toString();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     @Override
     public void onClick(View view) {
 
@@ -244,21 +244,22 @@ public class MpKeyBoard extends FrameLayout implements View.OnClickListener, Vie
                 mpLang.setText("EN");
                 setWidth(mpSpaceBar, 380, 3);
                 setWidth(mpSearch, 120, 0);
-                setWidth(mpDot, 60,3);
-                setWidth(findViewById(R.id.mpSwitcherEN), 120,3);
+                setWidth(mpDot, 60, 3);
+                setWidth(findViewById(R.id.mpSwitcherEN), 120, 3);
             } else {
                 findViewById(R.id.mpEnglishLetters).setVisibility(VISIBLE);
                 findViewById(R.id.mpRussianLetters).setVisibility(GONE);
                 mode = ENGLISH;
                 mpLang.setText("RU");
                 setWidth(mpSpaceBar, 410, 10);
-                setWidth(mpSearch, 95,0);
-                setWidth(mpDot, 60,10);
-                setWidth(findViewById(R.id.mpSwitcherEN), 95,10);
+                setWidth(mpSearch, 95, 0);
+                setWidth(mpDot, 60, 10);
+                setWidth(findViewById(R.id.mpSwitcherEN), 95, 10);
             }
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     @Override
     public boolean onLongClick(View view) {
         if (mode == ENGLISH) {
@@ -296,8 +297,8 @@ public class MpKeyBoard extends FrameLayout implements View.OnClickListener, Vie
 
     private void setWidth(View view, int width, int rightMargin) {
         LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) view.getLayoutParams();
-        params.width = width;
-        params.setMargins(0,0,rightMargin, 0);
+        params.width = (int) convertDpToPixel(width);
+        params.setMargins(0, 0, (int) convertDpToPixel(rightMargin), 0);
         view.setLayoutParams(params);
     }
 }
