@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,9 +7,8 @@
     android:orientation="horizontal">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="43"
         android:orientation="vertical">
 
         <LinearLayout
@@ -228,100 +227,35 @@
 
         </LinearLayout>
 
+    </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="right"
+        android:orientation="horizontal">
 
-            <com.jim.mpviews.MpButton
-                android:layout_width="160dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="15dp"
-                android:text="Cancel"
-                android:textColor="@color/colorMainText"
-                android:textSize="16dp" />
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            android:text="Cancel"
+            android:textColor="@color/colorMainText"
+            android:textSize="18dp" />
 
 
-            <com.jim.mpviews.MpButton
-                android:layout_width="160dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="30dp"
-                android:gravity="center"
-                android:text="Save"
-                android:textColor="@color/colorBlue"
-                android:textSize="16dp" />
-
-        </LinearLayout>
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="@color/colorBlue"
+            android:textSize="18dp" />
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="57"
-        android:background="@color/colorBackgroundGrey"
-        android:orientation="vertical">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:background="@color/colorWhite"
-                android:paddingLeft="30dp"
-                android:orientation="horizontal">
-
-                <com.jim.mpviews.MpLeftButton
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="center"
-                    app:pressed = "true"
-                    app:text_right="Group" />
-
-
-                <com.jim.mpviews.MpRightButton
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="center"
-                    app:text_right="Tax and Rate" />
-
-            </LinearLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="10px"
-                android:background="@drawable/top_fade" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rvCategory"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_weight="1" />
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="25px"
-            android:layout_height="match_parent"
-            android:background="@drawable/left_fade" />
-    </RelativeLayout>
-
-
-</LinearLayout>
+</RelativeLayout>

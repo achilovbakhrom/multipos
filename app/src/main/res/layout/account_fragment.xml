@@ -1,191 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorBackground"
     android:orientation="horizontal">
 
+
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="43"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/colorWhite"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:text="Management Item Mode"
-                android:textColor="@color/colorBlue" />
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:gravity="left"
+                android:text="System accounts"
+                android:textColor="@color/colorBlue"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:text="Account name"
+                android:textColor="@color/colorMainText"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:text="Type"
+                android:textColor="@color/colorMainText"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.jim.mpviews.MpEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:hint="Input account name"
+                android:textColor="@color/colorMainText"
+                android:textSize="16dp" />
+
+            <com.jim.mpviews.MpSpinner
+                android:layout_width="200dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="20dp" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tap Product to manage it info"
-                android:textColor="@color/colorMainText" />
+                android:layout_gravity="center"
+                android:src="@drawable/add_round" />
+
+
 
         </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="1px"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:background="@color/colorTextHint" />
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorWhite" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="57"
-        android:background="@color/colorBackgroundGrey"
-        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
 
+        >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Revert"
+            android:textColor="@color/colorMainText" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Save"
+            android:textColor="@color/colorBlue" />
 
-                <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:gravity="left"
-                    android:text="System accounts"
-                    android:textColor="@color/colorBlue"
-                    android:textSize="16dp" />
+    </LinearLayout>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="20dp"
-                    android:gravity="left"
-                    android:text="Account name"
-                    android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="20dp"
-                    android:gravity="left"
-                    android:text="Type"
-                    android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <com.jim.mpviews.MpEditText
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="20dp"
-                    android:gravity="left"
-                    android:hint="Input account name"
-                    android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
-
-                <com.jim.mpviews.MpSpinner
-                    android:layout_width="200dp"
-                    android:layout_height="38dp"
-                    android:layout_marginRight="20dp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@drawable/add_round" />
-
-            </LinearLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:background="@color/colorTextHint" />
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:background="@color/colorWhite" />
-
-            <android.support.v7.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="25px"
-            android:layout_height="match_parent"
-            android:background="@drawable/left_fade" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:gravity="right"
-            android:orientation="horizontal"
-            android:paddingBottom="20dp"
-            android:paddingRight="20dp"
-
-            >
-
-            <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="15dp"
-                android:text="Revert"
-                android:textColor="@color/colorMainText" />
-
-            <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="15dp"
-                android:text="Save"
-                android:textColor="@color/colorBlue" />
-
-        </LinearLayout>
-    </RelativeLayout>
-
-
-</LinearLayout>
+</RelativeLayout>

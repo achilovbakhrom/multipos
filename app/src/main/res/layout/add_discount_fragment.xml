@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
-    android:orientation="horizontal">
+    android:background="@color/colorBackground">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="43"
         android:orientation="vertical">
 
         <LinearLayout
@@ -249,291 +247,41 @@
                 app:text="  Display \n on Tablet" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+    </LinearLayout>
 
-            <com.jim.mpviews.MpButton
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:text="Cancel"
-                android:textColor="@color/colorMainText"
-                android:textSize="16dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-            <com.jim.mpviews.MpButton
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:text="Advance"
-                android:textColor="@color/colorMainText"
-                android:textSize="16dp" />
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            android:text="Cancel"
+            android:textColor="@color/colorMainText"
+            android:textSize="16dp" />
 
-            <com.jim.mpviews.MpButton
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="30dp"
-                android:layout_weight="1"
-                android:text="Save"
-                android:textColor="@color/colorBlue"
-                android:textSize="16dp" />
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Advance"
+            android:textColor="@color/colorMainText"
+            android:textSize="16dp" />
 
-        </LinearLayout>
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Save"
+            android:textColor="@color/colorBlue"
+            android:textSize="16dp" />
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="57"
-        android:background="@color/colorBackgroundGrey"
-        android:orientation="vertical">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="25dp"
-                android:orientation="horizontal">
-
-
-                <TextView
-                    android:layout_width="145dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
-                    android:gravity="right"
-                    android:text="Barcode"
-                    android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
-
-                <com.jim.mpviews.MpEditText
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_weight="1"
-                    android:drawableRight="@drawable/barcode"
-                    android:drawableTint="@color/colorTextHint"
-                    android:hint="Number"
-                    android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
-                    android:gravity="right"
-                    android:text="Password"
-                    android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
-
-                <com.jim.mpviews.MpEditText
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_weight="1"
-                    android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
-
-            </LinearLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="2px"
-                android:layout_marginBottom="10dp"
-                android:background="@color/colorTextHint" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-
-                <TextView
-                    android:layout_width="145dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
-                    android:gravity="right"
-                    android:text="Maximum \n off"
-                    android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
-
-                <com.jim.mpviews.MpEditText
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_weight="1"
-                    android:hint="Amount"
-                    android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
-                    android:gravity="right"
-                    android:text="Minimum \n off"
-                    android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
-
-                <com.jim.mpviews.MpEditText
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_weight="1"
-                    android:hint="Amount"
-                    android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-
-                <TextView
-                    android:layout_width="145dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
-                    android:gravity="right"
-                    android:text="Currency"
-                    android:textSize="16dp" />
-
-
-                <com.jim.mpviews.MpSpinner
-                    android:layout_width="210dp"
-                    android:layout_height="38dp"
-                    android:layout_marginRight="30dp" />
-
-            </LinearLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="2px"
-                android:layout_marginBottom="10dp"
-                android:background="@color/colorTextHint" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Number of Products Required to Earn Discount"
-                    android:textSize="16dp" />
-
-                <com.jim.mpviews.MpEditText
-                    android:layout_width="212dp"
-                    android:layout_height="38dp"
-                    android:layout_marginRight="30dp"
-                    android:hint="Amount"
-                    android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <com.jim.mpviews.MpCheckbox
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginRight="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="80dp"
-                    android:text="Apply to All Products \n Required to \n Earn Discount"
-                    android:textColor="@color/colorMainText" />
-
-                <com.jim.mpviews.MpCheckbox
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Apply to Qualifying \n Products/Class/ \n Group" />
-
-            </LinearLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="2px"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/colorTextHint" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="20dp"
-                    android:text="Effective Dates/Times"
-                    android:textColor="@color/colorBlue" />
-
-
-                <com.jim.mpviews.MpCheckbox
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    app:checked="true" />
-
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-
-        <FrameLayout
-            android:layout_width="25px"
-            android:layout_height="match_parent"
-            android:background="@drawable/left_fade" />
-    </RelativeLayout>
-
-
-</LinearLayout>
+</RelativeLayout>

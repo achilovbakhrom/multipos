@@ -6,7 +6,7 @@
     <color name="colorBlue">#419fd9</color>
     <color name="colorTransparentBlue">#30419fd9</color>
     <color name="colorTransparentMainText">#30414141</color>
-    <color name="colorBlueLight">#51afe6</color>
+    <color name="colorBlueSecond">#51afe6</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBackgroundGrey">#f1f1f1</color>
     <color name="colorBackground">#f8f8f8</color>
@@ -25,4 +25,5 @@
     <color name="colorOrange">#f0b321</color>
     <color name="colorDarkGreen">#15a53a</color>
     <color name="colorDarkGreenSecond">#0f8f27</color>
+    <color name="colorTransparent">#00ffffff</color>
 </resources>

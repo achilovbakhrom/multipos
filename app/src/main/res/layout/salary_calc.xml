@@ -6,9 +6,8 @@
     android:orientation="horizontal">
 
     <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="43">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -277,25 +276,5 @@
 
 
     </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="57">
-
-
-        <com.jim.mpviews.calendar.MpCalendarView
-            android:id="@+id/mpCalendar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <FrameLayout
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:background="@color/colorTextHint" />
-
-
-    </RelativeLayout>
-
 
 </LinearLayout>

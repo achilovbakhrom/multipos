@@ -36,19 +36,10 @@
             android:textColor="@color/colorMainText"
             android:textSize="18dp" />
 
-        <LinearLayout
+        <com.jim.mpviews.MpCheckbox
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/checked"
-                android:tint="@color/colorBlue" />
-
-        </LinearLayout>
+            android:layout_height="30dp"
+            android:layout_weight="1" />
 
 
     </LinearLayout>

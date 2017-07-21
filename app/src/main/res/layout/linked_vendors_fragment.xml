@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
-    android:orientation="horizontal">
+    android:background="@color/colorBackground">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="43"
         android:orientation="vertical">
 
 
@@ -151,183 +149,36 @@
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="380dp"
-            android:background="@color/colorBackgroundGrey" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="right"
-            android:orientation="horizontal">
-
-            <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="15dp"
-                android:text="Cancel"
-                android:textColor="@color/colorSecondaryText" />
-
-            <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="15dp"
-                android:text="Save"
-                android:textColor="@color/colorBlue"
-                android:textStyle="bold" />
-
-        </LinearLayout>
+            android:background="@color/colorBackgroundGrey" />
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="57"
-        android:background="@color/colorBackgroundGrey"
-        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Cancel"
+            android:textColor="@color/colorSecondaryText" />
+
+        <com.jim.mpviews.MpButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Save"
+            android:textColor="@color/colorBlue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:gravity="left"
-                    android:text="Global Vendors"
-                    android:textColor="@color/colorBlue"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-                <com.jim.mpviews.MpEditText
-                    android:layout_width="260dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="200dp"
-                    android:layout_marginRight="30dp"
-                    android:drawableRight="@drawable/search"
-                    android:drawableTint="@color/colorTextHint"
-                    android:hint="Choose Vendor"
-                    android:textColor="@color/colorMainText"
-                    android:textColorHint="@color/colorTextHint" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:background="@color/colorBlue"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:gravity="left"
-                    android:text="Vendor name"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="18dp" />
-
-                <FrameLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="20dp"
-                    android:background="@color/colorWhite" />
-
-                <TextView
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="Address"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="18dp" />
-
-                <FrameLayout
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="20dp"
-                    android:background="@color/colorWhite" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="Action"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="18dp" />
-            </LinearLayout>
-
-            <android.support.v7.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="400dp" />
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:text="Vendor name"
-                android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pu"
-                android:textColor="@color/colorSecondaryText"
-                android:textSize="16dp" />
-
-        </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="25px"
-            android:layout_height="match_parent"
-            android:background="@drawable/left_fade" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:gravity="right"
-            android:orientation="horizontal"
-            android:paddingBottom="20dp"
-            android:paddingRight="20dp"
-
-            >
-
-            <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="15dp"
-                android:text="Cancel"
-                android:textColor="@color/colorMainText" />
-
-            <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="15dp"
-                android:text="Link"
-                android:textColor="@color/colorBlue" />
-
-        </LinearLayout>
-    </RelativeLayout>
-
-
-</LinearLayout>
+</RelativeLayout>

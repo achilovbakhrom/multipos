@@ -1,6 +1,7 @@
 package com.jim.mpviews;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -62,6 +63,7 @@ public class MpButtonWithIcon extends RelativeLayout {
         mpBtnText = (TextView) findViewById(R.id.mpBtnText);
         String text = attributeArray.getString(R.styleable.MpButtonWithIcon_btn_text);
         mpBtnText.setText(text);
+        mpBtnIcon.setImageTintList(ColorStateList.valueOf(attributeArray.getColor(R.styleable.MpButtonWithIcon_tint_color, getResources().getColor(R.color.colorBlue))));
         mpBtnIcon.setImageResource(attributeArray.getResourceId(R.styleable.MpButtonWithIcon_src, 0));
         setBackgroundResource(R.drawable.button_bg);
         setPadding((int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10), (int) Utils.convertDpToPixel(10));
@@ -84,7 +86,7 @@ public class MpButtonWithIcon extends RelativeLayout {
                 return false;
             }
         });
-
+        attributeArray.recycle();
     }
 
     private String key = null;

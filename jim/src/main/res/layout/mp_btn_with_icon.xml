@@ -16,7 +16,6 @@
             android:layout_gravity="center"
             android:gravity="left"
             android:layout_marginLeft="15dp"
-            android:src="@drawable/checked"
             android:tint="@color/colorBlue" />
 
         <FrameLayout

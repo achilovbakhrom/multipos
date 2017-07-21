@@ -13,6 +13,8 @@ import com.jim.mpviews.utils.StateSaver;
 import com.jim.mpviews.utils.Utils;
 import com.jim.mpviews.utils.VibratorManager;
 
+import static com.jim.mpviews.utils.Utils.convertDpToPixel;
+
 /**
  * Created by Пользователь on 24.05.2017.
  */
@@ -52,17 +54,16 @@ public class MpButton extends TextView {
         setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
+                vibratorManager.startVibrate();
                 switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        vibratorManager.startVibrate();
-                        if (!isPressed) {
-                            setBackgroundResource(R.drawable.pressed_btn);
-                            isPressed = true;
-                        } else {
-                            setBackgroundResource(R.drawable.button_bg);
-                            isPressed = false;
-                        }
-                        break;
+                        setBackgroundResource(R.drawable.pressed_btn);
+                        setTextSize(convertDpToPixel(16));
+                        return true;
+                    case MotionEvent.ACTION_UP:
+                        setBackgroundResource(R.drawable.button_bg);
+                        setTextSize(convertDpToPixel(18));
+                        return true;
                 }
                 return false;
             }

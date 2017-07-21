@@ -9,12 +9,19 @@ import android.os.Vibrator;
 
 public class VibratorManager {
     private Context context;
+    private int time = 100;
+
     public VibratorManager(Context context) {
         this.context = context;
     }
 
-    public void startVibrate(){
+    public VibratorManager(Context context, int time) {
+        this.context = context;
+        this.time = time;
+    }
+
+    public void startVibrate() {
         Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
-        vibrator.vibrate(100);
+        vibrator.vibrate(time);
     }
 }

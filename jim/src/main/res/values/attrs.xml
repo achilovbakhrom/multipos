@@ -18,6 +18,11 @@
     <declare-styleable name="MpButtonWithIcon">
         <attr name="btn_text" format="string" />
         <attr name="src" format="reference" />
+        <attr name="tint_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MpSearchView">
+        <attr name="barcode_visibility" format="boolean" />
     </declare-styleable>
 
     <declare-styleable name="MpSpinner">
@@ -26,8 +31,32 @@
         <attr name="text_color" format="color" />
     </declare-styleable>
 
-    <declare-styleable name="MpRightButton">
+    <declare-styleable name="MpSwitcher">
         <attr name="text_right" format="string" />
-        <attr name="pressed" format="boolean" />
+        <attr name="text_left" format="string" />
     </declare-styleable>
+
+    <declare-styleable name="MpTripleSwitcher">
+        <attr name="right_text" format="string" />
+        <attr name="left_text" format="string" />
+        <attr name="center_text" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MpPayments">
+        <attr name="type" format="string" />
+        <attr name="percent" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MpComboSlot">
+        <attr name="combo_name" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MpKeyPad">
+        <attr name="letter" format="string" />
+        <attr name="symbol" format="string" />
+        <attr name="letter_color" format="color" />
+        <attr name="has_extra" format="boolean" />
+        <attr name="background" format="reference" />
+    </declare-styleable>
+
 </resources>

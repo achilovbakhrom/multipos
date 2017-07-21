@@ -110,7 +110,7 @@
                 >
 
                 <com.jim.mpviews.MpButton
-                    android:layout_width="120dp"
+                    android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="15dp"
                     android:gravity="center"
@@ -123,7 +123,7 @@
                     android:textSize="16dp" />
 
                 <com.jim.mpviews.MpButton
-                    android:layout_width="120dp"
+                    android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="15dp"
                     android:gravity="center"

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorBackground"
-              android:orientation="horizontal"
-    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="43"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,13 +23,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Management Employer"
-                android:textColor="@color/colorBlue"/>
+                android:textColor="@color/colorBlue" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tap Product to manage it info"
-                android:textColor="@color/colorTextHint"/>
+                android:textColor="@color/colorTextHint" />
 
         </LinearLayout>
 
@@ -41,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="2px"
             android:layout_marginBottom="25dp"
-            android:background="@color/colorTextHint"/>
+            android:background="@color/colorTextHint" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,7 +65,7 @@
                         android:gravity="right"
                         android:text="Full name"
                         android:textColor="@color/colorMainText"
-                        android:textSize="16dp"/>
+                        android:textSize="16dp" />
 
                     <EditText
                         android:id="@+id/etProductName"
@@ -86,7 +82,7 @@
                         android:paddingRight="10dp"
                         android:paddingTop="5dp"
                         android:textColorHint="@color/colorTextHint"
-                        android:textSize="16dp"/>
+                        android:textSize="16dp" />
 
 
                 </LinearLayout>
@@ -105,7 +101,7 @@
                         android:gravity="right"
                         android:text="Password"
                         android:textColor="@color/colorMainText"
-                        android:textSize="16dp"/>
+                        android:textSize="16dp" />
 
                     <EditText
                         android:id="@+id/etProductDescription"
@@ -122,8 +118,7 @@
                         android:paddingRight="10dp"
                         android:paddingTop="5dp"
                         android:textColorHint="@color/colorTextHint"
-                        android:textSize="16dp"
-                        />
+                        android:textSize="16dp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -132,7 +127,7 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_marginRight="30dp"
-                android:src="@drawable/add_item_bg"/>
+                android:src="@drawable/add_item_bg" />
         </LinearLayout>
 
 
@@ -151,7 +146,7 @@
                 android:gravity="right"
                 android:text="Department"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -171,15 +166,14 @@
                     android:layout_weight="1"
                     android:background="@color/colorWhite"
                     android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
+                    android:src="@drawable/triangle_down" />
             </LinearLayout>
 
 
@@ -191,7 +185,7 @@
                 android:gravity="right"
                 android:text="Role"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -212,15 +206,14 @@
                     android:layout_weight="1"
                     android:background="@color/colorWhite"
                     android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
+                    android:src="@drawable/triangle_down" />
             </LinearLayout>
 
         </LinearLayout>
@@ -241,7 +234,7 @@
                 android:gravity="right"
                 android:text="Salary type"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -261,15 +254,14 @@
                     android:layout_weight="1"
                     android:background="@color/colorWhite"
                     android:spinnerMode="dropdown"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingRight="10dp"
-                    android:src="@drawable/triangle_down"
-                    />
+                    android:src="@drawable/triangle_down" />
             </LinearLayout>
 
             <TextView
@@ -280,7 +272,7 @@
                 android:gravity="right"
                 android:text="Salary"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
             <EditText
                 android:layout_width="0dp"
@@ -294,7 +286,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -313,7 +305,7 @@
                 android:gravity="right"
                 android:text="Start date"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
             <EditText
                 android:layout_width="0dp"
@@ -328,7 +320,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
 
             <TextView
@@ -339,7 +331,7 @@
                 android:gravity="right"
                 android:text="Currency"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
             <EditText
                 android:layout_width="0dp"
@@ -355,7 +347,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
         </LinearLayout>
 
 
@@ -372,7 +364,7 @@
                 android:layout_marginRight="16dp"
                 android:gravity="right"
                 android:text="Options"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
 
             <LinearLayout
@@ -387,124 +379,46 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/checked"
-                    android:tint="#419fd9"/>
+                    android:tint="#419fd9" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Active"/>
+                    android:text="Active" />
 
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:layout_marginTop="300dp"
-            android:layout_gravity="bottom"
-            android:orientation="horizontal"
-
-            >
-
-            <TextView
-                android:id="@+id/btnCancel"
-                android:layout_width="160dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="15dp"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
-                android:text="Cancel"
-                android:textColor="#b1b1b1"
-                android:textSize="16dp"/>
-
-
-            <TextView
-                android:id="@+id/btnSave"
-                android:layout_width="160dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
-                android:text="Save"
-                android:textColor="#419fd9"
-                android:textSize="16dp"/>
-
         </LinearLayout>
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="57"
-        android:background="#f1f1f1"
-        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="right"
+        android:orientation="horizontal"
 
+        >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <com.jim.mpviews.MpButton
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Cancel"
+            android:textColor="@color/colorMainText"
+            android:textSize="16dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="#ffffff"
-                android:orientation="horizontal">
+        <com.jim.mpviews.MpButton
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Save"
+            android:textColor="@color/colorBlue"
+            android:textSize="16dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
-                    android:text="Employer"
-                    android:textColor="#419fd9"
-                    android:textSize="18dp"/>
+    </LinearLayout>
 
-
-            </LinearLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="10px"
-                android:background="@drawable/top_fade"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rvCategory"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_weight="1"/>
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="25px"
-            android:layout_height="match_parent"
-            android:background="@drawable/left_fade"/>
-    </RelativeLayout>
-
-
-</LinearLayout>
+</RelativeLayout>
