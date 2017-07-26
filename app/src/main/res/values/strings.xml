@@ -7,4 +7,16 @@
     <string name="registration">Registration</string>
     <string name="login">Login</string>
     <string name="founder_password">Founder password</string>
+    <string name="system_accounts">System accounts</string>
+    <string name="pos_id">Pos ID</string>
+    <string name="alias">Alias</string>
+    <string name="enter_pos_alias">Enter Pos Alias</string>
+    <string name="address">Address</string>
+    <string name="enter_pos_address">Enter POS Address</string>
+    <string name="password">Password</string>
+    <string name="admin_password">Admin password</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="revert">Revert</string>
+    <string name="next">Next</string>
 </resources>

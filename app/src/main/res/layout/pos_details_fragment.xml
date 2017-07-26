@@ -30,7 +30,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="30dp"
                     android:gravity="left"
-                    android:text="System accounts"
+                    android:text="@string/system_accounts"
                     android:textColor="@color/colorBlue"
                     android:textSize="16dp" />
 
@@ -48,7 +48,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="20dp"
                     android:gravity="right"
-                    android:text="Pos ID"
+                    android:text="@string/pos_id"
                     android:textColor="@color/colorMainText"
                     android:textSize="16dp" />
 
@@ -86,7 +86,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="20dp"
                     android:gravity="right"
-                    android:text="Alias"
+                    android:text="@string/alias"
                     android:textColor="@color/colorMainText"
                     android:textSize="16dp" />
 
@@ -96,7 +96,7 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="20dp"
                     android:gravity="left"
-                    android:hint="Enter POS Alias"
+                    android:hint="@string/enter_pos_alias"
                     android:textColor="@color/colorMainText"
                     android:textSize="16dp" />
 
@@ -116,7 +116,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="20dp"
                     android:gravity="right"
-                    android:text="Address"
+                    android:text="@string/address"
                     android:textColor="@color/colorMainText"
                     android:textSize="16dp" />
 
@@ -126,7 +126,67 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="20dp"
                     android:gravity="left"
-                    android:hint="Enter POS Address"
+                    android:hint="@string/enter_pos_address"
+                    android:textColor="@color/colorMainText"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:text="@string/password"
+                    android:textColor="@color/colorMainText"
+                    android:textSize="16dp" />
+
+                <com.jim.mpviews.MpEditText
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:hint="@string/admin_password"
+                    android:textColor="@color/colorMainText"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:text="@string/repeat"
+                    android:textColor="@color/colorMainText"
+                    android:textSize="16dp" />
+
+                <com.jim.mpviews.MpEditText
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:hint="@string/repeat_password"
                     android:textColor="@color/colorMainText"
                     android:textSize="16dp" />
 
@@ -154,14 +214,14 @@
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="15dp"
-                android:text="Revert"
+                android:text="@string/revert"
                 android:textColor="@color/colorMainText" />
 
             <com.jim.mpviews.MpButton
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="15dp"
-                android:text="Save"
+                android:text="@string/next"
                 android:textColor="@color/colorBlue" />
 
         </LinearLayout>
