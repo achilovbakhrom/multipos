@@ -2,4 +2,9 @@
     <string name="app_name">MultiPOS</string>
     <string name="client_management"><u>Client management</u></string>
     <string name="dash">...................................................................................................................................................................................................................................................................................................</string>
+    <string name="login_details">Login details</string>
+    <string name="founder_login">Founder login</string>
+    <string name="registration">Registration</string>
+    <string name="login">Login</string>
+    <string name="founder_password">Founder password</string>
 </resources>

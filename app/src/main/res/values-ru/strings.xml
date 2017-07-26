@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MultiPOS</string>
+    <string name="client_management"><u>Управление клиентами</u></string>
+    <string name="dash">...................................................................................................................................................................................................................................................................................................</string>
+    <string name="login_details">Детали авторизации</string>
+    <string name="founder_login">Логин владельца</string>
+    <string name="registration">Регистрация</string>
+    <string name="login">Логин</string>
+    <string name="founder_password">Пароль владельца</string>
+</resources>

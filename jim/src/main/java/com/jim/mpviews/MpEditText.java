@@ -51,7 +51,7 @@ public class MpEditText extends EditText {
         } else {
             setBackgroundResource( R.drawable.edit_text_bg);
         }
-        setPadding((int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(10));
+        setPadding((int)Utils.convertDpToPixel(15),(int)Utils.convertDpToPixel(10),(int)Utils.convertDpToPixel(15),(int)Utils.convertDpToPixel(10));
         setHintTextColor(ContextCompat.getColor(context,R.color.colorTextHint));
         setTextColor(ContextCompat.getColor(context,R.color.colorMainText));
     }

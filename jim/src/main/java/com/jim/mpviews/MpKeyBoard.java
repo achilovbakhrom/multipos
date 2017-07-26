@@ -41,7 +41,7 @@ public class MpKeyBoard extends FrameLayout implements View.OnClickListener, Vie
     int idsRU[] = {R.id.mpOne, R.id.mpTwo, R.id.mpThree, R.id.mpFour, R.id.mpFive, R.id.mpSix, R.id.mpSeven, R.id.mpEight, R.id.mpNine, R.id.mpZero,
             R.id.mpY_RU, R.id.mpTs_RU, R.id.mpU_RU, R.id.mpK_RU, R.id.mpE_RU, R.id.mpN_RU, R.id.mpG_RU, R.id.mpSh_RU, R.id.mpSh2_RU, R.id.mpZ_Ru, R.id.mpX_RU, R.id.mpF_RU, R.id.mpHard_RU, R.id.mpV_RU, R.id.mpA_RU, R.id.mpP_RU, R.id.mpR_RU, R.id.mpO_RU, R.id.mpL_RU, R.id.mpD_RU, R.id.mpJ_RU, R.id.mpE2_RU, R.id.mpYa_RU, R.id.mpCh_RU, R.id.mpC_RU, R.id.mpM_RU, R.id.mpI_Ru, R.id.mpT_RU, R.id.mpSoft_RU, R.id.mpB_RU, R.id.mpYu_RU};
     char keyValuesRU[] = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
-            'Й', 'Ц', 'У', 'К', 'Е', 'Н', 'Г', 'Ш', 'Щ', 'З', 'Х', 'Ъ', 'Ф', 'Ы', 'В', 'А', 'П', 'Р', 'О', 'Л', 'Д', 'Ж', 'Э', 'Я', 'Ч', 'С', 'М', 'И', 'Т', 'Ь', 'Б', 'Ю'};
+            'Й', 'Ц', 'У', 'К', 'Е', 'Н', 'Г', 'Ш', 'Щ', 'З', 'Х', 'Ф', 'Ы', 'В', 'А', 'П', 'Р', 'О', 'Л', 'Д', 'Ж', 'Э', 'Я', 'Ч', 'С', 'М', 'И', 'Т', 'Ь', 'Б', 'Ю'};
 
     private boolean isPressed = false;
     private RelativeLayout mpDot;
@@ -69,7 +69,7 @@ public class MpKeyBoard extends FrameLayout implements View.OnClickListener, Vie
     }
 
     public void init(Context context) {
-        vibratorManager = new VibratorManager(getContext(), 50);
+        vibratorManager = new VibratorManager(getContext(), 10);
         LayoutInflater.from(context).inflate(R.layout.mp_keyboard, this);
         LayoutParams layoutParams = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         setLayoutParams(layoutParams);

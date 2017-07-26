@@ -58,12 +58,12 @@ public class MpButton extends TextView {
                 switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
                         setBackgroundResource(R.drawable.pressed_btn);
-                        setTextSize(convertDpToPixel(16));
-                        return true;
+                        setTextSize(convertDpToPixel(17));
+                        return false;
                     case MotionEvent.ACTION_UP:
                         setBackgroundResource(R.drawable.button_bg);
                         setTextSize(convertDpToPixel(18));
-                        return true;
+                        return false;
                 }
                 return false;
             }

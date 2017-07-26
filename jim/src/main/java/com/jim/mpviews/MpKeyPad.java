@@ -48,7 +48,7 @@ public class MpKeyPad extends FrameLayout {
 
 
     public void init(Context context, AttributeSet attrs) {
-        vibratorManager = new VibratorManager(getContext());
+        vibratorManager = new VibratorManager(getContext(), 50);
         LayoutInflater.from(context).inflate(R.layout.mp_key_pad, this);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         setLayoutParams(layoutParams);
