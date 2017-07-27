@@ -19,4 +19,20 @@
     <string name="repeat_password">Повторите пароль</string>
     <string name="revert">Назад</string>
     <string name="next">Вперед</string>
+    <string-array name="start_configuration_title">
+        <item namte="pos_details">POS подробности</item>
+        <item name="account">Аккаунт</item>
+        <item name="payment_type">Типы оплаты</item>
+        <item name="currency">Валюта</item>
+        <item name="units">Единицы</item>
+        <item name="employers">Работодатели</item>
+    </string-array>
+    <string-array name="start_configuration_desctiption">
+        <item name="pos_details_description">Некторые подробности о POS системе</item>
+        <item name="account_description">Некторые подробности о деньгах</item>
+        <item name="payment_type_description">Некторые подробности о типе оплаты</item>
+        <item name="currency_description">Добавление и изменение основной валюты</item>
+        <item name="units_description">Единицы, используемые в системе</item>
+        <item name="employers_description">Кто будет работать с этим POS</item>
+    </string-array>
 </resources>

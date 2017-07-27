@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="false"
+    android:background="@color/colorBackgroundGrey"
     android:orientation="vertical">
 
     <LinearLayout
@@ -10,20 +13,23 @@
         android:orientation="horizontal">
 
         <FrameLayout
+            android:id="@+id/strip"
             android:layout_width="20dp"
             android:layout_height="match_parent"
-            android:background="@color/colorBlue" />
+            android:background="@color/colorBlue"
+            android:visibility="invisible" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="80dp"
-            android:background="@color/colorWhite"
+            android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingBottom="10dp"
             android:paddingTop="10dp">
 
             <TextView
+                android:id="@+id/tvTitle"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
@@ -32,6 +38,7 @@
                 android:textColor="@color/colorBlue" />
 
             <TextView
+                android:id="@+id/tvDescription"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Some details"
@@ -39,11 +46,17 @@
 
         </LinearLayout>
 
+        <com.jim.mpviews.MpCheckbox
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            app:enabled="false"
+            app:without_text="true" />
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:background="@color/colorTextHint" />
-
 </LinearLayout>

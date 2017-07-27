@@ -19,4 +19,27 @@
     <string name="repeat_password">Repeat password</string>
     <string name="revert">Revert</string>
     <string name="next">Next</string>
+
+    <string name="pos_details_description">Some details about POS system</string>
+    <string name="account_description">Some details about money</string>
+    <string name="payment_type_description">Some details about payment types</string>
+    <string name="currency_description">Adding and change main currency</string>
+    <string name="units_description">Units which used in system</string>
+    <string name="employers_description">Who will work with this POS</string>
+    <string-array name="start_configuration_title">
+        <item>POS details</item>
+        <item>Account</item>
+        <item>Payment type</item>
+        <item>Currency</item>
+        <item>Units</item>
+        <item>Employers</item>
+    </string-array>
+    <string-array name="start_configuration_desctiption">
+        <item>POS details</item>
+        <item>Account</item>
+        <item>Payment type</item>
+        <item>Currency</item>
+        <item>Units</item>
+        <item>Employers</item>
+    </string-array>
 </resources>

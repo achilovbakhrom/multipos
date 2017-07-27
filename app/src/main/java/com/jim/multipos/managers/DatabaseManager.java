@@ -2,7 +2,7 @@ package com.jim.multipos.managers;
 
 import android.content.Context;
 
-import com.jim.multipos.Constants;
+import com.jim.multipos.utils.Constants;
 import com.jim.multipos.utils.database.DatabaseHelper;
 import com.jim.multipos.utils.database.SQLiteCursor;
 import com.jim.multipos.utils.database.SQLiteException;

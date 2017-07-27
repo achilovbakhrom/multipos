@@ -2,7 +2,7 @@ package com.jim.multipos.utils.database;
 
 import android.content.Context;
 import android.util.Log;
-import static com.jim.multipos.Constants.TAG;
+import static com.jim.multipos.utils.Constants.TAG;
 import java.io.File;
 
 public class PathGenerator {

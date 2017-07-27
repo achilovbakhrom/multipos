@@ -64,6 +64,7 @@ public class MpCheckbox extends RelativeLayout {
 
         checkBox.setEnabled(enabled);
         textView.setEnabled(enabled);
+        checkBox.setClickable(enabled);
 
         if (without_text) {
             textView.setVisibility(GONE);
@@ -106,11 +107,9 @@ public class MpCheckbox extends RelativeLayout {
         if (state) {
             checkBox.setBackgroundResource(R.drawable.checked);
             checkBox.setChecked(true);
-            animateCheckbox();
         } else {
             checkBox.setBackgroundResource(R.drawable.checked);
             checkBox.setChecked(false);
-            animateCheckbox();
         }
     }
 
@@ -146,4 +145,6 @@ public class MpCheckbox extends RelativeLayout {
     public void setEnabled(boolean state) {
         checkBox.setEnabled(state);
     }
+
+    public void setClickable(boolean clickable) {checkBox.setClickable(clickable);}
 }

@@ -1,4 +1,4 @@
-package com.jim.multipos;
+package com.jim.multipos.utils;
 
 /**
  * Created by Developer on 5/10/17.
