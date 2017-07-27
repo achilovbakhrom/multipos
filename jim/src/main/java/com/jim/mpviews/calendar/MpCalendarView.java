@@ -89,7 +89,7 @@ public class MpCalendarView extends FrameLayout implements View.OnClickListener 
         list.add(new CalendarMonth(today, 1));
         list.add(new CalendarMonth(today, 2));
 
-        mViewPagerAdapter = new CalendarViewPagerAdapter(list, mViewPager);
+        mViewPagerAdapter = new CalendarViewPagerAdapter(list, mViewPager, context);
         mViewPager.setAdapter(mViewPagerAdapter);
         mViewPager.addOnPageChangeListener(mPageChangeListener);
         mViewPager.setOffscreenPageLimit(1);

@@ -1,5 +1,6 @@
 package com.jim.mpviews.adapters;
 
+import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -24,10 +25,12 @@ public class CalendarViewPagerAdapter extends PagerAdapter implements OnDayViewC
     private ViewPager mViewPager;
     private List<CalendarMonth> mData;
     private CalendarDate mSelectedDate;
+    private Context context;
     private OnDateSelectedListener mListener;
 
-    public CalendarViewPagerAdapter(List<CalendarMonth> list, ViewPager viewPager) {
+    public CalendarViewPagerAdapter(List<CalendarMonth> list, ViewPager viewPager, Context context) {
         mData = list;
+        this.context = context;
         mViewPager = viewPager;
         mSelectedDate = new CalendarDate(Calendar.getInstance());
     }
@@ -83,7 +86,7 @@ public class CalendarViewPagerAdapter extends PagerAdapter implements OnDayViewC
     }
 
     public String getItemPageHeader(int position) {
-        return mData.get(position).toString();
+        return mData.get(position).parseToString(context);
     }
 
     public CalendarMonth getItem(int position) {

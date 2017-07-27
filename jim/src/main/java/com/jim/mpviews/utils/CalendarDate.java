@@ -1,5 +1,7 @@
 package com.jim.mpviews.utils;
 
+import android.content.Context;
+
 import java.util.Calendar;
 
 public class CalendarDate {
@@ -187,8 +189,8 @@ public class CalendarDate {
      *
      * @return the month name like it appears in the Julian and Gregorian calendars as a string.
      */
-    public String monthToStringName() {
-        return DateUtils.monthToString(mMonth);
+    public String monthToStringName(Context context) {
+        return DateUtils.monthToString(mMonth, context);
     }
 
     /**
@@ -196,8 +198,8 @@ public class CalendarDate {
      *
      * @return the day of week name like it appears in the Julian and Gregorian calendars as a string.
      */
-    public String dayOfWeekToStringName() {
-        return DateUtils.dayOfWeekToString(getCalender().get(Calendar.DAY_OF_WEEK));
+    public String dayOfWeekToStringName(Context context) {
+        return DateUtils.dayOfWeekToString(getCalender().get(Calendar.DAY_OF_WEEK), context);
     }
 
 }

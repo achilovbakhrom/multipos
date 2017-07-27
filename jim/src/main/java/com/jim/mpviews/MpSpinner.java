@@ -32,6 +32,7 @@ import com.jim.mpviews.utils.Utils;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -93,12 +94,10 @@ public class MpSpinner extends RelativeLayout {
 
     public void setItems(ArrayList<String> items) {
         arrayList = items;
-        adapter.notifyDataSetChanged();
     }
 
     public void setItems(String[] items) {
-        for (String s : items)
-            arrayList.add(s);
+        arrayList.addAll(Arrays.asList(items));
 
     }
 

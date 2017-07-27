@@ -2,14 +2,17 @@ package com.jim.multipos;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 
+import com.jim.multipos.di.HasComponent;
+import com.jim.multipos.di.components.BaseAppComponent;
+import com.jim.multipos.di.components.DaggerMainActivityComponent;
+import com.jim.multipos.di.components.MainActivityComponent;
+import com.jim.multipos.di.modules.MainActivityModule;
 import com.jim.multipos.fragments.LoginDetailsFragment;
 import com.jim.multipos.managers.PosFragmentManager;
+
+import javax.inject.Inject;
 
 import static android.view.View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
 
@@ -17,22 +20,30 @@ import static android.view.View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
  * Created by DEV on 25.07.2017.
  */
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends BaseActivity implements HasComponent<MainActivityComponent> {
+    @Inject PosFragmentManager posFragmentManager;
+    private MainActivityComponent mainActivityComponent;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
         setContentView(R.layout.login_layout);
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_IMMERSIVE | SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
         decorView.setSystemUiVisibility(uiOptions);
         UiChangeListener();
-        PosFragmentManager posFragmentManager = new PosFragmentManager(this);
         posFragmentManager.displayFragment(new LoginDetailsFragment(), R.id.loginFragment);
     }
+
+    @Override
+    protected void setupComponent(BaseAppComponent baseAppComponent) {
+        mainActivityComponent = DaggerMainActivityComponent.builder()
+                .baseAppComponent(baseAppComponent)
+                .mainActivityModule(new MainActivityModule(this))
+                .build();
+        mainActivityComponent.inject(this);
+    }
+
     public void UiChangeListener()
     {
         final View decorView = getWindow().getDecorView();
@@ -50,5 +61,10 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public MainActivityComponent getComponent() {
+        return mainActivityComponent;
     }
 }

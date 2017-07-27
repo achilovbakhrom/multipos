@@ -1,5 +1,7 @@
 package com.jim.mpviews.utils;
 
+import android.content.Context;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -54,8 +56,7 @@ public class CalendarMonth {
         return mDays;
     }
 
-    @Override
-    public String toString() {
-        return DateUtils.monthToString(mMonth) + "  " + mYear;
+    public String parseToString(Context context) {
+        return DateUtils.monthToString(mMonth, context) + "  " + mYear;
     }
 }

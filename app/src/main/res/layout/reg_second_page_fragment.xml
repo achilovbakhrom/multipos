@@ -13,23 +13,24 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginLeft="30dp"
-            android:src="@drawable/posmen" />
+            android:layout_marginTop="30dp"
+            android:src="@drawable/pos" />
 
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="8px"
-        android:background="@drawable/top__blue_fade" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:background="@color/colorBlue"
-        android:gravity="center_vertical"
         android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="@drawable/shadow_black" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -76,8 +77,9 @@
                         android:textSize="18dp" />
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:id="@+id/ivEditDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginRight="30dp"
                         android:src="@drawable/edit"
                         android:tint="@color/colorBlue" />
@@ -85,6 +87,7 @@
 
 
                 <TextView
+                    android:id="@+id/tvOrgName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -111,6 +114,7 @@
                         android:textSize="18dp" />
 
                     <TextView
+                        android:id="@+id/tvOrgEmail"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -136,6 +140,7 @@
                         android:textSize="18dp" />
 
                     <TextView
+                        android:id="@+id/tvOrgAddress"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -161,6 +166,7 @@
                         android:textSize="18dp" />
 
                     <TextView
+                        android:id="@+id/tvOrgZipCode"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -201,14 +207,18 @@
                         android:tint="@color/colorTintGrey" />
                 </LinearLayout>
 
-                <com.jim.mpviews.MpEditText
+                <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/blue_stroke"
+                    android:textColor="@color/colorBlue"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp"
                     android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:textColorHint="@color/colorBlue"
                     android:hint="Access token*" />
 
@@ -220,6 +230,7 @@
                     android:layout_marginTop="15dp"
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
+                    android:textAlignment="center"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a Lorem ipsum dolor sit amet"
@@ -236,15 +247,16 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="45dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:orientation="horizontal">
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:id="@+id/btnBack"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
                 android:layout_marginRight="15dp"
                 android:gravity="center"
                 android:paddingBottom="5dp"
@@ -256,8 +268,9 @@
                 android:textSize="16dp" />
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:id="@+id/btnConfirm"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
                 android:gravity="center"
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"

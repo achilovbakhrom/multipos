@@ -1,7 +1,11 @@
 package com.jim.multipos.managers;
 
 import android.app.Activity;
-import android.app.FragmentManager;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+
+import javax.inject.Inject;
 
 /**
  * Created by DEV on 26.07.2017.
@@ -11,16 +15,21 @@ public class PosFragmentManager {
     private Activity activity;
     private FragmentManager fragmentManager;
 
-    public PosFragmentManager(Activity activity) {
+    @Inject
+    public PosFragmentManager(AppCompatActivity activity) {
         this.activity = activity;
-        fragmentManager = activity.getFragmentManager();
+        fragmentManager = activity.getSupportFragmentManager();
     }
 
-    public void displayFragment(android.app.Fragment fragment, int id) {
+    public void displayFragment(Fragment fragment, int id) {
         fragmentManager
                 .beginTransaction()
                 .addToBackStack(null)
-                .replace(id, fragment)
+                .add(id, fragment)
                 .commit();
+    }
+
+    public void popBackStack() {
+        fragmentManager.popBackStack();
     }
 }
