@@ -2,9 +2,9 @@ package com.jim.multipos.di.components;
 
 import com.jim.multipos.LoginActivity;
 import com.jim.multipos.di.modules.MainActivityModule;
-import com.jim.multipos.fragments.LoginDetailsFragment;
-import com.jim.multipos.fragments.RegistrationConfirmFragment;
-import com.jim.multipos.fragments.RegistrationFragment;
+import com.jim.multipos.registration.fragments.LoginDetailsFragment;
+import com.jim.multipos.registration.fragments.RegistrationConfirmFragment;
+import com.jim.multipos.registration.fragments.RegistrationFragment;
 
 
 

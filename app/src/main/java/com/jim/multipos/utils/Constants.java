@@ -7,4 +7,8 @@ package com.jim.multipos.utils;
 public class Constants {
     public static final String TAG = "com.jim.multipos";
     public static final String DB_NAME = "multipos.db";
+    public static final String ORG_NAME = "org_name";
+    public static final String ORG_ADDRESS = "org_address";
+    public static final String ORG_EMAIL = "org_email";
+    public static final String ORG_CODE = "org_code";
 }

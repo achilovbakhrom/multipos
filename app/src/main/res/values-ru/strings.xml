@@ -19,6 +19,8 @@
     <string name="repeat_password">Повторите пароль</string>
     <string name="revert">Назад</string>
     <string name="next">Вперед</string>
+    <string name="phone">Телефон</string>
+    <string name="email">Почта</string>
     <string-array name="start_configuration_title">
         <item namte="pos_details">POS подробности</item>
         <item name="account">Аккаунт</item>

@@ -9,7 +9,7 @@ import com.jim.multipos.di.components.BaseAppComponent;
 import com.jim.multipos.di.components.DaggerMainActivityComponent;
 import com.jim.multipos.di.components.MainActivityComponent;
 import com.jim.multipos.di.modules.MainActivityModule;
-import com.jim.multipos.fragments.LoginDetailsFragment;
+import com.jim.multipos.registration.fragments.LoginDetailsFragment;
 import com.jim.multipos.managers.PosFragmentManager;
 
 import javax.inject.Inject;

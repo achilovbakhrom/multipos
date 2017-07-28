@@ -1,14 +1,13 @@
-package com.jim.multipos.fragments;
+package com.jim.multipos.registration.fragments;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
+import android.widget.ImageView;
 
 import com.jim.mpviews.MpButton;
 import com.jim.mpviews.MpEditText;
@@ -17,8 +16,8 @@ import com.jim.multipos.BaseFragment;
 import com.jim.multipos.R;
 import com.jim.multipos.di.components.MainActivityComponent;
 import com.jim.multipos.managers.PosFragmentManager;
-import com.jim.multipos.presenters.RegistrationFragmentView;
-import com.jim.multipos.presenters.RegistrationPresenterImpl;
+import com.jim.multipos.registration.presenters.RegistrationFragmentView;
+import com.jim.multipos.registration.presenters.RegistrationPresenterImpl;
 
 import java.util.ArrayList;
 
@@ -45,20 +44,28 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
     MpEditText etOrgEmail;
     @BindView(R.id.etOrgZipCode)
     MpEditText etOrgZipCode;
+    @BindView(R.id.etContacts)
+    MpEditText etContacts;
+    @BindView(R.id.rvContacts)
+    RecyclerView rvContacts;
+    @BindView(R.id.ivAddContact)
+    ImageView ivAddContact;
     MpSpinner spContacts;
     @Inject
     RegistrationPresenterImpl presenter;
     @Inject
     PosFragmentManager posFragmentManager;
-
-
+    private RecyclerView.LayoutManager layoutManager;
+    ArrayList<String> contacts;
+    ArrayList<String> contactType;
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View rootView = inflater.inflate(R.layout.reg_fragment, container, false);
         ButterKnife.bind(this, rootView);
         spContacts = (MpSpinner) rootView.findViewById(R.id.spContacts);
-
+        contacts = new ArrayList<>();
+        contactType = new ArrayList<>();
         return rootView;
     }
 
@@ -83,10 +90,20 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
 
     @OnClick(R.id.btnRegistrationSecond)
     public void registration() {
-      presenter.displayFragment();
+
+        String code = etOrgZipCode.getText().toString();
+        String address = etOrgAddress.getText().toString();
+        String name = etOrgName.getText().toString();
+        String email = etOrgEmail.getText().toString();
+
+        presenter.displayFragment(name, address, email, code);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
+    @OnClick(R.id.ivAddContact)
+    public void addContact(){
+//        presenter.addContact();
+    }
+
     @Override
     public void setSpinnerItems(ArrayList<String> items) {
         spContacts.setItems(items);
@@ -94,12 +111,22 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
     }
 
     @Override
-    public void displayFragment() {
-        posFragmentManager.displayFragment(new RegistrationConfirmFragment(), R.id.loginFragment);
+    public void displayFragment(RegistrationConfirmFragment confirmFragment) {
+        posFragmentManager.displayFragment(confirmFragment, R.id.loginFragment);
     }
 
     @Override
     public void popFromBackStack() {
         posFragmentManager.popBackStack();
+    }
+
+    private void setRecyclerView(){
+
+        layoutManager = new LinearLayoutManager(getContext());
+        rvContacts.setLayoutManager(layoutManager);
+//        contacts.add(etContacts.getText().toString());
+//        contactType.add(items.get(spContacts.selectedItem()));
+//        ContactsAdapter adapter = new ContactsAdapter(contactType, contacts);
+//        rvContacts.setAdapter(adapter);
     }
 }

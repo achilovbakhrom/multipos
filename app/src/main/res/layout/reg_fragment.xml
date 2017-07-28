@@ -55,7 +55,7 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -147,6 +147,7 @@
 
 
                     <com.jim.mpviews.MpEditText
+                        android:id="@+id/etContacts"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_vertical"
@@ -156,11 +157,19 @@
                         android:hint="enter phone number" />
 
                     <ImageView
+                        android:id="@+id/ivAddContact"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="30dp"
                         android:src="@drawable/add_round" />
                 </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvContacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp" />
 
 
             </LinearLayout>

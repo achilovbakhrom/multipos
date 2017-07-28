@@ -1,4 +1,6 @@
-package com.jim.multipos.presenters;
+package com.jim.multipos.registration.presenters;
+
+import com.jim.multipos.registration.fragments.RegistrationConfirmFragment;
 
 import java.util.ArrayList;
 
@@ -8,6 +10,6 @@ import java.util.ArrayList;
 
 public interface RegistrationFragmentView {
     void setSpinnerItems(ArrayList<String> items);
-    void displayFragment();
+    void displayFragment(RegistrationConfirmFragment confirmFragment);
     void popFromBackStack();
 }

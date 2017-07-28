@@ -19,7 +19,8 @@
     <string name="repeat_password">Repeat password</string>
     <string name="revert">Revert</string>
     <string name="next">Next</string>
-
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
     <string name="pos_details_description">Some details about POS system</string>
     <string name="account_description">Some details about money</string>
     <string name="payment_type_description">Some details about payment types</string>

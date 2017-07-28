@@ -3,7 +3,7 @@ package com.jim.multipos.di.modules;
 import android.support.v7.app.AppCompatActivity;
 
 import com.jim.multipos.managers.PosFragmentManager;
-import com.jim.multipos.presenters.RegistrationPresenterImpl;
+import com.jim.multipos.registration.presenters.RegistrationPresenterImpl;
 
 
 import dagger.Module;
@@ -28,6 +28,6 @@ public class MainActivityModule {
 
     @Provides
     public RegistrationPresenterImpl getRegistrationPresenter(){
-        return new RegistrationPresenterImpl();
+        return new RegistrationPresenterImpl(activity.getApplicationContext());
     }
 }

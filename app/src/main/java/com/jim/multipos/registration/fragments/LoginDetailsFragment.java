@@ -1,4 +1,4 @@
-package com.jim.multipos.fragments;
+package com.jim.multipos.registration.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,6 +11,7 @@ import com.jim.multipos.BaseFragment;
 import com.jim.multipos.R;
 import com.jim.multipos.di.components.MainActivityComponent;
 import com.jim.multipos.managers.PosFragmentManager;
+import com.jim.multipos.registration.fragments.RegistrationFragment;
 
 import javax.inject.Inject;
 

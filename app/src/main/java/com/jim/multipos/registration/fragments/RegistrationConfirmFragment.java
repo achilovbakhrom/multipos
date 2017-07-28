@@ -1,4 +1,4 @@
-package com.jim.multipos.fragments;
+package com.jim.multipos.registration.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
