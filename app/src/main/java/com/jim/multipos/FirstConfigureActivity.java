@@ -7,7 +7,11 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
-public class FirstConfigure extends BaseActivity {
+import com.jim.multipos.di.components.BaseAppComponent;
+import com.jim.multipos.fragments.FirstConfigureLeftSideFragment;
+import com.jim.multipos.fragments.FirstConfigureRightSideFragment;
+
+public class FirstConfigureActivity extends BaseActivity {
     private FrameLayout leftContainer;
     private FrameLayout rightContainer;
 
