@@ -1,5 +1,6 @@
 package com.jim.multipos.registration.presenters;
 
+import com.jim.multipos.registration.adapters.Contact;
 import com.jim.multipos.registration.fragments.RegistrationConfirmFragment;
 
 import java.util.ArrayList;
@@ -12,4 +13,5 @@ public interface RegistrationFragmentView {
     void setSpinnerItems(ArrayList<String> items);
     void displayFragment(RegistrationConfirmFragment confirmFragment);
     void popFromBackStack();
+    void setRecyclerView(ArrayList<Contact> contacts);
 }

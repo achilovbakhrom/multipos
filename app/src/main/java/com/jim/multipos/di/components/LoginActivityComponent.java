@@ -1,6 +1,7 @@
 package com.jim.multipos.di.components;
 
 import com.jim.multipos.LoginActivity;
+import com.jim.multipos.di.ActivityScope;
 import com.jim.multipos.di.modules.MainActivityModule;
 import com.jim.multipos.registration.fragments.LoginDetailsFragment;
 import com.jim.multipos.registration.fragments.RegistrationConfirmFragment;

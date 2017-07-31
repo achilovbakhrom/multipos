@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.jim.multipos.di.components.BaseAppComponent;
+import com.jim.multipos.di.components().DaggerBaseAppComponent;
 import com.jim.multipos.di.components.DaggerBaseAppComponent;
 import com.jim.multipos.di.modules.BaseAppModule;
 
