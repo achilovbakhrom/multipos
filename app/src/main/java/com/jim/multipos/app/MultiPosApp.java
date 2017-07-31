@@ -1,10 +1,9 @@
-package com.jim.multipos;
+package com.jim.multipos.app;
 
 import android.app.Application;
 import android.content.Context;
 
 import com.jim.multipos.di.components.BaseAppComponent;
-import com.jim.multipos.di.components().DaggerBaseAppComponent;
 import com.jim.multipos.di.components.DaggerBaseAppComponent;
 import com.jim.multipos.di.modules.BaseAppModule;
 
@@ -24,12 +23,7 @@ public class MultiPosApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        context = getApplicationContext();
         buildComponent();
-    }
-
-    public Context getAppContext() {
-        return context;
     }
 
     public void buildComponent() {

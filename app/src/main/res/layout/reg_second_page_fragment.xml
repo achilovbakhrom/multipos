@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:gravity="center"
-            android:text="Registration details"
+            android:text="@string/registration_details"
             android:textColor="@color/colorWhite"
             android:textSize="18dp"
             android:textStyle="italic" />
@@ -72,7 +72,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Organization details"
+                        android:text="@string/organization_details"
                         android:textColor="@color/colorBlue"
                         android:textSize="18dp" />
 
@@ -93,7 +93,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="35dp"
-                    android:text="Bill and Bob's CO"
+                    android:text=""
                     android:textColor="@color/colorMainText"
                     android:textSize="18dp" />
 
@@ -108,7 +108,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Email:"
+                        android:text="@string/email"
                         android:layout_marginRight="15dp"
                         android:textColor="@color/colorMainText"
                         android:textSize="18dp" />
@@ -118,7 +118,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="bill@gmail.com"
+                        android:text=""
                         android:textColor="@color/colorMainText"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -134,7 +134,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Address:"
+                        android:text="@string/address"
                         android:layout_marginRight="15dp"
                         android:textColor="@color/colorMainText"
                         android:textSize="18dp" />
@@ -144,7 +144,6 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Some where in the galaxy"
                         android:textColor="@color/colorMainText"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -160,7 +159,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Zip code:"
+                        android:text="@string/zip_code"
                         android:layout_marginRight="15dp"
                         android:textColor="@color/colorMainText"
                         android:textSize="18dp" />
@@ -170,7 +169,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="1643134"
+                        android:text=""
                         android:textColor="@color/colorMainText"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -197,7 +196,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Enter number  which we send  to you Email"
+                        android:text="@string/enter_code_access_code"
                         android:textColor="@color/colorBlue"
                         android:textSize="18dp" />
 
@@ -220,7 +219,7 @@
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
                     android:textColorHint="@color/colorBlue"
-                    android:hint="Access token*" />
+                    android:hint="@string/access_token" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -263,7 +262,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:text="Back"
+                android:text="@string/back"
                 android:textColor="@color/colorMainText"
                 android:textSize="16dp" />
 
@@ -276,7 +275,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:text="Confirm"
+                android:text="@string/confirm"
                 android:textColor="@color/colorBlue"
                 android:textSize="16dp"
                 android:textStyle="bold" />

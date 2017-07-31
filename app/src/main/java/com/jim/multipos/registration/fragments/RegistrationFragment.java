@@ -12,11 +12,15 @@ import android.widget.ImageView;
 import com.jim.mpviews.MpButton;
 import com.jim.mpviews.MpEditText;
 import com.jim.mpviews.MpSpinner;
-import com.jim.multipos.BaseFragment;
+import com.jim.multipos.common.BaseFragment;
 import com.jim.multipos.R;
-import com.jim.multipos.di.components.MainActivityComponent;
+import com.jim.multipos.di.components.LoginActivityComponent;
+import com.jim.multipos.entity.ContactDao;
+import com.jim.multipos.entity.DaoSession;
+import com.jim.multipos.managers.DatabaseManager;
 import com.jim.multipos.managers.PosFragmentManager;
-import com.jim.multipos.registration.presenters.RegistrationFragmentView;
+import com.jim.multipos.entity.Contact;
+import com.jim.multipos.registration.adapters.ContactsAdapter;
 import com.jim.multipos.registration.presenters.RegistrationPresenterImpl;
 
 import java.util.ArrayList;
@@ -55,32 +59,31 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
     RegistrationPresenterImpl presenter;
     @Inject
     PosFragmentManager posFragmentManager;
-    private RecyclerView.LayoutManager layoutManager;
-    ArrayList<String> contacts;
-    ArrayList<String> contactType;
+    private ArrayList<String> list;
+
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View rootView = inflater.inflate(R.layout.reg_fragment, container, false);
+        this.getComponent(LoginActivityComponent.class).inject(this);
         ButterKnife.bind(this, rootView);
         spContacts = (MpSpinner) rootView.findViewById(R.id.spContacts);
-        contacts = new ArrayList<>();
-        contactType = new ArrayList<>();
+        list = new ArrayList<>();
+        presenter.init(this);
+        presenter.setItems();
         return rootView;
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        presenter.init(this);
-        presenter.setItems();
 
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        this.getComponent(MainActivityComponent.class).inject(this);
+        ;
     }
 
     @OnClick(R.id.btnBack)
@@ -100,14 +103,17 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
     }
 
     @OnClick(R.id.ivAddContact)
-    public void addContact(){
-//        presenter.addContact();
+    public void addContact() {
+        if (!etContacts.getText().toString().equals(""))
+        presenter.setRecyclerViewItems(list.get(spContacts.selectedItem()), etContacts.getText().toString());
+        else etContacts.setError(getResources().getString(R.string.enter_phone_number));
     }
 
     @Override
     public void setSpinnerItems(ArrayList<String> items) {
         spContacts.setItems(items);
         spContacts.setAdapter();
+        list = items;
     }
 
     @Override
@@ -119,14 +125,10 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
     public void popFromBackStack() {
         posFragmentManager.popBackStack();
     }
-
-    private void setRecyclerView(){
-
-        layoutManager = new LinearLayoutManager(getContext());
-        rvContacts.setLayoutManager(layoutManager);
-//        contacts.add(etContacts.getText().toString());
-//        contactType.add(items.get(spContacts.selectedItem()));
-//        ContactsAdapter adapter = new ContactsAdapter(contactType, contacts);
-//        rvContacts.setAdapter(adapter);
+    @Override
+    public void setRecyclerView(ArrayList<Contact> contacts) {
+        rvContacts.setLayoutManager(new LinearLayoutManager(getActivity()));
+        ContactsAdapter adapter = new ContactsAdapter(contacts, getContext());
+        rvContacts.setAdapter(adapter);
     }
 }

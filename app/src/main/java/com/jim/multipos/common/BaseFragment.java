@@ -1,4 +1,4 @@
-package com.jim.multipos;
+package com.jim.multipos.common;
 
 import android.support.v4.app.Fragment;
 

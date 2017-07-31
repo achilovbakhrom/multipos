@@ -1,12 +1,9 @@
 package com.jim.multipos;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.FrameLayout;
 
+import com.jim.multipos.common.BaseActivity;
 import com.jim.multipos.di.components.BaseAppComponent;
 import com.jim.multipos.fragments.FirstConfigureLeftSideFragment;
 import com.jim.multipos.fragments.FirstConfigureRightSideFragment;

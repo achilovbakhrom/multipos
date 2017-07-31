@@ -1,6 +1,8 @@
-package com.jim.multipos.registration.adapters;
+package com.jim.multipos.entity;
+
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Keep;
 import org.greenrobot.greendao.annotation.Property;
 
@@ -13,6 +15,7 @@ import org.greenrobot.greendao.DaoException;
  */
 @Entity(nameInDb = "CONTACTS", active = true)
 public class Contact {
+    @Id
     @Property
     private String id;
     @Property

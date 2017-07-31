@@ -1,12 +1,12 @@
-package com.jim.multipos;
+package com.jim.multipos.common;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.jim.multipos.app.MultiPosApp;
 import com.jim.multipos.di.components.BaseAppComponent;
-import com.jim.multipos.di.components.MainActivityComponent;
 
 /**
  * Created by user on 26.07.17.

@@ -1,6 +1,5 @@
 package com.jim.multipos.managers;
 
-import android.app.Activity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +11,7 @@ import javax.inject.Inject;
  */
 
 public class PosFragmentManager {
-    private Activity activity;
+    private AppCompatActivity activity;
     private FragmentManager fragmentManager;
 
     @Inject

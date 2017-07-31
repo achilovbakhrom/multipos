@@ -1,4 +1,4 @@
-package com.jim.multipos.di.components;
+package com.jim.multipos.di;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

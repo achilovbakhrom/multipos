@@ -7,7 +7,7 @@ import com.jim.multipos.registration.fragments.LoginDetailsFragmentView;
  * Created by DEV on 31.07.2017.
  */
 
-public interface LoginDetailsFragmentPresenter extends BaseFragmentPresenter<LoginDetailsFragmentView>{
+public interface LoginDetailsPresenter extends BaseFragmentPresenter<LoginDetailsFragmentView>{
     void registerFounder();
     void loginFounder();
 }

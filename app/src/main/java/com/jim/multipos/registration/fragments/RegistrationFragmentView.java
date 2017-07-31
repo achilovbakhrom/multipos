@@ -1,7 +1,6 @@
-package com.jim.multipos.registration.presenters;
+package com.jim.multipos.registration.fragments;
 
-import com.jim.multipos.registration.adapters.Contact;
-import com.jim.multipos.registration.fragments.RegistrationConfirmFragment;
+import com.jim.multipos.entity.Contact;
 
 import java.util.ArrayList;
 

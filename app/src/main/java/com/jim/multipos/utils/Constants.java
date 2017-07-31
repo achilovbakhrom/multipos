@@ -11,4 +11,6 @@ public class Constants {
     public static final String ORG_ADDRESS = "org_address";
     public static final String ORG_EMAIL = "org_email";
     public static final String ORG_CODE = "org_code";
+    public static final int SUCH_NAME_ALREADY_EXISTS = 1001;
+    public static final int SAVED_SUCCESSFUL = 1000;
 }

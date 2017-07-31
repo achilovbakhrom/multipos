@@ -27,6 +27,23 @@
     <string name="currency_description">Adding and change main currency</string>
     <string name="units_description">Units which used in system</string>
     <string name="employers_description">Who will work with this POS</string>
+    <string name="registration_details">Registration details</string>
+    <string name="organization_details">Organization details</string>
+    <string name="organization_name">Organization name</string>
+    <string name="email_with_star">Email*</string>
+    <string name="organization_address">Organization Address</string>
+    <string name="zip_code">Zip code</string>
+    <string name="contacts">Contacts</string>
+    <string name="enter_phone_number">enter phone number</string>
+    <string name="founder_login_details">Founder Login details</string>
+    <string name="login_with_start">Login*</string>
+    <string name="password_with_star">Password*</string>
+    <string name="confirm_password_with_star">Confirm password*</string>
+    <string name="mandatory_fields">* - mandatory fields</string>
+    <string name="back">Back</string>
+    <string name="access_token">Access token*</string>
+    <string name="confirm">Confirm</string>
+    <string name="enter_code_access_code">Enter code access code</string>
     <string-array name="start_configuration_title">
         <item>POS details</item>
         <item>Account</item>

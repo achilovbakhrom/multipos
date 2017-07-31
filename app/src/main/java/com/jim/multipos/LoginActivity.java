@@ -4,11 +4,12 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
+import com.jim.multipos.common.BaseActivity;
 import com.jim.multipos.di.HasComponent;
 import com.jim.multipos.di.components.BaseAppComponent;
-import com.jim.multipos.di.components.DaggerMainActivityComponent;
-import com.jim.multipos.di.components.MainActivityComponent;
-import com.jim.multipos.di.modules.MainActivityModule;
+import com.jim.multipos.di.components.DaggerLoginActivityComponent;
+import com.jim.multipos.di.components.LoginActivityComponent;
+import com.jim.multipos.di.modules.LoginActivityModule;
 import com.jim.multipos.registration.fragments.LoginDetailsFragment;
 import com.jim.multipos.managers.PosFragmentManager;
 
@@ -20,9 +21,9 @@ import static android.view.View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
  * Created by DEV on 25.07.2017.
  */
 
-public class LoginActivity extends BaseActivity implements HasComponent<MainActivityComponent> {
+public class LoginActivity extends BaseActivity implements HasComponent<LoginActivityComponent> {
     @Inject PosFragmentManager posFragmentManager;
-    private MainActivityComponent mainActivityComponent;
+    private LoginActivityComponent loginActivityComponent;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,11 +38,11 @@ public class LoginActivity extends BaseActivity implements HasComponent<MainActi
 
     @Override
     protected void setupComponent(BaseAppComponent baseAppComponent) {
-        mainActivityComponent = DaggerMainActivityComponent.builder()
+        loginActivityComponent = DaggerLoginActivityComponent.builder()
                 .baseAppComponent(baseAppComponent)
-                .mainActivityModule(new MainActivityModule(this))
+                .loginActivityModule(new LoginActivityModule(this))
                 .build();
-        mainActivityComponent.inject(this);
+        loginActivityComponent.inject(this);
     }
 
     public void UiChangeListener()
@@ -64,7 +65,7 @@ public class LoginActivity extends BaseActivity implements HasComponent<MainActi
     }
 
     @Override
-    public MainActivityComponent getComponent() {
-        return mainActivityComponent;
+    public LoginActivityComponent getComponent() {
+        return loginActivityComponent;
     }
 }

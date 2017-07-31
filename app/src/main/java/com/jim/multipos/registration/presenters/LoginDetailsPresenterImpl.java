@@ -9,13 +9,13 @@ import javax.inject.Inject;
  * Created by DEV on 31.07.2017.
  */
 
-public class LoginDetailsFragmentPresenterImpl implements LoginDetailsFragmentPresenter {
+public class LoginDetailsPresenterImpl implements LoginDetailsPresenter {
 
     private LoginDetailsFragmentView view;
     private LoginActivity activity;
 
     @Inject
-    public LoginDetailsFragmentPresenterImpl(LoginActivity activity) {
+    public LoginDetailsPresenterImpl(LoginActivity activity) {
         this.activity = activity;
     }
 

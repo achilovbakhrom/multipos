@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/diagonal_lines"
     android:orientation="vertical">
 
@@ -36,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:gravity="center"
-            android:text="Registration details"
+            android:text="@string/registration_details"
             android:textColor="@color/colorWhite"
             android:textSize="18dp"
             android:textStyle="italic" />
@@ -71,7 +72,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Organization details"
+                        android:text="@string/organization_details"
                         android:textColor="@color/colorBlue"
                         android:textSize="18dp" />
 
@@ -84,7 +85,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp"
-                    android:hint="Organization name" />
+                    android:hint="@string/organization_name" />
 
                 <com.jim.mpviews.MpEditText
                     android:id="@+id/etOrgEmail"
@@ -93,7 +94,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp"
-                    android:hint="Email*"
+                    android:hint="@string/email_with_star"
                     android:inputType="textEmailAddress" />
 
                 <com.jim.mpviews.MpEditText
@@ -103,7 +104,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp"
-                    android:hint="Organization Address" />
+                    android:hint="@string/organization_address" />
 
                 <com.jim.mpviews.MpEditText
                     android:id="@+id/etOrgZipCode"
@@ -112,7 +113,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp"
-                    android:hint="Zip code" />
+                    android:hint="@string/zip_code" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -125,7 +126,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Contact"
+                        android:text="@string/contacts"
                         android:textColor="@color/colorBlue"
                         android:textSize="18dp" />
 
@@ -154,7 +155,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
                         android:layout_weight="1"
-                        android:hint="enter phone number" />
+                        android:hint="@string/enter_phone_number" />
 
                     <ImageView
                         android:id="@+id/ivAddContact"
@@ -169,7 +170,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingLeft="30dp"
-                    android:paddingRight="30dp" />
+                    android:paddingRight="30dp"/>
 
 
             </LinearLayout>
@@ -192,7 +193,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Founder Login details"
+                        android:text="@string/founder_login_details"
                         android:textColor="@color/colorBlue"
                         android:textSize="18dp" />
 
@@ -208,7 +209,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp"
-                    android:hint="Login*" />
+                    android:hint="@string/login_with_start" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="match_parent"
@@ -216,7 +217,8 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp"
-                    android:hint="Password*"
+                    android:fontFamily="roboto"
+                    android:hint="@string/password_with_star"
                     android:inputType="textPassword" />
 
                 <com.jim.mpviews.MpEditText
@@ -225,7 +227,8 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp"
-                    android:hint="Confirm password*"
+                    android:fontFamily="roboto"
+                    android:hint="@string/confirm_password_with_star"
                     android:inputType="textPassword" />
 
                 <TextView
@@ -238,8 +241,7 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a Lorem ipsum dolor sit amet"
-                    android:textAlignment="center"
+                    android:text="@string/mandatory_fields"
                     android:textColor="@color/colorSecondaryText" />
 
             </LinearLayout>
@@ -269,7 +271,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:text="Back"
+                android:text="@string/back"
                 android:textColor="@color/colorMainText"
                 android:textSize="16dp" />
 
@@ -282,7 +284,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:text="Registration"
+                android:text="@string/registration"
                 android:textColor="@color/colorBlue"
                 android:textSize="16dp"
                 android:textStyle="bold" />

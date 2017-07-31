@@ -4,7 +4,11 @@ import android.content.Context;
 import android.os.Bundle;
 
 import com.jim.multipos.R;
+import com.jim.multipos.app.MultiPosApp;
+import com.jim.multipos.entity.Contact;
+import com.jim.multipos.managers.DatabaseManager;
 import com.jim.multipos.registration.fragments.RegistrationConfirmFragment;
+import com.jim.multipos.registration.fragments.RegistrationFragmentView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,11 +28,17 @@ public class RegistrationPresenterImpl implements RegistrationPresenter {
     private Context context;
     private RegistrationFragmentView view;
     private String[] contacts;
+    private ArrayList<Contact> list;
+    @Inject
+    DatabaseManager databaseManager;
 
     @Inject
     public RegistrationPresenterImpl(Context context) {
         this.context = context;
-         contacts = new String[]{context.getString(R.string.phone), context.getString(R.string.email)};
+        list = new ArrayList<>();
+        contacts = new String[]{context.getString(R.string.phone), context.getString(R.string.email)};
+        (MultiPosApp.get(context)).getBaseAppComponent().inject(this);
+
     }
 
     @Override
@@ -58,5 +68,14 @@ public class RegistrationPresenterImpl implements RegistrationPresenter {
     @Override
     public void popBackStack() {
         view.popFromBackStack();
+    }
+
+    @Override
+    public void setRecyclerViewItems(String s, String toString) {
+        Contact contact = new Contact();
+        contact.setContactType(s);
+        contact.setContactValue(toString);
+        list.add(contact);
+        view.setRecyclerView(list);
     }
 }
