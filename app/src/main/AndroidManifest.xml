@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FirstConfigure"
+            android:name=".FirstConfigureActivity"
             android:windowSoftInputMode="stateHidden">
         </activity>
     </application>

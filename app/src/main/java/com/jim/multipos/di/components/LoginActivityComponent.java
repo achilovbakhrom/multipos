@@ -24,4 +24,7 @@ public interface LoginActivityComponent {
     void inject(LoginDetailsFragment loginDetailsFragment);
     void inject(RegistrationConfirmFragment confirmFragment);
     void inject(RegistrationFragment registrationFragment);
+    void inject(FirstConfigureLeftSideFragment firstConfigureLeftSideFragment);
+    void inject(FirstConfigureRightSideFragment firstConfigureRightSideFragment);
+    void inject(FirstConfigureActivity firstConfigureActivity);
 }

@@ -1,18 +1,33 @@
-package com.jim.multipos.fragments;
+package com.jim.multipos.first_configure.fragments;
 
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.jim.multipos.BaseFragment;
 import com.jim.multipos.R;
+import com.jim.multipos.di.components.MainActivityComponent;
+import com.jim.multipos.managers.PosFragmentManager;
 
-public class FirstConfigureRightSideFragment extends Fragment {
+import javax.inject.Inject;
+
+public class FirstConfigureRightSideFragment extends BaseFragment {
+    @Inject
+    PosFragmentManager posFragmentManager;
+
     public FirstConfigureRightSideFragment() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        this.getComponent(MainActivityComponent.class).inject(this);
     }
 
     @Override
