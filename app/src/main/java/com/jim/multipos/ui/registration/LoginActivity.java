@@ -8,7 +8,6 @@ import com.jim.multipos.R;
 import com.jim.multipos.common.BaseActivity;
 import com.jim.multipos.ui.HasComponent;
 import com.jim.multipos.di.BaseAppComponent;
-import com.jim.multipos.ui.registration.di.DaggerLoginActivityComponent;
 import com.jim.multipos.ui.registration.di.LoginActivityComponent;
 import com.jim.multipos.ui.registration.di.LoginActivityModule;
 import com.jim.multipos.ui.registration.fragments.LoginDetailsFragment;
@@ -43,10 +42,7 @@ public class LoginActivity extends BaseActivity implements HasComponent<LoginAct
 
     @Override
     protected void setupComponent(BaseAppComponent baseAppComponent) {
-        loginActivityComponent = DaggerLoginActivityComponent.builder()
-                .baseAppComponent(baseAppComponent)
-                .loginActivityModule(new LoginActivityModule(this))
-                .build();
+        loginActivityComponent = baseAppComponent.plus(new LoginActivityModule(this));
         loginActivityComponent.inject(this);
     }
 

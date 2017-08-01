@@ -10,13 +10,15 @@ import com.jim.multipos.ui.registration.fragments.RegistrationFragment;
 
 
 import dagger.Component;
+import dagger.Subcomponent;
 
 /**
  * Created by DEV on 27.07.2017.
  */
 @ActivityScope
-@Component(modules = {LoginActivityModule.class}, dependencies = {BaseAppComponent.class})
+@Subcomponent(modules = {LoginActivityModule.class})
 public interface LoginActivityComponent {
+
     void inject(LoginActivity loginActivity);
     void inject(LoginDetailsFragment loginDetailsFragment);
     void inject(RegistrationConfirmFragment confirmFragment);

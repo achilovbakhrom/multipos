@@ -7,7 +7,6 @@ import com.jim.multipos.common.BaseActivity;
 import com.jim.multipos.common.FirstConfigureFragments;
 import com.jim.multipos.ui.HasComponent;
 import com.jim.multipos.di.BaseAppComponent;
-import com.jim.multipos.ui.first_configure.di.DaggerFirstConfigureActivityComponent;
 import com.jim.multipos.ui.first_configure.di.FirstConfigureActivityModule;
 import com.jim.multipos.ui.first_configure.di.FirstConfigureActivityComponent;
 import com.jim.multipos.ui.first_configure.fragments.FirstConfigureLeftSideFragment;
@@ -43,11 +42,7 @@ public class FirstConfigureActivity extends BaseActivity implements HasComponent
 
     @Override
     protected void setupComponent(BaseAppComponent baseAppComponent) {
-        firstConfigureComponent = DaggerFirstConfigureActivityComponent.builder()
-                .baseAppComponent(baseAppComponent)
-                .firstConfigureActivityModule(new FirstConfigureActivityModule(this))
-                .build();
-
+        firstConfigureComponent = baseAppComponent.plus(new FirstConfigureActivityModule(this));
         firstConfigureComponent.inject(this);
     }
 

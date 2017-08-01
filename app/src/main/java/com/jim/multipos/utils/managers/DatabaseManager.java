@@ -20,7 +20,6 @@ import javax.inject.Inject;
  */
 
 public class DatabaseManager {
-    @Inject
     DaoSession daoSession;
     private ContactDao contactDao;
     private DatabaseHelper helper;
@@ -37,27 +36,27 @@ public class DatabaseManager {
     @Inject
     public DatabaseManager(Context context) {
         this.context = context;
-        ((MultiPosApp) context.getApplicationContext()).getBaseAppComponent().inject(this);
-        contactDao = daoSession.getContactDao();
+//        ((MultiPosApp) context.getApplicationContext()).getBaseAppComponent().inject(this);
+//        contactDao = daoSession.getContactDao();
         helper = new DatabaseHelper(context, Constants.DB_NAME, 1);
         initPragmas();
     }
 
-    public int insertToContact(Contact contact) {
-        Query<Contact> contactQuery = contactDao.queryBuilder()
-                .where(ContactDao.Properties.ContactValue.eq(contact.getContactValue())).build();
-        if (!contactQuery.list().isEmpty())
-            return Constants.SUCH_NAME_ALREADY_EXISTS;
-        contactDao.insertOrReplace(contact);
-        return Constants.SAVED_SUCCESSFUL;
-    }
-
-    public void deleteContact(String contactID) {
-        for (Contact contact1 : contactDao.loadAll()) {
-            if (contact1.getId().matches(contactID))
-                contactDao.delete(contact1);
-        }
-    }
+//    public int insertToContact(Contact contact) {
+//        Query<Contact> contactQuery = contactDao.queryBuilder()
+//                .where(ContactDao.Properties.ContactValue.eq(contact.getContactValue())).build();
+//        if (!contactQuery.list().isEmpty())
+//            return Constants.SUCH_NAME_ALREADY_EXISTS;
+//        contactDao.insertOrReplace(contact);
+//        return Constants.SAVED_SUCCESSFUL;
+//    }
+//
+//    public void deleteContact(String contactID) {
+//        for (Contact contact1 : contactDao.loadAll()) {
+//            if (contact1.getId().matches(contactID))
+//                contactDao.delete(contact1);
+//        }
+//    }
 
     private void initPragmas() {
         execSQL("PRAGMA foreign_keys = ON");

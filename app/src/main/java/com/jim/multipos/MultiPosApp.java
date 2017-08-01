@@ -30,7 +30,6 @@ public class MultiPosApp extends Application {
         appComponent = DaggerBaseAppComponent.builder()
                 .baseAppModule(new BaseAppModule(this))
                 .build();
-        appComponent.inject(this);
     }
 
     public BaseAppComponent getBaseAppComponent() {

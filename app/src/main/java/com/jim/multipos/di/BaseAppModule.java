@@ -46,8 +46,8 @@ public class BaseAppModule {
 
     @Provides
     @Singleton
-    public DatabaseManager getDatabaseManager() {
-        return new DatabaseManager(app.getApplicationContext());
+    public DatabaseManager getDatabaseManager(Application application) {
+        return new DatabaseManager(application.getBaseContext());
     }
 
 }
