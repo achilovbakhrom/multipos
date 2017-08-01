@@ -6,13 +6,10 @@ import com.google.gson.Gson;
 import com.jim.multipos.entity.DbCache;
 import com.jim.multipos.entity.Entity;
 import com.jim.multipos.entity.nomenclature.Nomenclature;
-import com.jim.multipos.managers.DatabaseManager;
+import com.jim.multipos.utils.managers.DatabaseManager;
 import com.jim.multipos.utils.CommonUtils;
 
-import org.apache.commons.collections4.CollectionUtils;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 

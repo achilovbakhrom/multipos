@@ -8,19 +8,15 @@
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
 
     <application
-        android:name=".app.MultiPosApp"
+        android:name=".MultiPosApp"
         android:allowBackup="true"
         android:icon="@drawable/multi_pos"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".online_authentication.MPAuthenticationActivity">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.registration.LoginActivity"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,13 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MultiPOSMainTest">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity
-            android:name=".FirstConfigureActivity"
+            android:name=".ui.first_configure.FirstConfigureActivity"
             android:windowSoftInputMode="stateHidden">
         </activity>
     </application>

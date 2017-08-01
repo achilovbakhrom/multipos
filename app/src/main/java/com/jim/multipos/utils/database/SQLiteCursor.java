@@ -2,8 +2,6 @@ package com.jim.multipos.utils.database;
 
 import android.util.Log;
 
-import com.jim.multipos.managers.DatabaseManager;
-
 import java.util.Map;
 
 public class SQLiteCursor {

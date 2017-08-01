@@ -10,7 +10,7 @@ import com.jim.multipos.entity.nomenclature.ingridient.CompoundNomenclature;
 import com.jim.multipos.entity.nomenclature.ingridient.Ingridient;
 import com.jim.multipos.entity.nomenclature.matrix.Attribute;
 import com.jim.multipos.entity.nomenclature.matrix.Matrix;
-import com.jim.multipos.managers.DatabaseManager;
+import com.jim.multipos.utils.managers.DatabaseManager;
 import com.jim.multipos.utils.database.SQLiteCursor;
 import com.jim.multipos.utils.database.SQLiteException;
 

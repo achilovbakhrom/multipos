@@ -23,7 +23,16 @@ public class Utils {
         float px = dp * (metrics.densityDpi / 160f);
         return Math.round(px);
     }
-
+    public static float convertDpToPixel(float dp, Context context){
+        Resources resources = context.getResources();
+        DisplayMetrics metrics = resources.getDisplayMetrics();
+        float px = dp * ((float)metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT);
+        return px;
+    }
+    public static int dpToPx(int dp)
+    {
+        return (int) (dp * Resources.getSystem().getDisplayMetrics().density);
+    }
     public static int getScreenWidth(Context context) {
         return getPointSize(context).x;
     }

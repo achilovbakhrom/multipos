@@ -5,8 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.jim.multipos.app.MultiPosApp;
-import com.jim.multipos.di.components.BaseAppComponent;
+import com.jim.multipos.MultiPosApp;
+import com.jim.multipos.di.BaseAppComponent;
 
 /**
  * Created by user on 26.07.17.

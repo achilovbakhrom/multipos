@@ -4,7 +4,7 @@ package com.jim.multipos.entity.nomenclature;
 import android.content.Context;
 
 import com.jim.multipos.entity.Entity;
-import com.jim.multipos.managers.DatabaseManager;
+import com.jim.multipos.utils.managers.DatabaseManager;
 import com.jim.multipos.utils.database.SQLiteCursor;
 import com.jim.multipos.utils.database.SQLiteException;
 

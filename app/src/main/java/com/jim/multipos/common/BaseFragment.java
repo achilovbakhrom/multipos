@@ -2,7 +2,7 @@ package com.jim.multipos.common;
 
 import android.support.v4.app.Fragment;
 
-import com.jim.multipos.di.HasComponent;
+import com.jim.multipos.ui.HasComponent;
 
 /**
  * Created by DEV on 27.07.2017.

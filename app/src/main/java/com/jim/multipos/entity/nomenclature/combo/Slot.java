@@ -5,7 +5,7 @@ import android.content.Context;
 import com.google.gson.Gson;
 import com.jim.multipos.entity.DbCache;
 import com.jim.multipos.entity.Entity;
-import com.jim.multipos.managers.DatabaseManager;
+import com.jim.multipos.utils.managers.DatabaseManager;
 
 import java.util.HashMap;
 import java.util.List;

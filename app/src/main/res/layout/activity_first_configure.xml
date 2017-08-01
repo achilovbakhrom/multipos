@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jim.multipos.FirstConfigureActivity">
+    tools:context=".ui.first_configure.FirstConfigureActivity">
 
     <com.jim.mpviews.MpToolbar
         android:layout_width="match_parent"
