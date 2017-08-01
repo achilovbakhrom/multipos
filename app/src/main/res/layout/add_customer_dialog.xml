@@ -79,8 +79,8 @@
             android:orientation="horizontal">
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="60dp"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
                 android:gravity="center"
                 android:text="Cancel"
                 android:textColor="@color/colorSecondaryText"
@@ -88,8 +88,8 @@
 
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="60dp"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
                 android:gravity="center"
                 android:text="Add"
                 android:textColor="@color/colorDarkGreenSecond"

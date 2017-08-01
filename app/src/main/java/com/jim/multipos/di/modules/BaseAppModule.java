@@ -1,9 +1,7 @@
 package com.jim.multipos.di.modules;
 
 import android.app.Application;
-import android.content.Context;
 
-import com.jim.multipos.LoginActivity;
 import com.jim.multipos.app.MultiPosApp;
 import com.jim.multipos.entity.DaoMaster;
 import com.jim.multipos.entity.DaoSession;

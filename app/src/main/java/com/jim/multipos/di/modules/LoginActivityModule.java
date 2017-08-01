@@ -1,11 +1,17 @@
 package com.jim.multipos.di.modules;
 
 
-import com.jim.multipos.LoginActivity;
+import com.jim.multipos.views.LoginActivity;
+import com.jim.multipos.di.ActivityScope;
 import com.jim.multipos.managers.PosFragmentManager;
+import com.jim.multipos.registration.presenters.LoginDetailsPresenter;
 import com.jim.multipos.registration.presenters.LoginDetailsPresenterImpl;
+import com.jim.multipos.registration.presenters.RegistrationConfirmPresenter;
 import com.jim.multipos.registration.presenters.RegistrationConfirmPresenterImpl;
+import com.jim.multipos.registration.presenters.RegistrationPresenter;
 import com.jim.multipos.registration.presenters.RegistrationPresenterImpl;
+import com.jim.multipos.views.LoginPresenter;
+import com.jim.multipos.views.LoginPresenterImpl;
 
 
 import dagger.Module;
@@ -23,28 +29,38 @@ public class LoginActivityModule {
     }
 
     @Provides
+    @ActivityScope
     public LoginActivity getActivity() {
         return activity;
     }
 
     @Provides
+    @ActivityScope
     public PosFragmentManager getFragmentManager(LoginActivity activity) {
         return new PosFragmentManager(activity);
     }
 
-
     @Provides
-    public RegistrationPresenterImpl getRegistrationPresenter(LoginActivity activity) {
-        return new RegistrationPresenterImpl(activity);
+    @ActivityScope
+    public LoginPresenter getLoginPresenter(LoginActivity loginActivity){
+        return new LoginPresenterImpl(loginActivity);
     }
 
     @Provides
-    public LoginDetailsPresenterImpl getLoginDetailsFragmentPresenter(LoginActivity activity){
-        return new LoginDetailsPresenterImpl(activity);
+    @ActivityScope
+    public RegistrationPresenter getRegistrationPresenter() {
+        return new RegistrationPresenterImpl();
     }
 
     @Provides
-    public RegistrationConfirmPresenterImpl getRegistrationConfirmPresenter(LoginActivity activity){
-        return new RegistrationConfirmPresenterImpl(activity);
+    @ActivityScope
+    public LoginDetailsPresenter getLoginDetailsFragmentPresenter(){
+        return new LoginDetailsPresenterImpl();
+    }
+
+    @Provides
+    @ActivityScope
+    public RegistrationConfirmPresenter getRegistrationConfirmPresenter(){
+        return new RegistrationConfirmPresenterImpl();
     }
 }

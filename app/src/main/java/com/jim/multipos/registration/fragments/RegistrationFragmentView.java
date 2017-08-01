@@ -13,4 +13,5 @@ public interface RegistrationFragmentView {
     void displayFragment(RegistrationConfirmFragment confirmFragment);
     void popFromBackStack();
     void setRecyclerView(ArrayList<Contact> contacts);
+    void sendData();
 }

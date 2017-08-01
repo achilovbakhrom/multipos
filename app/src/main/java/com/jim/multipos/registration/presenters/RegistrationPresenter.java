@@ -9,8 +9,9 @@ import com.jim.multipos.registration.fragments.RegistrationFragmentView;
  */
 
 public interface RegistrationPresenter extends BaseFragmentPresenter<RegistrationFragmentView> {
-    void setItems();
+    void setItems(String[] items);
     void displayFragment(String name, String address, String email, String code);
     void popBackStack();
+    void wrapData();
     void setRecyclerViewItems(String s, String toString);
 }

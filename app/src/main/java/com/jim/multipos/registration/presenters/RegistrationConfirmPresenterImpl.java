@@ -1,7 +1,6 @@
 package com.jim.multipos.registration.presenters;
 
 
-import com.jim.multipos.LoginActivity;
 import com.jim.multipos.registration.fragments.RegistrationConfirmFragmentView;
 
 /**
@@ -9,12 +8,10 @@ import com.jim.multipos.registration.fragments.RegistrationConfirmFragmentView;
  */
 
 public class RegistrationConfirmPresenterImpl implements RegistrationConfirmPresenter {
-    private LoginActivity activity;
     private RegistrationConfirmFragmentView view;
 
-    public RegistrationConfirmPresenterImpl(LoginActivity activity) {
-        this.activity = activity;
-    }
+    public RegistrationConfirmPresenterImpl() {
+            }
 
     @Override
     public void init(RegistrationConfirmFragmentView view) {
@@ -32,6 +29,6 @@ public class RegistrationConfirmPresenterImpl implements RegistrationConfirmPres
 
     @Override
     public void back() {
-        view.onBackPressed();
+        view.onBack();
     }
 }

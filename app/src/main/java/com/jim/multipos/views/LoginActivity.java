@@ -1,9 +1,10 @@
-package com.jim.multipos;
+package com.jim.multipos.views;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
+import com.jim.multipos.R;
 import com.jim.multipos.common.BaseActivity;
 import com.jim.multipos.di.HasComponent;
 import com.jim.multipos.di.components.BaseAppComponent;
@@ -12,6 +13,8 @@ import com.jim.multipos.di.components.LoginActivityComponent;
 import com.jim.multipos.di.modules.LoginActivityModule;
 import com.jim.multipos.registration.fragments.LoginDetailsFragment;
 import com.jim.multipos.managers.PosFragmentManager;
+import com.jim.multipos.registration.fragments.RegistrationConfirmFragment;
+import com.jim.multipos.registration.fragments.RegistrationFragment;
 
 import javax.inject.Inject;
 
@@ -21,8 +24,9 @@ import static android.view.View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
  * Created by DEV on 25.07.2017.
  */
 
-public class LoginActivity extends BaseActivity implements HasComponent<LoginActivityComponent> {
+public class LoginActivity extends BaseActivity implements HasComponent<LoginActivityComponent>, LoginView {
     @Inject PosFragmentManager posFragmentManager;
+    @Inject LoginPresenter presenter;
     private LoginActivityComponent loginActivityComponent;
 
     @Override
@@ -33,7 +37,8 @@ public class LoginActivity extends BaseActivity implements HasComponent<LoginAct
         int uiOptions = View.SYSTEM_UI_FLAG_IMMERSIVE | SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
         decorView.setSystemUiVisibility(uiOptions);
         UiChangeListener();
-        posFragmentManager.displayFragment(new LoginDetailsFragment(), R.id.loginFragment);
+        presenter.openLoginDetails();
+
     }
 
     @Override
@@ -67,5 +72,25 @@ public class LoginActivity extends BaseActivity implements HasComponent<LoginAct
     @Override
     public LoginActivityComponent getComponent() {
         return loginActivityComponent;
+    }
+
+    @Override
+    public void openLoginDetails() {
+        posFragmentManager.displayFragment(new LoginDetailsFragment(), R.id.loginFragment);
+    }
+
+    @Override
+    public void openRegistration() {
+        posFragmentManager.displayFragment(new RegistrationFragment(), R.id.loginFragment);
+    }
+
+    @Override
+    public void openRegistrationConfirm() {
+        posFragmentManager.displayFragment(new RegistrationConfirmFragment(), R.id.loginFragment);
+    }
+
+    @Override
+    public void popFromBackStack() {
+        posFragmentManager.popBackStack();
     }
 }

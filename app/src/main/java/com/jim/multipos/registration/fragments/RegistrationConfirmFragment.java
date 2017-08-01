@@ -1,7 +1,10 @@
 package com.jim.multipos.registration.fragments;
 
+import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,13 +16,20 @@ import com.jim.multipos.common.BaseFragment;
 import com.jim.multipos.R;
 import com.jim.multipos.di.components.LoginActivityComponent;
 import com.jim.multipos.managers.PosFragmentManager;
+import com.jim.multipos.registration.presenters.RegistrationConfirmPresenter;
 import com.jim.multipos.registration.presenters.RegistrationConfirmPresenterImpl;
+import com.jim.multipos.views.LoginActivity;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
+import static com.jim.multipos.utils.Constants.ORG_ADDRESS;
+import static com.jim.multipos.utils.Constants.ORG_CODE;
+import static com.jim.multipos.utils.Constants.ORG_EMAIL;
+import static com.jim.multipos.utils.Constants.ORG_NAME;
 
 /**
  * Created by DEV on 26.07.2017.
@@ -29,7 +39,9 @@ public class RegistrationConfirmFragment extends BaseFragment implements Registr
     @Inject
     PosFragmentManager posFragmentManager;
     @Inject
-    RegistrationConfirmPresenterImpl presenter;
+    RegistrationConfirmPresenter presenter;
+    @Inject
+    LoginActivity activity;
     @BindView(R.id.btnBack)
     MpButton btnBack;
     @BindView(R.id.btnConfirm)
@@ -51,13 +63,14 @@ public class RegistrationConfirmFragment extends BaseFragment implements Registr
         ButterKnife.bind(this, rootView);
         this.getComponent(LoginActivityComponent.class).inject(this);
         presenter.init(this);
+        if (getArguments() != null) {
+            tvOrgName.setText(getArguments().getString(ORG_NAME));
+            tvOrgName.setPaintFlags(tvOrgName.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+            tvOrgAddress.setText(getArguments().getString(ORG_ADDRESS));
+            tvOrgEmail.setText(getArguments().getString(ORG_EMAIL));
+            tvOrgZipCode.setText(getArguments().getString(ORG_CODE));
+        }
         return rootView;
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
     }
 
     @OnClick(R.id.btnBack)
@@ -87,7 +100,7 @@ public class RegistrationConfirmFragment extends BaseFragment implements Registr
     }
 
     @Override
-    public void onBackPressed() {
-        posFragmentManager.popBackStack();
+    public void onBack() {
+        activity.popFromBackStack();
     }
 }

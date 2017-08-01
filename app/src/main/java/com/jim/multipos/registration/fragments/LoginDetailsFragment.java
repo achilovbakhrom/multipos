@@ -11,7 +11,9 @@ import com.jim.multipos.common.BaseFragment;
 import com.jim.multipos.R;
 import com.jim.multipos.di.components.LoginActivityComponent;
 import com.jim.multipos.managers.PosFragmentManager;
+import com.jim.multipos.registration.presenters.LoginDetailsPresenter;
 import com.jim.multipos.registration.presenters.LoginDetailsPresenterImpl;
+import com.jim.multipos.views.LoginActivity;
 
 import javax.inject.Inject;
 
@@ -29,7 +31,9 @@ public class LoginDetailsFragment extends BaseFragment implements LoginDetailsFr
     @Inject
     PosFragmentManager posFragmentManager;
     @Inject
-    LoginDetailsPresenterImpl presenter;
+    LoginDetailsPresenter presenter;
+    @Inject
+    LoginActivity activity;
     @BindView(R.id.btnLogin)
     MpButton btnLogin;
     @BindView(R.id.btnRegistration)
@@ -58,7 +62,8 @@ public class LoginDetailsFragment extends BaseFragment implements LoginDetailsFr
 
     @Override
     public void onRegistration() {
-        posFragmentManager.displayFragment(new RegistrationFragment(), R.id.loginFragment);
+        activity.openRegistration();
+//        posFragmentManager.displayFragment(new RegistrationFragment(), R.id.loginFragment);
     }
 
     @Override

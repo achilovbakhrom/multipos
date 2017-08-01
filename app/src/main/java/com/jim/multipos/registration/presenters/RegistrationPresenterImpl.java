@@ -25,20 +25,12 @@ import static com.jim.multipos.utils.Constants.ORG_NAME;
  */
 
 public class RegistrationPresenterImpl implements RegistrationPresenter {
-    private Context context;
     private RegistrationFragmentView view;
-    private String[] contacts;
     private ArrayList<Contact> list;
-    @Inject
-    DatabaseManager databaseManager;
 
     @Inject
-    public RegistrationPresenterImpl(Context context) {
-        this.context = context;
+    public RegistrationPresenterImpl() {
         list = new ArrayList<>();
-        contacts = new String[]{context.getString(R.string.phone), context.getString(R.string.email)};
-        (MultiPosApp.get(context)).getBaseAppComponent().inject(this);
-
     }
 
     @Override
@@ -47,7 +39,7 @@ public class RegistrationPresenterImpl implements RegistrationPresenter {
     }
 
     @Override
-    public void setItems() {
+    public void setItems(String[] contacts) {
         ArrayList<String> list = new ArrayList<>();
         list.addAll(Arrays.asList(contacts));
         view.setSpinnerItems(list);
@@ -68,6 +60,11 @@ public class RegistrationPresenterImpl implements RegistrationPresenter {
     @Override
     public void popBackStack() {
         view.popFromBackStack();
+    }
+
+    @Override
+    public void wrapData() {
+        view.sendData();
     }
 
     @Override

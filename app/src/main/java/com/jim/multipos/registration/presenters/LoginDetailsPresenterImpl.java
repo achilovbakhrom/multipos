@@ -1,6 +1,5 @@
 package com.jim.multipos.registration.presenters;
 
-import com.jim.multipos.LoginActivity;
 import com.jim.multipos.registration.fragments.LoginDetailsFragmentView;
 
 import javax.inject.Inject;
@@ -12,11 +11,9 @@ import javax.inject.Inject;
 public class LoginDetailsPresenterImpl implements LoginDetailsPresenter {
 
     private LoginDetailsFragmentView view;
-    private LoginActivity activity;
 
     @Inject
-    public LoginDetailsPresenterImpl(LoginActivity activity) {
-        this.activity = activity;
+    public LoginDetailsPresenterImpl() {
     }
 
     @Override

@@ -7,5 +7,5 @@ package com.jim.multipos.registration.fragments;
 public interface RegistrationConfirmFragmentView {
     void onConfirm();
     void checkToken();
-    void onBackPressed();
+    void onBack();
 }

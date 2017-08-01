@@ -212,33 +212,36 @@
 
             <com.jim.mpviews.MpButton
                 android:id="@+id/mpCancelBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
                 android:layout_alignParentBottom="true"
                 android:gravity="center"
                 android:text="Cancel"
+                android:textSize="18dp"
                 android:textColor="@color/colorSecondaryText" />
 
 
             <com.jim.mpviews.MpButton
                 android:id="@+id/mpMembersBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
                 android:layout_alignParentBottom="true"
                 android:layout_toEndOf="@id/mpCancelBtn"
                 android:gravity="center"
                 android:text="Members"
+                android:textSize="18dp"
                 android:textColor="@color/colorBlue"
                 android:textStyle="bold" />
 
             <com.jim.mpviews.MpButton
                 android:id="@+id/mpSaveBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
                 android:layout_alignParentBottom="true"
                 android:layout_toEndOf="@id/mpMembersBtn"
                 android:gravity="center"
                 android:text="Save"
+                android:textSize="18dp"
                 android:textColor="@color/colorBlue"
                 android:textStyle="bold" />
 

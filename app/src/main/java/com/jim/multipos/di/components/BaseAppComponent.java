@@ -23,6 +23,4 @@ public interface BaseAppComponent {
     DaoSession getDaoSession();
     void inject(MultiPosApp multiPosApp);
     void inject(DatabaseManager databaseManager);
-    void inject(RegistrationPresenterImpl registrationPresenter);
-    void inject(ContactsAdapter contactsAdapter);
 }

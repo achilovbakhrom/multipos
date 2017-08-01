@@ -1,6 +1,6 @@
 package com.jim.multipos.di.components;
 
-import com.jim.multipos.LoginActivity;
+import com.jim.multipos.views.LoginActivity;
 import com.jim.multipos.di.ActivityScope;
 import com.jim.multipos.di.modules.LoginActivityModule;
 import com.jim.multipos.registration.fragments.LoginDetailsFragment;

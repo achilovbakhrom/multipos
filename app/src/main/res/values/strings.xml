@@ -44,6 +44,10 @@
     <string name="access_token">Access token*</string>
     <string name="confirm">Confirm</string>
     <string name="enter_code_access_code">Enter code access code</string>
+    <string name="enter_organization_email">Enter organization mail</string>
+    <string name="email_">Email:</string>
+    <string name="address_">Address</string>
+    <string name="zip_code_">Zip Code</string>
     <string-array name="start_configuration_title">
         <item>POS details</item>
         <item>Account</item>
