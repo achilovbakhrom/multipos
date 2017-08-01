@@ -1,4 +1,4 @@
-package com.jim.multipos.first_configure.presenters;
+package com.jim.multipos.first_configure.fragments;
 
 import com.jim.multipos.first_configure.fragments.FirstConfigureLeftSideFragment;
 

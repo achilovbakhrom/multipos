@@ -1,8 +1,5 @@
 package com.jim.multipos.di.components;
 
-import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
-
 import com.jim.multipos.LoginActivity;
 import com.jim.multipos.di.ActivityScope;
 import com.jim.multipos.di.modules.LoginActivityModule;
@@ -24,7 +21,4 @@ public interface LoginActivityComponent {
     void inject(LoginDetailsFragment loginDetailsFragment);
     void inject(RegistrationConfirmFragment confirmFragment);
     void inject(RegistrationFragment registrationFragment);
-    void inject(FirstConfigureLeftSideFragment firstConfigureLeftSideFragment);
-    void inject(FirstConfigureRightSideFragment firstConfigureRightSideFragment);
-    void inject(FirstConfigureActivity firstConfigureActivity);
 }

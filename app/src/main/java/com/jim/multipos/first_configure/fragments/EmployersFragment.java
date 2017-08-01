@@ -12,10 +12,10 @@ import com.jim.multipos.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AccountFragment extends Fragment {
+public class EmployersFragment extends Fragment {
 
 
-    public AccountFragment() {
+    public EmployersFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class AccountFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.account_fragment, container, false);
+        return inflater.inflate(R.layout.employer_settings_fragment, container, false);
     }
 
 }
