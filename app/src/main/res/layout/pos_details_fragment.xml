@@ -3,16 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorBackgroundGrey"
-        android:orientation="vertical">
 
 
         <LinearLayout
+            android:background="@color/colorBackgroundGrey"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -54,7 +50,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="165dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="20dp"
                     android:gravity="right"
@@ -82,7 +78,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="400dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="20dp"
                     android:gravity="left"
@@ -112,7 +108,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="400dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="20dp"
                     android:gravity="left"
@@ -142,7 +138,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="400dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="20dp"
                     android:gravity="left"
@@ -172,7 +168,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="400dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="20dp"
                     android:gravity="left"
@@ -182,40 +178,34 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                >
 
-        <FrameLayout
-            android:layout_width="25px"
-            android:layout_height="match_parent"
-            android:background="@drawable/left_fade" />
+                <com.jim.mpviews.MpButton
+                    android:layout_width="180dp"
+                    android:layout_height="70dp"
+                    android:textSize="18dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/revert"
+                    android:textColor="@color/colorMainText" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:gravity="right"
-            android:orientation="horizontal"
-            android:paddingBottom="20dp"
-            android:paddingRight="20dp"
+                <com.jim.mpviews.MpButton
+                    android:layout_width="180dp"
+                    android:layout_height="70dp"
+                    android:textSize="18dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/next"
+                    android:textColor="@color/colorBlue" />
 
-            >
+            </LinearLayout>
 
-            <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="15dp"
-                android:text="@string/revert"
-                android:textColor="@color/colorMainText" />
-
-            <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="15dp"
-                android:text="@string/next"
-                android:textColor="@color/colorBlue" />
 
         </LinearLayout>
-    </RelativeLayout>
-
 
 </LinearLayout>
