@@ -16,17 +16,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="@dimen/eighty_dp"
                 android:background="#ffffff"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp">
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/five_dp"
                     android:text="Management Item Mode"
                     android:textColor="#419fd9" />
 
@@ -41,37 +41,37 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="2px"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="@dimen/twenty_five_dp"
                 android:background="@color/colorTextHint" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="@dimen/sixty_dp"
+                    android:layout_marginRight="@dimen/fifty_dp"
                     android:layout_weight="1"
                     android:gravity="left"
                     android:text="SKU"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:layout_weight="2"
                     android:gravity="left"
                     android:text="Product name"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
 
             </LinearLayout>
@@ -79,50 +79,50 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginBottom="25dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginBottom="@dimen/twenty_five_dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
+                android:layout_marginRight="@dimen/sixty_dp"
                 android:background="#e4e4e4" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/fifty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:background="@drawable/edit_text_bg"
                     android:drawableRight="@drawable/barcode"
                     android:drawableTint="@color/colorTextHint"
                     android:hint="Number"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:textColorHint="@color/colorTextHint"
                     android:textSize="16dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:drawableRight="@drawable/search"
                     android:drawableTint="@color/colorTextHint"
                     android:gravity="center_vertical"
                     android:hint="Name"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:textColorHint="@color/colorTextHint"
                     android:textSize="16dp" />
 
@@ -130,14 +130,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="@dimen/twenty_dp"
                     android:src="@drawable/dots" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:src="@drawable/add_round" />
 
 
@@ -155,17 +155,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="45dp"
+            android:layout_marginBottom="@dimen/forty_five_dp"
             android:gravity="right"
             android:orientation="horizontal"
-
             >
 
             <com.jim.mpviews.MpButton
-                android:layout_width="160dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_width="@dimen/hundred_sixty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginLeft="@dimen/twenty_dp"
+                android:layout_marginRight="@dimen/ten_dp"
                 android:background="@drawable/button_bg"
                 android:gravity="center"
                 android:text="Cancel"
@@ -173,26 +172,25 @@
                 android:textSize="16dp" />
 
             <com.jim.mpviews.MpButton
-                android:layout_width="160dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="10dp"
+                android:layout_width="@dimen/hundred_sixty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginRight="@dimen/ten_dp"
                 android:background="@drawable/button_bg"
                 android:gravity="center"
                 android:text="Products: 6"
                 android:textColor="@color/colorBlue"
-                android:textSize="16dp" />
+                android:textSize="@dimen/sixteen_dp" />
 
 
             <com.jim.mpviews.MpButton
-                android:layout_width="160dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="20dp"
+                android:layout_width="@dimen/hundred_sixty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginRight="@dimen/twenty_dp"
                 android:background="@drawable/button_bg"
                 android:gravity="center"
                 android:text="Save"
                 android:textColor="@color/colorBlue"
-                android:textSize="16dp" />
-
+                android:textSize="@dimen/sixteen_dp" />
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>

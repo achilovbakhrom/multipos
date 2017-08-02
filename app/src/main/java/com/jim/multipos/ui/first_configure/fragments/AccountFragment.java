@@ -8,11 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.jim.multipos.R;
+import com.jim.multipos.common.BaseFragment;
+import com.jim.multipos.common.FirstConfigureFragments;
+
+import java.util.HashMap;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AccountFragment extends Fragment {
+public class AccountFragment extends FirstConfigureFragments implements AccountFragmentView {
 
 
     public AccountFragment() {
@@ -27,4 +31,13 @@ public class AccountFragment extends Fragment {
         return inflater.inflate(R.layout.account_fragment, container, false);
     }
 
+    @Override
+    public void checkDatasComplete() {
+
+    }
+
+    @Override
+    public HashMap<String, String> getDatas() {
+        return null;
+    }
 }

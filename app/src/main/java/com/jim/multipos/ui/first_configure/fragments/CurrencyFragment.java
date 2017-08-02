@@ -8,11 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.jim.multipos.R;
+import com.jim.multipos.common.FirstConfigureFragments;
+
+import java.util.HashMap;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CurrencyFragment extends Fragment {
+public class CurrencyFragment extends FirstConfigureFragments implements CurrencyFragmentView {
 
 
     public CurrencyFragment() {
@@ -27,4 +30,13 @@ public class CurrencyFragment extends Fragment {
         return inflater.inflate(R.layout.currency_fragment, container, false);
     }
 
+    @Override
+    public void checkDatasComplete() {
+
+    }
+
+    @Override
+    public HashMap<String, String> getDatas() {
+        return null;
+    }
 }

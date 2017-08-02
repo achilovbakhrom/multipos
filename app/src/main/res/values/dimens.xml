@@ -90,7 +90,11 @@
     <dimen name="hundred_ninety_dp">190dp</dimen>
     <dimen name="hundred_ninety_five_dp">195dp</dimen>
     <dimen name="two_hundred_dp">200dp</dimen>
+    <dimen name="two_hundred_thirty">230dp</dimen>
+    <dimen name="two_hundred_sixty">260dp</dimen>
     <dimen name="three_hundred_dp">300dp</dimen>
     <dimen name="three_hundred_fifty_dp">350dp</dimen>
     <dimen name="three_hundred_eighty_dp">380dp</dimen>
+    <dimen name="four_hundred_sixty_dp">460dp</dimen>
+    <dimen name="five_hundred_twenty_dp">520dp</dimen>
 </resources>

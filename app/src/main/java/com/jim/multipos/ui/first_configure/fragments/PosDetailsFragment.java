@@ -8,13 +8,16 @@ import android.view.ViewGroup;
 
 import com.jim.multipos.R;
 import com.jim.multipos.common.BaseFragment;
+import com.jim.multipos.common.FirstConfigureFragments;
 import com.jim.multipos.ui.first_configure.di.FirstConfigureActivityComponent;
 import com.jim.multipos.ui.first_configure.presenters.PosFragmentPresenter;
 import com.jim.multipos.utils.managers.PosFragmentManager;
 
+import java.util.HashMap;
+
 import javax.inject.Inject;
 
-public class PosDetailsFragment extends BaseFragment implements PosDetailsFragmentView {
+public class PosDetailsFragment extends FirstConfigureFragments implements PosDetailsFragmentView {
     @Inject
     PosFragmentManager posFragmentManager;
     @Inject
@@ -49,5 +52,15 @@ public class PosDetailsFragment extends BaseFragment implements PosDetailsFragme
     @Override
     public void popFromBackStack() {
         posFragmentManager.popBackStack();
+    }
+
+    @Override
+    public void checkDatasComplete() {
+
+    }
+
+    @Override
+    public HashMap<String, String> getDatas() {
+        return null;
     }
 }

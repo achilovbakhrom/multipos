@@ -18,15 +18,16 @@
         <activity
             android:name=".ui.registration.LoginActivity"
             android:windowSoftInputMode="stateHidden">
+
+        </activity>
+        <activity
+            android:name=".ui.first_configure.FirstConfigureActivity"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".ui.first_configure.FirstConfigureActivity"
-            android:windowSoftInputMode="stateHidden">
         </activity>
     </application>
 

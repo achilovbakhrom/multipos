@@ -28,6 +28,14 @@ public class PosFragmentManager {
                 .commit();
     }
 
+    public void replaceFragment(Fragment fragment, int id) {
+        fragmentManager
+                .beginTransaction()
+                .addToBackStack(null)
+                .replace(id, fragment)
+                .commit();
+    }
+
     public void popBackStack() {
         fragmentManager.popBackStack();
     }

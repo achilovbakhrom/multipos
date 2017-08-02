@@ -9,35 +9,41 @@ import com.jim.multipos.ui.HasComponent;
 import com.jim.multipos.di.BaseAppComponent;
 import com.jim.multipos.ui.first_configure.di.FirstConfigureActivityModule;
 import com.jim.multipos.ui.first_configure.di.FirstConfigureActivityComponent;
+import com.jim.multipos.ui.first_configure.fragments.AccountFragment;
+import com.jim.multipos.ui.first_configure.fragments.CurrencyFragment;
+import com.jim.multipos.ui.first_configure.fragments.EmployersFragment;
 import com.jim.multipos.ui.first_configure.fragments.FirstConfigureLeftSideFragment;
+import com.jim.multipos.ui.first_configure.fragments.PaymentTypeFragment;
 import com.jim.multipos.ui.first_configure.fragments.PosDetailsFragment;
+import com.jim.multipos.ui.first_configure.fragments.UnitsFragment;
 import com.jim.multipos.utils.managers.PosFragmentManager;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.inject.Inject;
 
-public class FirstConfigureActivity extends BaseActivity implements HasComponent<FirstConfigureActivityComponent>{
-    /*private FrameLayout leftContainer;
-    private FrameLayout rightContainer;*/
+public class FirstConfigureActivity extends BaseActivity implements HasComponent<FirstConfigureActivityComponent>, FirstConfigureView {
     @Inject
     PosFragmentManager posFragmentManager;
     private FirstConfigureActivityComponent firstConfigureComponent;
-    ArrayList<FirstConfigureFragments> firstConfigureFragments;
+    List<FirstConfigureFragments> firstConfigureFragments;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_configure);
-        /*leftContainer = (Fr0 findViewById(R.id.leftContainer);
-        rightContainer = (Fra0findViewById(R.id.rightContainer);
 
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.leftContainer, new FirstConfigureLeftSideFragment())
-                .add(R.id.rightContainer, new PosDetailsFragment())
-                .commit();*/
+        firstConfigureFragments = new ArrayList<>();
+        firstConfigureFragments.add(new PosDetailsFragment());
+        firstConfigureFragments.add(new AccountFragment());
+        firstConfigureFragments.add(new PaymentTypeFragment());
+        firstConfigureFragments.add(new CurrencyFragment());
+        firstConfigureFragments.add(new UnitsFragment());
+        firstConfigureFragments.add(new EmployersFragment());
 
-        posFragmentManager.displayFragment(new FirstConfigureLeftSideFragment(), R.id.leftContainer);
-        posFragmentManager.displayFragment(new PosDetailsFragment(), R.id.rightContainer);
+        posFragmentManager.replaceFragment(new FirstConfigureLeftSideFragment(), R.id.leftContainer);
+        posFragmentManager.replaceFragment(firstConfigureFragments.get(0), R.id.rightContainer);
     }
 
     @Override
@@ -49,5 +55,10 @@ public class FirstConfigureActivity extends BaseActivity implements HasComponent
     @Override
     public FirstConfigureActivityComponent getComponent() {
         return firstConfigureComponent;
+    }
+
+    @Override
+    public void replaceFragment(int position) {
+        posFragmentManager.replaceFragment(firstConfigureFragments.get(position), R.id.rightContainer);
     }
 }

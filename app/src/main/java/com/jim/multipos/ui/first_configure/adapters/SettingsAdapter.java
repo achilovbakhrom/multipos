@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.jakewharton.rxbinding2.view.RxView;
 import com.jim.multipos.R;
+import com.jim.multipos.ui.first_configure.FirstConfigureActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -24,14 +25,14 @@ import io.reactivex.disposables.Disposable;
  */
 
 public class SettingsAdapter extends RecyclerView.Adapter<SettingsAdapter.ViewHolder> {
-    private Context context;
+    private FirstConfigureActivity activity;
     private String[] title;
     private String[] description;
     private int prevPosition;
 
-    public SettingsAdapter(Context context) {
-        this.context = context;
-        Resources resource = context.getResources();
+    public SettingsAdapter(FirstConfigureActivity activity) {
+        this.activity = activity;
+        Resources resource = activity.getResources();
         title = resource.getStringArray(R.array.start_configuration_title);
         description = resource.getStringArray(R.array.start_configuration_desctiption);
         prevPosition = 0;
@@ -50,11 +51,11 @@ public class SettingsAdapter extends RecyclerView.Adapter<SettingsAdapter.ViewHo
 
         if (prevPosition == position) {
             holder.flStrip.setVisibility(View.VISIBLE);
-            holder.itemView.setBackgroundColor(context.getColor(R.color.colorWhite));
+            holder.itemView.setBackgroundColor(activity.getColor(R.color.colorWhite));
 
         } else {
             holder.flStrip.setVisibility(View.INVISIBLE);
-            holder.itemView.setBackgroundColor(context.getColor(R.color.colorBackgroundGrey));
+            holder.itemView.setBackgroundColor(activity.getColor(R.color.colorBackgroundGrey));
         }
     }
 
@@ -86,6 +87,7 @@ public class SettingsAdapter extends RecyclerView.Adapter<SettingsAdapter.ViewHo
                     notifyItemChanged(getAdapterPosition());
                     notifyItemChanged(prevPosition);
                     prevPosition = getAdapterPosition();
+                    activity.replaceFragment(prevPosition);
                 }
 
                 @Override

@@ -27,6 +27,8 @@ public class FirstConfigureLeftSideFragment extends BaseFragment implements Firs
     PosFragmentManager posFragmentManager;
     @Inject
     FirstConfigureLeftSidePresenter presenter;
+    @Inject
+    SettingsAdapter adapter;
 
     private RecyclerView recyclerView;
 
@@ -43,14 +45,16 @@ public class FirstConfigureLeftSideFragment extends BaseFragment implements Firs
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        this.getComponent(FirstConfigureActivityComponent.class).inject(this);
+
+        presenter.init(this);
+
         View view = inflater.inflate(R.layout.start_configuration_fragment, container, false);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recycleView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(new SettingsAdapter(getContext()));
-        this.getComponent(FirstConfigureActivityComponent.class).inject(this);
+        recyclerView.setAdapter(adapter);
 
-        presenter.init(this);
         return view;
     }
 

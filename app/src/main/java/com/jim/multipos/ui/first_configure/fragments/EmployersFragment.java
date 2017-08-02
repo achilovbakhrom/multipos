@@ -8,11 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.jim.multipos.R;
+import com.jim.multipos.common.FirstConfigureFragments;
+
+import java.util.HashMap;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class EmployersFragment extends Fragment {
+public class EmployersFragment extends FirstConfigureFragments {
 
 
     public EmployersFragment() {
@@ -27,4 +30,13 @@ public class EmployersFragment extends Fragment {
         return inflater.inflate(R.layout.employer_settings_fragment, container, false);
     }
 
+    @Override
+    public void checkDatasComplete() {
+
+    }
+
+    @Override
+    public HashMap<String, String> getDatas() {
+        return null;
+    }
 }

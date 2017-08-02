@@ -4,6 +4,7 @@ import com.jim.multipos.ui.first_configure.FirstConfigureActivity;
 import com.jim.multipos.ui.ActivityScope;
 import com.jim.multipos.ui.first_configure.FirstConfigureLeftSidePresenter;
 import com.jim.multipos.ui.first_configure.FirstConfigureLeftSidePresenterImpl;
+import com.jim.multipos.ui.first_configure.adapters.SettingsAdapter;
 import com.jim.multipos.ui.first_configure.presenters.PosFragmentPresenter;
 import com.jim.multipos.ui.first_configure.presenters.PosFragmentPresenterImpl;
 import com.jim.multipos.utils.managers.PosFragmentManager;
@@ -44,5 +45,11 @@ public class FirstConfigureActivityModule {
     @ActivityScope
     public PosFragmentPresenter getFirstConfigureRightSidePresenter() {
         return new PosFragmentPresenterImpl();
+    }
+
+    @Provides
+    @ActivityScope
+    public SettingsAdapter provideSettingsAdapter(FirstConfigureActivity firstConfigureActivity) {
+        return new SettingsAdapter(firstConfigureActivity);
     }
 }
