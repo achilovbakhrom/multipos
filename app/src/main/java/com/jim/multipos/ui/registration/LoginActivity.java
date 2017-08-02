@@ -81,8 +81,8 @@ public class LoginActivity extends BaseActivity implements HasComponent<LoginAct
     }
 
     @Override
-    public void openRegistrationConfirm() {
-        posFragmentManager.displayFragment(new RegistrationConfirmFragment(), R.id.loginFragment);
+    public void openRegistrationConfirm(RegistrationConfirmFragment confirmFragment) {
+        posFragmentManager.displayFragment(confirmFragment, R.id.loginFragment);
     }
 
     @Override

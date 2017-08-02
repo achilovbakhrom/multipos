@@ -79,12 +79,14 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
         spContacts.setOnItemSelectedListener(new MpSpinner.setOnItemClickListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-                switch (position){
+                switch (position) {
                     case 0:
                         etContacts.setInputType(InputType.TYPE_CLASS_PHONE);
+                        etContacts.setText("");
                         break;
                     case 1:
                         etContacts.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
+                        etContacts.setText("");
                         break;
                 }
             }
@@ -111,16 +113,17 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
         String name = etOrgName.getText().toString();
         String email = etOrgEmail.getText().toString();
         if (!email.equals(""))
-        presenter.displayFragment(name, address, email, code);
+            presenter.displayFragment(name, address, email, code);
         else etOrgEmail.setError(getResources().getString(R.string.enter_organization_email));
         presenter.wrapData();
     }
 
     @OnClick(R.id.ivAddContact)
     public void addContact() {
-        if (!etContacts.getText().toString().equals(""))
-        presenter.setRecyclerViewItems(list.get(spContacts.selectedItem()), etContacts.getText().toString());
-        else etContacts.setError(getResources().getString(R.string.enter_phone_number));
+        if (!etContacts.getText().toString().equals("")) {
+            presenter.setRecyclerViewItems(list.get(spContacts.selectedItem()), etContacts.getText().toString());
+            etContacts.setText("");
+        } else etContacts.setError(getResources().getString(R.string.enter_phone_number));
     }
 
     @Override
@@ -133,7 +136,7 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
     @Override
     public void displayFragment(RegistrationConfirmFragment confirmFragment) {
 //        posFragmentManager.displayFragment(confirmFragment, R.id.loginFragment);
-        activity.openRegistrationConfirm();
+        activity.openRegistrationConfirm(confirmFragment);
     }
 
     @Override
@@ -141,6 +144,7 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
 //        posFragmentManager.popBackStack();
         activity.popFromBackStack();
     }
+
     @Override
     public void setRecyclerView(ArrayList<Contact> contacts) {
         rvContacts.setLayoutManager(new LinearLayoutManager(getActivity()));

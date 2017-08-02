@@ -17,31 +17,31 @@
 
         <com.jim.mpviews.MpEditText
             android:layout_width="0dp"
-            android:layout_height="38dp"
-            android:layout_marginLeft="150dp"
+            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_marginLeft="@dimen/hundred_fifty_dp"
             android:layout_weight="1"
             android:textColorHint="@color/colorTextHint">
         </com.jim.mpviews.MpEditText>
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginRight="40dp"
+            android:layout_width="@dimen/twenty_five_dp"
+            android:layout_height="@dimen/twenty_five_dp"
+            android:layout_marginLeft="@dimen/forty_five_dp"
+            android:layout_marginRight="@dimen/forty_dp"
             android:src="@drawable/checked"
             android:tint="@color/colorBlue"/>
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginRight="5dp"
+            android:layout_width="@dimen/twenty_five_dp"
+            android:layout_height="@dimen/twenty_five_dp"
+            android:layout_marginRight="@dimen/five_dp"
             android:src="@drawable/save"
             android:tint="@color/colorTintGrey"/>
 
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginRight="30dp"
+            android:layout_width="@dimen/thirty_five_dp"
+            android:layout_height="@dimen/thirty_five_dp"
+            android:layout_marginRight="@dimen/thirty_dp"
             android:src="@drawable/delete"
             android:tint="@color/colorTintGrey"/>
 

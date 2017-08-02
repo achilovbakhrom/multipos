@@ -8,14 +8,14 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="350dp"
+        android:layout_width="@dimen/three_hundred_eighty_dp"
+        android:layout_height="@dimen/three_hundred_fifty_dp"
         android:background="@drawable/rounded_edit_text_bg"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="@dimen/forty_five_dp"
             android:background="@drawable/rounded_blue_bg">
 
             <TextView
@@ -23,10 +23,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:paddingLeft="30dp"
-                android:text="Auto apply configuration"
+                android:paddingLeft="@dimen/thirty_dp"
+                android:text="@string/auto_apply_configuration"
                 android:textColor="@color/colorWhite"
-                android:textSize="20dp"
+                android:textSize="@dimen/twenty_dp"
                 android:textStyle="bold" />
 
 
@@ -34,15 +34,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/two_hundred_dp"
             android:orientation="vertical"
-            android:paddingTop="20dp">
+            android:paddingTop="@dimen/twenty_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
                 android:text="Void/Return"
                 android:textColor="@color/colorMainText"
                 android:textSize="18dp" />
@@ -50,7 +50,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:background="@color/colorTextHint" />
 
         </LinearLayout>
@@ -63,8 +63,8 @@
             android:orientation="horizontal">
 
             <com.jim.mpviews.MpButton
-                android:layout_width="180dp"
-                android:layout_height="70dp"
+                android:layout_width="@dimen/hundred_eighty_dp"
+                android:layout_height="@dimen/seventy_dp"
                 android:gravity="center"
                 android:text="Back"
                 android:textColor="@color/colorSecondaryText"

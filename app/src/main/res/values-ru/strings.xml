@@ -42,6 +42,7 @@
     <string name="email_">Электронная почта:</string>
     <string name="address_">Адрес:</string>
     <string name="zip_code_">Почтовоый индекс:</string>
+    <string name="auto_apply_configuration">Auto apply configuration</string>
     <string-array name="start_configuration_title">
         <item namte="pos_details">POS подробности</item>
         <item name="account">Аккаунт</item>
