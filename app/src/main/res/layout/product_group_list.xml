@@ -20,9 +20,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/ten_dp"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="@dimen/thirty_five_dp"
                 android:text="Products List"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp" />
@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/ten_dp"
                 android:layout_marginTop="@dimen/twenty_five_dp"
                 android:text="T-shirts"
@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/twenty_dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:text="--American colors"
                 android:textColor="@color/colorMainText"
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/ten_dp"
                 android:layout_marginTop="@dimen/twenty_five_dp"
                 android:text="T-shirts"
@@ -72,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/twenty_dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
                 android:layout_marginTop="@dimen/ten_dp"
                 android:text="--American colors"
                 android:textColor="@color/colorMainText"

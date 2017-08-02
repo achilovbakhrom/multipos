@@ -12,7 +12,7 @@
 
         <LinearLayout
             android:id="@+id/mpLeftSide"
-            android:layout_width="150dp"
+            android:layout_width="@dimen/hundred_fifty_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -31,13 +31,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="20dp" />
+                android:layout_marginRight="@dimen/twenty_dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/mpCenterBtn"
-            android:layout_width="150dp"
+            android:layout_width="@dimen/hundred_fifty_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -56,13 +56,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="20dp" />
+                android:layout_marginRight="@dimen/twenty_dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/mpRightSide"
-            android:layout_width="150dp"
+            android:layout_width="@dimen/hundred_fifty_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="20dp" />
+                android:layout_marginRight="@dimen/twenty_dp" />
 
         </LinearLayout>
 

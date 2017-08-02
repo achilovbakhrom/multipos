@@ -5,7 +5,7 @@
     android:orientation="vertical">
 
     <com.jim.mpviews.MpEmpItem
-        android:layout_width="250dp"
+        android:layout_width="@dimen/two_hundred_fifty_dp"
         android:layout_height="@dimen/hundred_dp" />
 
 

@@ -14,7 +14,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/fifty_dp"
             android:background="@color/colorWhite"
             android:orientation="horizontal"
             android:paddingBottom="@dimen/ten_dp"
@@ -113,7 +113,7 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="35dp"
+                android:layout_marginBottom="@dimen/thirty_five_dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -163,15 +163,15 @@
 
         <android.support.v4.view.ViewPager
             android:layout_width="match_parent"
-            android:layout_height="450dp" />
+            android:layout_height="@dimen/four_hundred_fifty_dp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginBottom="@dimen/thirty_dp"
@@ -275,14 +275,14 @@
                             android:gravity="right"
                             android:text="25 000"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="85dp"
+                        android:layout_height="@dimen/eighty_five_dp"
                         android:layout_marginBottom="@dimen/five_dp"
                         android:orientation="horizontal">
 
@@ -294,7 +294,7 @@
                             android:gravity="center"
                             android:text="7"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <com.jim.mpviews.MpNumPad
@@ -306,7 +306,7 @@
                             android:gravity="center"
                             android:text="8"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <com.jim.mpviews.MpNumPad
@@ -318,7 +318,7 @@
                             android:gravity="center"
                             android:text="9"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <LinearLayout
@@ -330,8 +330,8 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="@dimen/forty_five_dp"
+                                android:layout_height="@dimen/forty_five_dp"
                                 android:layout_gravity="center"
                                 android:src="@drawable/backspace"
                                 android:tint="@color/colorTintGrey" />
@@ -342,7 +342,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="85dp"
+                        android:layout_height="@dimen/eighty_five_dp"
                         android:layout_marginBottom="@dimen/five_dp"
                         android:orientation="horizontal">
 
@@ -355,7 +355,7 @@
                             android:gravity="center"
                             android:text="4"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <com.jim.mpviews.MpNumPad
@@ -367,7 +367,7 @@
                             android:gravity="center"
                             android:text="5"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <com.jim.mpviews.MpNumPad
@@ -379,7 +379,7 @@
                             android:gravity="center"
                             android:text="6"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <com.jim.mpviews.MpNumPad
@@ -390,13 +390,13 @@
                             android:gravity="center"
                             android:text="C"
                             android:textColor="@color/colorSecondaryText"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="85dp"
+                        android:layout_height="@dimen/eighty_five_dp"
                         android:layout_marginBottom="@dimen/five_dp"
                         android:orientation="horizontal">
 
@@ -409,7 +409,7 @@
                             android:gravity="center"
                             android:text="1"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <com.jim.mpviews.MpNumPad
@@ -421,7 +421,7 @@
                             android:gravity="center"
                             android:text="2"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <com.jim.mpviews.MpNumPad
@@ -433,21 +433,21 @@
                             android:gravity="center"
                             android:text="3"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <FrameLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="3dp"
+                            android:layout_marginBottom="@dimen/three_dp"
                             android:layout_weight="1"
                             android:background="@android:color/transparent" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="85dp"
+                        android:layout_height="@dimen/eighty_five_dp"
                         android:layout_marginBottom="@dimen/five_dp"
                         android:orientation="horizontal">
 
@@ -460,7 +460,7 @@
                             android:gravity="center"
                             android:text="00"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <com.jim.mpviews.MpNumPad
@@ -472,7 +472,7 @@
                             android:gravity="center"
                             android:text="0"
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <com.jim.mpviews.MpNumPad
@@ -484,14 +484,14 @@
                             android:gravity="center"
                             android:text=","
                             android:textColor="@color/colorBlue"
-                            android:textSize="@dimen/thirty_eight_dp"
+                            android:textSize="@dimen/forty_dp"
                             android:textStyle="bold" />
 
                         <FrameLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="3dp"
+                            android:layout_marginBottom="@dimen/three_dp"
                             android:layout_weight="1"
                             android:background="@android:color/transparent" />
                     </LinearLayout>
@@ -501,7 +501,7 @@
                 <FrameLayout
                     android:layout_width="1px"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="50dp"
+                    android:layout_marginBottom="@dimen/fifty_dp"
                     android:layout_marginLeft="@dimen/thirty_dp"
                     android:layout_marginRight="@dimen/twenty_dp"
                     android:background="@color/colorTextHint" />
@@ -555,7 +555,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Some role"
                                 android:textColor="@color/colorSecondaryText"
-                                android:textSize="12dp" />
+                                android:textSize="@dimen/ten_dp" />
 
                         </LinearLayout>
 
@@ -588,7 +588,7 @@
 
                     <com.jim.mpviews.MpButtonWithIcon
                         android:layout_width="wrap_content"
-                        android:layout_height="60dp"
+                        android:layout_height="@dimen/sixty_dp"
                         android:layout_marginBottom="@dimen/five_dp"
                         app:btn_text="Pay in"
                         app:src="@drawable/pay_in"
@@ -597,7 +597,7 @@
 
                     <com.jim.mpviews.MpButtonWithIcon
                         android:layout_width="wrap_content"
-                        android:layout_height="60dp"
+                        android:layout_height="@dimen/sixty_dp"
                         android:layout_marginBottom="@dimen/five_dp"
                         app:btn_text="Pay out"
                         app:src="@drawable/pay_out"
@@ -605,28 +605,28 @@
 
                     <com.jim.mpviews.MpButtonWithIcon
                         android:layout_width="wrap_content"
-                        android:layout_height="60dp"
+                        android:layout_height="@dimen/sixty_dp"
                         android:layout_marginBottom="@dimen/five_dp"
                         app:btn_text="Bank Drop"
                         app:src="@drawable/bank" />
 
                     <com.jim.mpviews.MpButtonWithIcon
                         android:layout_width="wrap_content"
-                        android:layout_height="60dp"
+                        android:layout_height="@dimen/sixty_dp"
                         android:layout_marginBottom="@dimen/five_dp"
                         app:btn_text="Reopen Till"
                         app:src="@drawable/restart" />
 
                     <com.jim.mpviews.MpButtonWithIcon
                         android:layout_width="wrap_content"
-                        android:layout_height="60dp"
+                        android:layout_height="@dimen/sixty_dp"
                         android:layout_marginBottom="@dimen/five_dp"
                         app:btn_text="Close Till"
                         app:src="@drawable/casher" />
 
                     <com.jim.mpviews.MpButtonWithIcon
                         android:layout_width="wrap_content"
-                        android:layout_height="60dp"
+                        android:layout_height="@dimen/sixty_dp"
                         app:btn_text="Debt Money"
                         app:src="@drawable/borrow" />
 

@@ -6,7 +6,7 @@
     <LinearLayout
         android:id="@+id/mpMain"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="@dimen/seventy_dp"
         android:orientation="horizontal">
 
         <RelativeLayout
@@ -21,8 +21,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="30dp"
-                android:paddingTop="10dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
+                android:paddingTop="@dimen/ten_dp"
                 android:src="@drawable/posmen" />
 
             <ImageView
@@ -30,8 +30,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="18dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
+                android:layout_marginRight="@dimen/eighteen_dp"
                 android:layout_toLeftOf="@+id/mpHorRoller"
                 android:src="@drawable/settings_blue" />
 
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="20dp" />
+                android:layout_marginRight="@dimen/twenty_dp" />
 
         </RelativeLayout>
 
@@ -72,8 +72,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:layout_marginRight="@dimen/fifteen_dp"
                         android:src="@drawable/no_photo" />
 
                     <LinearLayout
@@ -119,10 +119,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/four_dp"
                         android:src="@drawable/market"
                         android:tint="@color/colorWhite" />
 
@@ -154,10 +154,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/four_dp"
                         android:src="@drawable/reports"
                         android:tint="@color/colorWhite" />
 
@@ -189,10 +189,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/four_dp"
                         android:src="@drawable/employers"
                         android:tint="@color/colorWhite" />
 
@@ -224,10 +224,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/four_dp"
                         android:src="@drawable/customer_group"
                         android:tint="@color/colorWhite" />
 
@@ -259,10 +259,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/four_dp"
                         android:src="@drawable/inventory"
                         android:tint="@color/colorWhite" />
 
@@ -300,8 +300,8 @@
                     android:visibility="gone">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center"
                         android:src="@drawable/info" />
                 </LinearLayout>
@@ -326,8 +326,8 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center"
                         android:src="@drawable/search_2" />
                 </LinearLayout>
@@ -336,11 +336,11 @@
 
             <com.jim.mpviews.MpSearchView
                 android:id="@+id/mpSearchView"
-                android:layout_width="230dp"
-                android:layout_height="38dp"
+                android:layout_width="@dimen/two_hundred_thirty_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:visibility="gone" />
 
         </RelativeLayout>

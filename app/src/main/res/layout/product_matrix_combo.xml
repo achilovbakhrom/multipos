@@ -84,21 +84,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:paddingBottom="@dimen/thirty_dp"
-                    android:paddingLeft="40dp"
+                    android:paddingLeft="@dimen/forty_dp"
                     android:paddingRight="@dimen/thirty_dp"
                     android:paddingTop="@dimen/thirty_dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="40dp"
+                        android:layout_marginRight="@dimen/forty_dp"
                         android:background="@drawable/grey_bg"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="195dp"
-                            android:layout_height="195dp"
-                            android:padding="1dp" />
+                            android:layout_width="@dimen/hundred_ninety_five_dp"
+                            android:layout_height="@dimen/hundred_ninety_five_dp"
+                            android:padding="@dimen/one_dp" />
 
                     </LinearLayout>
 
@@ -134,7 +134,7 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="125dp"
+                            android:layout_height="@dimen/hundred_twenty_five_dp"
                             android:layout_gravity="left"
                             android:paddingBottom="@dimen/five_dp"
                             android:paddingRight="@dimen/ten_dp"
@@ -208,7 +208,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="270dp"
+                    android:layout_height="@dimen/two_hundred_seventy_dp"
                     android:orientation="horizontal">
 
                     <android.support.v7.widget.RecyclerView
@@ -245,7 +245,7 @@
 
             <com.jim.mpviews.MpButton
                 android:layout_width="@dimen/hundred_eighty_dp"
-                android:layout_height="60dp"
+                android:layout_height="@dimen/sixty_dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Cancel"

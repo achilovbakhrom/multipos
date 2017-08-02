@@ -9,14 +9,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:paddingLeft="60dp"
+        android:paddingLeft="@dimen/sixty_dp"
         android:text="Some Task"
         android:textSize="@dimen/eighteen_dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingRight="80dp"
+        android:paddingRight="@dimen/eighty_dp"
         android:text="Mark as Complete"
         android:textColor="@color/colorBlue"
         android:textSize="@dimen/eighteen_dp" />

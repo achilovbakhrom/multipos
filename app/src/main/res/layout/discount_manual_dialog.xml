@@ -39,7 +39,7 @@
 
             <com.jim.mpviews.MpTripleSwitcher
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="@dimen/forty_five_dp"
                 android:layout_marginBottom="@dimen/ten_dp"
                 android:layout_marginTop="@dimen/twenty_dp"
                 android:gravity="center"
@@ -57,7 +57,7 @@
                 android:paddingRight="@dimen/thirty_dp">
 
                 <LinearLayout
-                    android:layout_width="270dp"
+                    android:layout_width="@dimen/two_hundred_seventy_dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/ten_dp"
                     android:background="@drawable/edit_text_bg"
@@ -65,7 +65,7 @@
 
                     <EditText
                         android:layout_width="0dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:layout_weight="1"
                         android:background="@color/colorTransparent"
                         android:hint="Amount"
@@ -84,13 +84,13 @@
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/thirty_eight_dp" />
+                    android:layout_height="@dimen/forty_dp" />
 
             </LinearLayout>
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="@dimen/hundred_ten_dp"
                 android:layout_marginBottom="@dimen/twenty_dp"
                 android:layout_marginLeft="@dimen/thirty_dp"
                 android:layout_marginRight="@dimen/thirty_dp"
@@ -112,8 +112,8 @@
             android:orientation="horizontal">
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="60dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/sixty_dp"
                 android:gravity="center"
                 android:text="Cancel"
                 android:textColor="@color/colorSecondaryText"
@@ -121,8 +121,8 @@
 
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="60dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/sixty_dp"
                 android:gravity="center"
                 android:text="Next"
                 android:textColor="@color/colorBlue"

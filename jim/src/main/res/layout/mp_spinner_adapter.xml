@@ -8,11 +8,11 @@
         android:layout_weight="1"
         android:textColor="@color/colorMainText"
         android:layout_height="wrap_content"
-        android:textSize="18dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:textSize="@dimen/eighteen_dp"
+        android:paddingTop="@dimen/four_dp"
+        android:paddingBottom="@dimen/four_dp"
+        android:layout_marginLeft="@dimen/twenty_dp"
+        android:layout_marginRight="@dimen/twenty_dp"
         />
 
 </LinearLayout>

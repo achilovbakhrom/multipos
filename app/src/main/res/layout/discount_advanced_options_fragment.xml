@@ -37,7 +37,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_weight="1"
                     android:drawableRight="@drawable/barcode"
                     android:drawableTint="@color/colorTextHint"
@@ -57,7 +57,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:textColorHint="@color/colorTextHint"
@@ -90,7 +90,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_weight="1"
                     android:hint="Amount"
                     android:textColorHint="@color/colorTextHint"
@@ -108,7 +108,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:hint="Amount"
@@ -135,8 +135,8 @@
 
 
                 <com.jim.mpviews.MpSpinner
-                    android:layout_width="210dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_width="@dimen/two_hundred_ten_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_marginRight="@dimen/thirty_dp" />
 
             </LinearLayout>
@@ -163,8 +163,8 @@
                     android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
-                    android:layout_width="212dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_width="@dimen/two_hundred_twelve_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:hint="Amount"
                     android:textColorHint="@color/colorTextHint"
@@ -190,7 +190,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="80dp"
+                    android:layout_marginRight="@dimen/eighty_dp"
                     android:text="Apply to All Products \n Required to \n Earn Discount"
                     android:textColor="@color/colorMainText" />
 

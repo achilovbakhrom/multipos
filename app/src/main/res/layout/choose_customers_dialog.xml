@@ -9,8 +9,8 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="1170dp"
-        android:layout_height="600dp"
+        android:layout_width="@dimen/thousand_hundred_seventy_dp"
+        android:layout_height="@dimen/six_hundred_dp"
         android:background="@drawable/rounded_edit_text_bg"
         android:orientation="vertical">
 
@@ -30,7 +30,7 @@
                 android:textSize="@dimen/twenty_dp" />
 
             <com.jim.mpviews.MpSearchView
-                android:layout_width="275dp"
+                android:layout_width="@dimen/two_hundred_seventy_five_dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
@@ -40,17 +40,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="@dimen/four_hundred_fifty_dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:orientation="horizontal">
 
 
                 <TextView
-                    android:layout_width="220dp"
+                    android:layout_width="@dimen/two_hundred_twenty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -59,7 +59,7 @@
                     android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
-                    android:layout_width="150dp"
+                    android:layout_width="@dimen/hundred_fifty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Contact"
@@ -67,7 +67,7 @@
                     android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
-                    android:layout_width="320dp"
+                    android:layout_width="@dimen/three_hundred_twenty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Address"
@@ -113,7 +113,7 @@
 
             <com.jim.mpviews.MpButton
                 android:layout_width="@dimen/hundred_eighty_dp"
-                android:layout_height="60dp"
+                android:layout_height="@dimen/sixty_dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Back"
@@ -123,7 +123,7 @@
 
             <com.jim.mpviews.MpButton
                 android:layout_width="@dimen/hundred_eighty_dp"
-                android:layout_height="60dp"
+                android:layout_height="@dimen/sixty_dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="New Customer"

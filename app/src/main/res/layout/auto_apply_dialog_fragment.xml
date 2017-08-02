@@ -8,14 +8,14 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="520dp"
-        android:layout_height="350dp"
+        android:layout_width="@dimen/five_hundred_twenty_dp"
+        android:layout_height="@dimen/three_hundred_fifty_dp"
         android:background="@drawable/rounded_edit_text_bg"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="@dimen/forty_five_dp"
             android:background="@drawable/rounded_blue_bg">
 
             <TextView
@@ -34,7 +34,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/two_hundred_dp"
             android:background="@color/colorBackgroundGrey"
             android:orientation="vertical"
             android:paddingTop="@dimen/ten_dp">
@@ -45,7 +45,7 @@
                 android:layout_marginBottom="@dimen/ten_dp"
                 android:layout_marginLeft="@dimen/thirty_dp"
                 android:layout_marginRight="@dimen/thirty_dp"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="@dimen/thirty_five_dp"
                 android:orientation="horizontal">
 
 
@@ -60,7 +60,7 @@
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_marginLeft="@dimen/fifteen_dp" />
 
             </LinearLayout>
@@ -85,7 +85,7 @@
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_marginLeft="@dimen/fifteen_dp" />
 
             </LinearLayout>
@@ -101,8 +101,8 @@
             android:orientation="horizontal">
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:gravity="center"
                 android:text="Back"
                 android:textColor="@color/colorSecondaryText"
@@ -110,8 +110,8 @@
 
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:gravity="center"
                 android:text="Save"
                 android:textColor="@color/colorBlue"

@@ -10,13 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/fifteen_dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="@dimen/fifty_dp"
         android:orientation="horizontal">
 
 
         <EditText
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:layout_weight="1"
@@ -33,7 +33,7 @@
 
         <EditText
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:layout_weight="1"
@@ -50,7 +50,7 @@
 
         <EditText
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:layout_weight="1"
@@ -67,7 +67,7 @@
 
         <EditText
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:layout_weight="1"
@@ -84,7 +84,7 @@
 
         <EditText
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:layout_weight="1"
@@ -102,7 +102,7 @@
 
 
         <LinearLayout
-            android:layout_width="80dp"
+            android:layout_width="@dimen/eighty_dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:gravity="center"
@@ -122,7 +122,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="80dp"
+            android:layout_width="@dimen/eighty_dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:gravity="center"
@@ -142,7 +142,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="80dp"
+            android:layout_width="@dimen/eighty_dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:gravity="center"
@@ -163,16 +163,16 @@
 
 
         <LinearLayout
-            android:layout_width="105dp"
+            android:layout_width="@dimen/hundred_five_dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="@dimen/thirty_five_dp"
+                android:layout_height="@dimen/thirty_five_dp"
                 android:layout_gravity="center"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="@dimen/eight_dp"
                 android:src="@drawable/delete"
                 android:tint="@color/colorTintGrey"/>
 

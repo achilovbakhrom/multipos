@@ -13,7 +13,7 @@
             android:id="@+id/mpTop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
+            android:paddingTop="@dimen/ten_dp"
             android:src="@drawable/arrow_up" />
 
         <TextView
@@ -21,17 +21,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:layout_marginTop="@dimen/fifteen_dp"
             android:gravity="center"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <ImageView
             android:id="@+id/mpBottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
+            android:paddingBottom="@dimen/ten_dp"
             android:src="@drawable/arrow_down" />
 
     </LinearLayout>

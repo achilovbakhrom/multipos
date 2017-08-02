@@ -13,7 +13,7 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/thirty_dp"
             android:layout_weight="0.5"
@@ -26,7 +26,7 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_weight="1.5"
             android:layout_marginLeft="@dimen/twenty_five_dp"
@@ -40,7 +40,7 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:layout_marginLeft="@dimen/thirty_dp"
@@ -54,7 +54,7 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:layout_marginLeft="@dimen/twenty_five_dp"
@@ -68,7 +68,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_weight="1"
             android:layout_marginLeft="@dimen/twenty_dp"
             android:background="@drawable/edit_text_bg"
@@ -87,8 +87,8 @@
                 android:textSize="@dimen/eighteen_dp"/>
 
             <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="@dimen/forty_five_dp"
+                android:layout_height="@dimen/forty_five_dp"
                 android:layout_gravity="center"
                 android:tint="@color/colorBlue"
                 android:src="@drawable/refresh"
@@ -97,15 +97,15 @@
 
         <com.jim.mpviews.MpSpinner
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_weight="1"
             android:layout_marginLeft="@dimen/twenty_dp"
            />
 
 
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="@dimen/thirty_five_dp"
+            android:layout_height="@dimen/thirty_five_dp"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/fifteen_dp"
             android:paddingRight="@dimen/ten_dp"
@@ -114,8 +114,8 @@
             />
 
         <ImageView
-            android:layout_width="45dp"
-            android:layout_height="35dp"
+            android:layout_width="@dimen/forty_five_dp"
+            android:layout_height="@dimen/thirty_five_dp"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/five_dp"
             android:paddingRight="@dimen/ten_dp"

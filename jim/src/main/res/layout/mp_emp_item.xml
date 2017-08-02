@@ -6,13 +6,13 @@
 
     <LinearLayout
         android:id="@+id/llEmp"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/two_hundred_fifty_dp"
+        android:layout_height="@dimen/hundred_dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingBottom="10dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp">
+        android:paddingBottom="@dimen/ten_dp"
+        android:paddingLeft="@dimen/twenty_dp"
+        android:paddingTop="@dimen/ten_dp">
 
 
         <LinearLayout
@@ -23,9 +23,9 @@
 
             <ImageView
                 android:id="@+id/ivEmpPhoto"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:padding="1dp" />
+                android:layout_width="@dimen/seventy_five_dp"
+                android:layout_height="@dimen/seventy_five_dp"
+                android:padding="@dimen/one_dp" />
 
         </LinearLayout>
 
@@ -40,9 +40,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingTop="@dimen/four_dp"
                 android:textColor="@color/colorMainText" />
 
             <TextView
@@ -50,9 +50,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingTop="@dimen/four_dp"
                 android:textColor="@color/colorSecondaryText" />
 
             <TextView
@@ -60,9 +60,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingTop="@dimen/four_dp"
                 android:textColor="@color/colorSecondaryText" />
         </LinearLayout>
 

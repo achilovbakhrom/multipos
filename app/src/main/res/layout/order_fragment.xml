@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/fifty_dp"
         android:background="@color/colorWhite"
         android:orientation="horizontal">
 
@@ -23,13 +23,13 @@
             android:textSize="@dimen/twenty_dp" />
 
         <ImageView
-            android:layout_width="60dp"
+            android:layout_width="@dimen/sixty_dp"
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/ten_dp"
             android:src="@drawable/remove_rect" />
 
         <ImageView
-            android:layout_width="60dp"
+            android:layout_width="@dimen/sixty_dp"
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/thirty_dp"
             android:src="@drawable/add_rectangle" />
@@ -45,7 +45,7 @@
         android:paddingTop="@dimen/ten_dp">
 
         <TextView
-            android:layout_width="330dp"
+            android:layout_width="@dimen/three_hundred_thirty_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="left"
@@ -55,7 +55,7 @@
             android:textSize="@dimen/eighteen_dp" />
 
         <TextView
-            android:layout_width="190dp"
+            android:layout_width="@dimen/hundred_ninety_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="left"
@@ -65,7 +65,7 @@
             android:textSize="@dimen/eighteen_dp" />
 
         <TextView
-            android:layout_width="130dp"
+            android:layout_width="@dimen/hundred_thirty_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="left"
@@ -85,7 +85,7 @@
             android:textSize="@dimen/eighteen_dp" />
 
         <TextView
-            android:layout_width="130dp"
+            android:layout_width="@dimen/hundred_thirty_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="left"
@@ -109,19 +109,19 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_height="@dimen/two_hundred_thirty_dp"
         android:orientation="vertical"
         android:paddingTop="@dimen/fifteen_dp">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_marginBottom="@dimen/five_dp"
             android:orientation="horizontal">
 
             <com.jim.mpviews.MpSpinner
-                android:layout_width="300dp"
+                android:layout_width="@dimen/three_hundred_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/thirty_dp"
@@ -129,7 +129,7 @@
                 android:textSize="@dimen/eighteen_dp" />
 
             <com.jim.mpviews.MpEditText
-                android:layout_width="170dp"
+                android:layout_width="@dimen/hundred_seventy_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/twenty_dp"
@@ -140,14 +140,14 @@
                 android:textSize="@dimen/eighteen_dp" />
 
             <com.jim.mpviews.MpSpinner
-                android:layout_width="110dp"
+                android:layout_width="@dimen/hundred_ten_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/ten_dp"
                 android:gravity="left" />
 
             <com.jim.mpviews.MpEditText
-                android:layout_width="160dp"
+                android:layout_width="@dimen/hundred_sixty_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/twenty_dp"
@@ -157,7 +157,7 @@
                 android:textSize="@dimen/eighteen_dp" />
 
             <com.jim.mpviews.MpSpinner
-                android:layout_width="130dp"
+                android:layout_width="@dimen/hundred_thirty_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/ten_dp"
@@ -185,7 +185,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="@dimen/two_hundred_eighty_dp"
         android:background="@color/colorBackground"
         android:orientation="horizontal"
         android:paddingTop="@dimen/twenty_five_dp">
@@ -203,7 +203,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="250dp"
+                    android:layout_width="@dimen/two_hundred_fifty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/sixteen_dp"
@@ -212,8 +212,8 @@
                     android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
-                    android:layout_width="110dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_width="@dimen/hundred_ten_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:drawablePadding="@dimen/twenty_dp"
                     android:drawableRight="@drawable/time_little"
@@ -221,8 +221,8 @@
 
 
                 <com.jim.mpviews.MpEditText
-                    android:layout_width="170dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_width="@dimen/hundred_seventy_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/fifteen_dp"
                     android:hint="dd/mm/yyyy" />
@@ -236,7 +236,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="250dp"
+                    android:layout_width="@dimen/two_hundred_fifty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="top"
                     android:layout_marginRight="@dimen/sixteen_dp"
@@ -245,7 +245,7 @@
                     android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
-                    android:layout_width="295dp"
+                    android:layout_width="@dimen/two_hundred_ninety_five_dp"
                     android:layout_height="@dimen/seventy_dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/thirty_dp"
@@ -260,7 +260,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="250dp"
+                    android:layout_width="@dimen/two_hundred_fifty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/sixteen_dp"
@@ -291,7 +291,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="250dp"
+                    android:layout_width="@dimen/two_hundred_fifty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/sixteen_dp"
@@ -300,16 +300,16 @@
                     android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
-                    android:layout_width="170dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_width="@dimen/hundred_seventy_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:gravity="right"
                     android:text="10" />
 
 
                 <com.jim.mpviews.MpSpinner
-                    android:layout_width="110dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_width="@dimen/hundred_ten_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/fifteen_dp" />
 
@@ -322,7 +322,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="250dp"
+                    android:layout_width="@dimen/two_hundred_fifty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/sixteen_dp"
@@ -331,8 +331,8 @@
                     android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
-                    android:layout_width="295dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_width="@dimen/two_hundred_ninety_five_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:gravity="right"
@@ -350,15 +350,15 @@
         android:orientation="horizontal">
 
         <com.jim.mpviews.MpButton
-            android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:text="Advance"
             android:textColor="@color/colorMainText" />
 
         <com.jim.mpviews.MpButton
-            android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
             android:layout_marginRight="@dimen/thirty_dp"
             android:text="Add"
             android:textColor="@color/colorMainText" />

@@ -13,9 +13,9 @@
 
         <com.jim.mpviews.MpEditText
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="@dimen/sixty_dp"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:layout_weight="2"
             android:drawableRight="@drawable/barcode"
@@ -27,26 +27,26 @@
 
         <com.jim.mpviews.MpSpinner
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:layout_weight="1" />
 
         <com.jim.mpviews.MpSpinner
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:layout_weight="1" />
 
 
         <com.jim.mpviews.MpSpinner
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:layout_weight="1" />
 
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="@dimen/thirty_five_dp"
+            android:layout_height="@dimen/thirty_five_dp"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/thirty_dp"
             android:paddingRight="@dimen/ten_dp"

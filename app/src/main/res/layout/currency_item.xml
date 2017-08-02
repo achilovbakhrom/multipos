@@ -8,17 +8,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/twenty_dp"
-        android:layout_marginLeft="270dp"
+        android:layout_marginLeft="@dimen/two_hundred_seventy_dp"
         android:orientation="horizontal">
 
         <com.jim.mpviews.MpSpinner
-            android:layout_width="250dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_width="@dimen/two_hundred_fifty_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_marginRight="@dimen/twenty_dp" />
 
         <com.jim.mpviews.MpSpinner
-            android:layout_width="140dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_width="@dimen/hundred_forty_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_marginRight="@dimen/twenty_dp" />
 
     </LinearLayout>

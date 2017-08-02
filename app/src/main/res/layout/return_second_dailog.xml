@@ -8,8 +8,8 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="1170dp"
-        android:layout_height="650dp"
+        android:layout_width="@dimen/thousand_hundred_seventy_dp"
+        android:layout_height="@dimen/six_hundred_fifty_dp"
         android:background="@drawable/rounded_edit_text_bg"
         android:orientation="vertical">
 
@@ -35,11 +35,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="@dimen/four_hundred_fifty_dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="320dp"
+                android:layout_width="@dimen/three_hundred_twenty_dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/thirty_dp"
@@ -55,7 +55,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="match_parent"
-                    android:layout_height="115dp"
+                    android:layout_height="@dimen/hundred_fifteen_dp"
                     android:gravity="top"
                     android:hint="Description"
                     android:paddingLeft="@dimen/ten_dp"
@@ -70,17 +70,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
+                android:layout_height="@dimen/five_hundred_dp"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="@dimen/thirty_five_dp"
                     android:orientation="horizontal">
 
 
                     <TextView
-                        android:layout_width="230dp"
+                        android:layout_width="@dimen/two_hundred_thirty_dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginLeft="@dimen/thirty_dp"
@@ -89,7 +89,7 @@
                         android:textSize="@dimen/eighteen_dp" />
 
                     <TextView
-                        android:layout_width="160dp"
+                        android:layout_width="@dimen/hundred_sixty_dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Price"
@@ -97,7 +97,7 @@
                         android:textSize="@dimen/eighteen_dp" />
 
                     <TextView
-                        android:layout_width="150dp"
+                        android:layout_width="@dimen/hundred_fifty_dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Amount"
@@ -105,7 +105,7 @@
                         android:textSize="@dimen/eighteen_dp" />
 
                     <TextView
-                        android:layout_width="140dp"
+                        android:layout_width="@dimen/hundred_forty_dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Qty."
@@ -129,7 +129,7 @@
 
                 <android.support.v7.widget.RecyclerView
                     android:layout_width="match_parent"
-                    android:layout_height="380dp" />
+                    android:layout_height="@dimen/three_hundred_eighty_dp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -137,7 +137,7 @@
 
 
                     <LinearLayout
-                        android:layout_width="550dp"
+                        android:layout_width="@dimen/five_hundred_fifty_dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_marginTop="@dimen/ten_dp"
@@ -146,7 +146,7 @@
                         <FrameLayout
                             android:layout_width="match_parent"
                             android:layout_height="1px"
-                            android:layout_marginLeft="90dp"
+                            android:layout_marginLeft="@dimen/ninety_dp"
                             android:layout_marginRight="@dimen/fifteen_dp"
                             android:background="@color/colorTextHint" />
 
@@ -202,7 +202,7 @@
 
             <com.jim.mpviews.MpButton
                 android:layout_width="@dimen/hundred_eighty_dp"
-                android:layout_height="60dp"
+                android:layout_height="@dimen/sixty_dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Next"

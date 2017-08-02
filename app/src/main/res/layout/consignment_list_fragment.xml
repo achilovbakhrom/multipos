@@ -7,18 +7,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="@dimen/eighty_dp"
         android:background="@color/colorWhite"
         android:orientation="horizontal">
 
         <FrameLayout
             android:layout_width="1px"
             android:layout_height="match_parent"
-            android:layout_marginLeft="90dp"
+            android:layout_marginLeft="@dimen/ninety_dp"
             android:background="@color/colorTextHint" />
 
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="@dimen/three_hundred_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -32,7 +32,7 @@
             android:background="@color/colorTextHint" />
 
         <TextView
-            android:layout_width="260dp"
+            android:layout_width="@dimen/two_hundred_sixty_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -46,7 +46,7 @@
             android:background="@color/colorTextHint" />
 
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="@dimen/three_hundred_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -60,7 +60,7 @@
             android:background="@color/colorTextHint" />
 
         <TextView
-            android:layout_width="170dp"
+            android:layout_width="@dimen/hundred_seventy_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"

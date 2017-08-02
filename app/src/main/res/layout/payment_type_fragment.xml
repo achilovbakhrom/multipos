@@ -25,7 +25,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="200dp"
+                    android:layout_width="@dimen/two_hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -42,7 +42,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="200dp"
+                    android:layout_width="@dimen/two_hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -53,7 +53,7 @@
                     android:textSize="@dimen/sixteen_dp" />
 
                 <TextView
-                    android:layout_width="170dp"
+                    android:layout_width="@dimen/hundred_seventy_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/twenty_dp"
@@ -63,7 +63,7 @@
                     android:textSize="@dimen/sixteen_dp" />
 
                 <TextView
-                    android:layout_width="130dp"
+                    android:layout_width="@dimen/hundred_thirty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/twenty_dp"
@@ -82,7 +82,7 @@
                 android:orientation="horizontal">
 
                 <com.jim.mpviews.MpEditText
-                    android:layout_width="200dp"
+                    android:layout_width="@dimen/two_hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -93,13 +93,13 @@
                     android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpSpinner
-                    android:layout_width="170dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_width="@dimen/hundred_seventy_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_marginRight="@dimen/twenty_dp" />
 
                 <com.jim.mpviews.MpSpinner
-                    android:layout_width="130dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_width="@dimen/hundred_thirty_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_marginRight="@dimen/twenty_dp" />
 
                 <ImageView
@@ -147,15 +147,15 @@
             >
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="Revert"
                 android:textColor="@color/colorMainText" />
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="Save"
                 android:textColor="@color/colorBlue" />

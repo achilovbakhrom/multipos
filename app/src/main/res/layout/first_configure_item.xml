@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="@dimen/eighty_dp"
             android:layout_weight="1"
             android:background="@color/colorWhite"
             android:gravity="center"
@@ -25,7 +25,7 @@
             android:paddingTop="@dimen/ten_dp">
 
             <TextView
-                android:layout_width="300dp"
+                android:layout_width="@dimen/three_hundred_dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/five_dp"
                 android:gravity="left"
@@ -33,7 +33,7 @@
                 android:textColor="@color/colorBlue" />
 
             <TextView
-                android:layout_width="300dp"
+                android:layout_width="@dimen/three_hundred_dp"
                 android:layout_height="wrap_content"
                 android:text="Some details"
                 android:textColor="@color/colorMainText" />

@@ -6,12 +6,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/forty_dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="@dimen/thirty_five_dp"
+            android:layout_height="@dimen/thirty_five_dp"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/thirty_dp"
             android:layout_marginRight="@dimen/thirty_dp"
@@ -19,7 +19,7 @@
             android:tint="@color/colorBlue"/>
 
         <TextView
-            android:layout_width="330dp"
+            android:layout_width="@dimen/three_hundred_thirty_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/thirty_dp"

@@ -19,12 +19,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="@dimen/sixty_dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="35dp"
+                    android:layout_width="@dimen/sixty_dp"
+                    android:layout_height="@dimen/thirty_five_dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/ten_dp"
                     android:background="@drawable/emp_add" />
@@ -39,15 +39,15 @@
                     android:textSize="@dimen/twenty_dp" />
 
                 <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="35dp"
+                    android:layout_width="@dimen/sixty_dp"
+                    android:layout_height="@dimen/thirty_five_dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/ten_dp"
                     android:background="@drawable/hold" />
 
                 <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="35dp"
+                    android:layout_width="@dimen/sixty_dp"
+                    android:layout_height="@dimen/thirty_five_dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/ten_dp"
                     android:background="@drawable/clear" />
@@ -55,7 +55,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="@dimen/forty_dp"
                 android:background="@color/colorBlue"
                 android:orientation="horizontal">
 
@@ -102,7 +102,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="@dimen/four_hundred_dp"
                 android:orientation="vertical">
 
                 <android.support.v7.widget.RecyclerView
@@ -220,7 +220,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/five_dp"
-                        android:layout_marginRight="35dp"
+                        android:layout_marginRight="@dimen/thirty_five_dp"
                         android:gravity="right"
                         android:text="TOTAL"
                         android:textColor="@color/colorMainText"
@@ -229,11 +229,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="35dp"
+                        android:layout_marginRight="@dimen/thirty_five_dp"
                         android:gravity="right"
                         android:text="31 600 uzs"
                         android:textColor="@color/colorMainText"
-                        android:textSize="26dp" />
+                        android:textSize="@dimen/twenty_six_dp" />
                 </LinearLayout>
 
             </LinearLayout>

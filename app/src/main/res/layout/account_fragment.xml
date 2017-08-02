@@ -81,7 +81,7 @@
 
             <com.jim.mpviews.MpSpinner
                 android:layout_width="@dimen/two_hundred_dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_marginRight="@dimen/twenty_dp" />
 
             <ImageView
