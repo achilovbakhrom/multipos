@@ -6,7 +6,7 @@
 
 
     <com.jim.mpviews.MpItem
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/hundred_dp"
+        android:layout_height="@dimen/hundred_dp"
         android:gravity="center" />
 </LinearLayout>

@@ -16,7 +16,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/seventy_dp"
             android:background="@drawable/rounded_blue_bg">
 
             <TextView
@@ -24,17 +24,17 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
                 android:text="Choose Customer"
                 android:textColor="@color/colorWhite"
-                android:textSize="20dp" />
+                android:textSize="@dimen/twenty_dp" />
 
             <com.jim.mpviews.MpSearchView
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 app:barcode_visibility="false" />
         </RelativeLayout>
 
@@ -53,10 +53,10 @@
                     android:layout_width="220dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
                     android:text="Customer Name"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="150dp"
@@ -64,7 +64,7 @@
                     android:layout_gravity="center"
                     android:text="Contact"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="320dp"
@@ -72,7 +72,7 @@
                     android:layout_gravity="center"
                     android:text="Address"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                     android:layout_gravity="center"
                     android:text="ID Customer"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
             </LinearLayout>
 
@@ -109,26 +109,26 @@
             android:layout_height="match_parent"
             android:gravity="right"
             android:orientation="horizontal"
-            android:paddingRight="30dp">
+            android:paddingRight="@dimen/thirty_dp">
 
             <com.jim.mpviews.MpButton
-                android:layout_width="180dp"
+                android:layout_width="@dimen/hundred_eighty_dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Back"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
 
             <com.jim.mpviews.MpButton
-                android:layout_width="180dp"
+                android:layout_width="@dimen/hundred_eighty_dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="New Customer"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"
+                android:textSize="@dimen/eighteen_dp"
                 android:textStyle="bold" />
 
         </LinearLayout>

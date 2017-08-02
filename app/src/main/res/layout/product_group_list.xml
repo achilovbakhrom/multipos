@@ -21,70 +21,70 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="@dimen/ten_dp"
                 android:layout_marginTop="35dp"
                 android:text="Products List"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/twenty_five_dp"
                 android:text="T-shirts"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:layout_marginLeft="50dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/ten_dp"
                 android:text="--American colors"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp" />
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingTop="@dimen/five_dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/twenty_five_dp"
                 android:text="T-shirts"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:layout_marginLeft="50dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/ten_dp"
                 android:text="--American colors"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp" />
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingTop="@dimen/five_dp" />
 
 
         </LinearLayout>

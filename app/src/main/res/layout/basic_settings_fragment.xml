@@ -12,10 +12,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="20dp"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:paddingTop="20dp">
+            android:paddingBottom="@dimen/twenty_dp"
+            android:paddingLeft="@dimen/thirty_dp"
+            android:paddingRight="@dimen/thirty_dp"
+            android:paddingTop="@dimen/twenty_dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -26,10 +26,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/five_dp"
                     android:text="Group Duplicates"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
 
             <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="@dimen/thirty_dp"
                 android:layout_gravity="center" />
         </LinearLayout>
 
@@ -55,10 +55,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="20dp"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:paddingTop="20dp">
+            android:paddingBottom="@dimen/twenty_dp"
+            android:paddingLeft="@dimen/thirty_dp"
+            android:paddingRight="@dimen/thirty_dp"
+            android:paddingTop="@dimen/twenty_dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -69,10 +69,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/five_dp"
                     android:text="Show Images on Dislpay Unit"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
 
             <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="@dimen/thirty_dp"
                 android:layout_gravity="center" />
         </LinearLayout>
 
@@ -98,10 +98,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="20dp"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:paddingTop="20dp">
+            android:paddingBottom="@dimen/twenty_dp"
+            android:paddingLeft="@dimen/thirty_dp"
+            android:paddingRight="@dimen/thirty_dp"
+            android:paddingTop="@dimen/twenty_dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -112,10 +112,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/five_dp"
                     android:text="Language Pack"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -128,7 +128,7 @@
 
             <com.jim.mpviews.MpSpinner
                 android:layout_width="225dp"
-                android:layout_height="38dp"
+                android:layout_height="@dimen/thirty_eight_dp"
                 android:layout_gravity="center" />
         </LinearLayout>
 
@@ -141,10 +141,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="20dp"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:paddingTop="20dp">
+            android:paddingBottom="@dimen/twenty_dp"
+            android:paddingLeft="@dimen/thirty_dp"
+            android:paddingRight="@dimen/thirty_dp"
+            android:paddingTop="@dimen/twenty_dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -155,10 +155,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/five_dp"
                     android:text="Matrix Grouping"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -171,7 +171,7 @@
 
             <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="@dimen/thirty_dp"
                 android:layout_gravity="center" />
         </LinearLayout>
 
@@ -184,10 +184,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="20dp"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:paddingTop="20dp">
+            android:paddingBottom="@dimen/twenty_dp"
+            android:paddingLeft="@dimen/thirty_dp"
+            android:paddingRight="@dimen/thirty_dp"
+            android:paddingTop="@dimen/twenty_dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -198,10 +198,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/five_dp"
                     android:text="End of Day Process"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -214,7 +214,7 @@
 
             <com.jim.mpviews.MpCheckbox
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="@dimen/thirty_dp"
                 android:layout_gravity="center" />
         </LinearLayout>
 
@@ -231,20 +231,20 @@
         android:layout_alignParentBottom="true"
         android:gravity="right"
         android:orientation="horizontal"
-        android:paddingBottom="20dp"
-        android:paddingRight="20dp">
+        android:paddingBottom="@dimen/twenty_dp"
+        android:paddingRight="@dimen/twenty_dp">
 
         <com.jim.mpviews.MpButton
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
             android:text="Revert"
             android:textColor="@color/colorSecondaryText" />
 
         <com.jim.mpviews.MpButton
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
             android:text="Save"
             android:textColor="@color/colorBlue" />
 

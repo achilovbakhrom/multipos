@@ -21,18 +21,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="30dp"
-                android:paddingTop="15dp"
+                android:paddingLeft="@dimen/thirty_dp"
+                android:paddingTop="@dimen/fifteen_dp"
                 android:text="Effective Dates/Times"
                 android:textColor="@color/colorWhite"
-                android:textSize="20dp"/>
+                android:textSize="@dimen/twenty_dp"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="@dimen/fifteen_dp"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -44,30 +44,30 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/five_dp"
                     android:gravity="center"
                     android:text="Start Date"/>
 
                 <TextView
-                    android:layout_width="180dp"
-                    android:layout_height="38dp"
+                    android:layout_width="@dimen/hundred_eighty_dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
                     android:background="@drawable/edit_text_bg"
                     android:gravity="center_vertical"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp"/>
+                    android:textSize="@dimen/eighteen_dp"/>
 
             </LinearLayout>
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/thirty_dp"
+                android:layout_height="@dimen/thirty_dp"
                 android:layout_gravity="bottom"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:src="@drawable/calendar"
                 android:tint="@color/colorTintGrey"/>
 
@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:layout_marginBottom="15dp"
+                android:layout_marginBottom="@dimen/fifteen_dp"
                 android:src="@drawable/stroke"
                 android:tint="@color/colorTintGrey"/>
 
@@ -89,30 +89,30 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/five_dp"
                     android:gravity="center"
                     android:text="End Date"/>
 
                 <TextView
-                    android:layout_width="180dp"
-                    android:layout_height="38dp"
+                    android:layout_width="@dimen/hundred_eighty_dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
                     android:background="@drawable/edit_text_bg"
                     android:gravity="center_vertical"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp"/>
+                    android:textSize="@dimen/eighteen_dp"/>
 
             </LinearLayout>
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/thirty_dp"
+                android:layout_height="@dimen/thirty_dp"
                 android:layout_gravity="bottom"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:src="@drawable/calendar"
                 android:tint="@color/colorTintGrey"/>
 
@@ -121,7 +121,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/twenty_dp"
             android:background="@color/colorTextHint"/>
 
         <LinearLayout
@@ -129,29 +129,29 @@
             android:layout_height="wrap_content"
             android:background="@color/colorBackground"
             android:orientation="vertical"
-            android:paddingBottom="30dp">
+            android:paddingBottom="@dimen/thirty_dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp">
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:background="@drawable/blue_stroke"
                     android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="M"
                     android:textColor="@color/colorBlue"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/twenty_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
 
@@ -164,31 +164,31 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/five_dp"
                         android:gravity="center"
                         android:text="Start Time"
                         android:textColor="@color/colorMainText"/>
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
 
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
@@ -198,9 +198,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="@dimen/fifteen_dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/stroke"
                     android:tint="@color/colorTintGrey"/>
 
@@ -213,32 +213,32 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/five_dp"
                         android:gravity="center"
                         android:text="End Time"
                         android:textColor="@color/colorMainText"/>
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
 
@@ -246,15 +246,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:background="@drawable/blue_stroke"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="+"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/sixteen_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
             </LinearLayout>
@@ -263,23 +263,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp">
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:background="@drawable/blue_stroke"
                     android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="T"
                     android:textColor="@color/colorBlue"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/twenty_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
 
@@ -290,24 +290,24 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
 
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
@@ -317,9 +317,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="@dimen/fifteen_dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/stroke"
                     android:tint="@color/colorTintGrey"/>
 
@@ -330,26 +330,26 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
 
@@ -357,15 +357,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:background="@drawable/blue_stroke"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="+"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/sixteen_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
             </LinearLayout>
@@ -374,23 +374,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp">
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:background="@drawable/blue_stroke"
                     android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="W"
                     android:textColor="@color/colorBlue"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/twenty_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
 
@@ -401,24 +401,24 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
 
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
@@ -428,9 +428,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="@dimen/fifteen_dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/stroke"
                     android:tint="@color/colorTintGrey"/>
 
@@ -441,26 +441,26 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
 
@@ -468,15 +468,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:background="@drawable/blue_stroke"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="+"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/sixteen_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
             </LinearLayout>
@@ -485,23 +485,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp">
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:background="@drawable/blue_stroke"
                     android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="Th"
                     android:textColor="@color/colorBlue"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/twenty_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
 
@@ -512,24 +512,24 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
 
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
@@ -539,9 +539,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="@dimen/fifteen_dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/stroke"
                     android:tint="@color/colorTintGrey"/>
 
@@ -552,26 +552,26 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
 
@@ -579,15 +579,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:background="@drawable/blue_stroke"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="+"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/sixteen_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
             </LinearLayout>
@@ -596,23 +596,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp">
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:background="@drawable/blue_stroke"
                     android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="F"
                     android:textColor="@color/colorBlue"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/twenty_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
 
@@ -623,24 +623,24 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
 
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
@@ -650,9 +650,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="@dimen/fifteen_dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/stroke"
                     android:tint="@color/colorTintGrey"/>
 
@@ -663,26 +663,26 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
 
@@ -690,15 +690,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:background="@drawable/blue_stroke"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="+"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/sixteen_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
             </LinearLayout>
@@ -707,23 +707,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp">
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:background="@drawable/blue_stroke"
                     android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="Sa"
                     android:textColor="@color/colorBlue"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/twenty_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
 
@@ -734,24 +734,24 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
 
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
@@ -761,9 +761,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="@dimen/fifteen_dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/stroke"
                     android:tint="@color/colorTintGrey"/>
 
@@ -774,26 +774,26 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
 
@@ -801,15 +801,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:background="@drawable/blue_stroke"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="+"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/sixteen_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
             </LinearLayout>
@@ -818,23 +818,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp">
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:background="@drawable/blue_stroke"
                     android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="Su"
                     android:textColor="@color/colorBlue"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/twenty_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
 
@@ -845,24 +845,24 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
 
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
@@ -872,9 +872,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="@dimen/fifteen_dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/stroke"
                     android:tint="@color/colorTintGrey"/>
 
@@ -885,26 +885,26 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="38dp"
+                        android:layout_width="@dimen/hundred_eighty_dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:paddingRight="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:src="@drawable/time"
                     android:tint="@color/colorTintGrey"/>
 
@@ -912,15 +912,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:background="@drawable/blue_stroke"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="+"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/sixteen_dp"
                     android:textStyle="bold"
                     android:tint="@color/colorTintGrey"/>
             </LinearLayout>
@@ -930,7 +930,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="@dimen/twenty_dp"
             android:background="@color/colorTextHint"/>
 
         <LinearLayout
@@ -947,33 +947,33 @@
                 android:id="@+id/btnCancel"
                 android:layout_width="160dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
+                android:layout_marginRight="@dimen/fifteen_dp"
                 android:background="@drawable/button_bg"
                 android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingTop="@dimen/five_dp"
                 android:text="Cancel"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp"/>
+                android:textSize="@dimen/sixteen_dp"/>
 
 
             <TextView
                 android:id="@+id/btnSave"
                 android:layout_width="160dp"
                 android:layout_height="50dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:background="@drawable/button_bg"
                 android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingTop="@dimen/five_dp"
                 android:text="Save"
                 android:textColor="@color/colorBlue"
-                android:textSize="16dp"/>
+                android:textSize="@dimen/sixteen_dp"/>
 
         </LinearLayout>
     </LinearLayout>

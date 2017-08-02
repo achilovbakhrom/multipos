@@ -14,8 +14,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:paddingLeft="30dp"
-            android:paddingTop="10dp">
+            android:paddingLeft="@dimen/thirty_dp"
+            android:paddingTop="@dimen/ten_dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
                 android:layout_gravity="center_vertical"
                 android:text="Black Friday 50%"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -36,16 +36,16 @@
                     android:layout_gravity="center_vertical"
                     android:text="Used in Working shift:"
                     android:textColor="@color/colorSecondaryText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="5dp"
+                    android:paddingLeft="@dimen/five_dp"
                     android:text="15"
                     android:textColor="@color/colorSecondaryText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -54,10 +54,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="@dimen/thirty_dp"
             android:text="50%"
             android:textColor="@color/colorGreen"
-            android:textSize="16dp" />
+            android:textSize="@dimen/sixteen_dp" />
     </LinearLayout>
 
     <TextView

@@ -10,43 +10,43 @@
         android:orientation="horizontal">
 
         <FrameLayout
-            android:layout_width="15dp"
+            android:layout_width="@dimen/fifteen_dp"
             android:layout_height="match_parent" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:paddingTop="15dp"
+            android:paddingLeft="@dimen/thirty_dp"
+            android:paddingRight="@dimen/thirty_dp"
+            android:paddingTop="@dimen/fifteen_dp"
             android:text="1"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <FrameLayout
             android:layout_width="1px"
-            android:layout_height="25dp"
+            android:layout_height="@dimen/twenty_five_dp"
             android:layout_marginTop="12dp"
             android:background="@color/colorTextHint" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:layout_marginRight="@dimen/thirty_dp"
             android:orientation="vertical"
-            android:paddingTop="15dp">
+            android:paddingTop="@dimen/fifteen_dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="5dp"
+                    android:paddingRight="@dimen/five_dp"
                     android:text="04 August, 2017"
                     android:textColor="@color/colorMainText" />
 
@@ -62,13 +62,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="5dp"
+                    android:paddingRight="@dimen/five_dp"
                     android:text="Principal"
                     android:textColor="@color/colorMainText" />
 
@@ -83,13 +83,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="5dp"
+                    android:paddingRight="@dimen/five_dp"
                     android:text="Interest"
                     android:textColor="@color/colorMainText" />
 
@@ -105,13 +105,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="5dp"
+                    android:paddingRight="@dimen/five_dp"
                     android:text="Monthly Fee"
                     android:textColor="@color/colorMainText" />
 
@@ -127,13 +127,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="5dp"
+                    android:paddingRight="@dimen/five_dp"
                     android:text="Balance"
                     android:textColor="@color/colorMainText" />
 
@@ -149,14 +149,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="5dp"
+                    android:paddingRight="@dimen/five_dp"
                     android:text="Close with debt"
                     android:textColor="@color/colorMainText" />
 

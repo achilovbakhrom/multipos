@@ -19,7 +19,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="@dimen/thirty_dp"
                 android:background="@color/colorWhite"
                 android:orientation="horizontal">
 
@@ -27,34 +27,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="Recent results"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
                     android:orientation="horizontal"
-                    android:padding="5dp">
+                    android:padding="@dimen/five_dp">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/group" />
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="@dimen/twenty_five_dp"
+                        android:layout_height="@dimen/twenty_five_dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:layout_marginRight="@dimen/thirty_dp"
                         android:src="@drawable/dots"
                         android:tint="@color/colorTintGrey" />
 
@@ -76,23 +76,23 @@
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rvCategory"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp" />
+                    android:layout_height="@dimen/hundred_dp"
+                    android:layout_marginLeft="@dimen/twenty_dp"
+                    android:layout_marginRight="@dimen/twenty_dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="@dimen/twenty_dp"
+                    android:layout_marginRight="@dimen/twenty_dp"
+                    android:layout_marginTop="@dimen/twenty_dp"
                     android:background="@drawable/edit_text_bg"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_margin="10dp"
+                        android:layout_margin="@dimen/ten_dp"
                         android:layout_weight="1"
                         android:background="@drawable/grey_bg"
                         android:orientation="vertical">
@@ -105,23 +105,23 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="30dp"
+                                android:layout_height="@dimen/thirty_dp"
                                 android:gravity="left"
-                                android:paddingLeft="15dp"
-                                android:paddingTop="5dp"
+                                android:paddingLeft="@dimen/fifteen_dp"
+                                android:paddingTop="@dimen/five_dp"
                                 android:text="Search Result by SKU:"
                                 android:textColor="@color/colorWhite"
-                                android:textSize="18dp" />
+                                android:textSize="@dimen/eighteen_dp" />
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="30dp"
+                                android:layout_height="@dimen/thirty_dp"
                                 android:gravity="left"
-                                android:paddingLeft="5dp"
-                                android:paddingTop="5dp"
+                                android:paddingLeft="@dimen/five_dp"
+                                android:paddingTop="@dimen/five_dp"
                                 android:text="1087"
                                 android:textColor="@color/colorWhite"
-                                android:textSize="18dp" />
+                                android:textSize="@dimen/eighteen_dp" />
 
                         </LinearLayout>
 
@@ -135,36 +135,36 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="@dimen/twenty_dp"
+                        android:layout_marginRight="@dimen/twenty_dp"
+                        android:layout_marginTop="@dimen/twenty_dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_marginBottom="20dp"
+                            android:layout_height="@dimen/hundred_dp"
+                            android:layout_marginBottom="@dimen/twenty_dp"
                             android:background="@drawable/num_pad_bg"
                             android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:paddingBottom="5dp"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:paddingTop="5dp"
+                                android:layout_marginLeft="@dimen/twenty_dp"
+                                android:paddingBottom="@dimen/five_dp"
+                                android:paddingLeft="@dimen/ten_dp"
+                                android:paddingRight="@dimen/ten_dp"
+                                android:paddingTop="@dimen/five_dp"
                                 android:text="SKU"
                                 android:textColor="@color/colorMainText"
-                                android:textSize="18dp" />
+                                android:textSize="@dimen/eighteen_dp" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginLeft="@dimen/twenty_dp"
                                 android:orientation="horizontal">
 
                                 <EditText
@@ -174,19 +174,19 @@
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="#00ffffff"
-                                    android:paddingBottom="5dp"
-                                    android:paddingLeft="10dp"
-                                    android:paddingRight="10dp"
-                                    android:paddingTop="5dp"
+                                    android:paddingBottom="@dimen/five_dp"
+                                    android:paddingLeft="@dimen/ten_dp"
+                                    android:paddingRight="@dimen/ten_dp"
+                                    android:paddingTop="@dimen/five_dp"
                                     android:text="1087"
                                     android:textColor="@color/colorBlue"
-                                    android:textSize="38dp"
+                                    android:textSize="@dimen/thirty_eight_dp"
                                     android:textStyle="bold" />
 
                                 <ImageView
                                     android:layout_width="40dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="10dp"
+                                    android:layout_marginRight="@dimen/ten_dp"
                                     android:src="@drawable/backspace"
                                     android:tint="@color/colorTintGrey" />
 
@@ -195,31 +195,31 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="@dimen/hundred_dp"
                             android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginRight="@dimen/ten_dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/num_pad_btn"
                                 android:gravity="center"
                                 android:text="7"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginRight="@dimen/ten_dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/num_pad_btn"
                                 android:gravity="center"
                                 android:text="8"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -230,37 +230,37 @@
                                 android:gravity="center"
                                 android:text="9"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="@dimen/hundred_dp"
                             android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginRight="@dimen/ten_dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/num_pad_btn"
                                 android:gravity="center"
                                 android:text="4"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginRight="@dimen/ten_dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/num_pad_btn"
                                 android:gravity="center"
                                 android:text="5"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -271,37 +271,37 @@
                                 android:gravity="center"
                                 android:text="6"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="@dimen/hundred_dp"
                             android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginRight="@dimen/ten_dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/num_pad_btn"
                                 android:gravity="center"
                                 android:text="1"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginRight="@dimen/ten_dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/num_pad_btn"
                                 android:gravity="center"
                                 android:text="2"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -312,51 +312,51 @@
                                 android:gravity="center"
                                 android:text="3"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="@dimen/hundred_dp"
                             android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="@dimen/ten_dp"
+                                android:layout_marginRight="@dimen/ten_dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/num_pad_btn"
                                 android:gravity="center"
                                 android:text="C"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="@dimen/ten_dp"
+                                android:layout_marginRight="@dimen/ten_dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/num_pad_btn"
                                 android:gravity="center"
                                 android:text="0"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="10dp"
+                                android:layout_marginBottom="@dimen/ten_dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/num_pad_btn"
                                 android:gravity="center"
                                 android:text="OK"
                                 android:textColor="@color/colorBlue"
-                                android:textSize="38dp"
+                                android:textSize="@dimen/thirty_eight_dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 

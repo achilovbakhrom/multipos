@@ -15,11 +15,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="@dimen/twenty_five_dp"
             android:layout_weight="1"
             android:text="Coca cola"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="18dp"/>
+            android:textSize="@dimen/eighteen_dp"/>
 
         <LinearLayout
             android:layout_weight="1"
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginRight="@dimen/fifteen_dp"/>
         </LinearLayout>
 
         <TextView
@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:text="6500 uzs"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="18dp"/>
+            android:textSize="@dimen/eighteen_dp"/>
 
         <TextView
             android:id="@+id/tvTotalPrice"
@@ -51,7 +51,7 @@
             android:layout_weight="1"
             android:text="13000 uzs"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="18dp"/>
+            android:textSize="@dimen/eighteen_dp"/>
 
     </LinearLayout>
 

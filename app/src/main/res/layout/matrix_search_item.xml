@@ -8,9 +8,9 @@
         android:id="@+id/imageView"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/five_dp"
         android:src="@drawable/ellipse_white"
         />
 
@@ -24,14 +24,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#419fd9"
-                android:textSize="18dp"
+                android:textSize="@dimen/eighteen_dp"
                 android:text="Shinny"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SKU:07842"
-                android:textSize="18dp"/>
+                android:textSize="@dimen/eighteen_dp"/>
 
         </LinearLayout>
 

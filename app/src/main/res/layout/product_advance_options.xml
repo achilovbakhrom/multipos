@@ -23,13 +23,13 @@
                 android:background="@color/colorWhite"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp">
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/five_dp"
                     android:text="Advanced Options"
                     android:textColor="@color/colorBlue" />
 
@@ -44,29 +44,29 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="2px"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="@dimen/twenty_five_dp"
                 android:background="@color/colorTextHint" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Recipe"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
 
                 <com.jim.mpviews.MpCheckbox
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     app:checked="true"
                     app:text="Active"
                     app:without_text="true" />
@@ -75,20 +75,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="200dp"
-                    android:layout_height="38dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="20dp" />
+                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/twenty_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="125dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="@dimen/twenty_dp"
                     android:hint="Quantity"
                     android:textColorHint="@color/colorTextHint" />
 
@@ -96,10 +96,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="38dp"
+                    android:layout_marginRight="@dimen/thirty_eight_dp"
                     android:gravity="right"
                     android:text="unit"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -112,23 +112,23 @@
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="@dimen/ten_dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Stock Units"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
 
                 <TextView
@@ -138,21 +138,21 @@
                     android:layout_marginLeft="255dp"
                     android:gravity="right"
                     android:text="Active"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="125dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:hint="Quantity"
                     android:textColorHint="@color/colorTextHint" />
 
@@ -160,14 +160,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:gravity="right"
                     android:text="="
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="125dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="12dp"
                     android:hint="Quantity"
@@ -180,12 +180,12 @@
                     android:layout_marginRight="35dp"
                     android:gravity="right"
                     android:text="unit"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpCheckbox
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="38dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_eight_dp"
                     app:checked="true"
                     app:text="Active"
                     app:without_text="true" />
@@ -201,7 +201,7 @@
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="@dimen/ten_dp" />
 
         </LinearLayout>
 

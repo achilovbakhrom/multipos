@@ -26,12 +26,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="@dimen/twenty_dp"
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="60dp"
                     android:text="1st Attribute set"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -43,15 +43,15 @@
 
                     <com.jim.mpviews.MpSpinner
                         android:layout_width="0dp"
-                        android:layout_height="38dp"
-                        android:layout_marginRight="20dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_marginRight="@dimen/twenty_dp"
                         android:layout_weight="1" />
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginRight="@dimen/thirty_dp"
                         android:src="@drawable/add_round" />
 
                 </LinearLayout>
@@ -59,12 +59,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="@dimen/twenty_dp"
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="45dp"
                     android:text="2nd Attribute set"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -75,14 +75,14 @@
 
                     <com.jim.mpviews.MpSpinner
                         android:layout_width="0dp"
-                        android:layout_height="38dp"
-                        android:layout_marginRight="20dp"
+                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_marginRight="@dimen/twenty_dp"
                         android:layout_weight="1" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginRight="@dimen/thirty_dp"
                         android:src="@drawable/add_round" />
 
                 </LinearLayout>
@@ -94,25 +94,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="@dimen/thirty_dp"
                 android:gravity="right"
                 android:orientation="horizontal">
 
                 <com.jim.mpviews.MpButton
                     android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:text="Cancel"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpButton
                     android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:text="Save"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
             </LinearLayout>
 
@@ -120,11 +120,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="@dimen/thirty_dp"
                 android:layout_marginLeft="60dp"
                 android:text="1 step of 2"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <FrameLayout
                 android:layout_width="5px"

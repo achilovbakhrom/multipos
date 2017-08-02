@@ -21,13 +21,13 @@
                 android:background="@color/colorWhite"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp">
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/five_dp"
                     android:text="Management Item Mode"
                     android:textColor="@color/colorBlue" />
 
@@ -42,36 +42,36 @@
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="2px"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="@dimen/twenty_five_dp"
                 android:background="#8a8a8a" />
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="145dp"
+                    android:layout_width="@dimen/hundred_forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Vendor name"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:hint="Name"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
 
             </LinearLayout>
@@ -79,77 +79,77 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="145dp"
+                    android:layout_width="@dimen/hundred_forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Contact name"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:hint="Name"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
 
                 <TextView
-                    android:layout_width="145dp"
+                    android:layout_width="@dimen/hundred_forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Tel:"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:hint="Number"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Email:"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:hint="email"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
             </LinearLayout>
 
@@ -157,30 +157,30 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
 
                 <TextView
-                    android:layout_width="145dp"
+                    android:layout_width="@dimen/hundred_forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Address"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:hint="Place"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
 
             </LinearLayout>
@@ -189,23 +189,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="145dp"
+                    android:layout_width="@dimen/hundred_forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Tax Rate"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -216,14 +216,14 @@
                         android:layout_weight="1"
                         android:gravity="center_vertical"
                         android:text="0.0"
-                        android:textSize="16dp" />
+                        android:textSize="@dimen/sixteen_dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
                         android:text="%" />
                 </LinearLayout>
 
@@ -231,33 +231,33 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginRight="@dimen/thirty_dp"
+                android:layout_marginTop="@dimen/fifteen_dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="145dp"
+                    android:layout_width="@dimen/hundred_forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Contact"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpSpinner
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:layout_weight="1"
                     android:hint="enter phone number" />
 
@@ -270,18 +270,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="145dp"
+                    android:layout_width="@dimen/hundred_forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Options"
                     android:textColor="@color/colorMainText"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
 
                 <com.jim.mpviews.MpCheckbox
@@ -305,22 +305,22 @@
             <com.jim.mpviews.MpButton
                 android:layout_width="160dp"
                 android:layout_height="50dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
+                android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="Cancel"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp" />
+                android:textSize="@dimen/sixteen_dp" />
 
 
             <com.jim.mpviews.MpButton
                 android:layout_width="160dp"
                 android:layout_height="50dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:text="Save"
                 android:textColor="@color/colorBlue"
-                android:textSize="16dp"
+                android:textSize="@dimen/sixteen_dp"
                 android:textStyle="bold" />
 
         </LinearLayout>

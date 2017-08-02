@@ -21,31 +21,31 @@
                 android:background="@color/colorBackground"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp">
+                android:paddingBottom="@dimen/ten_dp"
+                android:paddingTop="@dimen/ten_dp">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:text="Emp Name"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
                     android:src="@drawable/payments_btn" />
 
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:src="@drawable/currency_btn" />
 
             </LinearLayout>
@@ -70,18 +70,18 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
+                        android:layout_marginTop="@dimen/fifteen_dp"
                         android:text="All Debt salary"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
                         android:text="800 000 uzs"
                         android:textColor="@color/colorMainText"
                         android:textSize="32dp" />
@@ -102,18 +102,18 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
+                        android:layout_marginTop="@dimen/fifteen_dp"
                         android:text="Payed in this month"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
                         android:text="200 000 uzs"
                         android:textColor="@color/colorMainText"
                         android:textSize="32dp" />
@@ -142,18 +142,18 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
+                        android:layout_marginTop="@dimen/fifteen_dp"
                         android:text="Debt for this month"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
                         android:text="120 000 uzs"
                         android:textColor="@color/colorMainText"
                         android:textSize="32dp" />
@@ -174,18 +174,18 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
+                        android:layout_marginTop="@dimen/fifteen_dp"
                         android:text="Payed for this month"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
                         android:text="680 000 uzs"
                         android:textColor="@color/colorMainText"
                         android:textSize="32dp" />
@@ -207,22 +207,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/twenty_five_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="@dimen/five_dp"
                     android:gravity="right"
                     android:text="Department:"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <FrameLayout
                     android:layout_width="0dp"
-                    android:layout_height="15dp"
+                    android:layout_height="@dimen/fifteen_dp"
                     android:layout_gravity="bottom"
                     android:layout_weight="1"
                     android:background="@drawable/dash" />
@@ -231,11 +231,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:gravity="right"
                     android:text="Cashier"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
             </LinearLayout>
 
@@ -245,7 +245,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="@dimen/thirty_dp"
             android:gravity="right"
             android:orientation="horizontal"
 
@@ -254,19 +254,19 @@
             <com.jim.mpviews.MpButton
                 android:layout_width="120dp"
                 android:layout_height="50dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="History"
                 android:textColor="@color/colorBlue"
-                android:textSize="16dp"
+                android:textSize="@dimen/sixteen_dp"
                 android:textStyle="bold" />
 
             <com.jim.mpviews.MpButton
                 android:layout_width="120dp"
                 android:layout_height="50dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:text="Pay"
                 android:textColor="@color/colorBlue"
-                android:textSize="16dp"
+                android:textSize="@dimen/sixteen_dp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -294,26 +294,26 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
                     android:text="List"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
                     android:text="Calendar"
                     android:textColor="@color/colorSecondaryText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <ImageButton
                     android:id="@+id/mpBtnLeft"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="70dp"
+                    android:layout_marginLeft="@dimen/seventy_dp"
                     android:background="@android:color/transparent"
                     android:src="@drawable/left_btn" />
 
@@ -323,7 +323,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:padding="20dp"
+                    android:padding="@dimen/twenty_dp"
                     android:text="December 2017"
                     android:textColor="@color/colorBlue"
                     android:textSize="15sp"
@@ -334,7 +334,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="@dimen/ten_dp"
                     android:background="@android:color/transparent"
                     android:src="@drawable/right_btn" />
 
@@ -345,16 +345,16 @@
                     android:layout_marginLeft="90dp"
                     android:text="Month"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
                     android:text="All"
                     android:textColor="@color/colorSecondaryText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
             </LinearLayout>
 
@@ -369,10 +369,10 @@
                     android:layout_width="210dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="30dp"
+                    android:paddingLeft="@dimen/thirty_dp"
                     android:text="Time Date"
                     android:textColor="@color/colorWhite"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <FrameLayout
                     android:layout_width="1px"
@@ -386,7 +386,7 @@
                     android:gravity="center"
                     android:text="Payed for"
                     android:textColor="@color/colorWhite"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <FrameLayout
                     android:layout_width="1px"
@@ -400,7 +400,7 @@
                     android:gravity="center"
                     android:text="Amount"
                     android:textColor="@color/colorWhite"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <FrameLayout
                     android:layout_width="1px"
@@ -415,7 +415,7 @@
                     android:gravity="center"
                     android:text="Action"
                     android:textColor="@color/colorWhite"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -427,10 +427,10 @@
                     android:layout_width="210dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:paddingLeft="30dp"
+                    android:paddingLeft="@dimen/thirty_dp"
                     android:text="20:20 09.12.2017"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <FrameLayout
                     android:layout_width="1px"
@@ -444,7 +444,7 @@
                     android:gravity="center"
                     android:text="Salary"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <FrameLayout
                     android:layout_width="1px"
@@ -456,10 +456,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:gravity="right"
-                    android:paddingRight="15dp"
+                    android:paddingRight="@dimen/fifteen_dp"
                     android:text="200 000 uzs"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <FrameLayout
                     android:layout_width="1px"
@@ -472,19 +472,19 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp">
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp">
 
                     <ImageView
                         android:layout_width="0dp"
-                        android:layout_height="30dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:src="@drawable/edit_blue" />
 
                     <ImageView
                         android:layout_width="0dp"
-                        android:layout_height="30dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:src="@drawable/delete_blue" />
@@ -500,21 +500,21 @@
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="@dimen/twenty_five_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="@dimen/five_dp"
                     android:gravity="right"
                     android:text="Payed Bonus:"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <FrameLayout
                     android:layout_width="0dp"
-                    android:layout_height="15dp"
+                    android:layout_height="@dimen/fifteen_dp"
                     android:layout_gravity="bottom"
                     android:layout_weight="1"
                     android:background="@drawable/dash" />
@@ -523,11 +523,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:gravity="right"
                     android:text="25 000 uzs"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
             </LinearLayout>
 
@@ -541,14 +541,14 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="@dimen/five_dp"
                     android:gravity="right"
                     android:text="Payed Salary:"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <FrameLayout
                     android:layout_width="0dp"
-                    android:layout_height="15dp"
+                    android:layout_height="@dimen/fifteen_dp"
                     android:layout_gravity="bottom"
                     android:layout_weight="1"
                     android:background="@drawable/dash" />
@@ -557,11 +557,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:gravity="right"
                     android:text="200 000 uzs"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
             </LinearLayout>
 
@@ -575,14 +575,14 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="@dimen/five_dp"
                     android:gravity="right"
                     android:text="Total get:"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <FrameLayout
                     android:layout_width="0dp"
-                    android:layout_height="15dp"
+                    android:layout_height="@dimen/fifteen_dp"
                     android:layout_gravity="bottom"
                     android:layout_weight="1"
                     android:background="@drawable/dash" />
@@ -591,28 +591,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:gravity="right"
                     android:text="225 000 uzs"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="@dimen/twenty_five_dp"
                 android:gravity="right"
                 android:orientation="horizontal">
 
                 <com.jim.mpviews.MpButton
                     android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:text="Pay"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/sixteen_dp"
                     android:textStyle="bold" />
 
             </LinearLayout>

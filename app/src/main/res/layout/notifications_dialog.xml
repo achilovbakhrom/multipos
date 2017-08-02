@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="480dp"
+        android:layout_width="@dimen/four_hundred_eighty_dp"
         android:layout_height="wrap_content"
         android:background="@drawable/notification_bg"
         android:orientation="vertical">
@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="@dimen/ten_dp"
             android:orientation="horizontal">
 
             <TextView
@@ -22,17 +22,17 @@
                 android:layout_height="wrap_content"
                 android:text="Name:"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp"
+                android:textSize="@dimen/eighteen_dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:paddingLeft="10dp"
+                android:paddingLeft="@dimen/ten_dp"
                 android:text="Some notes"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp"
+                android:textSize="@dimen/eighteen_dp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:text="Favorites:"
             android:textColor="@color/colorWhite"
-            android:textSize="18dp"
+            android:textSize="@dimen/eighteen_dp"
             android:textStyle="bold" />
 
         <android.support.v7.widget.RecyclerView
@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="30dp">
+            android:paddingTop="@dimen/thirty_dp">
 
             <LinearLayout
                 android:layout_width="match_parent"

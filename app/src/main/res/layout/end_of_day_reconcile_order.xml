@@ -22,13 +22,13 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="@dimen/hundred_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
                 android:text="Order#"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="135dp"
@@ -36,7 +36,7 @@
                 android:layout_gravity="center"
                 android:text="Customer"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="155dp"
@@ -44,7 +44,7 @@
                 android:layout_gravity="center"
                 android:text="Date Opened"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="155dp"
@@ -52,7 +52,7 @@
                 android:layout_gravity="center"
                 android:text="Employee"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="160dp"
@@ -60,16 +60,16 @@
                 android:layout_gravity="center"
                 android:text="Total"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="@dimen/fifteen_dp"
                 android:text="Due"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
         </LinearLayout>
 
@@ -85,13 +85,13 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="@dimen/hundred_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
                 android:text="54786"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="135dp"
@@ -99,7 +99,7 @@
                 android:layout_gravity="center"
                 android:text="-"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="155dp"
@@ -107,16 +107,16 @@
                 android:layout_gravity="center"
                 android:text="2/8/16, 11:24"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="@dimen/hundred_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:singleLine="true"
                 android:text="Jamal, Chambers"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="160dp"
@@ -125,17 +125,17 @@
                 android:gravity="center"
                 android:text="100 000 000 uzs"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="@dimen/fifteen_dp"
                 android:gravity="center"
                 android:text="100 000 000 uzs"
                 android:textColor="@color/colorRed"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <ImageView
                 android:layout_width="match_parent"

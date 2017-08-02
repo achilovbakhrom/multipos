@@ -14,8 +14,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:layout_marginTop="@dimen/thirty_dp"
             android:src="@drawable/pos" />
 
     </LinearLayout>
@@ -29,17 +29,17 @@
         android:orientation="vertical">
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="5dp"
+            android:layout_height="@dimen/five_dp"
             android:background="@drawable/shadow_black"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
             android:gravity="center"
             android:text="@string/login_details"
             android:textColor="@color/colorWhite"
-            android:textSize="18dp"
+            android:textSize="@dimen/eighteen_dp"
             android:textStyle="italic" />
 
     </LinearLayout>
@@ -65,8 +65,8 @@
                     android:id="@+id/etFounderLogin"
                     android:layout_width="350dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_marginTop="40dp"
                     android:hint="@string/founder_login" />
 
@@ -74,24 +74,24 @@
                     android:id="@+id/etFounderPassword"
                     android:layout_width="350dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
                     android:inputType="textPassword"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
                     android:fontFamily="roboto"
                     android:hint="@string/founder_password" />
 
                 <TextView
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:textSize="16dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:textSize="@dimen/sixteen_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:textAlignment="center"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a Lorem ipsum dolor sit amet"
                     android:textColor="#c7c7c7" />
@@ -104,37 +104,37 @@
                 android:layout_alignParentBottom="true"
                 android:orientation="horizontal"
                 android:paddingBottom="45dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
 
                 >
 
                 <com.jim.mpviews.MpButton
                     android:id="@+id/btnRegistration"
-                    android:layout_width="180dp"
-                    android:layout_height="70dp"
+                    android:layout_width="@dimen/hundred_eighty_dp"
+                    android:layout_height="@dimen/seventy_dp"
                     android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="@string/registration"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/sixteen_dp"
                     android:textStyle="bold" />
 
                 <com.jim.mpviews.MpButton
                     android:id="@+id/btnLogin"
-                    android:layout_width="180dp"
-                    android:layout_height="70dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_width="@dimen/hundred_eighty_dp"
+                    android:layout_height="@dimen/seventy_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
                     android:gravity="center"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="@string/login"
                     android:textColor="@color/colorBlue"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/sixteen_dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -156,14 +156,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_marginTop="40dp"
-                android:paddingLeft="30dp"
+                android:paddingLeft="@dimen/thirty_dp"
                 android:paddingRight="50dp"
                 android:textAlignment="center"
                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a "
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
         </LinearLayout>
 

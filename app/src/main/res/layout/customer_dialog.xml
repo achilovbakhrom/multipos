@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/seventy_dp"
             android:background="@drawable/rounded_blue_bg">
 
             <TextView
@@ -23,23 +23,23 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:paddingLeft="30dp"
+                android:paddingLeft="@dimen/thirty_dp"
                 android:text="Groups"
                 android:textColor="@color/colorWhite"
-                android:textSize="20dp"
+                android:textSize="@dimen/twenty_dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:layout_margin="30dp"
+                android:layout_margin="@dimen/thirty_dp"
                 android:background="@drawable/blue_btn_bg"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="@dimen/ten_dp"
                 android:text="+ Add"
                 android:textColor="@color/colorWhite"
-                android:textSize="16dp"
+                android:textSize="@dimen/sixteen_dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -48,19 +48,19 @@
             android:layout_height="400dp"
             android:background="@color/colorBackgroundGrey"
             android:orientation="vertical"
-            android:paddingTop="10dp">
+            android:paddingTop="@dimen/ten_dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:orientation="horizontal">
 
                 <com.jim.mpviews.MpCheckbox
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="center"
                     app:without_text="true" />
 
@@ -71,21 +71,21 @@
                     android:layout_weight="1"
                     android:text="Regular"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:orientation="horizontal">
 
                 <com.jim.mpviews.MpCheckbox
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="center"
                     app:without_text="true" />
 
@@ -96,7 +96,7 @@
                     android:layout_weight="1"
                     android:text="Regular"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
             </LinearLayout>
 
@@ -116,7 +116,7 @@
                 android:gravity="center"
                 android:text="Cancel"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
 
             <com.jim.mpviews.MpButton
@@ -125,7 +125,7 @@
                 android:gravity="center"
                 android:text="Save"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp"
+                android:textSize="@dimen/eighteen_dp"
                 android:textStyle="bold" />
 
         </LinearLayout>

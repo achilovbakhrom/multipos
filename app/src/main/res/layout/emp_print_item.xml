@@ -14,14 +14,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:paddingLeft="30dp"
+            android:paddingLeft="@dimen/thirty_dp"
             android:text="Jana Chambers"
             android:textColor="@color/colorMainText"
-            android:textSize="20dp" />
+            android:textSize="@dimen/twenty_dp" />
 
         <com.jim.mpviews.MpCheckbox
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="@dimen/thirty_dp"
             android:layout_gravity="center"
             android:layout_marginRight="90dp" />
     </LinearLayout>
@@ -29,7 +29,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/ten_dp"
         android:background="@color/colorTextHint" />
 </LinearLayout>

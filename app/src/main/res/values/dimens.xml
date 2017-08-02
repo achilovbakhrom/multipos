@@ -95,6 +95,8 @@
     <dimen name="three_hundred_dp">300dp</dimen>
     <dimen name="three_hundred_fifty_dp">350dp</dimen>
     <dimen name="three_hundred_eighty_dp">380dp</dimen>
+    <dimen name="four_hundred_forty_dp">440dp</dimen>
     <dimen name="four_hundred_sixty_dp">460dp</dimen>
+    <dimen name="four_hundred_eighty_dp">480dp</dimen>
     <dimen name="five_hundred_twenty_dp">520dp</dimen>
 </resources>

@@ -17,21 +17,21 @@
             android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="30dp"
-            android:paddingRight="5dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:paddingRight="@dimen/five_dp"
             android:text="Jamal Chambers"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <TextView
             android:id="@+id/phoneNum"
             android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingRight="5dp"
+            android:paddingRight="@dimen/five_dp"
             android:text="+998901598475"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <TextView
             android:id="@+id/date"
@@ -40,10 +40,10 @@
             android:layout_gravity="center"
             android:text="Tashkent Yunusobod"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <TextView
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
             android:id="@+id/idCustomer"
             android:layout_width="135dp"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:gravity="center"
             android:text="1245672445"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                 android:gravity="center"
                 android:text="Orders"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <com.jim.mpviews.MpButton
                 android:layout_width="150dp"
@@ -75,7 +75,7 @@
                 android:gravity="center"
                 android:text="Edit info"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <com.jim.mpviews.MpButton
                 android:layout_width="150dp"
@@ -84,7 +84,7 @@
                 android:gravity="center"
                 android:text="Add to Order"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
 

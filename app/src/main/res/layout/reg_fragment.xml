@@ -15,8 +15,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:layout_marginTop="@dimen/thirty_dp"
             android:src="@drawable/pos" />
 
     </LinearLayout>
@@ -36,11 +36,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
             android:gravity="center"
             android:text="@string/registration_details"
             android:textColor="@color/colorWhite"
-            android:textSize="18dp"
+            android:textSize="@dimen/eighteen_dp"
             android:textStyle="italic" />
 
     </LinearLayout>
@@ -64,8 +64,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_marginTop="35dp"
                     android:orientation="horizontal">
 
@@ -75,7 +75,7 @@
                         android:layout_weight="1"
                         android:text="@string/organization_details"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
 
                 </LinearLayout>
 
@@ -83,18 +83,18 @@
                     android:id="@+id/etOrgName"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
                     android:hint="@string/organization_name" />
 
                 <com.jim.mpviews.MpEditText
                     android:id="@+id/etOrgEmail"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
                     android:hint="@string/email_with_star"
                     android:inputType="textEmailAddress" />
 
@@ -102,26 +102,26 @@
                     android:id="@+id/etOrgAddress"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
                     android:hint="@string/organization_address" />
 
                 <com.jim.mpviews.MpEditText
                     android:id="@+id/etOrgZipCode"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
                     android:hint="@string/zip_code" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -129,16 +129,16 @@
                         android:layout_height="wrap_content"
                         android:text="@string/contacts"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -153,8 +153,8 @@
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:layout_marginRight="@dimen/fifteen_dp"
                         android:layout_weight="1"
                         android:hint="@string/enter_phone_number" />
 
@@ -162,7 +162,7 @@
                         android:id="@+id/ivAddContact"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginRight="@dimen/thirty_dp"
                         android:src="@drawable/add_round" />
                 </LinearLayout>
 
@@ -170,8 +170,8 @@
                     android:id="@+id/rvContacts"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"/>
+                    android:paddingLeft="@dimen/thirty_dp"
+                    android:paddingRight="@dimen/thirty_dp"/>
 
 
             </LinearLayout>
@@ -185,8 +185,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_marginTop="35dp"
                     android:orientation="horizontal">
 
@@ -196,28 +196,28 @@
                         android:layout_weight="1"
                         android:text="@string/founder_login_details"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:tint="@color/colorTintGrey" />
                 </LinearLayout>
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
                     android:hint="@string/login_with_start" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
                     android:fontFamily="roboto"
                     android:hint="@string/password_with_star"
                     android:inputType="textPassword" />
@@ -225,9 +225,9 @@
                 <com.jim.mpviews.MpEditText
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
                     android:fontFamily="roboto"
                     android:hint="@string/confirm_password_with_star"
                     android:inputType="textPassword" />
@@ -235,13 +235,13 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="@string/mandatory_fields"
                     android:textColor="@color/colorSecondaryText" />
 
@@ -257,37 +257,37 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_marginBottom="45dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginRight="@dimen/thirty_dp"
+            android:layout_marginTop="@dimen/thirty_dp"
             android:gravity="center"
             android:orientation="horizontal">
 
             <com.jim.mpviews.MpButton
                 android:id="@+id/btnBack"
-                android:layout_width="180dp"
-                android:layout_height="70dp"
-                android:layout_marginRight="15dp"
+                android:layout_width="@dimen/hundred_eighty_dp"
+                android:layout_height="@dimen/seventy_dp"
+                android:layout_marginRight="@dimen/fifteen_dp"
                 android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingTop="@dimen/five_dp"
                 android:text="@string/back"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp" />
+                android:textSize="@dimen/sixteen_dp" />
 
             <com.jim.mpviews.MpButton
                 android:id="@+id/btnRegistrationSecond"
-                android:layout_width="180dp"
-                android:layout_height="70dp"
+                android:layout_width="@dimen/hundred_eighty_dp"
+                android:layout_height="@dimen/seventy_dp"
                 android:gravity="center"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingTop="@dimen/five_dp"
                 android:text="@string/registration"
                 android:textColor="@color/colorBlue"
-                android:textSize="16dp"
+                android:textSize="@dimen/sixteen_dp"
                 android:textStyle="bold" />
 
         </LinearLayout>

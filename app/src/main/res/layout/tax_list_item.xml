@@ -14,22 +14,22 @@
             android:layout_height="wrap_content"
             android:text="Some tax"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp"/>
+            android:textSize="@dimen/eighteen_dp"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="@dimen/thirty_dp"
             android:layout_weight="1"
             android:gravity="right"
             android:text="8.5%"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp"/>
+            android:textSize="@dimen/eighteen_dp"/>
 
         <ImageView
             android:layout_gravity="center"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/twenty_dp"
+            android:layout_height="@dimen/twenty_dp"
             android:src="@drawable/checked"
             android:tint="@color/colorBlue"/>
 

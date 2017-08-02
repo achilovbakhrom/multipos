@@ -10,17 +10,17 @@
         android:orientation="horizontal">
 
         <FrameLayout
-            android:layout_width="20dp"
+            android:layout_width="@dimen/twenty_dp"
             android:layout_height="match_parent"
             android:background="@color/colorBlue" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:paddingBottom="10dp"
-            android:paddingRight="5dp"
-            android:paddingTop="10dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:paddingBottom="@dimen/ten_dp"
+            android:paddingRight="@dimen/five_dp"
+            android:paddingTop="@dimen/ten_dp"
             android:text="Alex Band"
             android:textColor="@color/colorBlue" />
 
@@ -37,7 +37,7 @@
         android:orientation="horizontal">
 
         <FrameLayout
-            android:layout_width="20dp"
+            android:layout_width="@dimen/twenty_dp"
             android:layout_height="match_parent"
             android:background="@color/colorGreyDark" />
 
@@ -46,21 +46,21 @@
             android:layout_height="wrap_content"
             android:background="@color/colorBackground"
             android:orientation="vertical"
-            android:paddingBottom="10dp"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:paddingTop="10dp">
+            android:paddingBottom="@dimen/ten_dp"
+            android:paddingLeft="@dimen/thirty_dp"
+            android:paddingRight="@dimen/thirty_dp"
+            android:paddingTop="@dimen/ten_dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="@dimen/five_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="5dp"
+                    android:paddingRight="@dimen/five_dp"
                     android:text="Order #455784"
                     android:textColor="@color/colorMainText" />
 
@@ -76,13 +76,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="@dimen/five_dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="5dp"
+                    android:paddingRight="@dimen/five_dp"
                     android:text="Peroid Left"
                     android:textColor="@color/colorMainText" />
 
@@ -103,7 +103,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="5dp"
+                    android:paddingRight="@dimen/five_dp"
                     android:text="For this period"
                     android:textColor="@color/colorMainText" />
 

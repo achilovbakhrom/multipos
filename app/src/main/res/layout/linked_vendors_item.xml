@@ -7,35 +7,35 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:layout_marginRight="@dimen/twenty_dp"
             android:gravity="left"
             android:hint="Input account name"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <TextView
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="@dimen/twenty_dp"
             android:gravity="right"
             android:hint="Input account name"
-            android:paddingRight="5dp"
+            android:paddingRight="@dimen/five_dp"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="@dimen/thirty_dp"
             android:layout_gravity="center"
             android:src="@drawable/cart" />
 

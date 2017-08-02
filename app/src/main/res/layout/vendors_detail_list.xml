@@ -33,7 +33,7 @@
                     android:paddingTop="@dimen/five_dp"
                     android:text="Products"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp"
+                    android:textSize="@dimen/eighteen_dp"
                     android:textStyle="bold" />
 
                 <TextView

@@ -45,7 +45,7 @@
                 android:layout_marginLeft="@dimen/thirty_dp"
                 android:text="Void/Return"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -68,7 +68,7 @@
                 android:gravity="center"
                 android:text="Back"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
 
         </LinearLayout>

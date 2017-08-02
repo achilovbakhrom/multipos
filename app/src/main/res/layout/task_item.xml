@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="30dp"
+    android:layout_marginBottom="@dimen/thirty_dp"
     android:orientation="horizontal">
 
     <TextView
@@ -11,7 +11,7 @@
         android:layout_weight="1"
         android:paddingLeft="60dp"
         android:text="Some Task"
-        android:textSize="18dp" />
+        android:textSize="@dimen/eighteen_dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,6 +19,6 @@
         android:paddingRight="80dp"
         android:text="Mark as Complete"
         android:textColor="@color/colorBlue"
-        android:textSize="18dp" />
+        android:textSize="@dimen/eighteen_dp" />
 
 </LinearLayout>

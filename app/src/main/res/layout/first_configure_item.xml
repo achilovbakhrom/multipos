@@ -10,7 +10,7 @@
         android:orientation="horizontal">
 
         <FrameLayout
-            android:layout_width="20dp"
+            android:layout_width="@dimen/twenty_dp"
             android:layout_height="match_parent"
             android:background="@color/colorBlue" />
 
@@ -21,13 +21,13 @@
             android:background="@color/colorWhite"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp">
+            android:paddingBottom="@dimen/ten_dp"
+            android:paddingTop="@dimen/ten_dp">
 
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="@dimen/five_dp"
                 android:gravity="left"
                 android:text="Account"
                 android:textColor="@color/colorBlue" />
@@ -42,10 +42,10 @@
         </LinearLayout>
 
         <com.jim.mpviews.MpCheckbox
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/thirty_dp"
+            android:layout_height="@dimen/thirty_dp"
             android:layout_gravity="center"
-            android:layout_marginRight="30dp" />
+            android:layout_marginRight="@dimen/thirty_dp" />
 
 
     </LinearLayout>

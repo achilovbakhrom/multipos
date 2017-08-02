@@ -14,8 +14,8 @@
         android:layout_height="match_parent"
         android:layout_weight="67"
         android:orientation="vertical"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp">
+        android:paddingLeft="@dimen/thirty_dp"
+        android:paddingRight="@dimen/thirty_dp">
 
 
         <LinearLayout
@@ -29,10 +29,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:paddingLeft="30dp"
+                android:paddingLeft="@dimen/thirty_dp"
                 android:text="Reports"
                 android:textColor="@color/colorWhite"
-                android:textSize="20dp" />
+                android:textSize="@dimen/twenty_dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                 android:paddingRight="80dp"
                 android:text="Check"
                 android:textColor="@color/colorWhite"
-                android:textSize="20dp" />
+                android:textSize="@dimen/twenty_dp" />
         </LinearLayout>
 
         <android.support.v7.widget.RecyclerView
@@ -50,13 +50,13 @@
             android:layout_height="360dp" />
 
         <com.jim.mpviews.MpButton
-            android:layout_width="180dp"
+            android:layout_width="@dimen/hundred_eighty_dp"
             android:layout_height="60dp"
             android:layout_gravity="right"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/five_dp"
             android:text="Print"
             android:textColor="@color/colorBlue"
-            android:textSize="18dp"
+            android:textSize="@dimen/eighteen_dp"
             android:textStyle="bold" />
 
 

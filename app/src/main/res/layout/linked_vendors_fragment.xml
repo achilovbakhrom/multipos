@@ -13,18 +13,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:layout_marginTop="@dimen/thirty_dp"
             android:text="Vendor name"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="@dimen/five_dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
             android:orientation="horizontal">
 
             <TextView
@@ -32,25 +32,25 @@
                 android:layout_height="wrap_content"
                 android:text="Contact name:"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"
+                android:textSize="@dimen/eighteen_dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_weight="1"
                 android:text="Tap Product to manage it info"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
             android:orientation="horizontal">
 
             <TextView
@@ -58,18 +58,18 @@
                 android:layout_height="wrap_content"
                 android:text="Address:"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp"
+                android:textSize="@dimen/eighteen_dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_weight="1"
                 android:text="Tap Product to manage it info"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
 
@@ -81,9 +81,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:layout_marginTop="@dimen/fifteen_dp"
             android:orientation="horizontal">
 
             <TextView
@@ -91,22 +91,22 @@
                 android:layout_height="wrap_content"
                 android:text="in Vendor system:"
                 android:textColor="@color/colorMainText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_weight="1"
                 android:background="@drawable/blue_stroke"
                 android:drawableRight="@drawable/chain"
                 android:drawableTint="@color/colorBlue"
                 android:hint="Choose Vendor"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingTop="@dimen/five_dp"
                 android:textColor="@color/colorMainText"
                 android:textColorHint="@color/colorTextHint" />
         </LinearLayout>
@@ -114,7 +114,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="@dimen/five_dp"
             android:background="@color/colorBlue"
             android:orientation="horizontal">
 
@@ -122,28 +122,28 @@
                 android:layout_width="165dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
                 android:text="Products"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="165dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="@dimen/five_dp"
                 android:text="In Vendors sys"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="165dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="@dimen/five_dp"
                 android:text="Vendor Product"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
 
@@ -159,21 +159,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="@dimen/thirty_dp"
         android:gravity="right"
         android:orientation="horizontal">
 
         <com.jim.mpviews.MpButton
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
             android:text="Cancel"
             android:textColor="@color/colorSecondaryText" />
 
         <com.jim.mpviews.MpButton
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="@dimen/thirty_dp"
             android:text="Save"
             android:textColor="@color/colorBlue"
             android:textStyle="bold" />

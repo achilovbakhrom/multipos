@@ -20,7 +20,7 @@
             <com.jim.mpviews.MpSwitcher
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="30dp"
+                android:paddingLeft="@dimen/thirty_dp"
                 app:text_left="Group"
                 app:text_right="Tax and Rate" />
 
@@ -38,8 +38,8 @@
                     android:id="@+id/rvCategory"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="@dimen/twenty_dp"
+                    android:layout_marginRight="@dimen/twenty_dp"
                     android:layout_weight="1" />
 
             </LinearLayout>

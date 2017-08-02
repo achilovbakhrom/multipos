@@ -30,7 +30,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="@dimen/thirty_dp"
                 android:background="@color/colorWhite"
                 android:orientation="horizontal"
                 >
@@ -39,34 +39,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="Recent results"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
                     android:orientation="horizontal"
-                    android:padding="5dp">
+                    android:padding="@dimen/five_dp">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/group" />
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="@dimen/twenty_five_dp"
+                        android:layout_height="@dimen/twenty_five_dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:layout_marginRight="@dimen/thirty_dp"
                         android:src="@drawable/dots"
                         android:tint="@color/colorTintGrey" />
 
@@ -83,9 +83,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/fifteen_dp"
+                android:layout_marginLeft="@dimen/twenty_dp"
+                android:layout_marginTop="@dimen/ten_dp"
                 android:background="@drawable/edit_text_bg"
                 android:orientation="vertical">
 
@@ -93,10 +93,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingBottom="30dp"
+                    android:paddingBottom="@dimen/thirty_dp"
                     android:paddingLeft="40dp"
-                    android:paddingRight="30dp"
-                    android:paddingTop="30dp">
+                    android:paddingRight="@dimen/thirty_dp"
+                    android:paddingTop="@dimen/thirty_dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -122,12 +122,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
-                            android:paddingBottom="5dp"
-                            android:paddingRight="10dp"
-                            android:paddingTop="5dp"
+                            android:paddingBottom="@dimen/five_dp"
+                            android:paddingRight="@dimen/ten_dp"
+                            android:paddingTop="@dimen/five_dp"
                             android:text="Coca Cola 1.5L"
                             android:textColor="@color/colorBlue"
-                            android:textSize="18dp"
+                            android:textSize="@dimen/eighteen_dp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -135,23 +135,23 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
                             android:gravity="left"
-                            android:paddingBottom="5dp"
-                            android:paddingTop="5dp"
+                            android:paddingBottom="@dimen/five_dp"
+                            android:paddingTop="@dimen/five_dp"
                             android:text="Bell and Bobs"
                             android:textColor="@color/colorSecondaryText"
-                            android:textSize="18dp"
+                            android:textSize="@dimen/eighteen_dp"
                             android:textStyle="italic" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="125dp"
                             android:layout_gravity="left"
-                            android:paddingBottom="5dp"
-                            android:paddingRight="10dp"
-                            android:paddingTop="5dp"
+                            android:paddingBottom="@dimen/five_dp"
+                            android:paddingRight="@dimen/ten_dp"
+                            android:paddingTop="@dimen/five_dp"
                             android:text=""
                             android:textColor="@color/colorBlue"
-                            android:textSize="18dp" />
+                            android:textSize="@dimen/eighteen_dp" />
                     </LinearLayout>
 
                     <ImageView
@@ -170,13 +170,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
                         android:gravity="left"
-                        android:paddingBottom="5dp"
-                        android:paddingTop="5dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:paddingTop="@dimen/five_dp"
                         android:text="Quantity"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp"
+                        android:textSize="@dimen/eighteen_dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -201,7 +201,7 @@
                             android:gravity="center"
                             android:text="2"
                             android:textColor="@color/colorMainText"
-                            android:textSize="38dp"
+                            android:textSize="@dimen/thirty_eight_dp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -214,19 +214,19 @@
                     <com.jim.mpviews.MpButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginRight="@dimen/thirty_dp"
                         android:text="Set Quantity"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
                 </LinearLayout>
 
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="1px"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/twenty_dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
+                    android:layout_marginTop="@dimen/twenty_dp"
                     android:background="@color/colorTintGrey" />
 
                 <LinearLayout
@@ -237,46 +237,46 @@
                     <com.jim.mpviews.MpButton
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
+                        android:layout_marginRight="@dimen/fifteen_dp"
                         android:text="Special Price"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
 
                     <com.jim.mpviews.MpButton
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:layout_marginRight="@dimen/fifteen_dp"
                         android:text="Discount item"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
 
                     <com.jim.mpviews.MpButton
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="@dimen/fifteen_dp"
+                        android:layout_marginRight="@dimen/thirty_dp"
                         android:text="Remove Tax"
                         android:textColor="@color/colorBlue"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/eighteen_dp" />
 
                 </LinearLayout>
 
                 <com.jim.mpviews.MpButton
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="@dimen/ten_dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
                     android:text="Some"
                     android:textColor="@color/colorBlue"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="match_parent"
                     android:layout_height="115dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:gravity="top"
                     android:hint="Special Request" />
 

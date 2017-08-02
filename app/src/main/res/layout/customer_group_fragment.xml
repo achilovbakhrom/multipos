@@ -26,14 +26,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingTop="@dimen/five_dp"
                     android:text="Customers group"
                     android:textColor="#419fd9"
-                    android:textSize="18dp"
+                    android:textSize="@dimen/eighteen_dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -48,17 +48,17 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
                 android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp">
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:text="ID client"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -66,7 +66,7 @@
                     android:layout_weight="1"
                     android:text="Full Name"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -74,7 +74,7 @@
                     android:layout_weight="1"
                     android:text="Phone number"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -82,13 +82,13 @@
                     android:layout_weight="1"
                     android:text="Member"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
             </LinearLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="2px"
-                android:layout_marginBottom="15dp"
+                android:layout_marginBottom="@dimen/fifteen_dp"
                 android:background="@color/colorTextHint" />
 
             <android.support.v7.widget.RecyclerView

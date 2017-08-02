@@ -41,23 +41,23 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
                         android:layout_marginRight="200dp"
                         android:gravity="center"
                         android:text="Name"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginRight="@dimen/thirty_dp"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="Products"
                         android:textColor="@color/colorMainText"
-                        android:textSize="18dp"/>
+                        android:textSize="@dimen/eighteen_dp"/>
 
                 </LinearLayout>
 
@@ -69,16 +69,16 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_margin="5dp"
+                    android:layout_margin="@dimen/five_dp"
                     android:orientation="horizontal">
 
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/thirty_dp"
+                        android:layout_height="@dimen/thirty_dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="@dimen/thirty_dp"
+                        android:layout_marginRight="@dimen/thirty_dp"
                         android:src="@drawable/top_arrow"
                         android:tint="@color/colorTintGrey"
                         />
@@ -87,11 +87,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="30dp"
+                        android:layout_marginRight="@dimen/thirty_dp"
                         android:gravity="center"
                         android:text="[...]"
                         android:textColor="@color/colorTintGrey"
-                        android:textSize="18dp"
+                        android:textSize="@dimen/eighteen_dp"
                         android:textStyle="bold"/>
 
                 </LinearLayout>

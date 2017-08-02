@@ -8,39 +8,39 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/ten_dp"
         android:layout_marginLeft="80dp"
         android:orientation="horizontal">
 
 
         <com.jim.mpviews.MpEditText
             android:layout_width="0dp"
-            android:layout_height="38dp"
+            android:layout_height="@dimen/thirty_eight_dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:drawableTint="@color/colorTextHint"
             android:hint="SKU, Barcode"
             android:gravity="center_vertical"
             android:textColorHint="@color/colorTextHint"
-            android:textSize="16dp"/>
+            android:textSize="@dimen/sixteen_dp"/>
 
 
         <com.jim.mpviews.MpEditText
             android:layout_width="0dp"
-            android:layout_height="38dp"
+            android:layout_height="@dimen/thirty_eight_dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/twenty_dp"
             android:layout_weight="1"
             android:hint="Difference price"
             android:textColorHint="@color/colorTextHint"
-            android:textSize="16dp"/>
+            android:textSize="@dimen/sixteen_dp"/>
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="@dimen/twenty_five_dp"
+            android:layout_height="@dimen/twenty_five_dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/thirty_dp"
             android:src="@drawable/delete"
             android:tint="@color/colorTintGrey"/>
 

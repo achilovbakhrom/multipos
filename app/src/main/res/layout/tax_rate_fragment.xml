@@ -17,13 +17,13 @@
             android:background="@color/colorWhite"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp">
+            android:paddingBottom="@dimen/ten_dp"
+            android:paddingTop="@dimen/ten_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="@dimen/five_dp"
                 android:text="Management Item Mode"
                 android:textColor="#419fd9" />
 
@@ -38,35 +38,35 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="2px"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="@dimen/twenty_five_dp"
             android:background="@color/colorTextHint" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="@dimen/ten_dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="145dp"
+                android:layout_width="@dimen/hundred_forty_five_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="@dimen/sixteen_dp"
                 android:gravity="right"
                 android:text="Name"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp" />
+                android:textSize="@dimen/sixteen_dp" />
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
-                android:layout_height="38dp"
+                android:layout_height="@dimen/thirty_eight_dp"
                 android:layout_gravity="center"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_weight="1"
                 android:hint="Name"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="16dp" />
+                android:textSize="@dimen/sixteen_dp" />
 
 
         </LinearLayout>
@@ -74,23 +74,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="@dimen/ten_dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="145dp"
+                android:layout_width="@dimen/hundred_forty_five_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="@dimen/sixteen_dp"
                 android:gravity="right"
                 android:text="Rounding"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp" />
+                android:textSize="@dimen/sixteen_dp" />
 
             <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
-                android:layout_height="38dp"
-                android:layout_marginRight="30dp"
+                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_weight="1" />
 
 
@@ -99,24 +99,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="@dimen/ten_dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="@dimen/fifteen_dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
                 android:text="Rate"
                 android:textColor="@color/colorBlue"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="100dp"
+                android:layout_marginBottom="@dimen/five_dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
+                android:layout_marginRight="@dimen/hundred_dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -126,7 +126,7 @@
                     android:layout_weight="1"
                     android:text="Tax Rate"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -137,7 +137,7 @@
                     android:gravity="left"
                     android:text="From"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -147,69 +147,69 @@
                     android:gravity="left"
                     android:text="To"
                     android:textColor="@color/colorMainText"
-                    android:textSize="18dp" />
+                    android:textSize="@dimen/eighteen_dp" />
 
             </LinearLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
                 android:layout_marginRight="80dp"
                 android:background="#e4e4e4" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
                 android:orientation="horizontal">
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:hint="Percent"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:hint="dd/mm/yy"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:hint="dd/mm/yy"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:src="@drawable/add_round" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp" />
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/thirty_dp"
+                android:layout_marginRight="@dimen/thirty_dp" />
 
         </LinearLayout>
     </LinearLayout>
@@ -218,27 +218,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="@dimen/thirty_dp"
         android:gravity="right"
         android:orientation="horizontal">
 
         <com.jim.mpviews.MpButton
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
             android:text="Cancel"
             android:textColor="@color/colorMainText"
-            android:textSize="16dp" />
+            android:textSize="@dimen/sixteen_dp" />
 
 
         <com.jim.mpviews.MpButton
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="@dimen/thirty_dp"
             android:text="Save"
             android:textColor="@color/colorBlue"
-            android:textSize="16dp" />
+            android:textSize="@dimen/sixteen_dp" />
 
     </LinearLayout>
 

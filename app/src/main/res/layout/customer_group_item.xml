@@ -8,17 +8,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp">
+        android:paddingBottom="@dimen/five_dp"
+        android:paddingTop="@dimen/five_dp">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
             android:layout_weight="1"
             android:text="1354"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <TextView
             android:layout_width="0dp"
@@ -26,7 +26,7 @@
             android:layout_weight="1"
             android:text="Magic Missile"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <TextView
             android:layout_width="0dp"
@@ -34,11 +34,11 @@
             android:layout_weight="1"
             android:text="+98901564859"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
 
         <com.jim.mpviews.MpCheckbox
             android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_height="@dimen/thirty_dp"
             android:layout_weight="1" />
 
 

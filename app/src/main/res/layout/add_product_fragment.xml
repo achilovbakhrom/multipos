@@ -17,13 +17,13 @@
             android:background="@color/colorWhite"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp">
+            android:paddingBottom="@dimen/ten_dp"
+            android:paddingTop="@dimen/ten_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="@dimen/five_dp"
                 android:text="Management Item Mode"
                 android:textColor="@color/colorBlue" />
 
@@ -38,7 +38,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="2px"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="@dimen/twenty_five_dp"
             android:background="@color/colorTextHint" />
 
         <LinearLayout
@@ -50,41 +50,41 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Category"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:hint="Name" />
 
                 <ImageView
                     android:id="@+id/ivChild"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginLeft="@dimen/sixteen_dp"
                     android:src="@drawable/child"
                     android:tint="@color/colorTintGrey" />
 
                 <ImageView
                     android:id="@+id/ivChooseImage"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/thirty_dp"
+                    android:layout_height="@dimen/thirty_dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="@dimen/sixteen_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:src="@drawable/camera"
                     android:tint="@color/colorTintGrey" />
 
@@ -93,23 +93,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="top"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Description"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="70dp"
+                    android:layout_height="@dimen/seventy_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
                     android:gravity="top"
                     android:hint="Some notes" />
@@ -118,40 +118,40 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Barcode"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:drawableRight="@drawable/barcode" />
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="SKU"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1" />
 
             </LinearLayout>
@@ -159,38 +159,38 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Quantity"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_weight="1" />
 
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Start inv"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1" />
 
             </LinearLayout>
@@ -199,39 +199,39 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Price"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
                     android:layout_weight="1" />
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Cost"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1" />
 
             </LinearLayout>
@@ -239,39 +239,39 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
 
                     android:text="Price \n currency"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
                     android:layout_weight="1" />
 
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Cost \n currency"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1" />
 
             </LinearLayout>
@@ -279,22 +279,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Class"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1" />
 
             </LinearLayout>
@@ -302,22 +302,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Vendor"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1" />
 
             </LinearLayout>
@@ -325,17 +325,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginRight="@dimen/sixteen_dp"
                     android:gravity="right"
                     android:text="Options"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpCheckbox
                     android:layout_width="wrap_content"
@@ -357,7 +357,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="@dimen/thirty_dp"
         android:gravity="center"
         android:orientation="horizontal"
 
@@ -366,15 +366,15 @@
         <com.jim.mpviews.MpButton
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginLeft="@dimen/thirty_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
             android:text="Cancel"
             android:textColor="@color/colorMainText" />
 
         <com.jim.mpviews.MpButton
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
             android:text="Advance"
             android:textColor="@color/colorBlue"
             android:textStyle="bold" />
@@ -382,7 +382,7 @@
         <com.jim.mpviews.MpButton
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="@dimen/thirty_dp"
             android:text="Save"
             android:textColor="@color/colorBlue"
             android:textStyle="bold" />

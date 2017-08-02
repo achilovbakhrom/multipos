@@ -107,7 +107,7 @@
                     android:paddingRight="@dimen/ten_dp"
                     android:paddingTop="@dimen/five_dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
@@ -124,7 +124,7 @@
                     android:paddingRight="@dimen/ten_dp"
                     android:paddingTop="@dimen/five_dp"
                     android:textColorHint="@color/colorTextHint"
-                    android:textSize="16dp" />
+                    android:textSize="@dimen/sixteen_dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -169,7 +169,7 @@
                 android:gravity="center"
                 android:text="Cancel"
                 android:textColor="@color/colorMainText"
-                android:textSize="16dp" />
+                android:textSize="@dimen/sixteen_dp" />
 
             <com.jim.mpviews.MpButton
                 android:layout_width="@dimen/hundred_sixty_dp"
