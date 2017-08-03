@@ -94,6 +94,7 @@
                     android:layout_height="@dimen/fifty_dp"
                     android:layout_marginLeft="@dimen/thirty_dp"
                     android:layout_marginRight="@dimen/thirty_dp"
+                    android:minLines="8"
                     android:layout_marginTop="@dimen/fifteen_dp"
                     android:hint="@string/email_with_star"
                     android:inputType="textEmailAddress" />
@@ -111,6 +112,7 @@
                     android:id="@+id/etOrgZipCode"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/fifty_dp"
+                    android:inputType="numberDecimal"
                     android:layout_marginLeft="@dimen/thirty_dp"
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_marginTop="@dimen/fifteen_dp"
@@ -210,6 +212,7 @@
                     android:layout_marginLeft="@dimen/thirty_dp"
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_marginTop="@dimen/fifteen_dp"
+                    android:minLines="5"
                     android:hint="@string/login_with_start" />
 
                 <com.jim.mpviews.MpEditText
@@ -219,6 +222,7 @@
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_marginTop="@dimen/fifteen_dp"
                     android:fontFamily="roboto"
+                    android:minLines="8"
                     android:hint="@string/password_with_star"
                     android:inputType="textPassword" />
 
@@ -229,6 +233,7 @@
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_marginTop="@dimen/fifteen_dp"
                     android:fontFamily="roboto"
+                    android:minLines="8"
                     android:hint="@string/confirm_password_with_star"
                     android:inputType="textPassword" />
 

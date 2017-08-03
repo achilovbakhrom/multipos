@@ -1,5 +1,6 @@
 package com.jim.multipos.ui.registration.fragments;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,6 +12,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 
+import com.jakewharton.rxbinding2.view.RxView;
+import com.jakewharton.rxbinding2.view.RxViewGroup;
+import com.jakewharton.rxbinding2.widget.RxTextView;
 import com.jim.mpviews.MpButton;
 import com.jim.mpviews.MpEditText;
 import com.jim.mpviews.MpSpinner;
@@ -23,13 +27,22 @@ import com.jim.multipos.ui.registration.adapters.ContactsAdapter;
 import com.jim.multipos.ui.registration.presenters.RegistrationPresenter;
 import com.jim.multipos.ui.registration.LoginActivity;
 
+import org.reactivestreams.Subscription;
+
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
+
+import static com.jim.multipos.utils.CommonUtils.isEmailValid;
 
 /**
  * Created by DEV on 26.07.2017.
@@ -81,7 +94,7 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 switch (position) {
                     case 0:
-                        etContacts.setInputType(InputType.TYPE_CLASS_PHONE);
+                        etContacts.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL);
                         etContacts.setText("");
                         break;
                     case 1:
@@ -112,17 +125,28 @@ public class RegistrationFragment extends BaseFragment implements RegistrationFr
         String address = etOrgAddress.getText().toString();
         String name = etOrgName.getText().toString();
         String email = etOrgEmail.getText().toString();
-        if (!email.equals(""))
-            presenter.displayFragment(name, address, email, code);
-        else etOrgEmail.setError(getResources().getString(R.string.enter_organization_email));
+        if (!email.equals("")) {
+            if (isEmailValid(email))
+                presenter.displayFragment(name, address, email, code);
+            else etOrgEmail.setError("wrong input type");
+        } else etOrgEmail.setError(getResources().getString(R.string.enter_organization_email));
         presenter.wrapData();
     }
 
     @OnClick(R.id.ivAddContact)
     public void addContact() {
         if (!etContacts.getText().toString().equals("")) {
-            presenter.setRecyclerViewItems(list.get(spContacts.selectedItem()), etContacts.getText().toString());
-            etContacts.setText("");
+            if (etContacts.getInputType() == InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS) {
+                if (isEmailValid(etContacts.getText().toString())) {
+                    presenter.setRecyclerViewItems(list.get(spContacts.selectedItem()), etContacts.getText().toString());
+                    etContacts.setText("");
+                } else {
+                    etContacts.setError("wrong input type");
+                }
+            } else {
+                presenter.setRecyclerViewItems(list.get(spContacts.selectedItem()), etContacts.getText().toString());
+                etContacts.setText("");
+            }
         } else etContacts.setError(getResources().getString(R.string.enter_phone_number));
     }
 

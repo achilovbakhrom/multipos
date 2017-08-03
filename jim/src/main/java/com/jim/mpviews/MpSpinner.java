@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Build;
@@ -15,6 +16,7 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -200,7 +202,9 @@ public class MpSpinner extends RelativeLayout {
 
         public View getForDefault(int position, ViewGroup parent) {
             textView = new TextView(context);
-            textView.setTextSize(Utils.convertDpToPixel(14));
+            Resources r = getResources();
+            float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 18, r.getDisplayMetrics());
+            textView.setTextSize(px);
             if (withDefaultValue != null && unselected) {
                 textView.setText(withDefaultValue);
                 textView.setTextColor(Color.parseColor("#b9b9b9"));
@@ -220,6 +224,9 @@ public class MpSpinner extends RelativeLayout {
             View mySpinner = inflater.inflate(R.layout.mp_spinner_adapter, parent, false);
             TextView textView = (TextView) mySpinner.findViewById(R.id.spinnerTextView);
             textView.setText(arrayList.get(position));
+            Resources r = getResources();
+            float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 18, r.getDisplayMetrics());
+            textView.setTextSize(px);
             mySpinner.setAlpha(0.1f);
             mySpinner.animate().alpha(1f).setDuration(400).start();
             return mySpinner;
