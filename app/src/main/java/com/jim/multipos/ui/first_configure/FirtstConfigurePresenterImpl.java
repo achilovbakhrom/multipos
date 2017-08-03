@@ -10,9 +10,4 @@ public class FirtstConfigurePresenterImpl implements FirstConfigurePresenter {
     public FirtstConfigurePresenterImpl(FirstConfigureView view) {
         this.view = view;
     }
-
-    @Override
-    public void replaceFragment(int position) {
-        view.replaceFragment(position);
-    }
 }

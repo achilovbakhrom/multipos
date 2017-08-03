@@ -6,5 +6,6 @@ package com.jim.multipos.ui.first_configure.fragments;
 
 public interface FirstConfigureLeftSideFragmentView {
     void displayFragment(FirstConfigureLeftSideFragment firstConfigureLeftSideFragment);
+    void replaceFragment(int position);
     void popFromBackStack();
 }

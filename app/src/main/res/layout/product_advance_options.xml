@@ -67,9 +67,7 @@
                 <com.jim.mpviews.MpCheckbox
                     android:layout_width="@dimen/thirty_dp"
                     android:layout_height="@dimen/thirty_dp"
-                    app:checked="true"
-                    app:text="Active"
-                    app:without_text="true" />
+                    app:checked="true"/>
             </LinearLayout>
 
             <LinearLayout
@@ -186,9 +184,7 @@
                     android:layout_width="@dimen/thirty_dp"
                     android:layout_height="@dimen/thirty_dp"
                     android:layout_marginRight="@dimen/thirty_eight_dp"
-                    app:checked="true"
-                    app:text="Active"
-                    app:without_text="true" />
+                    app:checked="true"/>
 
                 <ImageView
                     android:layout_width="wrap_content"

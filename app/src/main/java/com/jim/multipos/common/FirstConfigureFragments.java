@@ -6,9 +6,7 @@ import java.util.HashMap;
  * Created by user on 01.08.17.
  */
 
-public abstract class FirstConfigureFragments extends BaseFragment {
-
-    public abstract void checkDatasComplete();
-    public abstract HashMap<String,String> getDatas();
-
+public interface FirstConfigureFragments {
+    void showCheckedDatasResult(boolean result);
+    HashMap<String, String> getDatas();
 }

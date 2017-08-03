@@ -2,9 +2,6 @@ package com.jim.multipos.api;
 
 import android.app.Application;
 
-import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
-import com.jim.multipos.R;
-
 import java.util.concurrent.TimeUnit;
 
 import javax.inject.Singleton;
@@ -14,6 +11,7 @@ import dagger.Provides;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
@@ -45,7 +43,7 @@ public class MultiPosApiModule {
         Retrofit.Builder builder = new Retrofit.Builder();
         builder.client(okHttpClient)
                 .baseUrl("https://api.github.com")
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create());
         return builder.build();
     }

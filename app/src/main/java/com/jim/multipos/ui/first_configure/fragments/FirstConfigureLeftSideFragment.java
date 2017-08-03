@@ -12,9 +12,10 @@ import android.view.ViewGroup;
 
 import com.jim.multipos.R;
 import com.jim.multipos.common.BaseFragment;
+import com.jim.multipos.ui.first_configure.FirstConfigureActivity;
 import com.jim.multipos.ui.first_configure.di.FirstConfigureActivityComponent;
 import com.jim.multipos.ui.first_configure.adapters.SettingsAdapter;
-import com.jim.multipos.ui.first_configure.FirstConfigureLeftSidePresenter;
+import com.jim.multipos.ui.first_configure.presenters.FirstConfigureLeftSidePresenter;
 import com.jim.multipos.utils.managers.PosFragmentManager;
 
 import javax.inject.Inject;
@@ -29,7 +30,8 @@ public class FirstConfigureLeftSideFragment extends BaseFragment implements Firs
     FirstConfigureLeftSidePresenter presenter;
     @Inject
     SettingsAdapter adapter;
-
+    @Inject
+    FirstConfigureActivity activity;
     private RecyclerView recyclerView;
 
     public FirstConfigureLeftSideFragment() {
@@ -66,5 +68,14 @@ public class FirstConfigureLeftSideFragment extends BaseFragment implements Firs
     @Override
     public void popFromBackStack() {
         posFragmentManager.popBackStack();
+    }
+
+    @Override
+    public void replaceFragment(int position) {
+        activity.replaceFragment(position);
+    }
+
+    public void showCheckBoxIndicator(int position, boolean checked) {
+        ((SettingsAdapter.ViewHolder) recyclerView.findViewHolderForAdapterPosition(position)).setCheckBoxIndicator(checked);
     }
 }

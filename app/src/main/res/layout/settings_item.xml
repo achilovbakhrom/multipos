@@ -35,24 +35,25 @@
                 android:layout_marginBottom="@dimen/five_dp"
                 android:gravity="left"
                 android:text="Account"
-                android:textColor="@color/colorBlue" />
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:id="@+id/tvDescription"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Some details"
-                android:textColor="@color/colorMainText" />
+                android:textColor="@color/colorMainText"
+                android:textSize="@dimen/eighteen_dp" />
 
         </LinearLayout>
 
         <com.jim.mpviews.MpCheckbox
+            android:id="@+id/chbDone"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/thirty_dp"
             android:layout_gravity="center"
-            android:layout_marginRight="@dimen/thirty_dp"
-            app:enabled="false"
-            app:without_text="true" />
+            android:layout_marginRight="@dimen/thirty_dp" />
     </LinearLayout>
 
     <FrameLayout

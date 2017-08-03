@@ -5,5 +5,4 @@ package com.jim.multipos.ui.first_configure;
  */
 
 public interface FirstConfigurePresenter {
-    void replaceFragment(int position);
 }

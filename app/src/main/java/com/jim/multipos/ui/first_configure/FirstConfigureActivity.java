@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import com.jim.multipos.R;
 import com.jim.multipos.common.BaseActivity;
+import com.jim.multipos.common.BaseFragment;
 import com.jim.multipos.common.FirstConfigureFragments;
 import com.jim.multipos.ui.HasComponent;
 import com.jim.multipos.di.BaseAppComponent;
@@ -27,7 +28,9 @@ public class FirstConfigureActivity extends BaseActivity implements HasComponent
     @Inject
     PosFragmentManager posFragmentManager;
     private FirstConfigureActivityComponent firstConfigureComponent;
-    List<FirstConfigureFragments> firstConfigureFragments;
+    List<BaseFragment> firstConfigureFragments;
+    private FirstConfigureLeftSideFragment leftSideFragment;
+    private int currentFragmentPosition = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +39,14 @@ public class FirstConfigureActivity extends BaseActivity implements HasComponent
 
         firstConfigureFragments = new ArrayList<>();
         firstConfigureFragments.add(new PosDetailsFragment());
-        firstConfigureFragments.add(new AccountFragment());
+        /*firstConfigureFragments.add(new AccountFragment());
         firstConfigureFragments.add(new PaymentTypeFragment());
         firstConfigureFragments.add(new CurrencyFragment());
         firstConfigureFragments.add(new UnitsFragment());
-        firstConfigureFragments.add(new EmployersFragment());
+        firstConfigureFragments.add(new EmployersFragment());*/
 
-        posFragmentManager.replaceFragment(new FirstConfigureLeftSideFragment(), R.id.leftContainer);
+        leftSideFragment = new FirstConfigureLeftSideFragment();
+        posFragmentManager.replaceFragment(leftSideFragment, R.id.leftContainer);
         posFragmentManager.replaceFragment(firstConfigureFragments.get(0), R.id.rightContainer);
     }
 
@@ -57,8 +61,16 @@ public class FirstConfigureActivity extends BaseActivity implements HasComponent
         return firstConfigureComponent;
     }
 
-    @Override
     public void replaceFragment(int position) {
+        currentFragmentPosition = position;
         posFragmentManager.replaceFragment(firstConfigureFragments.get(position), R.id.rightContainer);
+    }
+
+    public void showCheckedIndicator(int position, boolean checked) {
+        leftSideFragment.showCheckBoxIndicator(position, checked);
+    }
+
+    public void openNextFragment() {
+        replaceFragment(currentFragmentPosition + 1);
     }
 }

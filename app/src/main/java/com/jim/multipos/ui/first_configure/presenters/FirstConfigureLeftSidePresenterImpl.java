@@ -1,4 +1,4 @@
-package com.jim.multipos.ui.first_configure;
+package com.jim.multipos.ui.first_configure.presenters;
 
 import com.jim.multipos.ui.first_configure.fragments.FirstConfigureLeftSideFragment;
 import com.jim.multipos.ui.first_configure.fragments.FirstConfigureLeftSideFragmentView;
@@ -18,5 +18,10 @@ public class FirstConfigureLeftSidePresenterImpl implements FirstConfigureLeftSi
     @Override
     public void displayFragment() {
         view.displayFragment(new FirstConfigureLeftSideFragment());
+    }
+
+    @Override
+    public void replaceFragment(int position) {
+        view.replaceFragment(position);
     }
 }

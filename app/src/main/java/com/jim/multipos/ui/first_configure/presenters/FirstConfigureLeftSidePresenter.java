@@ -1,4 +1,4 @@
-package com.jim.multipos.ui.first_configure;
+package com.jim.multipos.ui.first_configure.presenters;
 
 import com.jim.multipos.common.BaseFragmentPresenter;
 import com.jim.multipos.ui.first_configure.fragments.FirstConfigureLeftSideFragmentView;
@@ -9,4 +9,5 @@ import com.jim.multipos.ui.first_configure.fragments.FirstConfigureLeftSideFragm
 
 public interface FirstConfigureLeftSidePresenter extends BaseFragmentPresenter<FirstConfigureLeftSideFragmentView> {
     void displayFragment();
+    void replaceFragment(int position);
 }

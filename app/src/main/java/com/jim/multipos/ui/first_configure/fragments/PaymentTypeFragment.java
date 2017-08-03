@@ -6,17 +6,24 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.jim.multipos.R;
+import com.jim.multipos.common.BaseFragment;
 import com.jim.multipos.common.FirstConfigureFragments;
 
 import java.util.HashMap;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PaymentTypeFragment extends FirstConfigureFragments {
-
+public class PaymentTypeFragment extends BaseFragment implements PaymentTypeFragmentView {
+    @BindView(R.id.etPaymentTypeName)
+    EditText etPaymentTypeName;
+    private String paymentTypeName;
 
     public PaymentTypeFragment() {
         // Required empty public constructor
@@ -27,16 +34,21 @@ public class PaymentTypeFragment extends FirstConfigureFragments {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.payment_type_fragment, container, false);
+        View view = inflater.inflate(R.layout.payment_type_fragment, container, false);
+
+        ButterKnife.bind(this, view);
+
+        if (etPaymentTypeName != null) {
+            etPaymentTypeName.setText(paymentTypeName);
+        }
+
+        return view;
     }
 
     @Override
-    public void checkDatasComplete() {
+    public void onStop() {
+        super.onStop();
 
-    }
-
-    @Override
-    public HashMap<String, String> getDatas() {
-        return null;
+        paymentTypeName = etPaymentTypeName.getText().toString();
     }
 }
