@@ -17,7 +17,7 @@
 
         <com.jim.mpviews.MpEditText
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_marginLeft="@dimen/hundred_fifty_dp"
             android:layout_weight="1"
             android:textColorHint="@color/colorTextHint">

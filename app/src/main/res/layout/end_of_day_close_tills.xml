@@ -18,20 +18,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/fifty_dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="200dp"
+                android:layout_width="@dimen/two_hundred_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
                 android:text="POS Station"
                 android:textColor="@color/colorMainText"
                 android:textSize="@dimen/eighteen_dp" />
 
             <TextView
-                android:layout_width="260dp"
+                android:layout_width="@dimen/two_hundred_sixty_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Employee"
@@ -39,7 +39,7 @@
                 android:textSize="@dimen/eighteen_dp" />
 
             <TextView
-                android:layout_width="220dp"
+                android:layout_width="@dimen/two_hundred_twenty_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Status"
@@ -65,22 +65,22 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/fifty_dp"
             android:background="#daeefc"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="175dp"
+                android:layout_width="@dimen/hundred_seventy_five_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
                 android:paddingRight="@dimen/five_dp"
                 android:text="POS1"
                 android:textColor="@color/colorMainText"
                 android:textSize="@dimen/eighteen_dp" />
 
             <TextView
-                android:layout_width="230dp"
+                android:layout_width="@dimen/two_hundred_thirty_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingRight="@dimen/five_dp"
@@ -89,7 +89,7 @@
                 android:textSize="@dimen/eighteen_dp" />
 
             <TextView
-                android:layout_width="270dp"
+                android:layout_width="@dimen/two_hundred_seventy_dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginRight="@dimen/fifteen_dp"

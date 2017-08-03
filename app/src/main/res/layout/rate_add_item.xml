@@ -14,7 +14,7 @@
         <TextView
             android:id="@+id/tvTaxRate"
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/thirty_dp"
             android:layout_weight="1"
@@ -30,7 +30,7 @@
         <TextView
             android:id="@+id/tvFrom"
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/thirty_dp"
             android:layout_weight="1"
@@ -47,7 +47,7 @@
         <TextView
             android:id="@+id/tvTo"
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/thirty_dp"
             android:layout_weight="1"

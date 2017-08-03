@@ -11,18 +11,18 @@
 
         <ImageView
             android:id="@+id/mpBtnIcon"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="@dimen/twenty_five_dp"
+            android:layout_height="@dimen/twenty_five_dp"
             android:layout_gravity="center"
             android:gravity="left"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
             android:tint="@color/colorBlue" />
 
         <FrameLayout
             android:layout_width="1px"
             android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="@dimen/four_dp"
+            android:layout_marginRight="@dimen/ten_dp"
             android:background="@color/colorTextHint" />
 
         <TextView
@@ -34,7 +34,7 @@
             android:gravity="left"
             android:text="String"
             android:textColor="@color/colorBlue"
-            android:textSize="18dp"
+            android:textSize="@dimen/eighteen_dp"
             android:textStyle="bold" />
 
     </LinearLayout>

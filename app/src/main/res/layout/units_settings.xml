@@ -825,15 +825,15 @@
             >
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="Revert"
                 android:textColor="@color/colorMainText" />
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="Save"
                 android:textColor="@color/colorBlue" />

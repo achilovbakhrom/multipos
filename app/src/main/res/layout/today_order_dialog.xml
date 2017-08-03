@@ -7,8 +7,8 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="1000dp"
-        android:layout_height="600dp"
+        android:layout_width="@dimen/thousand_dp"
+        android:layout_height="@dimen/six_hundred_dp"
         android:background="@drawable/rounded_edit_text_bg"
         android:orientation="vertical">
 
@@ -33,26 +33,26 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="@dimen/four_hundred_fifty_dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:orientation="horizontal">
 
 
                 <TextView
-                    android:layout_width="120dp"
+                    android:layout_width="@dimen/hundred_twenty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="@dimen/fifty_dp"
                     android:text="Call's"
                     android:textColor="@color/colorMainText"
                     android:textSize="@dimen/eighteen_dp" />
 
                 <TextView
-                    android:layout_width="210dp"
+                    android:layout_width="@dimen/two_hundred_ten_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Customer Name"
@@ -60,7 +60,7 @@
                     android:textSize="@dimen/eighteen_dp" />
 
                 <LinearLayout
-                    android:layout_width="210dp"
+                    android:layout_width="@dimen/two_hundred_ten_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
@@ -83,7 +83,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:layout_width="260dp"
+                    android:layout_width="@dimen/two_hundred_sixty_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Employer Name"
@@ -94,7 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginRight="50dp"
+                    android:layout_marginRight="@dimen/fifty_dp"
                     android:gravity="right"
                     android:text="Total"
                     android:textColor="@color/colorMainText"
@@ -124,7 +124,7 @@
 
             <com.jim.mpviews.MpButton
                 android:layout_width="@dimen/hundred_eighty_dp"
-                android:layout_height="60dp"
+                android:layout_height="@dimen/sixty_dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Back"

@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="@dimen/eighty_dp"
             android:background="#ffffff"
             android:gravity="center"
             android:orientation="vertical"
@@ -59,7 +59,7 @@
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_weight="1"
@@ -87,7 +87,7 @@
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="@dimen/sixteen_dp"
                 android:layout_weight="1"
@@ -120,9 +120,9 @@
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
-                android:layout_height="120dp"
+                android:layout_height="@dimen/hundred_twenty_dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="@dimen/hundred_sixty_dp"
                 android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_weight="1"
                 android:gravity="top"
@@ -142,7 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/fifteen_dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="@dimen/hundred_sixty_dp"
                 android:text="Included taxes"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp" />
@@ -151,7 +151,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/five_dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="@dimen/hundred_sixty_dp"
                 android:layout_marginRight="@dimen/hundred_dp"
                 android:orientation="horizontal">
 
@@ -178,30 +178,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:layout_marginBottom="@dimen/ten_dp"
-                android:layout_marginLeft="160dp"
-                android:layout_marginRight="80dp"
+                android:layout_marginLeft="@dimen/hundred_sixty_dp"
+                android:layout_marginRight="@dimen/eighty_dp"
                 android:background="#e4e4e4" />
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="@dimen/hundred_twenty_dp"
                 android:layout_marginBottom="@dimen/ten_dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="@dimen/hundred_sixty_dp"
                 android:layout_marginRight="@dimen/thirty_dp" />
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:layout_marginBottom="@dimen/ten_dp"
-                android:layout_marginLeft="160dp"
-                android:layout_marginRight="80dp"
+                android:layout_marginLeft="@dimen/hundred_sixty_dp"
+                android:layout_marginRight="@dimen/eighty_dp"
                 android:background="#e4e4e4" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/five_dp"
-                android:layout_marginLeft="160dp"
+                android:layout_marginLeft="@dimen/hundred_sixty_dp"
                 android:layout_marginRight="@dimen/hundred_dp"
                 android:gravity="right"
                 android:orientation="horizontal">
@@ -238,8 +238,8 @@
         android:orientation="horizontal">
 
         <com.jim.mpviews.MpButton
-            android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
             android:layout_marginLeft="@dimen/thirty_dp"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:text="Cancel"
@@ -248,8 +248,8 @@
 
 
         <com.jim.mpviews.MpButton
-            android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
             android:layout_marginRight="@dimen/thirty_dp"
             android:gravity="center"
             android:text="Save"

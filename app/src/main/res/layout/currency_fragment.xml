@@ -2,112 +2,125 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackgroundGrey"
-    android:orientation="vertical">
+    android:background="@color/colorBackground"
+    android:orientation="horizontal">
 
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorBackgroundGrey"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/twenty_dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginRight="@dimen/sixteen_dp"
-                android:gravity="right"
-                android:text="Main system currency"
-                android:textColor="@color/colorBlue"
-                android:textSize="@dimen/sixteen_dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/twenty_dp"
-            android:layout_marginTop="@dimen/twenty_dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginRight="@dimen/twenty_dp"
-                android:gravity="right"
-                android:text="Choose system currency"
-                android:textColor="@color/colorMainText"
-                android:textSize="@dimen/sixteen_dp" />
-
-            <com.jim.mpviews.MpSpinner
-                android:layout_width="250dp"
-                android:layout_height="@dimen/thirty_eight_dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/twenty_dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginRight="@dimen/sixteen_dp"
-                android:gravity="right"
-                android:text="Secondary currencies"
-                android:textColor="@color/colorBlue"
-                android:textSize="@dimen/sixteen_dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/twenty_dp"
-            android:layout_marginTop="@dimen/twenty_dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginRight="@dimen/twenty_dp"
-                android:gravity="right"
-                android:text="Other currencies"
-                android:textColor="@color/colorMainText"
-                android:textSize="@dimen/sixteen_dp" />
-
-            <com.jim.mpviews.MpSpinner
-                android:layout_width="250dp"
-                android:layout_height="@dimen/thirty_eight_dp"
-                android:layout_marginRight="@dimen/twenty_dp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/add_round" />
-
-        </LinearLayout>
-
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="300dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="right|bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/sixteen_dp"
+                    android:gravity="right"
+                    android:text="Main system currency"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/sixteen_dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/twenty_dp"
+                    android:gravity="right"
+                    android:text="Choose system currency"
+                    android:textColor="@color/colorMainText"
+                    android:textSize="@dimen/sixteen_dp" />
+
+                <com.jim.mpviews.MpSpinner
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/thirty_eight_dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/sixteen_dp"
+                    android:gravity="right"
+                    android:text="Secondary currencies"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/sixteen_dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/twenty_dp"
+                    android:gravity="right"
+                    android:text="Other currencies"
+                    android:textColor="@color/colorMainText"
+                    android:textSize="@dimen/sixteen_dp" />
+
+                <com.jim.mpviews.MpSpinner
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_marginRight="@dimen/twenty_dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_round" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="25px"
+            android:layout_height="match_parent"
+            android:background="@drawable/left_fade" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
             android:orientation="horizontal"
             android:paddingBottom="@dimen/twenty_dp"
             android:paddingRight="@dimen/twenty_dp"
@@ -115,21 +128,21 @@
             >
 
             <com.jim.mpviews.MpButton
-                android:layout_width="@dimen/hundred_eighty_dp"
-                android:layout_height="@dimen/seventy_dp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
                 android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="Revert"
-                android:textColor="@color/colorMainText"
-                android:textSize="@dimen/eighteen_dp" />
+                android:textColor="@color/colorMainText" />
 
             <com.jim.mpviews.MpButton
-                android:layout_width="@dimen/hundred_eighty_dp"
-                android:layout_height="@dimen/seventy_dp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
                 android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="Save"
-                android:textColor="@color/colorBlue"
-                android:textSize="@dimen/eighteen_dp" />
+                android:textColor="@color/colorBlue" />
 
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
+
+
 </LinearLayout>

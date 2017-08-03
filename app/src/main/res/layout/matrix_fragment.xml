@@ -21,11 +21,11 @@
             <com.jim.mpviews.MpSwitcher
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="35dp"
+                android:layout_marginBottom="@dimen/thirty_five_dp"
                 android:paddingBottom="@dimen/five_dp"
                 android:paddingLeft="@dimen/ten_dp"
                 android:paddingRight="@dimen/ten_dp"
-                android:paddingTop="40dp"
+                android:paddingTop="@dimen/forty_dp"
                 app:text_left="Child"
                 app:text_right="Parent" />
 
@@ -34,17 +34,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/fifteen_dp"
-                android:layout_marginLeft="55dp"
+                android:layout_marginLeft="@dimen/fifty_five_dp"
                 android:text="Parent Product"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp" />
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_marginBottom="@dimen/fifteen_dp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginRight="50dp"
+                android:layout_marginLeft="@dimen/fifty_five_dp"
+                android:layout_marginRight="@dimen/fifty_dp"
                 android:drawableTint="#e1e1e1"
                 android:hint="Name, SKU or Barcode"
                 android:textColorHint="@color/colorTextHint"
@@ -54,7 +54,7 @@
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="55dp"
+                android:layout_marginLeft="@dimen/fifty_five_dp"
                 android:layout_marginRight="@dimen/thirty_dp" />
 
 

@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="@dimen/sixty_five_dp"
         android:background="@color/colorGreyLight"
         android:orientation="horizontal">
 
@@ -64,12 +64,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="@dimen/thirty_five_dp"
         android:background="@color/colorBlue"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="275dp"
+            android:layout_width="@dimen/two_hundred_seventy_five_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingLeft="@dimen/thirty_dp"
@@ -83,7 +83,7 @@
             android:background="@color/colorWhite" />
 
         <TextView
-            android:layout_width="270dp"
+            android:layout_width="@dimen/two_hundred_seventy_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingLeft="@dimen/thirty_dp"
@@ -97,7 +97,7 @@
             android:background="@color/colorWhite" />
 
         <TextView
-            android:layout_width="205dp"
+            android:layout_width="@dimen/two_hundred_five_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -112,7 +112,7 @@
             android:background="@color/colorWhite" />
 
         <TextView
-            android:layout_width="195dp"
+            android:layout_width="@dimen/hundred_ninety_five_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -126,7 +126,7 @@
             android:background="@color/colorWhite" />
 
         <TextView
-            android:layout_width="220dp"
+            android:layout_width="@dimen/two_hundred_twenty_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -152,17 +152,17 @@
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="390dp" />
+        android:layout_height="@dimen/three_hundred_ninety_dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorBackgroundGrey"
         android:orientation="vertical"
-        android:paddingTop="50dp">
+        android:paddingTop="@dimen/fifty_dp">
 
         <LinearLayout
-            android:layout_width="300dp"
+            android:layout_width="@dimen/three_hundred_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginRight="@dimen/thirty_dp"
@@ -195,10 +195,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="300dp"
+            android:layout_width="@dimen/three_hundred_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="@dimen/forty_dp"
             android:layout_marginRight="@dimen/thirty_dp"
             android:orientation="horizontal">
 
@@ -229,8 +229,8 @@
         </LinearLayout>
 
         <com.jim.mpviews.MpButton
-            android:layout_width="150dp"
-            android:layout_height="55dp"
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="@dimen/fifty_five_dp"
             android:layout_gravity="right"
             android:layout_marginRight="@dimen/thirty_dp"
             android:text="Pay"

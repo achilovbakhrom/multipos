@@ -7,14 +7,14 @@
               android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="600dp"
-        android:layout_height="700dp"
+        android:layout_width="@dimen/six_hundred_dp"
+        android:layout_height="@dimen/seven_hundred_dp"
         android:background="@drawable/rounded_edit_text_bg"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="@dimen/fifty_five_dp"
             android:background="@drawable/rounded_blue_bg"
             android:orientation="vertical">
 
@@ -50,7 +50,7 @@
 
                 <TextView
                     android:layout_width="@dimen/hundred_eighty_dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:background="@drawable/edit_text_bg"
                     android:gravity="center_vertical"
@@ -95,7 +95,7 @@
 
                 <TextView
                     android:layout_width="@dimen/hundred_eighty_dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:background="@drawable/edit_text_bg"
                     android:gravity="center_vertical"
@@ -138,7 +138,7 @@
                 android:paddingTop="@dimen/ten_dp">
 
                 <TextView
-                    android:layout_width="45dp"
+                    android:layout_width="@dimen/forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -171,7 +171,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
@@ -220,7 +220,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
@@ -266,7 +266,7 @@
                 android:paddingTop="@dimen/ten_dp">
 
                 <TextView
-                    android:layout_width="45dp"
+                    android:layout_width="@dimen/forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -291,7 +291,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
                         android:paddingBottom="@dimen/five_dp"
@@ -331,7 +331,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
@@ -377,7 +377,7 @@
                 android:paddingTop="@dimen/ten_dp">
 
                 <TextView
-                    android:layout_width="45dp"
+                    android:layout_width="@dimen/forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -402,7 +402,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
                         android:paddingBottom="@dimen/five_dp"
@@ -442,7 +442,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
@@ -488,7 +488,7 @@
                 android:paddingTop="@dimen/ten_dp">
 
                 <TextView
-                    android:layout_width="45dp"
+                    android:layout_width="@dimen/forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -513,7 +513,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
                         android:paddingBottom="@dimen/five_dp"
@@ -553,7 +553,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
@@ -599,7 +599,7 @@
                 android:paddingTop="@dimen/ten_dp">
 
                 <TextView
-                    android:layout_width="45dp"
+                    android:layout_width="@dimen/forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -624,7 +624,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
                         android:paddingBottom="@dimen/five_dp"
@@ -664,7 +664,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
@@ -710,7 +710,7 @@
                 android:paddingTop="@dimen/ten_dp">
 
                 <TextView
-                    android:layout_width="45dp"
+                    android:layout_width="@dimen/forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -735,7 +735,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
                         android:paddingBottom="@dimen/five_dp"
@@ -775,7 +775,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
@@ -821,7 +821,7 @@
                 android:paddingTop="@dimen/ten_dp">
 
                 <TextView
-                    android:layout_width="45dp"
+                    android:layout_width="@dimen/forty_five_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="@dimen/thirty_dp"
@@ -846,7 +846,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
                         android:paddingBottom="@dimen/five_dp"
@@ -886,7 +886,7 @@
 
                     <TextView
                         android:layout_width="@dimen/hundred_eighty_dp"
-                        android:layout_height="@dimen/thirty_eight_dp"
+                        android:layout_height="@dimen/forty_dp"
                         android:layout_gravity="center"
                         android:background="@drawable/edit_text_bg"
                         android:gravity="center_vertical"
@@ -937,7 +937,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="@dimen/fifty_dp"
             android:gravity="right"
             android:orientation="horizontal"
 
@@ -945,8 +945,8 @@
 
             <TextView
                 android:id="@+id/btnCancel"
-                android:layout_width="160dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_sixty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginLeft="@dimen/thirty_dp"
                 android:layout_marginRight="@dimen/fifteen_dp"
                 android:background="@drawable/button_bg"
@@ -962,8 +962,8 @@
 
             <TextView
                 android:id="@+id/btnSave"
-                android:layout_width="160dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_sixty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/thirty_dp"
                 android:background="@drawable/button_bg"
                 android:gravity="center"

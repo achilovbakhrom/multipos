@@ -10,10 +10,10 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingBottom="10dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:paddingTop="10dp">
+        android:paddingBottom="@dimen/ten_dp"
+        android:paddingLeft="@dimen/twenty_dp"
+        android:paddingRight="@dimen/twenty_dp"
+        android:paddingTop="@dimen/ten_dp">
 
         <TextView
             android:id="@+id/mpType"
@@ -22,11 +22,11 @@
             android:layout_weight="1"
             android:gravity="left"
             android:layout_gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
+            android:paddingLeft="@dimen/ten_dp"
+            android:paddingRight="@dimen/ten_dp"
+            android:paddingTop="@dimen/four_dp"
             android:textColor="@color/colorMainText"
-            android:textSize="18dp"
+            android:textSize="@dimen/eighteen_dp"
             android:textStyle="bold" />
 
         <TextView
@@ -34,12 +34,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:paddingLeft="10dp"
+            android:paddingLeft="@dimen/ten_dp"
             android:layout_gravity="center"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
+            android:paddingRight="@dimen/ten_dp"
+            android:paddingTop="@dimen/four_dp"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="18dp" />
+            android:textSize="@dimen/eighteen_dp" />
     </LinearLayout>
 
 </merge>

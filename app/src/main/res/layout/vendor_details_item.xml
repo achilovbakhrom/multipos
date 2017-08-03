@@ -11,7 +11,7 @@
 
 
         <LinearLayout
-            android:layout_width="@dimen/two_hundred_thirty"
+            android:layout_width="@dimen/two_hundred_thirty_dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/thirty_dp"

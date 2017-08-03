@@ -16,7 +16,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="@dimen/eighty_dp"
                 android:background="@color/colorBackground"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
@@ -33,15 +33,15 @@
                     android:textSize="@dimen/eighteen_dp" />
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/forty_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/fifteen_dp"
                     android:src="@drawable/payments_btn" />
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/forty_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/fifteen_dp"
                     android:layout_marginRight="@dimen/thirty_dp"
@@ -56,7 +56,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="@dimen/hundred_ten_dp"
                 android:background="@color/colorWhite"
                 android:orientation="horizontal">
 
@@ -83,7 +83,7 @@
                         android:layout_marginTop="@dimen/ten_dp"
                         android:text="800 000 uzs"
                         android:textColor="@color/colorMainText"
-                        android:textSize="32dp" />
+                        android:textSize="@dimen/thirty_two_dp" />
 
                 </LinearLayout>
 
@@ -115,7 +115,7 @@
                         android:layout_marginTop="@dimen/ten_dp"
                         android:text="200 000 uzs"
                         android:textColor="@color/colorMainText"
-                        android:textSize="32dp" />
+                        android:textSize="@dimen/thirty_two_dp" />
 
                 </LinearLayout>
 
@@ -128,7 +128,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="@dimen/hundred_ten_dp"
                 android:background="@color/colorWhite"
                 android:orientation="horizontal">
 
@@ -155,7 +155,7 @@
                         android:layout_marginTop="@dimen/ten_dp"
                         android:text="120 000 uzs"
                         android:textColor="@color/colorMainText"
-                        android:textSize="32dp" />
+                        android:textSize="@dimen/thirty_two_dp" />
 
                 </LinearLayout>
 
@@ -187,7 +187,7 @@
                         android:layout_marginTop="@dimen/ten_dp"
                         android:text="680 000 uzs"
                         android:textColor="@color/colorMainText"
-                        android:textSize="32dp" />
+                        android:textSize="@dimen/thirty_two_dp" />
 
                 </LinearLayout>
 
@@ -206,7 +206,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="110dp"
+                    android:layout_width="@dimen/hundred_ten_dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="@dimen/five_dp"
@@ -246,8 +246,8 @@
             >
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="Cancel"
                 android:textColor="@color/colorSecondaryText"
@@ -255,8 +255,8 @@
                 android:textStyle="bold" />
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="Salary"
                 android:textColor="@color/colorBlue"
@@ -264,8 +264,8 @@
                 android:textStyle="bold" />
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/thirty_dp"
                 android:text="Save"
                 android:textColor="@color/colorBlue"

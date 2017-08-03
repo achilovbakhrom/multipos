@@ -12,12 +12,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/forty_dp"
             android:background="@color/colorWhite"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tvCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -26,7 +25,7 @@
                 android:paddingLeft="@dimen/ten_dp"
                 android:paddingRight="@dimen/ten_dp"
                 android:paddingTop="@dimen/five_dp"
-                android:text="Category"
+                android:text="@string/category"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp" />
 
@@ -38,7 +37,6 @@
                 android:textColor="@color/colorBlue" />
 
             <TextView
-                android:id="@+id/tvSubCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -46,7 +44,7 @@
                 android:paddingLeft="@dimen/ten_dp"
                 android:paddingRight="@dimen/ten_dp"
                 android:paddingTop="@dimen/five_dp"
-                android:text="SubCategory"
+                android:text="@string/subcategory"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp" />
 
@@ -66,7 +64,7 @@
                 android:paddingLeft="@dimen/ten_dp"
                 android:paddingRight="@dimen/ten_dp"
                 android:paddingTop="@dimen/five_dp"
-                android:text="Product"
+                android:text="@string/product"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp" />
 

@@ -12,12 +12,12 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/sunday"
             android:textColor="@color/colorWhite"
-            android:textSize="15sp"
+            android:textSize="@dimen/fifteen_dp"
             android:textStyle="bold" />
 
         <FrameLayout
@@ -26,12 +26,12 @@
             android:background="@color/colorWhite" />
 
         <TextView
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/monday"
             android:textColor="@color/colorWhite"
-            android:textSize="15sp"
+            android:textSize="@dimen/fifteen_dp"
             android:textStyle="bold" />
 
         <FrameLayout
@@ -40,12 +40,12 @@
             android:background="@color/colorWhite" />
 
         <TextView
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/tuesday"
             android:textColor="@color/colorWhite"
-            android:textSize="15sp"
+            android:textSize="@dimen/fifteen_dp"
             android:textStyle="bold" />
 
         <FrameLayout
@@ -54,12 +54,12 @@
             android:background="@color/colorWhite" />
 
         <TextView
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/wednesday"
             android:textColor="@color/colorWhite"
-            android:textSize="15sp"
+            android:textSize="@dimen/fifteen_dp"
             android:textStyle="bold" />
 
         <FrameLayout
@@ -68,12 +68,12 @@
             android:background="@color/colorWhite" />
 
         <TextView
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/thursday"
             android:textColor="@color/colorWhite"
-            android:textSize="15sp"
+            android:textSize="@dimen/fifteen_dp"
             android:textStyle="bold" />
 
         <FrameLayout
@@ -82,12 +82,12 @@
             android:background="@color/colorWhite" />
 
         <TextView
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/friday"
             android:textColor="@color/colorWhite"
-            android:textSize="15sp"
+            android:textSize="@dimen/fifteen_dp"
             android:textStyle="bold" />
 
         <FrameLayout
@@ -96,14 +96,14 @@
             android:background="@color/colorWhite" />
 
         <TextView
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
+            android:paddingBottom="@dimen/four_dp"
+            android:paddingTop="@dimen/four_dp"
             android:text="@string/saturday"
             android:textColor="@color/colorWhite"
-            android:textSize="15sp"
+            android:textSize="@dimen/fifteen_dp"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -116,31 +116,31 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp">
+            android:paddingBottom="@dimen/two_dp"
+            android:paddingTop="@dimen/two_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="8:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="20:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
         <FrameLayout
@@ -149,31 +149,31 @@
             android:background="@color/colorTextHint" />
 
         <LinearLayout
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp">
+            android:paddingBottom="@dimen/two_dp"
+            android:paddingTop="@dimen/two_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="8:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="20:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
         <FrameLayout
@@ -182,31 +182,31 @@
             android:background="@color/colorTextHint" />
 
         <LinearLayout
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp">
+            android:paddingBottom="@dimen/two_dp"
+            android:paddingTop="@dimen/two_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="8:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="20:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
         <FrameLayout
@@ -216,31 +216,31 @@
 
 
         <LinearLayout
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp">
+            android:paddingBottom="@dimen/two_dp"
+            android:paddingTop="@dimen/two_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="8:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="20:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
         <FrameLayout
@@ -249,31 +249,31 @@
             android:background="@color/colorTextHint" />
 
         <LinearLayout
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp">
+            android:paddingBottom="@dimen/two_dp"
+            android:paddingTop="@dimen/two_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="8:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="20:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
         <FrameLayout
@@ -282,31 +282,31 @@
             android:background="@color/colorTextHint" />
 
         <LinearLayout
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp">
+            android:paddingBottom="@dimen/two_dp"
+            android:paddingTop="@dimen/two_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="8:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="20:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
         <FrameLayout
@@ -315,31 +315,31 @@
             android:background="@color/colorTextHint" />
 
         <LinearLayout
-            android:layout_width="104dp"
+            android:layout_width="@dimen/hundred_four_dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp">
+            android:paddingBottom="@dimen/two_dp"
+            android:paddingTop="@dimen/two_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="8:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:paddingLeft="15dp"
+                android:paddingLeft="@dimen/fifteen_dp"
                 android:text="20:00"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
         </LinearLayout>
 
         <FrameLayout

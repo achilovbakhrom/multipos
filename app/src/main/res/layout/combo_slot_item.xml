@@ -9,13 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/ten_dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="@dimen/eighty_dp"
         android:orientation="horizontal">
 
 
         <com.jim.mpviews.MpEditText
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:drawableTint="@color/colorTextHint"
@@ -27,7 +27,7 @@
 
         <com.jim.mpviews.MpEditText
             android:layout_width="0dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/twenty_dp"
             android:layout_weight="1"

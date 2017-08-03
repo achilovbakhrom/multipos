@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="@dimen/fifty_five_dp"
         android:background="@color/colorBlue"
         android:gravity="center"
         android:orientation="horizontal">
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/thirty_dp"
             android:gravity="left"
-            android:text="Matrix Option"
+            android:text="@string/matrix_option"
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/eighteen_dp"
             />
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/fifteen_dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="@dimen/fifty_dp"
         android:layout_marginTop="@dimen/twenty_five_dp"
         android:orientation="horizontal">
 
@@ -44,18 +44,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/ten_dp"
-                android:text="Name"
+                android:text="@string/name"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp"/>
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
-                android:hint="Name"
+                android:hint="@string/name"
                 android:gravity="center_vertical"
                 android:textColorHint="@color/colorTextHint"
-                android:textSize="@dimen/sixteen_dp"/>
+                android:textSize="@dimen/eighteen_dp"/>
 
         </LinearLayout>
 
@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/ten_dp"
-                android:text="Active"
+                android:text="@string/active"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp"/>
 
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/ten_dp"
-                android:text="Actions"
+                android:text="@string/actions"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp"/>
 

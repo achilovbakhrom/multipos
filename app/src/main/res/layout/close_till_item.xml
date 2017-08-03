@@ -14,8 +14,8 @@
         android:textSize="@dimen/eighteen_dp" />
 
     <com.jim.mpviews.MpEditText
-        android:layout_width="245dp"
-        android:layout_height="@dimen/thirty_eight_dp"
+        android:layout_width="@dimen/two_hundred_forty_five_dp"
+        android:layout_height="@dimen/forty_dp"
         android:layout_marginRight="@dimen/thirty_dp"
         android:gravity="right"
         android:paddingRight="@dimen/ten_dp"
@@ -30,8 +30,8 @@
         android:textSize="@dimen/eighteen_dp" />
 
     <com.jim.mpviews.MpEditText
-        android:layout_width="245dp"
-        android:layout_height="@dimen/thirty_eight_dp"
+        android:layout_width="@dimen/two_hundred_forty_five_dp"
+        android:layout_height="@dimen/forty_dp"
         android:layout_marginRight="@dimen/thirty_dp"
         android:gravity="right"
         android:paddingRight="@dimen/ten_dp"

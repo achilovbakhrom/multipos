@@ -8,8 +8,8 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="400dp"
-        android:layout_height="550dp"
+        android:layout_width="@dimen/four_hundred_dp"
+        android:layout_height="@dimen/five_hundred_fifty_dp"
         android:background="@drawable/rounded_edit_text_bg"
         android:orientation="vertical">
 
@@ -30,8 +30,8 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="80dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/eighty_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/thirty_dp"
                 android:background="@drawable/blue_btn_bg"
@@ -45,7 +45,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="@dimen/four_hundred_dp"
             android:background="@color/colorBackgroundGrey"
             android:orientation="vertical"
             android:paddingTop="@dimen/ten_dp">
@@ -109,8 +109,8 @@
             android:orientation="horizontal">
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:gravity="center"
                 android:text="Cancel"
                 android:textColor="@color/colorSecondaryText"
@@ -118,8 +118,8 @@
 
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:gravity="center"
                 android:text="Save"
                 android:textColor="@color/colorBlue"

@@ -20,8 +20,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="35dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/thirty_five_dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -47,8 +47,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/twenty_dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/forty_dp"
                 android:text="Size (1st Attribute)"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp" />
@@ -65,8 +65,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/twenty_dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginLeft="@dimen/fifty_dp"
+                android:layout_marginTop="@dimen/forty_dp"
                 android:text="Color (2nd Attribute)"
                 android:textColor="@color/colorBlue"
                 android:textSize="@dimen/eighteen_dp" />
@@ -91,15 +91,15 @@
             android:orientation="horizontal">
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/fifteen_dp"
                 android:text="Cancel"
                 android:textColor="@color/colorSecondaryText" />
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_marginRight="@dimen/thirty_dp"
                 android:text="Save"
                 android:textColor="@color/colorBlue"

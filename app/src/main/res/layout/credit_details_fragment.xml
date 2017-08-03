@@ -8,8 +8,8 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="930dp"
-        android:layout_height="600dp"
+        android:layout_width="@dimen/nine_hundred_thirty_dp"
+        android:layout_height="@dimen/six_hundred_dp"
         android:background="@drawable/rounded_edit_text_bg"
         android:orientation="vertical">
 
@@ -32,7 +32,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="@dimen/four_hundred_fifty_dp"
             android:orientation="horizontal"
             android:paddingTop="@dimen/twenty_five_dp">
 
@@ -95,7 +95,7 @@
                     android:orientation="horizontal">
 
                     <com.jim.mpviews.MpEditText
-                        android:layout_width="240dp"
+                        android:layout_width="@dimen/two_hundred_forty_dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="@dimen/ten_dp"
@@ -105,7 +105,7 @@
 
                     <com.jim.mpviews.MpSpinner
                         android:layout_width="wrap_content"
-                        android:layout_height="@dimen/thirty_eight_dp" />
+                        android:layout_height="@dimen/forty_dp" />
 
                 </LinearLayout>
 
@@ -128,7 +128,7 @@
                     android:orientation="horizontal">
 
                     <com.jim.mpviews.MpEditText
-                        android:layout_width="240dp"
+                        android:layout_width="@dimen/two_hundred_forty_dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="@dimen/ten_dp"
@@ -139,7 +139,7 @@
 
                     <com.jim.mpviews.MpSpinner
                         android:layout_width="wrap_content"
-                        android:layout_height="@dimen/thirty_eight_dp" />
+                        android:layout_height="@dimen/forty_dp" />
 
                 </LinearLayout>
 
@@ -162,7 +162,7 @@
                     android:orientation="horizontal">
 
                     <com.jim.mpviews.MpEditText
-                        android:layout_width="240dp"
+                        android:layout_width="@dimen/two_hundred_forty_dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="@dimen/ten_dp"
@@ -173,7 +173,7 @@
 
                     <com.jim.mpviews.MpSpinner
                         android:layout_width="wrap_content"
-                        android:layout_height="@dimen/thirty_eight_dp" />
+                        android:layout_height="@dimen/forty_dp" />
 
                 </LinearLayout>
 
@@ -220,7 +220,7 @@
 
                 <com.jim.mpviews.MpSpinner
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_marginBottom="@dimen/fifteen_dp"
                     android:layout_marginLeft="@dimen/thirty_dp"
                     android:layout_marginRight="@dimen/thirty_dp" />
@@ -244,7 +244,7 @@
                     android:orientation="horizontal">
 
                     <com.jim.mpviews.MpEditText
-                        android:layout_width="155dp"
+                        android:layout_width="@dimen/hundred_fifty_five_dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="@dimen/ten_dp"
@@ -254,8 +254,8 @@
                         android:textSize="@dimen/eighteen_dp" />
 
                     <com.jim.mpviews.MpSpinner
-                        android:layout_width="240dp"
-                        android:layout_height="@dimen/thirty_eight_dp" />
+                        android:layout_width="@dimen/two_hundred_forty_dp"
+                        android:layout_height="@dimen/forty_dp" />
 
                 </LinearLayout>
 
@@ -272,7 +272,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="match_parent"
-                    android:layout_height="125dp"
+                    android:layout_height="@dimen/hundred_twenty_five_dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/thirty_dp"
                     android:layout_marginRight="@dimen/thirty_dp"
@@ -299,8 +299,8 @@
             android:paddingRight="@dimen/thirty_dp">
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Back"
@@ -309,8 +309,8 @@
 
 
             <com.jim.mpviews.MpButton
-                android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Next"

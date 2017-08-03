@@ -12,7 +12,7 @@
 
         <com.jim.mpviews.MpEditText
             android:layout_width="@dimen/hundred_sixty_five_dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/thirty_dp"
             android:singleLine="true"
@@ -21,7 +21,7 @@
 
         <com.jim.mpviews.MpEditText
             android:layout_width="@dimen/hundred_sixty_five_dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/five_dp"
             android:drawableRight="@drawable/chain"
@@ -31,7 +31,7 @@
 
         <com.jim.mpviews.MpEditText
             android:layout_width="@dimen/hundred_sixty_five_dp"
-            android:layout_height="@dimen/thirty_eight_dp"
+            android:layout_height="@dimen/forty_dp"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/five_dp"
             android:drawableRight="@drawable/chain"

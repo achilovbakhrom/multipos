@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="@dimen/eighty_dp"
             android:background="@color/colorWhite"
             android:gravity="center"
             android:orientation="vertical"
@@ -60,7 +60,7 @@
             <EditText
                 android:id="@+id/etProductName"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_weight="1"
@@ -94,7 +94,7 @@
 
             <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_marginRight="@dimen/twenty_dp"
                 android:layout_weight="1" />
 
@@ -113,7 +113,7 @@
                 android:layout_width="@dimen/thirty_dp"
                 android:layout_height="@dimen/thirty_dp"
                 android:layout_marginRight="@dimen/thirty_dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="@dimen/two_dp"
                 android:gravity="center"
                 app:checked="true" />
 
@@ -138,7 +138,7 @@
 
             <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_marginRight="@dimen/twenty_dp"
                 android:layout_weight="1" />
 
@@ -157,7 +157,7 @@
                 android:layout_width="@dimen/thirty_dp"
                 android:layout_height="@dimen/thirty_dp"
                 android:layout_marginRight="@dimen/thirty_dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="@dimen/two_dp"
                 android:gravity="center"
                 app:checked="true"/>
 

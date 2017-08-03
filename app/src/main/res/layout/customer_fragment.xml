@@ -9,15 +9,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
+        android:layout_marginLeft="@dimen/thirty_five_dp"
+        android:layout_marginRight="@dimen/thirty_five_dp"
         android:layout_marginTop="@dimen/twenty_dp"
         android:background="@drawable/rounded_edit_text_bg"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="@dimen/eighty_five_dp"
             android:background="@drawable/rounded_blue_bg"
             android:orientation="vertical">
 
@@ -38,7 +38,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="700dp"
+                    android:layout_width="@dimen/seven_hundred_dp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/ten_dp"
                     android:paddingLeft="@dimen/thirty_dp"
@@ -54,11 +54,11 @@
                 <com.jim.mpviews.MpSpinner
                     android:id="@+id/mpSp"
                     android:layout_width="@dimen/hundred_eighty_dp"
-                    android:layout_height="28dp"
+                    android:layout_height="@dimen/twenty_eight_dp"
                     app:sp_bg="@drawable/blue_sp_bg"
                     app:img_color="@drawable/arrow_down_white"
                     app:text_color="@color/colorWhite"
-                    android:layout_marginBottom="3dp"
+                    android:layout_marginBottom="@dimen/three_dp"
                     android:layout_gravity="center" />
 
 
@@ -141,7 +141,7 @@
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/thirty_dp"
                 android:layout_weight="0.5"
@@ -152,7 +152,7 @@
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/twenty_five_dp"
                 android:layout_weight="1.5"
@@ -163,7 +163,7 @@
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/thirty_dp"
                 android:layout_weight="1"
@@ -174,7 +174,7 @@
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/twenty_five_dp"
                 android:layout_weight="1"
@@ -185,7 +185,7 @@
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/twenty_five_dp"
                 android:layout_weight="1"
@@ -198,7 +198,7 @@
 
             <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_marginLeft="@dimen/twenty_dp"
                 android:layout_weight="1"
               />
@@ -207,7 +207,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="@dimen/thirty_five_dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/thirty_dp"
                 android:layout_marginRight="@dimen/thirty_dp"

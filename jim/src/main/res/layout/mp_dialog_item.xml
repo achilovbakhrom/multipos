@@ -8,12 +8,12 @@
         android:id="@+id/mpMenuItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
         android:gravity="center"
         android:text="Cash management"
         android:textColor="@color/colorMainText"
-        android:textSize="18dp" />
+        android:textSize="@dimen/eighteen_dp" />
 
     <FrameLayout
         android:layout_width="match_parent"

@@ -12,15 +12,15 @@
             android:id="@+id/mpLeftArrow"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="2dp">
+            android:layout_marginBottom="@dimen/four_dp"
+            android:layout_marginTop="@dimen/two_dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginLeft="@dimen/fifteen_dp"
+                android:layout_marginRight="@dimen/fifteen_dp"
                 android:src="@drawable/triangle_left"
                 android:tint="@color/colorWhite" />
 
@@ -30,15 +30,15 @@
         <FrameLayout
             android:layout_width="1px"
             android:layout_height="match_parent"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/four_dp"
+            android:layout_marginTop="@dimen/two_dp"
             android:background="#20000000" />
 
         <FrameLayout
             android:layout_width="1px"
             android:layout_height="match_parent"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/four_dp"
+            android:layout_marginTop="@dimen/two_dp"
             android:background="#20ffffff" />
 
         <LinearLayout
@@ -46,8 +46,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/four_dp"
+            android:layout_marginTop="@dimen/two_dp"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal">
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:text="Order: "
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
             <TextView
                 android:id="@+id/mpCounter"
@@ -66,37 +66,37 @@
                 android:layout_height="wrap_content"
                 android:text="01"
                 android:textColor="@color/colorWhite"
-                android:textSize="18dp" />
+                android:textSize="@dimen/eighteen_dp" />
 
         </LinearLayout>
 
         <FrameLayout
             android:layout_width="1px"
             android:layout_height="match_parent"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/four_dp"
+            android:layout_marginTop="@dimen/two_dp"
             android:background="#20ffffff" />
 
         <FrameLayout
             android:layout_width="1px"
             android:layout_height="match_parent"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/four_dp"
+            android:layout_marginTop="@dimen/two_dp"
             android:background="#20000000" />
 
         <LinearLayout
             android:id="@+id/mpRightArrow"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="2dp">
+            android:layout_marginBottom="@dimen/four_dp"
+            android:layout_marginTop="@dimen/two_dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginLeft="@dimen/fifteen_dp"
+                android:layout_marginRight="@dimen/fifteen_dp"
                 android:src="@drawable/triangle_right"
                 android:tint="@color/colorWhite" />
         </LinearLayout>

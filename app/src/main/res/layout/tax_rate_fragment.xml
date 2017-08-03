@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="@dimen/eighty_dp"
             android:background="@color/colorWhite"
             android:gravity="center"
             android:orientation="vertical"
@@ -60,7 +60,7 @@
 
             <com.jim.mpviews.MpEditText
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_weight="1"
@@ -89,7 +89,7 @@
 
             <com.jim.mpviews.MpSpinner
                 android:layout_width="0dp"
-                android:layout_height="@dimen/thirty_eight_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:layout_marginRight="@dimen/thirty_dp"
                 android:layout_weight="1" />
 
@@ -122,7 +122,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="40dp"
+                    android:layout_marginRight="@dimen/forty_dp"
                     android:layout_weight="1"
                     android:text="Tax Rate"
                     android:textColor="@color/colorMainText"
@@ -132,7 +132,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:layout_marginRight="45dp"
+                    android:layout_marginRight="@dimen/forty_five_dp"
                     android:layout_weight="1"
                     android:gravity="left"
                     android:text="From"
@@ -156,7 +156,7 @@
                 android:layout_height="1px"
                 android:layout_marginBottom="@dimen/ten_dp"
                 android:layout_marginLeft="@dimen/thirty_dp"
-                android:layout_marginRight="80dp"
+                android:layout_marginRight="@dimen/eighty_dp"
                 android:background="#e4e4e4" />
 
             <LinearLayout
@@ -168,7 +168,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
@@ -178,7 +178,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
@@ -188,7 +188,7 @@
 
                 <com.jim.mpviews.MpEditText
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/thirty_eight_dp"
+                    android:layout_height="@dimen/forty_dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="@dimen/thirty_dp"
                     android:layout_weight="1"
@@ -206,7 +206,7 @@
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="@dimen/two_hundred_fifty_dp"
                 android:layout_marginBottom="@dimen/ten_dp"
                 android:layout_marginLeft="@dimen/thirty_dp"
                 android:layout_marginRight="@dimen/thirty_dp" />
@@ -223,8 +223,8 @@
         android:orientation="horizontal">
 
         <com.jim.mpviews.MpButton
-            android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
             android:layout_marginLeft="@dimen/thirty_dp"
             android:layout_marginRight="@dimen/fifteen_dp"
             android:text="Cancel"
@@ -233,8 +233,8 @@
 
 
         <com.jim.mpviews.MpButton
-            android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
             android:layout_marginRight="@dimen/thirty_dp"
             android:text="Save"
             android:textColor="@color/colorBlue"

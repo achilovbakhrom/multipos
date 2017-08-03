@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_marginTop="@dimen/five_dp"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/fifty_dp"
         android:orientation="horizontal">
 
 
@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/thirty_dp"
-            android:layout_marginRight="160dp"
+            android:layout_marginRight="@dimen/hundred_sixty_dp"
             android:orientation="vertical">
 
 
